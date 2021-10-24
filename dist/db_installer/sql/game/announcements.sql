@@ -12,4 +12,4 @@ CREATE TABLE IF NOT EXISTS `announcements` (
 
 INSERT INTO announcements (`type`, `author`, `content`) VALUES 
 (0, 'l2jdd', 'Thanks for using l2jdd!'),
-(0, 'l2jdd', '[=http://https://dd-project.xyz/=]');
+(0, 'l2jdd', '[=https://dd-project.xyz/=]');
