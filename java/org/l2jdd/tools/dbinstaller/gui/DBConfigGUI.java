@@ -43,21 +43,24 @@ public class DBConfigGUI extends JFrame
 	
 	public DBConfigGUI(String db, String dir)
 	{
-		super("Mobius - DB Installer");
+		super("L2jDD - Database Installer");
 		setVisible(false);
 		setLayout(new SpringLayout());
 		setDefaultLookAndFeelDecorated(true);
 		
 		// Set icons.
 		final List<Image> icons = new ArrayList<>();
-		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "l2jdd_16x16.png").getImage());
-		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "l2jdd_32x32.png").getImage());
-		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "l2jdd_64x64.png").getImage());
-		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "l2jdd_128x128.png").getImage());
+		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "database" + File.separator + "Database_16x16.png").getImage());
+		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "database" + File.separator + "Database_24x24.png").getImage());
+		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "database" + File.separator + "Database_32x32.png").getImage());
+		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "database" + File.separator + "Database_64x64.png").getImage());
+		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "database" + File.separator + "Database_128x128.png").getImage());
+		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "database" + File.separator + "Database_256x256.png").getImage());
+		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "database" + File.separator + "Database_512x512.png").getImage());
 		setIconImages(icons);
 		
 		// Show SplashScreen.
-		new SplashScreen(".." + File.separator + "images" + File.separator + "splash.png", 5000, this);
+		new SplashScreen("", 0, this);
 		_db = db;
 		_dir = dir;
 		
@@ -90,7 +93,7 @@ public class DBConfigGUI extends JFrame
 		final JLabel labelDbUser = new JLabel("Username: ", SwingConstants.LEFT);
 		add(labelDbUser);
 		_dbUser = new JTextField(15);
-		_dbUser.setText(_prop.get("dbUser_" + db, "root"));
+		_dbUser.setText(_prop.get("dbUser_" + db, "l2jdd"));
 		labelDbUser.setLabelFor(_dbUser);
 		add(_dbUser);
 		

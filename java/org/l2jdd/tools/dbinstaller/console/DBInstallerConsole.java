@@ -30,7 +30,7 @@ public class DBInstallerConsole implements DBOutputInterface
 				String dbHost = scn.nextLine();
 				System.out.printf("%s (%s): ", "Port", prop.get("dbPort_" + db, "3306"));
 				String dbPort = scn.nextLine();
-				System.out.printf("%s (%s): ", "Username", prop.get("dbUser_" + db, "root"));
+				System.out.printf("%s (%s): ", "Username", prop.get("dbUser_" + db, "l2jdd"));
 				String dbUser = scn.nextLine();
 				System.out.printf("%s (%s): ", "Password", "");
 				final String dbPass = scn.nextLine();
@@ -38,7 +38,7 @@ public class DBInstallerConsole implements DBOutputInterface
 				String dbDbse = scn.nextLine();
 				dbHost = dbHost.isEmpty() ? prop.get("dbHost_" + db, "localhost") : dbHost;
 				dbPort = dbPort.isEmpty() ? prop.get("dbPort_" + db, "3306") : dbPort;
-				dbUser = dbUser.isEmpty() ? prop.get("dbUser_" + db, "root") : dbUser;
+				dbUser = dbUser.isEmpty() ? prop.get("dbUser_" + db, "l2jdd") : dbUser;
 				dbDbse = dbDbse.isEmpty() ? prop.get("dbDbse_" + db, db) : dbDbse;
 				
 				final MySqlConnect connector = new MySqlConnect(dbHost, dbPort, dbUser, dbPass, dbDbse, true);

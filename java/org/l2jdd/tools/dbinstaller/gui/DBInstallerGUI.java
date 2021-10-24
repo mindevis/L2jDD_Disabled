@@ -31,16 +31,19 @@ public class DBInstallerGUI extends JFrame implements DBOutputInterface
 	
 	public DBInstallerGUI(Connection con)
 	{
-		super("Mobius - DB Installer");
+		super("L2jDD - Database Installer");
 		setLayout(new BorderLayout());
 		setDefaultLookAndFeelDecorated(true);
 		
 		// Set icons.
 		final List<Image> icons = new ArrayList<>();
-		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "l2jdd_16x16.png").getImage());
-		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "l2jdd_32x32.png").getImage());
-		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "l2jdd_64x64.png").getImage());
-		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "l2jdd_128x128.png").getImage());
+		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "database" + File.separator + "Database_16x16.png").getImage());
+		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "database" + File.separator + "Database_24x24.png").getImage());
+		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "database" + File.separator + "Database_32x32.png").getImage());
+		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "database" + File.separator + "Database_64x64.png").getImage());
+		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "database" + File.separator + "Database_128x128.png").getImage());
+		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "database" + File.separator + "Database_256x256.png").getImage());
+		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "database" + File.separator + "Database_512x512.png").getImage());
 		setIconImages(icons);
 		
 		_con = con;
