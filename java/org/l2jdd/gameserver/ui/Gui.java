@@ -281,10 +281,13 @@ public class Gui
 		
 		// Set icons.
 		final List<Image> icons = new ArrayList<>();
-		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "l2jdd_16x16.png").getImage());
-		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "l2jdd_32x32.png").getImage());
-		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "l2jdd_64x64.png").getImage());
-		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "l2jdd_128x128.png").getImage());
+		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "server" + File.separator + "Server_16x16.png").getImage());
+		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "server" + File.separator + "Server_24x24.png").getImage());
+		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "server" + File.separator + "Server_32x32.png").getImage());
+		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "server" + File.separator + "Server_64x64.png").getImage());
+		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "server" + File.separator + "Server_128x128.png").getImage());
+		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "server" + File.separator + "Server_256x256.png").getImage());
+		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "server" + File.separator + "Server_512x512.png").getImage());
 		
 		// Set Panels.
 		final JPanel systemPanel = new SystemPanel();
@@ -295,7 +298,7 @@ public class Gui
 		layeredPanel.add(systemPanel, 1, 0);
 		
 		// Set frame.
-		final JFrame frame = new JFrame("Mobius - GameServer");
+		final JFrame frame = new JFrame("L2jDD - GameServer");
 		frame.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
 		frame.addWindowListener(new WindowAdapter()
 		{
@@ -328,7 +331,7 @@ public class Gui
 		redirectSystemStreams();
 		
 		// Show SplashScreen.
-		new SplashScreen(".." + File.separator + "images" + File.separator + "splash.png", 5000, frame);
+		new SplashScreen("", 0, frame);
 	}
 	
 	// Set where the text is redirected. In this case, txtrConsole.
