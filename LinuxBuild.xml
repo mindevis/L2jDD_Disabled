@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="L2jDD Linux Build" default="Clean-Project" basedir=".">
+
+	<property name="project.archive.name" value="l2jdd"/>
+	<property name="build" location="build"/>
+	<property name="build.bin" location="${build}/bin"/>
+	<property name="build.dist" location="${build}/dist"/>
+	<property name="build.dist.libs" location="${build.dist}/libs"/>
+	<property name="build.dist.dbinstaller" location="${build.dist}/db_installer"/>
+	<property name="compiled" location="${build}/compiled"/>
+	<property name="launcher.dist" location="launcher"/>
+	<property name="linux" location="${launcher.dist}/linux"/>
+	<property name="datapack" location="dist"/>
+	<property name="libs" location="${datapack}/libs"/>
+	<property name="src" location="java"/>
+
+	<path id="classpath">
+		<fileset dir="${libs}">
+			<include name="*.jar"/>
+			<exclude name="**/*-sources.jar"/>
+		</fileset>
+	</path>
+
+	<pathconvert property="manifest.libs" pathsep=" ">
+		<path refid="classpath"/>
+		<mapper>
+			<chainedmapper>
+				<flattenmapper/>
+				<globmapper from="*.jar" to="../libs/*.jar"/>
+			</chainedmapper>
+		</mapper>
+	</pathconvert>
+
+	<exec executable="git" outputproperty="git.hash" failifexecutionfails="true" failonerror="true">
+		<arg value="rev-parse"/>
+		<arg value="--short"/>
+		<arg value="HEAD"/>
+	</exec>
+
+	<!-- Task #1 -->
+	<target name="Check-Requirements" description="Check Requirements.">
+		<echo message="Check Requirements." level="info"/>
+		<echo message="Check Java: ${java.version}" level="info" />
+		<fail message="Required Java Version 17. Your Java version: ${ant.java.version} | Full Java Version: ${java.version}. Update your JDK to the required version">
+			<condition>
+				<not>
+					<or>
+						<equals arg1="${ant.java.version}" arg2="17"/>
+					</or>
+				</not>
+			</condition>
+		</fail>
+		<echo message="Check Ant: ${ant.version}" level="info" />
+		<fail message="Required Apache Ant Compiler Version 1.10.7. Your compiler version: ${ant.version}. Update your compiler to the required version">
+			<condition>
+				<not>
+					<antversion atleast="1.10.12" />
+				</not>
+			</condition>
+		</fail>
+		<echo message="Check Requirements Successful" level="info"/>
+		</target>
+
+	<!-- Task #2 -->
+	<target name="Initial-Task" depends="Check-Requirements" description="Initial Task.">
+		<echo message="Initial Task" level="info"/>
+		<echo message="Create directory for building source code" level="info"/>
+		<delete dir="${build.bin}" quiet="true"/>
+		<mkdir dir="${build.bin}"/>
+	</target>
+
+	<!-- Task #3 -->
+	<target name="Compile-Sources" depends="Initial-Task" description="Compiling the source code.">
+		<echo message="Compiling the source code." level="info"/>
+		<javac srcdir="${src}" classpathref="classpath" destdir="${build.bin}" compiler="modern" debug="true" debuglevel="lines,vars,source" includeantruntime="false" source="17" target="17" encoding="UTF-8" />
+	</target>
+
+	<!-- Task #4 -->
+	<target name="Compile-JAR-Files" depends="Compile-Sources" description="Compiling and creating JAR files.">
+		<echo message="Compiling and creating JAR files." level="info"/>
+		<tstamp>
+			<format property="time.stamp" pattern="yyyy-MM-dd HH:mm:ss" />
+		</tstamp>
+
+		<!-- LoginServer.jar -->
+		<echo message="Compile LoginServer.jar" level="info"/>
+		<jar destfile="${build.dist.libs}/LoginServer.jar" level="9">
+			<fileset dir="${build.bin}">
+				<exclude name="**/dbinstaller/**" />
+				<exclude name="**/gameserver/**" />
+				<exclude name="**/geodataconverter/**" />
+			</fileset>
+			<manifest>
+				<attribute name="Build-By" value="${user.name}" />
+				<attribute name="Build-Date" value="${time.stamp}" />
+				<attribute name="Implementation-URL" value="https://dd-project.xyz" />
+				<attribute name="Class-Path" value="${manifest.libs}" />
+				<attribute name="Main-Class" value="org.l2jdd.loginserver.LoginServer" />
+			</manifest>
+		</jar>
+
+		<!-- GameServer.jar -->
+		<echo message="Compile GameServer.jar" level="info"/>
+		<jar destfile="${build.dist.libs}/GameServer.jar" level="9">
+			<fileset dir="${build.bin}">
+				<exclude name="**/dbinstaller/**" />
+				<exclude name="**/loginserver/**" />
+				<exclude name="**/accountmanager/**" />
+				<exclude name="**/gsregistering/**" />
+			</fileset>
+			<manifest>
+				<attribute name="Build-By" value="${user.name}" />
+				<attribute name="Build-Date" value="${time.stamp}" />
+				<attribute name="Implementation-URL" value="https://dd-project.xyz" />
+				<attribute name="Class-Path" value="${manifest.libs}" />
+				<attribute name="Main-Class" value="org.l2jdd.gameserver.GameServer" />
+			</manifest>
+		</jar>
+
+		<!-- Database_Installer_GS.jar -->
+		<echo message="Compile Database_Installer_GS.jar" level="info"/>
+		<jar destfile="${build.dist.dbinstaller}/Database_Installer_GS.jar" level="9">
+			<fileset dir="${build.bin}">
+				<include name="**/dbinstaller/**" />
+				<include name="**/util/**" />
+				<include name="**/SQLFilter**" />
+				<exclude name="**/LauncherLS*" />
+			</fileset>
+			<manifest>
+				<attribute name="Build-By" value="${user.name}" />
+				<attribute name="Build-Date" value="${time.stamp}" />
+				<attribute name="Class-Path" value="${manifest.libs}" />
+				<attribute name="Implementation-URL" value="https://dd-project.xyz" />
+				<attribute name="Main-Class" value="org.l2jdd.tools.dbinstaller.LauncherGS" />
+			</manifest>
+		</jar>
+
+		<!-- Database_Installer_LS.jar -->
+		<echo message="Compile Database_Installer_LS.jar" level="info"/>
+		<jar destfile="${build.dist.dbinstaller}/Database_Installer_LS.jar" level="9">
+			<fileset dir="${build.bin}">
+				<include name="**/dbinstaller/**" />
+				<include name="**/util/**" />
+				<include name="**/SQLFilter**" />
+				<exclude name="**/LauncherGS*" />
+			</fileset>
+			<manifest>
+				<attribute name="Build-By" value="${user.name}" />
+				<attribute name="Build-Date" value="${time.stamp}" />
+				<attribute name="Class-Path" value="${manifest.libs}" />
+				<attribute name="Implementation-URL" value="https://dd-project.xyz" />
+				<attribute name="Main-Class" value="org.l2jdd.tools.dbinstaller.LauncherLS" />
+			</manifest>
+		</jar>
+	</target>
+
+	<!-- Task #5 -->
+	<target name="Compress-Project" depends="Compile-JAR-Files" description="Project archive create.">
+		<echo message="Project archive create." level="info"/>
+		<copy todir="${compiled}" overwrite="true" includeemptydirs="true" failonerror="true">
+			<fileset dir="${build.dist}" erroronmissingdir="true"/>
+			<fileset dir="${datapack}" erroronmissingdir="true"/>
+		</copy>
+		<tar destfile="${build}/linux_${project.archive.name}_${git.hash}.tar.gz" basedir="${compiled}" compression="gzip" longfile="gnu">
+			<tarfileset dir="${linux}" erroronmissingdir="true" includes="*/*.sh" filemode="744" />
+		</tar>
+	</target>
+
+	<!-- Task #6 -->
+	<target name="Clean-Project" depends="Compress-Project" description="Clearing the project build directory.">
+		<echo message="Clearing the project build directory." level="info"/>
+		<delete dir="${build.bin}"/>
+		<delete dir="${build.dist}"/>
+		<delete dir="${compiled}"/>
+	</target>
+</project>
