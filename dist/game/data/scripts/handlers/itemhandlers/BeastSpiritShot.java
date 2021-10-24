@@ -19,17 +19,17 @@ package handlers.itemhandlers;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.l2jmobius.gameserver.enums.ItemSkillType;
-import org.l2jmobius.gameserver.enums.ShotType;
-import org.l2jmobius.gameserver.handler.IItemHandler;
-import org.l2jmobius.gameserver.model.actor.Playable;
-import org.l2jmobius.gameserver.model.actor.Summon;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.holders.ItemSkillHolder;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.MagicSkillUse;
-import org.l2jmobius.gameserver.util.Broadcast;
+import org.l2jdd.gameserver.enums.ItemSkillType;
+import org.l2jdd.gameserver.enums.ShotType;
+import org.l2jdd.gameserver.handler.IItemHandler;
+import org.l2jdd.gameserver.model.actor.Playable;
+import org.l2jdd.gameserver.model.actor.Summon;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.holders.ItemSkillHolder;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.MagicSkillUse;
+import org.l2jdd.gameserver.util.Broadcast;
 
 /**
  * Beast SpiritShot Handler

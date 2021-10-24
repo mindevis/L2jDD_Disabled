@@ -14,13 +14,13 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.actor.status;
+package org.l2jdd.gameserver.model.actor.status;
 
-import org.l2jmobius.gameserver.ai.CtrlEvent;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.instance.PetInstance;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
+import org.l2jdd.gameserver.ai.CtrlEvent;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.actor.instance.PetInstance;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.SystemMessage;
 
 public class PetStatus extends SummonStatus
 {

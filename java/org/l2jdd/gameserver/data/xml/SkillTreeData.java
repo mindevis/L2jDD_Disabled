@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.data.xml;
+package org.l2jdd.gameserver.data.xml;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -36,26 +36,26 @@ import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.util.IXmlReader;
-import org.l2jmobius.gameserver.enums.AcquireSkillType;
-import org.l2jmobius.gameserver.enums.CategoryType;
-import org.l2jmobius.gameserver.enums.ClassId;
-import org.l2jmobius.gameserver.enums.Race;
-import org.l2jmobius.gameserver.enums.SocialClass;
-import org.l2jmobius.gameserver.enums.SubclassType;
-import org.l2jmobius.gameserver.model.SkillLearn;
-import org.l2jmobius.gameserver.model.StatSet;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.clan.Clan;
-import org.l2jmobius.gameserver.model.holders.ItemHolder;
-import org.l2jmobius.gameserver.model.holders.ItemSkillHolder;
-import org.l2jmobius.gameserver.model.holders.PlayerSkillHolder;
-import org.l2jmobius.gameserver.model.holders.SkillHolder;
-import org.l2jmobius.gameserver.model.interfaces.ISkillsHolder;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.model.skills.CommonSkill;
-import org.l2jmobius.gameserver.model.skills.Skill;
+import org.l2jdd.Config;
+import org.l2jdd.commons.util.IXmlReader;
+import org.l2jdd.gameserver.enums.AcquireSkillType;
+import org.l2jdd.gameserver.enums.CategoryType;
+import org.l2jdd.gameserver.enums.ClassId;
+import org.l2jdd.gameserver.enums.Race;
+import org.l2jdd.gameserver.enums.SocialClass;
+import org.l2jdd.gameserver.enums.SubclassType;
+import org.l2jdd.gameserver.model.SkillLearn;
+import org.l2jdd.gameserver.model.StatSet;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.clan.Clan;
+import org.l2jdd.gameserver.model.holders.ItemHolder;
+import org.l2jdd.gameserver.model.holders.ItemSkillHolder;
+import org.l2jdd.gameserver.model.holders.PlayerSkillHolder;
+import org.l2jdd.gameserver.model.holders.SkillHolder;
+import org.l2jdd.gameserver.model.interfaces.ISkillsHolder;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.model.skills.CommonSkill;
+import org.l2jdd.gameserver.model.skills.Skill;
 
 /**
  * This class loads and manage the characters and pledges skills trees.<br>

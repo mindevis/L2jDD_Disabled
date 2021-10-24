@@ -14,22 +14,22 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network.clientpackets;
+package org.l2jdd.gameserver.network.clientpackets;
 
 import java.util.Arrays;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.gameserver.enums.ItemLocation;
-import org.l2jmobius.gameserver.enums.PrivateStoreType;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.actor.request.EnchantItemAttributeRequest;
-import org.l2jmobius.gameserver.model.actor.request.EnchantItemRequest;
-import org.l2jmobius.gameserver.model.items.Armor;
-import org.l2jmobius.gameserver.model.items.Weapon;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.model.options.VariationFee;
-import org.l2jmobius.gameserver.model.skills.AbnormalType;
-import org.l2jmobius.gameserver.network.SystemMessageId;
+import org.l2jdd.Config;
+import org.l2jdd.gameserver.enums.ItemLocation;
+import org.l2jdd.gameserver.enums.PrivateStoreType;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.actor.request.EnchantItemAttributeRequest;
+import org.l2jdd.gameserver.model.actor.request.EnchantItemRequest;
+import org.l2jdd.gameserver.model.items.Armor;
+import org.l2jdd.gameserver.model.items.Weapon;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.model.options.VariationFee;
+import org.l2jdd.gameserver.model.skills.AbnormalType;
+import org.l2jdd.gameserver.network.SystemMessageId;
 
 public abstract class AbstractRefinePacket implements IClientIncomingPacket
 {

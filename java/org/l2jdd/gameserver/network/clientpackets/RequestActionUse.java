@@ -14,26 +14,26 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network.clientpackets;
+package org.l2jdd.gameserver.network.clientpackets;
 
 import java.util.Arrays;
 import java.util.logging.Logger;
 
-import org.l2jmobius.commons.network.PacketReader;
-import org.l2jmobius.gameserver.data.xml.ActionData;
-import org.l2jmobius.gameserver.enums.PrivateStoreType;
-import org.l2jmobius.gameserver.handler.IPlayerActionHandler;
-import org.l2jmobius.gameserver.handler.PlayerActionHandler;
-import org.l2jmobius.gameserver.model.ActionDataHolder;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.effects.AbstractEffect;
-import org.l2jmobius.gameserver.model.skills.AbnormalType;
-import org.l2jmobius.gameserver.model.skills.BuffInfo;
-import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
-import org.l2jmobius.gameserver.network.serverpackets.ExBasicActionList;
-import org.l2jmobius.gameserver.network.serverpackets.RecipeShopManageList;
+import org.l2jdd.commons.network.PacketReader;
+import org.l2jdd.gameserver.data.xml.ActionData;
+import org.l2jdd.gameserver.enums.PrivateStoreType;
+import org.l2jdd.gameserver.handler.IPlayerActionHandler;
+import org.l2jdd.gameserver.handler.PlayerActionHandler;
+import org.l2jdd.gameserver.model.ActionDataHolder;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.effects.AbstractEffect;
+import org.l2jdd.gameserver.model.skills.AbnormalType;
+import org.l2jdd.gameserver.model.skills.BuffInfo;
+import org.l2jdd.gameserver.network.GameClient;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.ActionFailed;
+import org.l2jdd.gameserver.network.serverpackets.ExBasicActionList;
+import org.l2jdd.gameserver.network.serverpackets.RecipeShopManageList;
 
 /**
  * This class manages the action use request packet.

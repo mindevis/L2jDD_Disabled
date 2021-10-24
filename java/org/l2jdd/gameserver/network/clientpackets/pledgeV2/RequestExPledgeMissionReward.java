@@ -14,21 +14,21 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network.clientpackets.pledgeV2;
+package org.l2jdd.gameserver.network.clientpackets.pledgeV2;
 
 import java.util.Collection;
 
-import org.l2jmobius.commons.concurrent.ThreadPool;
-import org.l2jmobius.commons.network.PacketReader;
-import org.l2jmobius.gameserver.data.xml.DailyMissionData;
-import org.l2jmobius.gameserver.model.DailyMissionDataHolder;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.actor.request.RewardRequest;
-import org.l2jmobius.gameserver.network.Disconnection;
-import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
-import org.l2jmobius.gameserver.network.serverpackets.pledgeV2.ExPledgeMissionInfo;
-import org.l2jmobius.gameserver.network.serverpackets.pledgeV2.ExPledgeMissionRewardCount;
+import org.l2jdd.commons.concurrent.ThreadPool;
+import org.l2jdd.commons.network.PacketReader;
+import org.l2jdd.gameserver.data.xml.DailyMissionData;
+import org.l2jdd.gameserver.model.DailyMissionDataHolder;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.actor.request.RewardRequest;
+import org.l2jdd.gameserver.network.Disconnection;
+import org.l2jdd.gameserver.network.GameClient;
+import org.l2jdd.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jdd.gameserver.network.serverpackets.pledgeV2.ExPledgeMissionInfo;
+import org.l2jdd.gameserver.network.serverpackets.pledgeV2.ExPledgeMissionRewardCount;
 
 /**
  * @author Mobius

@@ -16,17 +16,17 @@
  */
 package instances.KartiasLabyrinth;
 
-import org.l2jmobius.commons.util.CommonUtil;
-import org.l2jmobius.gameserver.model.Location;
-import org.l2jmobius.gameserver.model.StatSet;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.FriendlyNpcInstance;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.events.impl.creature.OnCreatureAttacked;
-import org.l2jmobius.gameserver.model.events.impl.creature.OnCreatureDeath;
-import org.l2jmobius.gameserver.model.events.impl.instance.OnInstanceStatusChange;
-import org.l2jmobius.gameserver.model.instancezone.Instance;
+import org.l2jdd.commons.util.CommonUtil;
+import org.l2jdd.gameserver.model.Location;
+import org.l2jdd.gameserver.model.StatSet;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.FriendlyNpcInstance;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.events.impl.creature.OnCreatureAttacked;
+import org.l2jdd.gameserver.model.events.impl.creature.OnCreatureDeath;
+import org.l2jdd.gameserver.model.events.impl.instance.OnInstanceStatusChange;
+import org.l2jdd.gameserver.model.instancezone.Instance;
 
 import ai.AbstractNpcAI;
 

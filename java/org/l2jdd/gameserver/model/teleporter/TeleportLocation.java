@@ -14,16 +14,16 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.teleporter;
+package org.l2jdd.gameserver.model.teleporter;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import org.l2jmobius.gameserver.model.Location;
-import org.l2jmobius.gameserver.model.StatSet;
-import org.l2jmobius.gameserver.model.itemcontainer.Inventory;
-import org.l2jmobius.gameserver.network.NpcStringId;
+import org.l2jdd.gameserver.model.Location;
+import org.l2jdd.gameserver.model.StatSet;
+import org.l2jdd.gameserver.model.itemcontainer.Inventory;
+import org.l2jdd.gameserver.network.NpcStringId;
 
 /**
  * @author UnAfraid

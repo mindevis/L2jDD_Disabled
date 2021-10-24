@@ -14,14 +14,14 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.commons.database;
+package org.l2jdd.commons.database;
 
 import java.sql.Connection;
 import java.util.logging.Logger;
 
 import org.mariadb.jdbc.MariaDbPoolDataSource;
 
-import org.l2jmobius.Config;
+import org.l2jdd.Config;
 
 /**
  * @author Mobius

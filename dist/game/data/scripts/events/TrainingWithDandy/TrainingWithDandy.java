@@ -18,11 +18,11 @@ package events.TrainingWithDandy;
 
 import java.util.Calendar;
 
-import org.l2jmobius.commons.util.Chronos;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.holders.SkillHolder;
-import org.l2jmobius.gameserver.model.quest.LongTimeEvent;
+import org.l2jdd.commons.util.Chronos;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.holders.SkillHolder;
+import org.l2jdd.gameserver.model.quest.LongTimeEvent;
 
 /**
  * Training with Dandy

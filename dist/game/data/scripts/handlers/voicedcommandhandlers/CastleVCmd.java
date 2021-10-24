@@ -16,12 +16,12 @@
  */
 package handlers.voicedcommandhandlers;
 
-import org.l2jmobius.gameserver.handler.IVoicedCommandHandler;
-import org.l2jmobius.gameserver.instancemanager.CastleManager;
-import org.l2jmobius.gameserver.model.actor.instance.DoorInstance;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.siege.Castle;
-import org.l2jmobius.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.handler.IVoicedCommandHandler;
+import org.l2jdd.gameserver.instancemanager.CastleManager;
+import org.l2jdd.gameserver.model.actor.instance.DoorInstance;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.siege.Castle;
+import org.l2jdd.gameserver.network.SystemMessageId;
 
 /**
  * @author Zoey76

@@ -16,18 +16,18 @@
  */
 package handlers.actionshifthandlers;
 
-import org.l2jmobius.gameserver.data.xml.ClanHallData;
-import org.l2jmobius.gameserver.enums.InstanceType;
-import org.l2jmobius.gameserver.handler.IActionShiftHandler;
-import org.l2jmobius.gameserver.model.WorldObject;
-import org.l2jmobius.gameserver.model.actor.instance.DoorInstance;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.residences.ClanHall;
-import org.l2jmobius.gameserver.model.siege.Castle;
-import org.l2jmobius.gameserver.model.siege.Fort;
-import org.l2jmobius.gameserver.network.serverpackets.NpcHtmlMessage;
-import org.l2jmobius.gameserver.network.serverpackets.StaticObject;
-import org.l2jmobius.gameserver.util.HtmlUtil;
+import org.l2jdd.gameserver.data.xml.ClanHallData;
+import org.l2jdd.gameserver.enums.InstanceType;
+import org.l2jdd.gameserver.handler.IActionShiftHandler;
+import org.l2jdd.gameserver.model.WorldObject;
+import org.l2jdd.gameserver.model.actor.instance.DoorInstance;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.residences.ClanHall;
+import org.l2jdd.gameserver.model.siege.Castle;
+import org.l2jdd.gameserver.model.siege.Fort;
+import org.l2jdd.gameserver.network.serverpackets.NpcHtmlMessage;
+import org.l2jdd.gameserver.network.serverpackets.StaticObject;
+import org.l2jdd.gameserver.util.HtmlUtil;
 
 /**
  * This class manage shift + click on {@link DoorInstance}.

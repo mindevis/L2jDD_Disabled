@@ -18,19 +18,19 @@ package handlers.voicedcommandhandlers;
 
 import java.util.StringTokenizer;
 
-import org.l2jmobius.commons.util.Chronos;
-import org.l2jmobius.gameserver.data.sql.CharNameTable;
-import org.l2jmobius.gameserver.data.xml.AdminData;
-import org.l2jmobius.gameserver.handler.IVoicedCommandHandler;
-import org.l2jmobius.gameserver.instancemanager.PunishmentManager;
-import org.l2jmobius.gameserver.model.World;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.punishment.PunishmentAffect;
-import org.l2jmobius.gameserver.model.punishment.PunishmentTask;
-import org.l2jmobius.gameserver.model.punishment.PunishmentType;
-import org.l2jmobius.gameserver.model.skills.AbnormalVisualEffect;
-import org.l2jmobius.gameserver.util.BuilderUtil;
-import org.l2jmobius.gameserver.util.Util;
+import org.l2jdd.commons.util.Chronos;
+import org.l2jdd.gameserver.data.sql.CharNameTable;
+import org.l2jdd.gameserver.data.xml.AdminData;
+import org.l2jdd.gameserver.handler.IVoicedCommandHandler;
+import org.l2jdd.gameserver.instancemanager.PunishmentManager;
+import org.l2jdd.gameserver.model.World;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.punishment.PunishmentAffect;
+import org.l2jdd.gameserver.model.punishment.PunishmentTask;
+import org.l2jdd.gameserver.model.punishment.PunishmentType;
+import org.l2jdd.gameserver.model.skills.AbnormalVisualEffect;
+import org.l2jdd.gameserver.util.BuilderUtil;
+import org.l2jdd.gameserver.util.Util;
 
 public class ChatAdmin implements IVoicedCommandHandler
 {

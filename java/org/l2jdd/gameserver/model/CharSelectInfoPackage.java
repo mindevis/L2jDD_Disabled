@@ -14,10 +14,10 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model;
+package org.l2jdd.gameserver.model;
 
-import org.l2jmobius.gameserver.model.itemcontainer.PlayerInventory;
-import org.l2jmobius.gameserver.model.variables.PlayerVariables;
+import org.l2jdd.gameserver.model.itemcontainer.PlayerInventory;
+import org.l2jdd.gameserver.model.variables.PlayerVariables;
 
 /**
  * Used to Store data sent to Client for Character.<br>

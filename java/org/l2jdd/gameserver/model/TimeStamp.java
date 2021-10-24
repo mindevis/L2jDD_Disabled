@@ -14,11 +14,11 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model;
+package org.l2jdd.gameserver.model;
 
-import org.l2jmobius.commons.util.Chronos;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.model.skills.Skill;
+import org.l2jdd.commons.util.Chronos;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.model.skills.Skill;
 
 /**
  * Simple class containing all necessary information to maintain<br>

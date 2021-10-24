@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.instancezone;
+package org.l2jdd.gameserver.model.instancezone;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -36,39 +36,39 @@ import java.util.logging.Logger;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.concurrent.ThreadPool;
-import org.l2jmobius.commons.database.DatabaseFactory;
-import org.l2jmobius.commons.util.Chronos;
-import org.l2jmobius.commons.util.CommonUtil;
-import org.l2jmobius.gameserver.data.xml.DoorData;
-import org.l2jmobius.gameserver.enums.InstanceReenterType;
-import org.l2jmobius.gameserver.enums.InstanceTeleportType;
-import org.l2jmobius.gameserver.enums.TeleportWhereType;
-import org.l2jmobius.gameserver.instancemanager.InstanceManager;
-import org.l2jmobius.gameserver.model.Location;
-import org.l2jmobius.gameserver.model.StatSet;
-import org.l2jmobius.gameserver.model.WorldObject;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.Summon;
-import org.l2jmobius.gameserver.model.actor.instance.DoorInstance;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.actor.templates.DoorTemplate;
-import org.l2jmobius.gameserver.model.events.EventDispatcher;
-import org.l2jmobius.gameserver.model.events.impl.instance.OnInstanceCreated;
-import org.l2jmobius.gameserver.model.events.impl.instance.OnInstanceDestroy;
-import org.l2jmobius.gameserver.model.events.impl.instance.OnInstanceEnter;
-import org.l2jmobius.gameserver.model.events.impl.instance.OnInstanceLeave;
-import org.l2jmobius.gameserver.model.events.impl.instance.OnInstanceStatusChange;
-import org.l2jmobius.gameserver.model.interfaces.IIdentifiable;
-import org.l2jmobius.gameserver.model.interfaces.ILocational;
-import org.l2jmobius.gameserver.model.interfaces.INamable;
-import org.l2jmobius.gameserver.model.spawns.SpawnGroup;
-import org.l2jmobius.gameserver.model.spawns.SpawnTemplate;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
-import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
+import org.l2jdd.Config;
+import org.l2jdd.commons.concurrent.ThreadPool;
+import org.l2jdd.commons.database.DatabaseFactory;
+import org.l2jdd.commons.util.Chronos;
+import org.l2jdd.commons.util.CommonUtil;
+import org.l2jdd.gameserver.data.xml.DoorData;
+import org.l2jdd.gameserver.enums.InstanceReenterType;
+import org.l2jdd.gameserver.enums.InstanceTeleportType;
+import org.l2jdd.gameserver.enums.TeleportWhereType;
+import org.l2jdd.gameserver.instancemanager.InstanceManager;
+import org.l2jdd.gameserver.model.Location;
+import org.l2jdd.gameserver.model.StatSet;
+import org.l2jdd.gameserver.model.WorldObject;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.Summon;
+import org.l2jdd.gameserver.model.actor.instance.DoorInstance;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.actor.templates.DoorTemplate;
+import org.l2jdd.gameserver.model.events.EventDispatcher;
+import org.l2jdd.gameserver.model.events.impl.instance.OnInstanceCreated;
+import org.l2jdd.gameserver.model.events.impl.instance.OnInstanceDestroy;
+import org.l2jdd.gameserver.model.events.impl.instance.OnInstanceEnter;
+import org.l2jdd.gameserver.model.events.impl.instance.OnInstanceLeave;
+import org.l2jdd.gameserver.model.events.impl.instance.OnInstanceStatusChange;
+import org.l2jdd.gameserver.model.interfaces.IIdentifiable;
+import org.l2jdd.gameserver.model.interfaces.ILocational;
+import org.l2jdd.gameserver.model.interfaces.INamable;
+import org.l2jdd.gameserver.model.spawns.SpawnGroup;
+import org.l2jdd.gameserver.model.spawns.SpawnTemplate;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jdd.gameserver.network.serverpackets.SystemMessage;
 
 /**
  * Instance world.

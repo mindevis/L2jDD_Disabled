@@ -18,15 +18,15 @@ package ai.bosses.Lindvior;
 
 import java.util.Collection;
 
-import org.l2jmobius.gameserver.ai.CtrlIntention;
-import org.l2jmobius.gameserver.geoengine.GeoEngine;
-import org.l2jmobius.gameserver.model.Location;
-import org.l2jmobius.gameserver.model.World;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.network.serverpackets.FlyToLocation;
-import org.l2jmobius.gameserver.network.serverpackets.ValidateLocation;
+import org.l2jdd.gameserver.ai.CtrlIntention;
+import org.l2jdd.gameserver.geoengine.GeoEngine;
+import org.l2jdd.gameserver.model.Location;
+import org.l2jdd.gameserver.model.World;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.network.serverpackets.FlyToLocation;
+import org.l2jdd.gameserver.network.serverpackets.ValidateLocation;
 
 import ai.AbstractNpcAI;
 

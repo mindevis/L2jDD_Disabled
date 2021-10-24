@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.tools.dbinstaller.gui;
+package org.l2jdd.tools.dbinstaller.gui;
 
 import java.awt.Dimension;
 import java.awt.Image;
@@ -36,10 +36,10 @@ import javax.swing.SpringLayout;
 import javax.swing.SwingConstants;
 import javax.swing.WindowConstants;
 
-import org.l2jmobius.commons.util.SplashScreen;
-import org.l2jmobius.tools.dbinstaller.RunTasks;
-import org.l2jmobius.tools.dbinstaller.util.mysql.MySqlConnect;
-import org.l2jmobius.tools.dbinstaller.util.swing.SpringUtilities;
+import org.l2jdd.commons.util.SplashScreen;
+import org.l2jdd.tools.dbinstaller.RunTasks;
+import org.l2jdd.tools.dbinstaller.util.mysql.MySqlConnect;
+import org.l2jdd.tools.dbinstaller.util.swing.SpringUtilities;
 
 /**
  * @author mrTJO
@@ -65,10 +65,10 @@ public class DBConfigGUI extends JFrame
 		
 		// Set icons.
 		final List<Image> icons = new ArrayList<>();
-		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "l2jmobius_16x16.png").getImage());
-		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "l2jmobius_32x32.png").getImage());
-		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "l2jmobius_64x64.png").getImage());
-		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "l2jmobius_128x128.png").getImage());
+		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "l2jdd_16x16.png").getImage());
+		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "l2jdd_32x32.png").getImage());
+		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "l2jdd_64x64.png").getImage());
+		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "l2jdd_128x128.png").getImage());
 		setIconImages(icons);
 		
 		// Show SplashScreen.

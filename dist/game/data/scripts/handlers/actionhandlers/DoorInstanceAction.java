@@ -16,18 +16,18 @@
  */
 package handlers.actionhandlers;
 
-import org.l2jmobius.gameserver.ai.CtrlIntention;
-import org.l2jmobius.gameserver.data.xml.ClanHallData;
-import org.l2jmobius.gameserver.enums.InstanceType;
-import org.l2jmobius.gameserver.handler.IActionHandler;
-import org.l2jmobius.gameserver.model.WorldObject;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.DoorInstance;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.holders.DoorRequestHolder;
-import org.l2jmobius.gameserver.model.residences.ClanHall;
-import org.l2jmobius.gameserver.network.serverpackets.ConfirmDlg;
+import org.l2jdd.gameserver.ai.CtrlIntention;
+import org.l2jdd.gameserver.data.xml.ClanHallData;
+import org.l2jdd.gameserver.enums.InstanceType;
+import org.l2jdd.gameserver.handler.IActionHandler;
+import org.l2jdd.gameserver.model.WorldObject;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.DoorInstance;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.holders.DoorRequestHolder;
+import org.l2jdd.gameserver.model.residences.ClanHall;
+import org.l2jdd.gameserver.network.serverpackets.ConfirmDlg;
 
 public class DoorInstanceAction implements IActionHandler
 {

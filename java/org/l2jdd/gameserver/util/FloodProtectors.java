@@ -14,10 +14,10 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.util;
+package org.l2jdd.gameserver.util;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.gameserver.network.GameClient;
+import org.l2jdd.Config;
+import org.l2jdd.gameserver.network.GameClient;
 
 /**
  * Collection of flood protectors for single player.

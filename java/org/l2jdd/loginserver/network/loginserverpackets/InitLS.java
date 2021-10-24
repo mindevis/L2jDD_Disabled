@@ -14,10 +14,10 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.loginserver.network.loginserverpackets;
+package org.l2jdd.loginserver.network.loginserverpackets;
 
-import org.l2jmobius.commons.network.BaseSendablePacket;
-import org.l2jmobius.loginserver.LoginServer;
+import org.l2jdd.commons.network.BaseSendablePacket;
+import org.l2jdd.loginserver.LoginServer;
 
 /**
  * @author -Wooden-

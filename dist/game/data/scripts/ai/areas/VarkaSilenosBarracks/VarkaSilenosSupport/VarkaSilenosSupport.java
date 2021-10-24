@@ -19,11 +19,11 @@ package ai.areas.VarkaSilenosBarracks.VarkaSilenosSupport;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.l2jmobius.gameserver.data.xml.SkillData;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.skills.Skill;
-import org.l2jmobius.gameserver.util.Util;
+import org.l2jdd.gameserver.data.xml.SkillData;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.skills.Skill;
+import org.l2jdd.gameserver.util.Util;
 
 import ai.AbstractNpcAI;
 

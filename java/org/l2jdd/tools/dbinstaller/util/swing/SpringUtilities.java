@@ -28,7 +28,7 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package org.l2jmobius.tools.dbinstaller.util.swing;
+package org.l2jdd.tools.dbinstaller.util.swing;
 
 import java.awt.Component;
 import java.awt.Container;

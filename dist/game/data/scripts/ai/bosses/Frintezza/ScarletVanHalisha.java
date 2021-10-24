@@ -16,21 +16,21 @@
  */
 package ai.bosses.Frintezza;
 
-import static org.l2jmobius.gameserver.ai.CtrlIntention.AI_INTENTION_ATTACK;
-import static org.l2jmobius.gameserver.ai.CtrlIntention.AI_INTENTION_FOLLOW;
-import static org.l2jmobius.gameserver.ai.CtrlIntention.AI_INTENTION_IDLE;
+import static org.l2jdd.gameserver.ai.CtrlIntention.AI_INTENTION_ATTACK;
+import static org.l2jdd.gameserver.ai.CtrlIntention.AI_INTENTION_FOLLOW;
+import static org.l2jdd.gameserver.ai.CtrlIntention.AI_INTENTION_IDLE;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.l2jmobius.commons.util.Chronos;
-import org.l2jmobius.gameserver.data.xml.SkillData;
-import org.l2jmobius.gameserver.geoengine.GeoEngine;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.skills.Skill;
-import org.l2jmobius.gameserver.util.Util;
+import org.l2jdd.commons.util.Chronos;
+import org.l2jdd.gameserver.data.xml.SkillData;
+import org.l2jdd.gameserver.geoengine.GeoEngine;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.skills.Skill;
+import org.l2jdd.gameserver.util.Util;
 
 import ai.AbstractNpcAI;
 

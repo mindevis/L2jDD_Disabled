@@ -14,19 +14,19 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.ai;
+package org.l2jdd.gameserver.ai;
 
-import static org.l2jmobius.gameserver.ai.CtrlIntention.AI_INTENTION_ACTIVE;
-import static org.l2jmobius.gameserver.ai.CtrlIntention.AI_INTENTION_ATTACK;
-import static org.l2jmobius.gameserver.ai.CtrlIntention.AI_INTENTION_REST;
+import static org.l2jdd.gameserver.ai.CtrlIntention.AI_INTENTION_ACTIVE;
+import static org.l2jdd.gameserver.ai.CtrlIntention.AI_INTENTION_ATTACK;
+import static org.l2jdd.gameserver.ai.CtrlIntention.AI_INTENTION_REST;
 
-import org.l2jmobius.commons.util.Rnd;
-import org.l2jmobius.gameserver.geoengine.GeoEngine;
-import org.l2jmobius.gameserver.model.Location;
-import org.l2jmobius.gameserver.model.World;
-import org.l2jmobius.gameserver.model.WorldObject;
-import org.l2jmobius.gameserver.model.actor.Attackable;
-import org.l2jmobius.gameserver.model.actor.Creature;
+import org.l2jdd.commons.util.Rnd;
+import org.l2jdd.gameserver.geoengine.GeoEngine;
+import org.l2jdd.gameserver.model.Location;
+import org.l2jdd.gameserver.model.World;
+import org.l2jdd.gameserver.model.WorldObject;
+import org.l2jdd.gameserver.model.actor.Attackable;
+import org.l2jdd.gameserver.model.actor.Creature;
 
 /**
  * @author Sdw

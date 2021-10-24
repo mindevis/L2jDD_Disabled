@@ -14,39 +14,39 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network.clientpackets;
+package org.l2jdd.gameserver.network.clientpackets;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.OptionalLong;
 
-import org.l2jmobius.commons.network.PacketReader;
-import org.l2jmobius.commons.util.CommonUtil;
-import org.l2jmobius.gameserver.data.ItemTable;
-import org.l2jmobius.gameserver.data.xml.EnsoulData;
-import org.l2jmobius.gameserver.data.xml.MultisellData;
-import org.l2jmobius.gameserver.enums.AttributeType;
-import org.l2jmobius.gameserver.enums.SpecialItemType;
-import org.l2jmobius.gameserver.model.ItemInfo;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.clan.Clan;
-import org.l2jmobius.gameserver.model.ensoul.EnsoulOption;
-import org.l2jmobius.gameserver.model.holders.ItemChanceHolder;
-import org.l2jmobius.gameserver.model.holders.MultisellEntryHolder;
-import org.l2jmobius.gameserver.model.holders.PreparedMultisellListHolder;
-import org.l2jmobius.gameserver.model.itemcontainer.Inventory;
-import org.l2jmobius.gameserver.model.itemcontainer.PlayerInventory;
-import org.l2jmobius.gameserver.model.items.Item;
-import org.l2jmobius.gameserver.model.items.enchant.attribute.AttributeHolder;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.ExPCCafePointInfo;
-import org.l2jmobius.gameserver.network.serverpackets.InventoryUpdate;
-import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
-import org.l2jmobius.gameserver.network.serverpackets.UserInfo;
+import org.l2jdd.commons.network.PacketReader;
+import org.l2jdd.commons.util.CommonUtil;
+import org.l2jdd.gameserver.data.ItemTable;
+import org.l2jdd.gameserver.data.xml.EnsoulData;
+import org.l2jdd.gameserver.data.xml.MultisellData;
+import org.l2jdd.gameserver.enums.AttributeType;
+import org.l2jdd.gameserver.enums.SpecialItemType;
+import org.l2jdd.gameserver.model.ItemInfo;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.clan.Clan;
+import org.l2jdd.gameserver.model.ensoul.EnsoulOption;
+import org.l2jdd.gameserver.model.holders.ItemChanceHolder;
+import org.l2jdd.gameserver.model.holders.MultisellEntryHolder;
+import org.l2jdd.gameserver.model.holders.PreparedMultisellListHolder;
+import org.l2jdd.gameserver.model.itemcontainer.Inventory;
+import org.l2jdd.gameserver.model.itemcontainer.PlayerInventory;
+import org.l2jdd.gameserver.model.items.Item;
+import org.l2jdd.gameserver.model.items.enchant.attribute.AttributeHolder;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.network.GameClient;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.ExPCCafePointInfo;
+import org.l2jdd.gameserver.network.serverpackets.InventoryUpdate;
+import org.l2jdd.gameserver.network.serverpackets.SystemMessage;
+import org.l2jdd.gameserver.network.serverpackets.UserInfo;
 
 /**
  * The Class MultiSellChoose.

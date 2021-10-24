@@ -18,12 +18,12 @@ package ai.others.CastleDoorManager;
 
 import java.util.StringTokenizer;
 
-import org.l2jmobius.commons.util.CommonUtil;
-import org.l2jmobius.gameserver.model.PlayerCondOverride;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.clan.ClanPrivilege;
-import org.l2jmobius.gameserver.model.siege.Castle;
+import org.l2jdd.commons.util.CommonUtil;
+import org.l2jdd.gameserver.model.PlayerCondOverride;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.clan.ClanPrivilege;
+import org.l2jdd.gameserver.model.siege.Castle;
 
 import ai.AbstractNpcAI;
 

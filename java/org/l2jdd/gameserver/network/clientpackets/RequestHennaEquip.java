@@ -14,20 +14,20 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network.clientpackets;
+package org.l2jdd.gameserver.network.clientpackets;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
-import org.l2jmobius.gameserver.data.xml.HennaData;
-import org.l2jmobius.gameserver.model.PlayerCondOverride;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.items.Henna;
-import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
-import org.l2jmobius.gameserver.network.serverpackets.HennaEquipList;
-import org.l2jmobius.gameserver.network.serverpackets.InventoryUpdate;
-import org.l2jmobius.gameserver.util.Util;
+import org.l2jdd.Config;
+import org.l2jdd.commons.network.PacketReader;
+import org.l2jdd.gameserver.data.xml.HennaData;
+import org.l2jdd.gameserver.model.PlayerCondOverride;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.items.Henna;
+import org.l2jdd.gameserver.network.GameClient;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.ActionFailed;
+import org.l2jdd.gameserver.network.serverpackets.HennaEquipList;
+import org.l2jdd.gameserver.network.serverpackets.InventoryUpdate;
+import org.l2jdd.gameserver.util.Util;
 
 /**
  * @author Zoey76

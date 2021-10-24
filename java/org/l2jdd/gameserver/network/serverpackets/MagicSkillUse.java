@@ -14,20 +14,20 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network.serverpackets;
+package org.l2jdd.gameserver.network.serverpackets;
 
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.model.Location;
-import org.l2jmobius.gameserver.model.WorldObject;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.interfaces.IPositionable;
-import org.l2jmobius.gameserver.model.skills.SkillCastingType;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jdd.commons.network.PacketWriter;
+import org.l2jdd.gameserver.model.Location;
+import org.l2jdd.gameserver.model.WorldObject;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.interfaces.IPositionable;
+import org.l2jdd.gameserver.model.skills.SkillCastingType;
+import org.l2jdd.gameserver.network.OutgoingPackets;
 
 /**
  * MagicSkillUse server packet implementation.

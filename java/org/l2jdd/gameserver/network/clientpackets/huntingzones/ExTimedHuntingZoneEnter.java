@@ -14,19 +14,19 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network.clientpackets.huntingzones;
+package org.l2jdd.gameserver.network.clientpackets.huntingzones;
 
-import org.l2jmobius.commons.network.PacketReader;
-import org.l2jmobius.commons.util.Chronos;
-import org.l2jmobius.gameserver.data.xml.TimedHuntingZoneData;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.holders.TimedHuntingZoneHolder;
-import org.l2jmobius.gameserver.model.itemcontainer.Inventory;
-import org.l2jmobius.gameserver.model.olympiad.OlympiadManager;
-import org.l2jmobius.gameserver.model.variables.PlayerVariables;
-import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jdd.commons.network.PacketReader;
+import org.l2jdd.commons.util.Chronos;
+import org.l2jdd.gameserver.data.xml.TimedHuntingZoneData;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.holders.TimedHuntingZoneHolder;
+import org.l2jdd.gameserver.model.itemcontainer.Inventory;
+import org.l2jdd.gameserver.model.olympiad.OlympiadManager;
+import org.l2jdd.gameserver.model.variables.PlayerVariables;
+import org.l2jdd.gameserver.network.GameClient;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.clientpackets.IClientIncomingPacket;
 
 /**
  * @author Mobius

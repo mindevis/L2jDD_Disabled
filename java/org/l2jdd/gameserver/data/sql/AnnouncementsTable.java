@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.data.sql;
+package org.l2jdd.gameserver.data.sql;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -25,14 +25,14 @@ import java.util.concurrent.ConcurrentSkipListMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.l2jmobius.commons.database.DatabaseFactory;
-import org.l2jmobius.gameserver.enums.ChatType;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.announce.Announcement;
-import org.l2jmobius.gameserver.model.announce.AnnouncementType;
-import org.l2jmobius.gameserver.model.announce.AutoAnnouncement;
-import org.l2jmobius.gameserver.model.announce.IAnnouncement;
-import org.l2jmobius.gameserver.network.serverpackets.CreatureSay;
+import org.l2jdd.commons.database.DatabaseFactory;
+import org.l2jdd.gameserver.enums.ChatType;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.announce.Announcement;
+import org.l2jdd.gameserver.model.announce.AnnouncementType;
+import org.l2jdd.gameserver.model.announce.AutoAnnouncement;
+import org.l2jdd.gameserver.model.announce.IAnnouncement;
+import org.l2jdd.gameserver.network.serverpackets.CreatureSay;
 
 /**
  * Loads announcements from database.

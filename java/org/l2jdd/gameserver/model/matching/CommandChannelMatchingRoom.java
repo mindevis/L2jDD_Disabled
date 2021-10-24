@@ -14,22 +14,22 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.matching;
+package org.l2jdd.gameserver.model.matching;
 
-import org.l2jmobius.gameserver.enums.ExManagePartyRoomMemberType;
-import org.l2jmobius.gameserver.enums.MatchingMemberType;
-import org.l2jmobius.gameserver.enums.MatchingRoomType;
-import org.l2jmobius.gameserver.enums.UserInfoType;
-import org.l2jmobius.gameserver.instancemanager.MatchingRoomManager;
-import org.l2jmobius.gameserver.model.CommandChannel;
-import org.l2jmobius.gameserver.model.Party;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.ExDissmissMPCCRoom;
-import org.l2jmobius.gameserver.network.serverpackets.ExMPCCRoomInfo;
-import org.l2jmobius.gameserver.network.serverpackets.ExMPCCRoomMember;
-import org.l2jmobius.gameserver.network.serverpackets.ExManageMpccRoomMember;
-import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
+import org.l2jdd.gameserver.enums.ExManagePartyRoomMemberType;
+import org.l2jdd.gameserver.enums.MatchingMemberType;
+import org.l2jdd.gameserver.enums.MatchingRoomType;
+import org.l2jdd.gameserver.enums.UserInfoType;
+import org.l2jdd.gameserver.instancemanager.MatchingRoomManager;
+import org.l2jdd.gameserver.model.CommandChannel;
+import org.l2jdd.gameserver.model.Party;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.ExDissmissMPCCRoom;
+import org.l2jdd.gameserver.network.serverpackets.ExMPCCRoomInfo;
+import org.l2jdd.gameserver.network.serverpackets.ExMPCCRoomMember;
+import org.l2jdd.gameserver.network.serverpackets.ExManageMpccRoomMember;
+import org.l2jdd.gameserver.network.serverpackets.SystemMessage;
 
 /**
  * @author Sdw

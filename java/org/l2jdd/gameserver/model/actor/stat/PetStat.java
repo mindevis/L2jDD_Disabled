@@ -14,14 +14,14 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.actor.stat;
+package org.l2jdd.gameserver.model.actor.stat;
 
-import org.l2jmobius.gameserver.data.xml.ExperienceData;
-import org.l2jmobius.gameserver.data.xml.PetDataTable;
-import org.l2jmobius.gameserver.model.actor.instance.PetInstance;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.SocialAction;
-import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
+import org.l2jdd.gameserver.data.xml.ExperienceData;
+import org.l2jdd.gameserver.data.xml.PetDataTable;
+import org.l2jdd.gameserver.model.actor.instance.PetInstance;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.SocialAction;
+import org.l2jdd.gameserver.network.serverpackets.SystemMessage;
 
 public class PetStat extends SummonStat
 {

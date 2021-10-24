@@ -16,15 +16,15 @@
  */
 package handlers.admincommandhandlers;
 
-import org.l2jmobius.gameserver.enums.ChatType;
-import org.l2jmobius.gameserver.handler.IAdminCommandHandler;
-import org.l2jmobius.gameserver.model.WorldObject;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.actor.instance.StaticObjectInstance;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.CreatureSay;
-import org.l2jmobius.gameserver.util.BuilderUtil;
+import org.l2jdd.gameserver.enums.ChatType;
+import org.l2jdd.gameserver.handler.IAdminCommandHandler;
+import org.l2jdd.gameserver.model.WorldObject;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.actor.instance.StaticObjectInstance;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.CreatureSay;
+import org.l2jdd.gameserver.util.BuilderUtil;
 
 /**
  * This class handles following admin commands: - targetsay <message> = makes talk a Creature

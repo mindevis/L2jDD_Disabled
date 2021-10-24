@@ -16,25 +16,25 @@
  */
 package handlers.punishmenthandlers;
 
-import org.l2jmobius.commons.concurrent.ThreadPool;
-import org.l2jmobius.commons.util.Chronos;
-import org.l2jmobius.gameserver.LoginServerThread;
-import org.l2jmobius.gameserver.cache.HtmCache;
-import org.l2jmobius.gameserver.handler.IPunishmentHandler;
-import org.l2jmobius.gameserver.model.World;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.actor.tasks.player.TeleportTask;
-import org.l2jmobius.gameserver.model.events.Containers;
-import org.l2jmobius.gameserver.model.events.EventType;
-import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerLogin;
-import org.l2jmobius.gameserver.model.events.listeners.ConsumerEventListener;
-import org.l2jmobius.gameserver.model.olympiad.OlympiadManager;
-import org.l2jmobius.gameserver.model.punishment.PunishmentTask;
-import org.l2jmobius.gameserver.model.punishment.PunishmentType;
-import org.l2jmobius.gameserver.model.zone.ZoneId;
-import org.l2jmobius.gameserver.model.zone.type.JailZone;
-import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.serverpackets.NpcHtmlMessage;
+import org.l2jdd.commons.concurrent.ThreadPool;
+import org.l2jdd.commons.util.Chronos;
+import org.l2jdd.gameserver.LoginServerThread;
+import org.l2jdd.gameserver.cache.HtmCache;
+import org.l2jdd.gameserver.handler.IPunishmentHandler;
+import org.l2jdd.gameserver.model.World;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.actor.tasks.player.TeleportTask;
+import org.l2jdd.gameserver.model.events.Containers;
+import org.l2jdd.gameserver.model.events.EventType;
+import org.l2jdd.gameserver.model.events.impl.creature.player.OnPlayerLogin;
+import org.l2jdd.gameserver.model.events.listeners.ConsumerEventListener;
+import org.l2jdd.gameserver.model.olympiad.OlympiadManager;
+import org.l2jdd.gameserver.model.punishment.PunishmentTask;
+import org.l2jdd.gameserver.model.punishment.PunishmentType;
+import org.l2jdd.gameserver.model.zone.ZoneId;
+import org.l2jdd.gameserver.model.zone.type.JailZone;
+import org.l2jdd.gameserver.network.GameClient;
+import org.l2jdd.gameserver.network.serverpackets.NpcHtmlMessage;
 
 /**
  * This class handles jail punishment.

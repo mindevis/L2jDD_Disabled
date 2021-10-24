@@ -26,19 +26,19 @@ import java.util.TreeSet;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.l2jmobius.gameserver.handler.IAdminCommandHandler;
-import org.l2jmobius.gameserver.instancemanager.QuestManager;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.events.EventType;
-import org.l2jmobius.gameserver.model.events.ListenerRegisterType;
-import org.l2jmobius.gameserver.model.events.listeners.AbstractEventListener;
-import org.l2jmobius.gameserver.model.quest.Quest;
-import org.l2jmobius.gameserver.model.quest.QuestTimer;
-import org.l2jmobius.gameserver.network.serverpackets.NpcHtmlMessage;
-import org.l2jmobius.gameserver.scripting.ScriptEngineManager;
-import org.l2jmobius.gameserver.util.BuilderUtil;
-import org.l2jmobius.gameserver.util.Util;
+import org.l2jdd.gameserver.handler.IAdminCommandHandler;
+import org.l2jdd.gameserver.instancemanager.QuestManager;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.events.EventType;
+import org.l2jdd.gameserver.model.events.ListenerRegisterType;
+import org.l2jdd.gameserver.model.events.listeners.AbstractEventListener;
+import org.l2jdd.gameserver.model.quest.Quest;
+import org.l2jdd.gameserver.model.quest.QuestTimer;
+import org.l2jdd.gameserver.network.serverpackets.NpcHtmlMessage;
+import org.l2jdd.gameserver.scripting.ScriptEngineManager;
+import org.l2jdd.gameserver.util.BuilderUtil;
+import org.l2jdd.gameserver.util.Util;
 
 public class AdminQuest implements IAdminCommandHandler
 {

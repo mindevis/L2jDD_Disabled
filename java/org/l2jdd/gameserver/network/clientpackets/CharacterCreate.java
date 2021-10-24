@@ -14,42 +14,42 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network.clientpackets;
+package org.l2jdd.gameserver.network.clientpackets;
 
 import java.util.List;
 import java.util.logging.Logger;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
-import org.l2jmobius.gameserver.data.sql.CharNameTable;
-import org.l2jmobius.gameserver.data.xml.ExperienceData;
-import org.l2jmobius.gameserver.data.xml.FakePlayerData;
-import org.l2jmobius.gameserver.data.xml.InitialEquipmentData;
-import org.l2jmobius.gameserver.data.xml.InitialShortcutData;
-import org.l2jmobius.gameserver.data.xml.PlayerTemplateData;
-import org.l2jmobius.gameserver.data.xml.SkillData;
-import org.l2jmobius.gameserver.data.xml.SkillTreeData;
-import org.l2jmobius.gameserver.enums.ClassId;
-import org.l2jmobius.gameserver.instancemanager.PremiumManager;
-import org.l2jmobius.gameserver.model.Location;
-import org.l2jmobius.gameserver.model.SkillLearn;
-import org.l2jmobius.gameserver.model.World;
-import org.l2jmobius.gameserver.model.actor.appearance.PlayerAppearance;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.actor.stat.PlayerStat;
-import org.l2jmobius.gameserver.model.actor.templates.PlayerTemplate;
-import org.l2jmobius.gameserver.model.events.Containers;
-import org.l2jmobius.gameserver.model.events.EventDispatcher;
-import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerCreate;
-import org.l2jmobius.gameserver.model.holders.ItemHolder;
-import org.l2jmobius.gameserver.model.items.PlayerItemTemplate;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.network.Disconnection;
-import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.serverpackets.CharCreateFail;
-import org.l2jmobius.gameserver.network.serverpackets.CharCreateOk;
-import org.l2jmobius.gameserver.network.serverpackets.CharSelectionInfo;
-import org.l2jmobius.gameserver.util.Util;
+import org.l2jdd.Config;
+import org.l2jdd.commons.network.PacketReader;
+import org.l2jdd.gameserver.data.sql.CharNameTable;
+import org.l2jdd.gameserver.data.xml.ExperienceData;
+import org.l2jdd.gameserver.data.xml.FakePlayerData;
+import org.l2jdd.gameserver.data.xml.InitialEquipmentData;
+import org.l2jdd.gameserver.data.xml.InitialShortcutData;
+import org.l2jdd.gameserver.data.xml.PlayerTemplateData;
+import org.l2jdd.gameserver.data.xml.SkillData;
+import org.l2jdd.gameserver.data.xml.SkillTreeData;
+import org.l2jdd.gameserver.enums.ClassId;
+import org.l2jdd.gameserver.instancemanager.PremiumManager;
+import org.l2jdd.gameserver.model.Location;
+import org.l2jdd.gameserver.model.SkillLearn;
+import org.l2jdd.gameserver.model.World;
+import org.l2jdd.gameserver.model.actor.appearance.PlayerAppearance;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.actor.stat.PlayerStat;
+import org.l2jdd.gameserver.model.actor.templates.PlayerTemplate;
+import org.l2jdd.gameserver.model.events.Containers;
+import org.l2jdd.gameserver.model.events.EventDispatcher;
+import org.l2jdd.gameserver.model.events.impl.creature.player.OnPlayerCreate;
+import org.l2jdd.gameserver.model.holders.ItemHolder;
+import org.l2jdd.gameserver.model.items.PlayerItemTemplate;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.network.Disconnection;
+import org.l2jdd.gameserver.network.GameClient;
+import org.l2jdd.gameserver.network.serverpackets.CharCreateFail;
+import org.l2jdd.gameserver.network.serverpackets.CharCreateOk;
+import org.l2jdd.gameserver.network.serverpackets.CharSelectionInfo;
+import org.l2jdd.gameserver.util.Util;
 
 @SuppressWarnings("unused")
 public class CharacterCreate implements IClientIncomingPacket

@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius;
+package org.l2jdd;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -55,18 +55,18 @@ import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 
-import org.l2jmobius.commons.enums.ServerMode;
-import org.l2jmobius.commons.util.IXmlReader;
-import org.l2jmobius.commons.util.PropertiesParser;
-import org.l2jmobius.commons.util.StringUtil;
-import org.l2jmobius.gameserver.enums.ChatType;
-import org.l2jmobius.gameserver.enums.ClassId;
-import org.l2jmobius.gameserver.enums.GeoType;
-import org.l2jmobius.gameserver.enums.IllegalActionPunishmentType;
-import org.l2jmobius.gameserver.model.Location;
-import org.l2jmobius.gameserver.model.holders.ItemHolder;
-import org.l2jmobius.gameserver.util.FloodProtectorConfig;
-import org.l2jmobius.gameserver.util.Util;
+import org.l2jdd.commons.enums.ServerMode;
+import org.l2jdd.commons.util.IXmlReader;
+import org.l2jdd.commons.util.PropertiesParser;
+import org.l2jdd.commons.util.StringUtil;
+import org.l2jdd.gameserver.enums.ChatType;
+import org.l2jdd.gameserver.enums.ClassId;
+import org.l2jdd.gameserver.enums.GeoType;
+import org.l2jdd.gameserver.enums.IllegalActionPunishmentType;
+import org.l2jdd.gameserver.model.Location;
+import org.l2jdd.gameserver.model.holders.ItemHolder;
+import org.l2jdd.gameserver.util.FloodProtectorConfig;
+import org.l2jdd.gameserver.util.Util;
 
 /**
  * This class loads all the game server related configurations from files.<br>

@@ -18,23 +18,23 @@ package instances.DimensionalWrap;
 
 import java.util.List;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.util.CommonUtil;
-import org.l2jmobius.gameserver.data.xml.SkillData;
-import org.l2jmobius.gameserver.enums.CategoryType;
-import org.l2jmobius.gameserver.model.Location;
-import org.l2jmobius.gameserver.model.Party;
-import org.l2jmobius.gameserver.model.World;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.instancezone.Instance;
-import org.l2jmobius.gameserver.model.skills.Skill;
-import org.l2jmobius.gameserver.network.NpcStringId;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.Earthquake;
-import org.l2jmobius.gameserver.network.serverpackets.ExShowScreenMessage;
-import org.l2jmobius.gameserver.network.serverpackets.NpcHtmlMessage;
-import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
+import org.l2jdd.Config;
+import org.l2jdd.commons.util.CommonUtil;
+import org.l2jdd.gameserver.data.xml.SkillData;
+import org.l2jdd.gameserver.enums.CategoryType;
+import org.l2jdd.gameserver.model.Location;
+import org.l2jdd.gameserver.model.Party;
+import org.l2jdd.gameserver.model.World;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.instancezone.Instance;
+import org.l2jdd.gameserver.model.skills.Skill;
+import org.l2jdd.gameserver.network.NpcStringId;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.Earthquake;
+import org.l2jdd.gameserver.network.serverpackets.ExShowScreenMessage;
+import org.l2jdd.gameserver.network.serverpackets.NpcHtmlMessage;
+import org.l2jdd.gameserver.network.serverpackets.SystemMessage;
 
 import instances.AbstractInstance;
 

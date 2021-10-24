@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver;
+package org.l2jdd.gameserver;
 
 import java.util.Calendar;
 import java.util.Set;
@@ -22,12 +22,12 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.l2jmobius.commons.util.Chronos;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.events.EventDispatcher;
-import org.l2jmobius.gameserver.model.events.impl.OnDayNightChange;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
+import org.l2jdd.commons.util.Chronos;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.events.EventDispatcher;
+import org.l2jdd.gameserver.model.events.impl.OnDayNightChange;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.SystemMessage;
 
 /**
  * Game Time controller class.

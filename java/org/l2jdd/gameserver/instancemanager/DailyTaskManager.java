@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.instancemanager;
+package org.l2jdd.gameserver.instancemanager;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -23,25 +23,25 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.database.DatabaseFactory;
-import org.l2jmobius.gameserver.data.sql.ClanTable;
-import org.l2jmobius.gameserver.data.xml.DailyMissionData;
-import org.l2jmobius.gameserver.model.DailyMissionDataHolder;
-import org.l2jmobius.gameserver.model.World;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.actor.stat.PlayerStat;
-import org.l2jmobius.gameserver.model.clan.Clan;
-import org.l2jmobius.gameserver.model.clan.ClanMember;
-import org.l2jmobius.gameserver.model.eventengine.AbstractEvent;
-import org.l2jmobius.gameserver.model.eventengine.AbstractEventManager;
-import org.l2jmobius.gameserver.model.eventengine.ScheduleTarget;
-import org.l2jmobius.gameserver.model.holders.SkillHolder;
-import org.l2jmobius.gameserver.model.holders.SubClassHolder;
-import org.l2jmobius.gameserver.model.olympiad.Olympiad;
-import org.l2jmobius.gameserver.model.variables.PlayerVariables;
-import org.l2jmobius.gameserver.network.serverpackets.ExVoteSystemInfo;
-import org.l2jmobius.gameserver.network.serverpackets.ExWorldChatCnt;
+import org.l2jdd.Config;
+import org.l2jdd.commons.database.DatabaseFactory;
+import org.l2jdd.gameserver.data.sql.ClanTable;
+import org.l2jdd.gameserver.data.xml.DailyMissionData;
+import org.l2jdd.gameserver.model.DailyMissionDataHolder;
+import org.l2jdd.gameserver.model.World;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.actor.stat.PlayerStat;
+import org.l2jdd.gameserver.model.clan.Clan;
+import org.l2jdd.gameserver.model.clan.ClanMember;
+import org.l2jdd.gameserver.model.eventengine.AbstractEvent;
+import org.l2jdd.gameserver.model.eventengine.AbstractEventManager;
+import org.l2jdd.gameserver.model.eventengine.ScheduleTarget;
+import org.l2jdd.gameserver.model.holders.SkillHolder;
+import org.l2jdd.gameserver.model.holders.SubClassHolder;
+import org.l2jdd.gameserver.model.olympiad.Olympiad;
+import org.l2jdd.gameserver.model.variables.PlayerVariables;
+import org.l2jdd.gameserver.network.serverpackets.ExVoteSystemInfo;
+import org.l2jdd.gameserver.network.serverpackets.ExWorldChatCnt;
 
 /**
  * @author UnAfraid

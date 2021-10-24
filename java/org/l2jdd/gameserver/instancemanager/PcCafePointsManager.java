@@ -14,15 +14,15 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.instancemanager;
+package org.l2jdd.gameserver.instancemanager;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.util.Rnd;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.zone.ZoneId;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.ExPCCafePointInfo;
-import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
+import org.l2jdd.Config;
+import org.l2jdd.commons.util.Rnd;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.zone.ZoneId;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.ExPCCafePointInfo;
+import org.l2jdd.gameserver.network.serverpackets.SystemMessage;
 
 public class PcCafePointsManager
 {

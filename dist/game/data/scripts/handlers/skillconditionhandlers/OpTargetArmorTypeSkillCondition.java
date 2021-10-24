@@ -19,16 +19,16 @@ package handlers.skillconditionhandlers;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.l2jmobius.gameserver.model.StatSet;
-import org.l2jmobius.gameserver.model.WorldObject;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.itemcontainer.Inventory;
-import org.l2jmobius.gameserver.model.items.Item;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.model.items.type.ArmorType;
-import org.l2jmobius.gameserver.model.items.type.ItemType;
-import org.l2jmobius.gameserver.model.skills.ISkillCondition;
-import org.l2jmobius.gameserver.model.skills.Skill;
+import org.l2jdd.gameserver.model.StatSet;
+import org.l2jdd.gameserver.model.WorldObject;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.itemcontainer.Inventory;
+import org.l2jdd.gameserver.model.items.Item;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.model.items.type.ArmorType;
+import org.l2jdd.gameserver.model.items.type.ItemType;
+import org.l2jdd.gameserver.model.skills.ISkillCondition;
+import org.l2jdd.gameserver.model.skills.Skill;
 
 /**
  * @author Mobius

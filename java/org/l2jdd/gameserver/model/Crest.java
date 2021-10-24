@@ -14,14 +14,14 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model;
+package org.l2jdd.gameserver.model;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.interfaces.IIdentifiable;
-import org.l2jmobius.gameserver.network.serverpackets.AllyCrest;
-import org.l2jmobius.gameserver.network.serverpackets.ExPledgeEmblem;
-import org.l2jmobius.gameserver.network.serverpackets.PledgeCrest;
+import org.l2jdd.Config;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.interfaces.IIdentifiable;
+import org.l2jdd.gameserver.network.serverpackets.AllyCrest;
+import org.l2jdd.gameserver.network.serverpackets.ExPledgeEmblem;
+import org.l2jdd.gameserver.network.serverpackets.PledgeCrest;
 
 /**
  * @author NosBit

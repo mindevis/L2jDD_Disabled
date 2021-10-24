@@ -14,21 +14,21 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.ai;
+package org.l2jdd.gameserver.ai;
 
-import static org.l2jmobius.gameserver.ai.CtrlIntention.AI_INTENTION_ATTACK;
-import static org.l2jmobius.gameserver.ai.CtrlIntention.AI_INTENTION_FOLLOW;
-import static org.l2jmobius.gameserver.ai.CtrlIntention.AI_INTENTION_IDLE;
+import static org.l2jdd.gameserver.ai.CtrlIntention.AI_INTENTION_ATTACK;
+import static org.l2jdd.gameserver.ai.CtrlIntention.AI_INTENTION_FOLLOW;
+import static org.l2jdd.gameserver.ai.CtrlIntention.AI_INTENTION_IDLE;
 
-import org.l2jmobius.commons.util.Rnd;
-import org.l2jmobius.gameserver.GameTimeController;
-import org.l2jmobius.gameserver.model.Location;
-import org.l2jmobius.gameserver.model.WorldObject;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.instance.DoppelgangerInstance;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.model.skills.Skill;
-import org.l2jmobius.gameserver.model.skills.SkillCaster;
+import org.l2jdd.commons.util.Rnd;
+import org.l2jdd.gameserver.GameTimeController;
+import org.l2jdd.gameserver.model.Location;
+import org.l2jdd.gameserver.model.WorldObject;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.actor.instance.DoppelgangerInstance;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.model.skills.Skill;
+import org.l2jdd.gameserver.model.skills.SkillCaster;
 
 public class DoppelgangerAI extends CreatureAI
 {

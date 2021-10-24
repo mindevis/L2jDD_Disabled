@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.quest;
+package org.l2jdd.gameserver.model.quest;
 
 import java.io.File;
 import java.sql.Connection;
@@ -30,22 +30,22 @@ import java.util.logging.Logger;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 
-import org.l2jmobius.commons.concurrent.ThreadPool;
-import org.l2jmobius.commons.database.DatabaseFactory;
-import org.l2jmobius.commons.util.Chronos;
-import org.l2jmobius.commons.util.IXmlReader;
-import org.l2jmobius.gameserver.data.EventDroplist;
-import org.l2jmobius.gameserver.data.ItemTable;
-import org.l2jmobius.gameserver.data.sql.AnnouncementsTable;
-import org.l2jmobius.gameserver.data.xml.NpcData;
-import org.l2jmobius.gameserver.instancemanager.EventShrineManager;
-import org.l2jmobius.gameserver.model.Location;
-import org.l2jmobius.gameserver.model.World;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.announce.EventAnnouncement;
-import org.l2jmobius.gameserver.model.holders.EventDropHolder;
-import org.l2jmobius.gameserver.script.DateRange;
-import org.l2jmobius.gameserver.util.Broadcast;
+import org.l2jdd.commons.concurrent.ThreadPool;
+import org.l2jdd.commons.database.DatabaseFactory;
+import org.l2jdd.commons.util.Chronos;
+import org.l2jdd.commons.util.IXmlReader;
+import org.l2jdd.gameserver.data.EventDroplist;
+import org.l2jdd.gameserver.data.ItemTable;
+import org.l2jdd.gameserver.data.sql.AnnouncementsTable;
+import org.l2jdd.gameserver.data.xml.NpcData;
+import org.l2jdd.gameserver.instancemanager.EventShrineManager;
+import org.l2jdd.gameserver.model.Location;
+import org.l2jdd.gameserver.model.World;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.announce.EventAnnouncement;
+import org.l2jdd.gameserver.model.holders.EventDropHolder;
+import org.l2jdd.gameserver.script.DateRange;
+import org.l2jdd.gameserver.util.Broadcast;
 
 /**
  * Parent class for long time events.<br>

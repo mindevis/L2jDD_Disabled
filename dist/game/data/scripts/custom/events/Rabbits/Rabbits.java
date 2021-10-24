@@ -21,15 +21,15 @@ import java.util.Collection;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.util.CommonUtil;
-import org.l2jmobius.gameserver.model.WorldObject;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.holders.SkillHolder;
-import org.l2jmobius.gameserver.model.quest.Event;
-import org.l2jmobius.gameserver.model.skills.Skill;
-import org.l2jmobius.gameserver.util.Broadcast;
+import org.l2jdd.Config;
+import org.l2jdd.commons.util.CommonUtil;
+import org.l2jdd.gameserver.model.WorldObject;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.holders.SkillHolder;
+import org.l2jdd.gameserver.model.quest.Event;
+import org.l2jdd.gameserver.model.skills.Skill;
+import org.l2jdd.gameserver.util.Broadcast;
 
 /**
  * Rabbits event.<br>

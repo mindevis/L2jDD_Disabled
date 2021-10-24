@@ -19,12 +19,12 @@ package handlers.admincommandhandlers;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.l2jmobius.gameserver.handler.IAdminCommandHandler;
-import org.l2jmobius.gameserver.model.World;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.zone.ZoneId;
-import org.l2jmobius.gameserver.taskmanager.AttackStanceTaskManager;
-import org.l2jmobius.gameserver.util.BuilderUtil;
+import org.l2jdd.gameserver.handler.IAdminCommandHandler;
+import org.l2jdd.gameserver.model.World;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.zone.ZoneId;
+import org.l2jdd.gameserver.taskmanager.AttackStanceTaskManager;
+import org.l2jdd.gameserver.util.BuilderUtil;
 
 /**
  * @author Mobius

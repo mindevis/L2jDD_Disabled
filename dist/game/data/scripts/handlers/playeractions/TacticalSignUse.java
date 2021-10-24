@@ -16,11 +16,11 @@
  */
 package handlers.playeractions;
 
-import org.l2jmobius.gameserver.handler.IPlayerActionHandler;
-import org.l2jmobius.gameserver.model.ActionDataHolder;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
+import org.l2jdd.gameserver.handler.IPlayerActionHandler;
+import org.l2jdd.gameserver.model.ActionDataHolder;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.network.serverpackets.ActionFailed;
 
 /**
  * Tactical Signs setting player action handler.

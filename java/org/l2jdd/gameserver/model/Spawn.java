@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model;
+package org.l2jdd.gameserver.model;
 
 import java.lang.reflect.Constructor;
 import java.util.Deque;
@@ -23,23 +23,23 @@ import java.util.concurrent.ConcurrentLinkedDeque;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.util.Chronos;
-import org.l2jmobius.commons.util.Rnd;
-import org.l2jmobius.gameserver.data.xml.NpcData;
-import org.l2jmobius.gameserver.geoengine.GeoEngine;
-import org.l2jmobius.gameserver.instancemanager.WalkingManager;
-import org.l2jmobius.gameserver.instancemanager.ZoneManager;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.MonsterInstance;
-import org.l2jmobius.gameserver.model.actor.templates.NpcTemplate;
-import org.l2jmobius.gameserver.model.instancezone.Instance;
-import org.l2jmobius.gameserver.model.interfaces.IIdentifiable;
-import org.l2jmobius.gameserver.model.interfaces.INamable;
-import org.l2jmobius.gameserver.model.spawns.NpcSpawnTemplate;
-import org.l2jmobius.gameserver.model.zone.type.WaterZone;
-import org.l2jmobius.gameserver.taskmanager.RespawnTaskManager;
-import org.l2jmobius.gameserver.util.Util;
+import org.l2jdd.Config;
+import org.l2jdd.commons.util.Chronos;
+import org.l2jdd.commons.util.Rnd;
+import org.l2jdd.gameserver.data.xml.NpcData;
+import org.l2jdd.gameserver.geoengine.GeoEngine;
+import org.l2jdd.gameserver.instancemanager.WalkingManager;
+import org.l2jdd.gameserver.instancemanager.ZoneManager;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.MonsterInstance;
+import org.l2jdd.gameserver.model.actor.templates.NpcTemplate;
+import org.l2jdd.gameserver.model.instancezone.Instance;
+import org.l2jdd.gameserver.model.interfaces.IIdentifiable;
+import org.l2jdd.gameserver.model.interfaces.INamable;
+import org.l2jdd.gameserver.model.spawns.NpcSpawnTemplate;
+import org.l2jdd.gameserver.model.zone.type.WaterZone;
+import org.l2jdd.gameserver.taskmanager.RespawnTaskManager;
+import org.l2jdd.gameserver.util.Util;
 
 /**
  * This class manages the spawn and respawn of a group of NpcInstance that are in the same are and have the same type.<br>
@@ -111,7 +111,7 @@ public class Spawn extends Location implements IIdentifiable, INamable
 			return;
 		}
 		
-		final String className = "org.l2jmobius.gameserver.model.actor.instance." + _template.getType() + "Instance";
+		final String className = "org.l2jdd.gameserver.model.actor.instance." + _template.getType() + "Instance";
 		
 		// Create the generic constructor of Npc managed by this Spawn
 		_constructor = Class.forName(className).asSubclass(Npc.class).getConstructor(NpcTemplate.class);
@@ -129,7 +129,7 @@ public class Spawn extends Location implements IIdentifiable, INamable
 		super(0, 0, -10000);
 		_template = Objects.requireNonNull(NpcData.getInstance().getTemplate(npcId), "NpcTemplate not found for NPC ID: " + npcId);
 		
-		final String className = "org.l2jmobius.gameserver.model.actor.instance." + _template.getType() + "Instance";
+		final String className = "org.l2jdd.gameserver.model.actor.instance." + _template.getType() + "Instance";
 		
 		// Create the generic constructor of Npc managed by this Spawn
 		_constructor = Class.forName(className).asSubclass(Npc.class).getConstructor(NpcTemplate.class);

@@ -16,19 +16,19 @@
  */
 package ai.others;
 
-import org.l2jmobius.gameserver.ai.CtrlIntention;
-import org.l2jmobius.gameserver.model.WorldObject;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.events.EventType;
-import org.l2jmobius.gameserver.model.events.ListenerRegisterType;
-import org.l2jmobius.gameserver.model.events.annotations.Id;
-import org.l2jmobius.gameserver.model.events.annotations.RegisterEvent;
-import org.l2jmobius.gameserver.model.events.annotations.RegisterType;
-import org.l2jmobius.gameserver.model.events.impl.creature.OnCreatureAttack;
-import org.l2jmobius.gameserver.model.events.impl.creature.OnCreatureSkillFinishCast;
-import org.l2jmobius.gameserver.model.events.impl.creature.npc.OnNpcSpawn;
-import org.l2jmobius.gameserver.model.events.listeners.ConsumerEventListener;
+import org.l2jdd.gameserver.ai.CtrlIntention;
+import org.l2jdd.gameserver.model.WorldObject;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.events.EventType;
+import org.l2jdd.gameserver.model.events.ListenerRegisterType;
+import org.l2jdd.gameserver.model.events.annotations.Id;
+import org.l2jdd.gameserver.model.events.annotations.RegisterEvent;
+import org.l2jdd.gameserver.model.events.annotations.RegisterType;
+import org.l2jdd.gameserver.model.events.impl.creature.OnCreatureAttack;
+import org.l2jdd.gameserver.model.events.impl.creature.OnCreatureSkillFinishCast;
+import org.l2jdd.gameserver.model.events.impl.creature.npc.OnNpcSpawn;
+import org.l2jdd.gameserver.model.events.listeners.ConsumerEventListener;
 
 import ai.AbstractNpcAI;
 

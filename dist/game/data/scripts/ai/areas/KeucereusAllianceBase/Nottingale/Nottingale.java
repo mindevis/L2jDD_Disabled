@@ -19,11 +19,11 @@ package ai.areas.KeucereusAllianceBase.Nottingale;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.l2jmobius.gameserver.instancemanager.AirShipManager;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.clan.ClanPrivilege;
-import org.l2jmobius.gameserver.network.serverpackets.RadarControl;
+import org.l2jdd.gameserver.instancemanager.AirShipManager;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.clan.ClanPrivilege;
+import org.l2jdd.gameserver.network.serverpackets.RadarControl;
 
 import ai.AbstractNpcAI;
 

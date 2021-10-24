@@ -14,17 +14,17 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network.serverpackets;
+package org.l2jdd.gameserver.network.serverpackets;
 
 import java.util.Set;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.model.actor.Summon;
-import org.l2jmobius.gameserver.model.actor.instance.PetInstance;
-import org.l2jmobius.gameserver.model.actor.instance.ServitorInstance;
-import org.l2jmobius.gameserver.model.skills.AbnormalVisualEffect;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.taskmanager.AttackStanceTaskManager;
+import org.l2jdd.commons.network.PacketWriter;
+import org.l2jdd.gameserver.model.actor.Summon;
+import org.l2jdd.gameserver.model.actor.instance.PetInstance;
+import org.l2jdd.gameserver.model.actor.instance.ServitorInstance;
+import org.l2jdd.gameserver.model.skills.AbnormalVisualEffect;
+import org.l2jdd.gameserver.network.OutgoingPackets;
+import org.l2jdd.gameserver.taskmanager.AttackStanceTaskManager;
 
 public class PetInfo implements IClientOutgoingPacket
 {

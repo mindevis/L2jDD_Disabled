@@ -16,19 +16,19 @@
  */
 package ai.bosses.Freya.IceQueensCastle;
 
-import org.l2jmobius.gameserver.ai.CtrlIntention;
-import org.l2jmobius.gameserver.enums.ChatType;
-import org.l2jmobius.gameserver.enums.Movie;
-import org.l2jmobius.gameserver.model.Location;
-import org.l2jmobius.gameserver.model.World;
-import org.l2jmobius.gameserver.model.actor.Attackable;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.holders.SkillHolder;
-import org.l2jmobius.gameserver.model.instancezone.Instance;
-import org.l2jmobius.gameserver.model.skills.Skill;
-import org.l2jmobius.gameserver.network.NpcStringId;
+import org.l2jdd.gameserver.ai.CtrlIntention;
+import org.l2jdd.gameserver.enums.ChatType;
+import org.l2jdd.gameserver.enums.Movie;
+import org.l2jdd.gameserver.model.Location;
+import org.l2jdd.gameserver.model.World;
+import org.l2jdd.gameserver.model.actor.Attackable;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.holders.SkillHolder;
+import org.l2jdd.gameserver.model.instancezone.Instance;
+import org.l2jdd.gameserver.model.skills.Skill;
+import org.l2jdd.gameserver.network.NpcStringId;
 
 import instances.AbstractInstance;
 

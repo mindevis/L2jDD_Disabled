@@ -18,18 +18,18 @@ package handlers.admincommandhandlers;
 
 import java.util.StringTokenizer;
 
-import org.l2jmobius.gameserver.data.ItemTable;
-import org.l2jmobius.gameserver.handler.IAdminCommandHandler;
-import org.l2jmobius.gameserver.handler.IItemHandler;
-import org.l2jmobius.gameserver.handler.ItemHandler;
-import org.l2jmobius.gameserver.model.World;
-import org.l2jmobius.gameserver.model.WorldObject;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.items.Item;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.network.serverpackets.ExAdenaInvenCount;
-import org.l2jmobius.gameserver.network.serverpackets.GMViewItemList;
-import org.l2jmobius.gameserver.util.BuilderUtil;
+import org.l2jdd.gameserver.data.ItemTable;
+import org.l2jdd.gameserver.handler.IAdminCommandHandler;
+import org.l2jdd.gameserver.handler.IItemHandler;
+import org.l2jdd.gameserver.handler.ItemHandler;
+import org.l2jdd.gameserver.model.World;
+import org.l2jdd.gameserver.model.WorldObject;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.items.Item;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.network.serverpackets.ExAdenaInvenCount;
+import org.l2jdd.gameserver.network.serverpackets.GMViewItemList;
+import org.l2jdd.gameserver.util.BuilderUtil;
 
 /**
  * This class handles following admin commands: - itemcreate = show menu - create_item <id> [num] = creates num items with respective id, if num is not specified, assumes 1.

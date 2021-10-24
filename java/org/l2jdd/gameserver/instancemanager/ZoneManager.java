@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.instancemanager;
+package org.l2jdd.gameserver.instancemanager;
 
 import java.io.File;
 import java.lang.reflect.Constructor;
@@ -34,54 +34,54 @@ import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 
-import org.l2jmobius.commons.util.IXmlReader;
-import org.l2jmobius.gameserver.model.World;
-import org.l2jmobius.gameserver.model.WorldObject;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.interfaces.ILocational;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.model.zone.AbstractZoneSettings;
-import org.l2jmobius.gameserver.model.zone.ZoneForm;
-import org.l2jmobius.gameserver.model.zone.ZoneRegion;
-import org.l2jmobius.gameserver.model.zone.ZoneRespawn;
-import org.l2jmobius.gameserver.model.zone.ZoneType;
-import org.l2jmobius.gameserver.model.zone.form.ZoneCuboid;
-import org.l2jmobius.gameserver.model.zone.form.ZoneCylinder;
-import org.l2jmobius.gameserver.model.zone.form.ZoneNPoly;
-import org.l2jmobius.gameserver.model.zone.type.ArenaZone;
-import org.l2jmobius.gameserver.model.zone.type.CastleZone;
-import org.l2jmobius.gameserver.model.zone.type.ClanHallZone;
-import org.l2jmobius.gameserver.model.zone.type.ConditionZone;
-import org.l2jmobius.gameserver.model.zone.type.DamageZone;
-import org.l2jmobius.gameserver.model.zone.type.DerbyTrackZone;
-import org.l2jmobius.gameserver.model.zone.type.EffectZone;
-import org.l2jmobius.gameserver.model.zone.type.FishingZone;
-import org.l2jmobius.gameserver.model.zone.type.FortZone;
-import org.l2jmobius.gameserver.model.zone.type.HqZone;
-import org.l2jmobius.gameserver.model.zone.type.JailZone;
-import org.l2jmobius.gameserver.model.zone.type.LandingZone;
-import org.l2jmobius.gameserver.model.zone.type.MotherTreeZone;
-import org.l2jmobius.gameserver.model.zone.type.NoLandingZone;
-import org.l2jmobius.gameserver.model.zone.type.NoRestartZone;
-import org.l2jmobius.gameserver.model.zone.type.NoStoreZone;
-import org.l2jmobius.gameserver.model.zone.type.NoSummonFriendZone;
-import org.l2jmobius.gameserver.model.zone.type.OlympiadStadiumZone;
-import org.l2jmobius.gameserver.model.zone.type.PeaceZone;
-import org.l2jmobius.gameserver.model.zone.type.ResidenceHallTeleportZone;
-import org.l2jmobius.gameserver.model.zone.type.ResidenceTeleportZone;
-import org.l2jmobius.gameserver.model.zone.type.ResidenceZone;
-import org.l2jmobius.gameserver.model.zone.type.RespawnZone;
-import org.l2jmobius.gameserver.model.zone.type.SayuneZone;
-import org.l2jmobius.gameserver.model.zone.type.ScriptZone;
-import org.l2jmobius.gameserver.model.zone.type.SiegableHallZone;
-import org.l2jmobius.gameserver.model.zone.type.SiegeZone;
-import org.l2jmobius.gameserver.model.zone.type.SpawnTerritory;
-import org.l2jmobius.gameserver.model.zone.type.SwampZone;
-import org.l2jmobius.gameserver.model.zone.type.TaxZone;
-import org.l2jmobius.gameserver.model.zone.type.TeleportZone;
-import org.l2jmobius.gameserver.model.zone.type.TimedHuntingZone;
-import org.l2jmobius.gameserver.model.zone.type.UndyingZone;
-import org.l2jmobius.gameserver.model.zone.type.WaterZone;
+import org.l2jdd.commons.util.IXmlReader;
+import org.l2jdd.gameserver.model.World;
+import org.l2jdd.gameserver.model.WorldObject;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.interfaces.ILocational;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.model.zone.AbstractZoneSettings;
+import org.l2jdd.gameserver.model.zone.ZoneForm;
+import org.l2jdd.gameserver.model.zone.ZoneRegion;
+import org.l2jdd.gameserver.model.zone.ZoneRespawn;
+import org.l2jdd.gameserver.model.zone.ZoneType;
+import org.l2jdd.gameserver.model.zone.form.ZoneCuboid;
+import org.l2jdd.gameserver.model.zone.form.ZoneCylinder;
+import org.l2jdd.gameserver.model.zone.form.ZoneNPoly;
+import org.l2jdd.gameserver.model.zone.type.ArenaZone;
+import org.l2jdd.gameserver.model.zone.type.CastleZone;
+import org.l2jdd.gameserver.model.zone.type.ClanHallZone;
+import org.l2jdd.gameserver.model.zone.type.ConditionZone;
+import org.l2jdd.gameserver.model.zone.type.DamageZone;
+import org.l2jdd.gameserver.model.zone.type.DerbyTrackZone;
+import org.l2jdd.gameserver.model.zone.type.EffectZone;
+import org.l2jdd.gameserver.model.zone.type.FishingZone;
+import org.l2jdd.gameserver.model.zone.type.FortZone;
+import org.l2jdd.gameserver.model.zone.type.HqZone;
+import org.l2jdd.gameserver.model.zone.type.JailZone;
+import org.l2jdd.gameserver.model.zone.type.LandingZone;
+import org.l2jdd.gameserver.model.zone.type.MotherTreeZone;
+import org.l2jdd.gameserver.model.zone.type.NoLandingZone;
+import org.l2jdd.gameserver.model.zone.type.NoRestartZone;
+import org.l2jdd.gameserver.model.zone.type.NoStoreZone;
+import org.l2jdd.gameserver.model.zone.type.NoSummonFriendZone;
+import org.l2jdd.gameserver.model.zone.type.OlympiadStadiumZone;
+import org.l2jdd.gameserver.model.zone.type.PeaceZone;
+import org.l2jdd.gameserver.model.zone.type.ResidenceHallTeleportZone;
+import org.l2jdd.gameserver.model.zone.type.ResidenceTeleportZone;
+import org.l2jdd.gameserver.model.zone.type.ResidenceZone;
+import org.l2jdd.gameserver.model.zone.type.RespawnZone;
+import org.l2jdd.gameserver.model.zone.type.SayuneZone;
+import org.l2jdd.gameserver.model.zone.type.ScriptZone;
+import org.l2jdd.gameserver.model.zone.type.SiegableHallZone;
+import org.l2jdd.gameserver.model.zone.type.SiegeZone;
+import org.l2jdd.gameserver.model.zone.type.SpawnTerritory;
+import org.l2jdd.gameserver.model.zone.type.SwampZone;
+import org.l2jdd.gameserver.model.zone.type.TaxZone;
+import org.l2jdd.gameserver.model.zone.type.TeleportZone;
+import org.l2jdd.gameserver.model.zone.type.TimedHuntingZone;
+import org.l2jdd.gameserver.model.zone.type.UndyingZone;
+import org.l2jdd.gameserver.model.zone.type.WaterZone;
 
 /**
  * This class manages the zones
@@ -351,7 +351,7 @@ public class ZoneManager implements IXmlReader
 						ZoneType temp;
 						try
 						{
-							newZone = Class.forName("org.l2jmobius.gameserver.model.zone.type." + zoneType);
+							newZone = Class.forName("org.l2jdd.gameserver.model.zone.type." + zoneType);
 							zoneConstructor = newZone.getConstructor(int.class);
 							temp = (ZoneType) zoneConstructor.newInstance(zoneId);
 							temp.setZone(zoneForm);

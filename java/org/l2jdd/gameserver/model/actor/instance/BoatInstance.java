@@ -14,18 +14,18 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.actor.instance;
+package org.l2jdd.gameserver.model.actor.instance;
 
 import java.util.logging.Logger;
 
-import org.l2jmobius.gameserver.ai.BoatAI;
-import org.l2jmobius.gameserver.enums.InstanceType;
-import org.l2jmobius.gameserver.model.Location;
-import org.l2jmobius.gameserver.model.actor.Vehicle;
-import org.l2jmobius.gameserver.model.actor.templates.CreatureTemplate;
-import org.l2jmobius.gameserver.network.serverpackets.VehicleDeparture;
-import org.l2jmobius.gameserver.network.serverpackets.VehicleInfo;
-import org.l2jmobius.gameserver.network.serverpackets.VehicleStarted;
+import org.l2jdd.gameserver.ai.BoatAI;
+import org.l2jdd.gameserver.enums.InstanceType;
+import org.l2jdd.gameserver.model.Location;
+import org.l2jdd.gameserver.model.actor.Vehicle;
+import org.l2jdd.gameserver.model.actor.templates.CreatureTemplate;
+import org.l2jdd.gameserver.network.serverpackets.VehicleDeparture;
+import org.l2jdd.gameserver.network.serverpackets.VehicleInfo;
+import org.l2jdd.gameserver.network.serverpackets.VehicleStarted;
 
 /**
  * @author Maktakien, DS

@@ -14,17 +14,17 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.actor.instance;
+package org.l2jdd.gameserver.model.actor.instance;
 
-import org.l2jmobius.gameserver.data.xml.BuyListData;
-import org.l2jmobius.gameserver.enums.InstanceType;
-import org.l2jmobius.gameserver.enums.TaxType;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.templates.NpcTemplate;
-import org.l2jmobius.gameserver.model.buylist.ProductList;
-import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
-import org.l2jmobius.gameserver.network.serverpackets.BuyList;
-import org.l2jmobius.gameserver.network.serverpackets.ExBuySellList;
+import org.l2jdd.gameserver.data.xml.BuyListData;
+import org.l2jdd.gameserver.enums.InstanceType;
+import org.l2jdd.gameserver.enums.TaxType;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.actor.templates.NpcTemplate;
+import org.l2jdd.gameserver.model.buylist.ProductList;
+import org.l2jdd.gameserver.network.serverpackets.ActionFailed;
+import org.l2jdd.gameserver.network.serverpackets.BuyList;
+import org.l2jdd.gameserver.network.serverpackets.ExBuySellList;
 
 /**
  * @version $Revision: 1.10.4.9 $ $Date: 2005/04/11 10:06:08 $

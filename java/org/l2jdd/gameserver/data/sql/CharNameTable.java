@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.data.sql;
+package org.l2jdd.gameserver.data.sql;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -27,9 +27,9 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.database.DatabaseFactory;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.Config;
+import org.l2jdd.commons.database.DatabaseFactory;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
 
 /**
  * Loads name and access level for all players.

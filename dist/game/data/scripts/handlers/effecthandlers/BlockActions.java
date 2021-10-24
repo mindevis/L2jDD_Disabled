@@ -20,16 +20,16 @@ import java.util.Arrays;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import org.l2jmobius.gameserver.ai.CtrlEvent;
-import org.l2jmobius.gameserver.ai.CtrlIntention;
-import org.l2jmobius.gameserver.model.StatSet;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.Summon;
-import org.l2jmobius.gameserver.model.effects.AbstractEffect;
-import org.l2jmobius.gameserver.model.effects.EffectFlag;
-import org.l2jmobius.gameserver.model.effects.EffectType;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.model.skills.Skill;
+import org.l2jdd.gameserver.ai.CtrlEvent;
+import org.l2jdd.gameserver.ai.CtrlIntention;
+import org.l2jdd.gameserver.model.StatSet;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.actor.Summon;
+import org.l2jdd.gameserver.model.effects.AbstractEffect;
+import org.l2jdd.gameserver.model.effects.EffectFlag;
+import org.l2jdd.gameserver.model.effects.EffectType;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.model.skills.Skill;
 
 /**
  * Block Actions effect implementation.

@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.tools.gsregistering;
+package org.l2jdd.tools.gsregistering;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -22,8 +22,8 @@ import java.io.LineNumberReader;
 import java.sql.SQLException;
 import java.util.Map.Entry;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.loginserver.GameServerTable;
+import org.l2jdd.Config;
+import org.l2jdd.loginserver.GameServerTable;
 
 public class GameServerRegister extends BaseGameServerRegister
 {

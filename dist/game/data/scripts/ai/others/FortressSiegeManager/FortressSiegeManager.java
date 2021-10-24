@@ -16,16 +16,16 @@
  */
 package ai.others.FortressSiegeManager;
 
-import org.l2jmobius.gameserver.instancemanager.FortSiegeManager;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.clan.Clan;
-import org.l2jmobius.gameserver.model.clan.ClanPrivilege;
-import org.l2jmobius.gameserver.model.siege.Castle;
-import org.l2jmobius.gameserver.model.siege.Fort;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.NpcHtmlMessage;
-import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
+import org.l2jdd.gameserver.instancemanager.FortSiegeManager;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.clan.Clan;
+import org.l2jdd.gameserver.model.clan.ClanPrivilege;
+import org.l2jdd.gameserver.model.siege.Castle;
+import org.l2jdd.gameserver.model.siege.Fort;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.NpcHtmlMessage;
+import org.l2jdd.gameserver.network.serverpackets.SystemMessage;
 
 import ai.AbstractNpcAI;
 

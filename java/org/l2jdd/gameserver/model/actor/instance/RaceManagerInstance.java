@@ -14,24 +14,24 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.actor.instance;
+package org.l2jdd.gameserver.model.actor.instance;
 
 import java.util.List;
 import java.util.Locale;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.util.StringUtil;
-import org.l2jmobius.gameserver.instancemanager.IdManager;
-import org.l2jmobius.gameserver.instancemanager.games.MonsterRace;
-import org.l2jmobius.gameserver.instancemanager.games.MonsterRace.HistoryInfo;
-import org.l2jmobius.gameserver.instancemanager.games.MonsterRace.RaceState;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.templates.NpcTemplate;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
-import org.l2jmobius.gameserver.network.serverpackets.NpcHtmlMessage;
-import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
+import org.l2jdd.Config;
+import org.l2jdd.commons.util.StringUtil;
+import org.l2jdd.gameserver.instancemanager.IdManager;
+import org.l2jdd.gameserver.instancemanager.games.MonsterRace;
+import org.l2jdd.gameserver.instancemanager.games.MonsterRace.HistoryInfo;
+import org.l2jdd.gameserver.instancemanager.games.MonsterRace.RaceState;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.templates.NpcTemplate;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.ActionFailed;
+import org.l2jdd.gameserver.network.serverpackets.NpcHtmlMessage;
+import org.l2jdd.gameserver.network.serverpackets.SystemMessage;
 
 public class RaceManagerInstance extends Npc
 {

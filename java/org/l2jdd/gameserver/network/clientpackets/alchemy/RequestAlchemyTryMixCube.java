@@ -14,32 +14,32 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network.clientpackets.alchemy;
+package org.l2jdd.gameserver.network.clientpackets.alchemy;
 
 import java.util.LinkedList;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketReader;
-import org.l2jmobius.commons.util.Rnd;
-import org.l2jmobius.gameserver.enums.PrivateStoreType;
-import org.l2jmobius.gameserver.enums.Race;
-import org.l2jmobius.gameserver.enums.TryMixCubeResultType;
-import org.l2jmobius.gameserver.enums.TryMixCubeType;
-import org.l2jmobius.gameserver.model.PlayerCondOverride;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.holders.AlchemyResult;
-import org.l2jmobius.gameserver.model.holders.ItemHolder;
-import org.l2jmobius.gameserver.model.itemcontainer.Inventory;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.model.skills.CommonSkill;
-import org.l2jmobius.gameserver.network.Disconnection;
-import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
-import org.l2jmobius.gameserver.network.serverpackets.InventoryUpdate;
-import org.l2jmobius.gameserver.network.serverpackets.MagicSkillUse;
-import org.l2jmobius.gameserver.network.serverpackets.alchemy.ExTryMixCube;
-import org.l2jmobius.gameserver.taskmanager.AttackStanceTaskManager;
+import org.l2jdd.commons.network.PacketReader;
+import org.l2jdd.commons.util.Rnd;
+import org.l2jdd.gameserver.enums.PrivateStoreType;
+import org.l2jdd.gameserver.enums.Race;
+import org.l2jdd.gameserver.enums.TryMixCubeResultType;
+import org.l2jdd.gameserver.enums.TryMixCubeType;
+import org.l2jdd.gameserver.model.PlayerCondOverride;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.holders.AlchemyResult;
+import org.l2jdd.gameserver.model.holders.ItemHolder;
+import org.l2jdd.gameserver.model.itemcontainer.Inventory;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.model.skills.CommonSkill;
+import org.l2jdd.gameserver.network.Disconnection;
+import org.l2jdd.gameserver.network.GameClient;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jdd.gameserver.network.serverpackets.InventoryUpdate;
+import org.l2jdd.gameserver.network.serverpackets.MagicSkillUse;
+import org.l2jdd.gameserver.network.serverpackets.alchemy.ExTryMixCube;
+import org.l2jdd.gameserver.taskmanager.AttackStanceTaskManager;
 
 /**
  * @author Sdw

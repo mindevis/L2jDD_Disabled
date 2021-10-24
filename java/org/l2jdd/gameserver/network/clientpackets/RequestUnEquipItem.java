@@ -14,20 +14,20 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network.clientpackets;
+package org.l2jdd.gameserver.network.clientpackets;
 
 import java.util.Arrays;
 
-import org.l2jmobius.commons.network.PacketReader;
-import org.l2jmobius.gameserver.model.PlayerCondOverride;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.items.EtcItem;
-import org.l2jmobius.gameserver.model.items.Item;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.InventoryUpdate;
-import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
+import org.l2jdd.commons.network.PacketReader;
+import org.l2jdd.gameserver.model.PlayerCondOverride;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.items.EtcItem;
+import org.l2jdd.gameserver.model.items.Item;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.network.GameClient;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.InventoryUpdate;
+import org.l2jdd.gameserver.network.serverpackets.SystemMessage;
 
 /**
  * @author Zoey76

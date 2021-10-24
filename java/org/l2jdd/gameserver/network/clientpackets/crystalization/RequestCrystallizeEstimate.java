@@ -14,25 +14,25 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network.clientpackets.crystalization;
+package org.l2jdd.gameserver.network.clientpackets.crystalization;
 
 import java.util.List;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
-import org.l2jmobius.gameserver.data.xml.ItemCrystallizationData;
-import org.l2jmobius.gameserver.enums.PrivateStoreType;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.holders.ItemChanceHolder;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.model.items.type.CrystalType;
-import org.l2jmobius.gameserver.model.skills.CommonSkill;
-import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
-import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
-import org.l2jmobius.gameserver.network.serverpackets.crystalization.ExGetCrystalizingEstimation;
-import org.l2jmobius.gameserver.util.Util;
+import org.l2jdd.Config;
+import org.l2jdd.commons.network.PacketReader;
+import org.l2jdd.gameserver.data.xml.ItemCrystallizationData;
+import org.l2jdd.gameserver.enums.PrivateStoreType;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.holders.ItemChanceHolder;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.model.items.type.CrystalType;
+import org.l2jdd.gameserver.model.skills.CommonSkill;
+import org.l2jdd.gameserver.network.GameClient;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jdd.gameserver.network.serverpackets.ActionFailed;
+import org.l2jdd.gameserver.network.serverpackets.crystalization.ExGetCrystalizingEstimation;
+import org.l2jdd.gameserver.util.Util;
 
 /**
  * @author UnAfraid

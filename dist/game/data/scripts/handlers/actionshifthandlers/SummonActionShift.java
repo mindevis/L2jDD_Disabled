@@ -16,11 +16,11 @@
  */
 package handlers.actionshifthandlers;
 
-import org.l2jmobius.gameserver.enums.InstanceType;
-import org.l2jmobius.gameserver.handler.AdminCommandHandler;
-import org.l2jmobius.gameserver.handler.IActionShiftHandler;
-import org.l2jmobius.gameserver.model.WorldObject;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.enums.InstanceType;
+import org.l2jdd.gameserver.handler.AdminCommandHandler;
+import org.l2jdd.gameserver.handler.IActionShiftHandler;
+import org.l2jdd.gameserver.model.WorldObject;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
 
 public class SummonActionShift implements IActionShiftHandler
 {

@@ -16,13 +16,13 @@
  */
 package quests.Q10507_ObtainingNewPower;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.gameserver.enums.QuestSound;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.quest.Quest;
-import org.l2jmobius.gameserver.model.quest.QuestState;
-import org.l2jmobius.gameserver.model.quest.State;
+import org.l2jdd.Config;
+import org.l2jdd.gameserver.enums.QuestSound;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.quest.Quest;
+import org.l2jdd.gameserver.model.quest.QuestState;
+import org.l2jdd.gameserver.model.quest.State;
 
 import quests.Q10879_ExaltedGuideToPower.Q10879_ExaltedGuideToPower;
 

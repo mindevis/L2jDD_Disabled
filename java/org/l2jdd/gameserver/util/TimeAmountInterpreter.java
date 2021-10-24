@@ -9,7 +9,7 @@
  * suitability of this software for any purpose. It is provided "as is"
  * without expressed or implied warranty.
  */
-package org.l2jmobius.gameserver.util;
+package org.l2jdd.gameserver.util;
 
 import static java.util.concurrent.TimeUnit.DAYS;
 import static java.util.concurrent.TimeUnit.MILLISECONDS;

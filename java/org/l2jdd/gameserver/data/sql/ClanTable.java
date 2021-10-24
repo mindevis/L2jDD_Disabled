@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.data.sql;
+package org.l2jdd.gameserver.data.sql;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -28,39 +28,39 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.concurrent.ThreadPool;
-import org.l2jmobius.commons.database.DatabaseFactory;
-import org.l2jmobius.commons.util.Chronos;
-import org.l2jmobius.gameserver.communitybbs.Manager.ForumsBBSManager;
-import org.l2jmobius.gameserver.data.xml.ClanHallData;
-import org.l2jmobius.gameserver.enums.ClanWarState;
-import org.l2jmobius.gameserver.enums.UserInfoType;
-import org.l2jmobius.gameserver.instancemanager.ClanEntryManager;
-import org.l2jmobius.gameserver.instancemanager.FortManager;
-import org.l2jmobius.gameserver.instancemanager.FortSiegeManager;
-import org.l2jmobius.gameserver.instancemanager.IdManager;
-import org.l2jmobius.gameserver.instancemanager.SiegeManager;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.clan.Clan;
-import org.l2jmobius.gameserver.model.clan.ClanMember;
-import org.l2jmobius.gameserver.model.clan.ClanPrivilege;
-import org.l2jmobius.gameserver.model.clan.ClanWar;
-import org.l2jmobius.gameserver.model.events.EventDispatcher;
-import org.l2jmobius.gameserver.model.events.impl.clan.OnClanWarFinish;
-import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerClanCreate;
-import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerClanDestroy;
-import org.l2jmobius.gameserver.model.residences.ClanHall;
-import org.l2jmobius.gameserver.model.siege.Fort;
-import org.l2jmobius.gameserver.model.siege.FortSiege;
-import org.l2jmobius.gameserver.model.siege.Siege;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.PledgeShowInfoUpdate;
-import org.l2jmobius.gameserver.network.serverpackets.PledgeShowMemberListAll;
-import org.l2jmobius.gameserver.network.serverpackets.PledgeShowMemberListUpdate;
-import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
-import org.l2jmobius.gameserver.util.EnumIntBitmask;
-import org.l2jmobius.gameserver.util.Util;
+import org.l2jdd.Config;
+import org.l2jdd.commons.concurrent.ThreadPool;
+import org.l2jdd.commons.database.DatabaseFactory;
+import org.l2jdd.commons.util.Chronos;
+import org.l2jdd.gameserver.communitybbs.Manager.ForumsBBSManager;
+import org.l2jdd.gameserver.data.xml.ClanHallData;
+import org.l2jdd.gameserver.enums.ClanWarState;
+import org.l2jdd.gameserver.enums.UserInfoType;
+import org.l2jdd.gameserver.instancemanager.ClanEntryManager;
+import org.l2jdd.gameserver.instancemanager.FortManager;
+import org.l2jdd.gameserver.instancemanager.FortSiegeManager;
+import org.l2jdd.gameserver.instancemanager.IdManager;
+import org.l2jdd.gameserver.instancemanager.SiegeManager;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.clan.Clan;
+import org.l2jdd.gameserver.model.clan.ClanMember;
+import org.l2jdd.gameserver.model.clan.ClanPrivilege;
+import org.l2jdd.gameserver.model.clan.ClanWar;
+import org.l2jdd.gameserver.model.events.EventDispatcher;
+import org.l2jdd.gameserver.model.events.impl.clan.OnClanWarFinish;
+import org.l2jdd.gameserver.model.events.impl.creature.player.OnPlayerClanCreate;
+import org.l2jdd.gameserver.model.events.impl.creature.player.OnPlayerClanDestroy;
+import org.l2jdd.gameserver.model.residences.ClanHall;
+import org.l2jdd.gameserver.model.siege.Fort;
+import org.l2jdd.gameserver.model.siege.FortSiege;
+import org.l2jdd.gameserver.model.siege.Siege;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.PledgeShowInfoUpdate;
+import org.l2jdd.gameserver.network.serverpackets.PledgeShowMemberListAll;
+import org.l2jdd.gameserver.network.serverpackets.PledgeShowMemberListUpdate;
+import org.l2jdd.gameserver.network.serverpackets.SystemMessage;
+import org.l2jdd.gameserver.util.EnumIntBitmask;
+import org.l2jdd.gameserver.util.Util;
 
 /**
  * This class loads the clan related data.

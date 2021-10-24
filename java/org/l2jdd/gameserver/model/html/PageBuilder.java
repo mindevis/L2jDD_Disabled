@@ -14,15 +14,15 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.html;
+package org.l2jdd.gameserver.model.html;
 
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Objects;
 
-import org.l2jmobius.gameserver.model.html.formatters.DefaultFormatter;
-import org.l2jmobius.gameserver.model.html.pagehandlers.DefaultPageHandler;
-import org.l2jmobius.gameserver.model.html.styles.DefaultStyle;
+import org.l2jdd.gameserver.model.html.formatters.DefaultFormatter;
+import org.l2jdd.gameserver.model.html.pagehandlers.DefaultPageHandler;
+import org.l2jdd.gameserver.model.html.styles.DefaultStyle;
 
 /**
  * @author UnAfraid

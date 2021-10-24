@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model;
+package org.l2jdd.gameserver.model;
 
 import java.util.Calendar;
 import java.util.List;
@@ -24,30 +24,30 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.l2jmobius.commons.concurrent.ThreadPool;
-import org.l2jmobius.commons.util.Rnd;
-import org.l2jmobius.gameserver.ai.CtrlIntention;
-import org.l2jmobius.gameserver.enums.DuelResult;
-import org.l2jmobius.gameserver.enums.Team;
-import org.l2jmobius.gameserver.instancemanager.DuelManager;
-import org.l2jmobius.gameserver.instancemanager.InstanceManager;
-import org.l2jmobius.gameserver.instancemanager.ZoneManager;
-import org.l2jmobius.gameserver.model.actor.instance.DoorInstance;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.instancezone.Instance;
-import org.l2jmobius.gameserver.model.skills.Skill;
-import org.l2jmobius.gameserver.model.zone.ZoneId;
-import org.l2jmobius.gameserver.model.zone.type.OlympiadStadiumZone;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
-import org.l2jmobius.gameserver.network.serverpackets.ExDuelEnd;
-import org.l2jmobius.gameserver.network.serverpackets.ExDuelReady;
-import org.l2jmobius.gameserver.network.serverpackets.ExDuelStart;
-import org.l2jmobius.gameserver.network.serverpackets.ExDuelUpdateUserInfo;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
-import org.l2jmobius.gameserver.network.serverpackets.PlaySound;
-import org.l2jmobius.gameserver.network.serverpackets.SocialAction;
-import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
+import org.l2jdd.commons.concurrent.ThreadPool;
+import org.l2jdd.commons.util.Rnd;
+import org.l2jdd.gameserver.ai.CtrlIntention;
+import org.l2jdd.gameserver.enums.DuelResult;
+import org.l2jdd.gameserver.enums.Team;
+import org.l2jdd.gameserver.instancemanager.DuelManager;
+import org.l2jdd.gameserver.instancemanager.InstanceManager;
+import org.l2jdd.gameserver.instancemanager.ZoneManager;
+import org.l2jdd.gameserver.model.actor.instance.DoorInstance;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.instancezone.Instance;
+import org.l2jdd.gameserver.model.skills.Skill;
+import org.l2jdd.gameserver.model.zone.ZoneId;
+import org.l2jdd.gameserver.model.zone.type.OlympiadStadiumZone;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.ActionFailed;
+import org.l2jdd.gameserver.network.serverpackets.ExDuelEnd;
+import org.l2jdd.gameserver.network.serverpackets.ExDuelReady;
+import org.l2jdd.gameserver.network.serverpackets.ExDuelStart;
+import org.l2jdd.gameserver.network.serverpackets.ExDuelUpdateUserInfo;
+import org.l2jdd.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jdd.gameserver.network.serverpackets.PlaySound;
+import org.l2jdd.gameserver.network.serverpackets.SocialAction;
+import org.l2jdd.gameserver.network.serverpackets.SystemMessage;
 
 public class Duel
 {

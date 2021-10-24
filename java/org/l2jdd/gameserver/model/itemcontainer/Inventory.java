@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.itemcontainer;
+package org.l2jdd.gameserver.model.itemcontainer;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -30,40 +30,40 @@ import java.util.function.Predicate;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.database.DatabaseFactory;
-import org.l2jmobius.commons.util.CommonUtil;
-import org.l2jmobius.gameserver.cache.PaperdollCache;
-import org.l2jmobius.gameserver.data.ItemTable;
-import org.l2jmobius.gameserver.data.xml.AgathionData;
-import org.l2jmobius.gameserver.data.xml.AppearanceItemData;
-import org.l2jmobius.gameserver.data.xml.ArmorSetData;
-import org.l2jmobius.gameserver.enums.ItemLocation;
-import org.l2jmobius.gameserver.enums.ItemSkillType;
-import org.l2jmobius.gameserver.enums.PrivateStoreType;
-import org.l2jmobius.gameserver.model.ArmorSet;
-import org.l2jmobius.gameserver.model.PlayerCondOverride;
-import org.l2jmobius.gameserver.model.VariationInstance;
-import org.l2jmobius.gameserver.model.World;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.events.EventDispatcher;
-import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerItemUnequip;
-import org.l2jmobius.gameserver.model.holders.AgathionSkillHolder;
-import org.l2jmobius.gameserver.model.holders.ArmorsetSkillHolder;
-import org.l2jmobius.gameserver.model.holders.ItemSkillHolder;
-import org.l2jmobius.gameserver.model.holders.SkillHolder;
-import org.l2jmobius.gameserver.model.items.Item;
-import org.l2jmobius.gameserver.model.items.appearance.AppearanceStone;
-import org.l2jmobius.gameserver.model.items.appearance.AppearanceType;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.model.items.type.ArmorType;
-import org.l2jmobius.gameserver.model.items.type.EtcItemType;
-import org.l2jmobius.gameserver.model.items.type.WeaponType;
-import org.l2jmobius.gameserver.model.skills.Skill;
-import org.l2jmobius.gameserver.model.skills.SkillConditionScope;
-import org.l2jmobius.gameserver.network.serverpackets.ExUserInfoEquipSlot;
-import org.l2jmobius.gameserver.network.serverpackets.SkillCoolTime;
+import org.l2jdd.Config;
+import org.l2jdd.commons.database.DatabaseFactory;
+import org.l2jdd.commons.util.CommonUtil;
+import org.l2jdd.gameserver.cache.PaperdollCache;
+import org.l2jdd.gameserver.data.ItemTable;
+import org.l2jdd.gameserver.data.xml.AgathionData;
+import org.l2jdd.gameserver.data.xml.AppearanceItemData;
+import org.l2jdd.gameserver.data.xml.ArmorSetData;
+import org.l2jdd.gameserver.enums.ItemLocation;
+import org.l2jdd.gameserver.enums.ItemSkillType;
+import org.l2jdd.gameserver.enums.PrivateStoreType;
+import org.l2jdd.gameserver.model.ArmorSet;
+import org.l2jdd.gameserver.model.PlayerCondOverride;
+import org.l2jdd.gameserver.model.VariationInstance;
+import org.l2jdd.gameserver.model.World;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.events.EventDispatcher;
+import org.l2jdd.gameserver.model.events.impl.creature.player.OnPlayerItemUnequip;
+import org.l2jdd.gameserver.model.holders.AgathionSkillHolder;
+import org.l2jdd.gameserver.model.holders.ArmorsetSkillHolder;
+import org.l2jdd.gameserver.model.holders.ItemSkillHolder;
+import org.l2jdd.gameserver.model.holders.SkillHolder;
+import org.l2jdd.gameserver.model.items.Item;
+import org.l2jdd.gameserver.model.items.appearance.AppearanceStone;
+import org.l2jdd.gameserver.model.items.appearance.AppearanceType;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.model.items.type.ArmorType;
+import org.l2jdd.gameserver.model.items.type.EtcItemType;
+import org.l2jdd.gameserver.model.items.type.WeaponType;
+import org.l2jdd.gameserver.model.skills.Skill;
+import org.l2jdd.gameserver.model.skills.SkillConditionScope;
+import org.l2jdd.gameserver.network.serverpackets.ExUserInfoEquipSlot;
+import org.l2jdd.gameserver.network.serverpackets.SkillCoolTime;
 
 /**
  * This class manages inventory

@@ -16,17 +16,17 @@
  */
 package ai.others;
 
-import org.l2jmobius.commons.util.CommonUtil;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.events.EventType;
-import org.l2jmobius.gameserver.model.events.ListenerRegisterType;
-import org.l2jmobius.gameserver.model.events.annotations.Id;
-import org.l2jmobius.gameserver.model.events.annotations.RegisterEvent;
-import org.l2jmobius.gameserver.model.events.annotations.RegisterType;
-import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerItemEquip;
-import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerItemUnequip;
-import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerLogin;
-import org.l2jmobius.gameserver.model.items.Weapon;
+import org.l2jdd.commons.util.CommonUtil;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.events.EventType;
+import org.l2jdd.gameserver.model.events.ListenerRegisterType;
+import org.l2jdd.gameserver.model.events.annotations.Id;
+import org.l2jdd.gameserver.model.events.annotations.RegisterEvent;
+import org.l2jdd.gameserver.model.events.annotations.RegisterType;
+import org.l2jdd.gameserver.model.events.impl.creature.player.OnPlayerItemEquip;
+import org.l2jdd.gameserver.model.events.impl.creature.player.OnPlayerItemUnequip;
+import org.l2jdd.gameserver.model.events.impl.creature.player.OnPlayerLogin;
+import org.l2jdd.gameserver.model.items.Weapon;
 
 import ai.AbstractNpcAI;
 

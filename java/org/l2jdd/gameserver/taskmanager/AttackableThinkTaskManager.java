@@ -14,14 +14,14 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.taskmanager;
+package org.l2jdd.gameserver.taskmanager;
 
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
-import org.l2jmobius.commons.concurrent.ThreadPool;
-import org.l2jmobius.gameserver.ai.CreatureAI;
-import org.l2jmobius.gameserver.model.actor.Attackable;
+import org.l2jdd.commons.concurrent.ThreadPool;
+import org.l2jdd.gameserver.ai.CreatureAI;
+import org.l2jdd.gameserver.model.actor.Attackable;
 
 /**
  * @author Mobius

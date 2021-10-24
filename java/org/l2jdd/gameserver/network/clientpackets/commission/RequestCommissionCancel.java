@@ -14,11 +14,11 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network.clientpackets.commission;
+package org.l2jdd.gameserver.network.clientpackets.commission;
 
-import org.l2jmobius.commons.network.PacketReader;
-import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jdd.commons.network.PacketReader;
+import org.l2jdd.gameserver.network.GameClient;
+import org.l2jdd.gameserver.network.clientpackets.IClientIncomingPacket;
 
 /**
  * This Packet doesn't seem to be doing anything.

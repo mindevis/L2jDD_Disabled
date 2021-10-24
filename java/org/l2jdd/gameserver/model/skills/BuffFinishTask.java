@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.skills;
+package org.l2jdd.gameserver.model.skills;
 
 import java.util.Map;
 import java.util.Map.Entry;
@@ -22,7 +22,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import org.l2jmobius.commons.concurrent.ThreadPool;
+import org.l2jdd.commons.concurrent.ThreadPool;
 
 /**
  * @author Mobius

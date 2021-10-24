@@ -16,10 +16,10 @@
  */
 package ai.areas.ForgeOfTheGods;
 
-import org.l2jmobius.gameserver.ai.CtrlIntention;
-import org.l2jmobius.gameserver.model.actor.Attackable;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.ai.CtrlIntention;
+import org.l2jdd.gameserver.model.actor.Attackable;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
 
 import ai.AbstractNpcAI;
 

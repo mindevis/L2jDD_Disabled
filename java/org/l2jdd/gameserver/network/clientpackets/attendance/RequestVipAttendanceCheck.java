@@ -14,21 +14,21 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network.clientpackets.attendance;
+package org.l2jdd.gameserver.network.clientpackets.attendance;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
-import org.l2jmobius.gameserver.data.ItemTable;
-import org.l2jmobius.gameserver.data.xml.AttendanceRewardData;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.holders.AttendanceInfoHolder;
-import org.l2jmobius.gameserver.model.holders.ItemHolder;
-import org.l2jmobius.gameserver.model.items.Item;
-import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
-import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
-import org.l2jmobius.gameserver.network.serverpackets.attendance.ExConfirmVipAttendanceCheck;
+import org.l2jdd.Config;
+import org.l2jdd.commons.network.PacketReader;
+import org.l2jdd.gameserver.data.ItemTable;
+import org.l2jdd.gameserver.data.xml.AttendanceRewardData;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.holders.AttendanceInfoHolder;
+import org.l2jdd.gameserver.model.holders.ItemHolder;
+import org.l2jdd.gameserver.model.items.Item;
+import org.l2jdd.gameserver.network.GameClient;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jdd.gameserver.network.serverpackets.SystemMessage;
+import org.l2jdd.gameserver.network.serverpackets.attendance.ExConfirmVipAttendanceCheck;
 
 /**
  * @author Mobius

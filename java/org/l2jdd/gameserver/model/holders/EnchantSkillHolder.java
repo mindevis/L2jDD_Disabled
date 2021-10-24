@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.holders;
+package org.l2jdd.gameserver.model.holders;
 
 import java.util.Collections;
 import java.util.EnumMap;
@@ -22,8 +22,8 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-import org.l2jmobius.gameserver.enums.SkillEnchantType;
-import org.l2jmobius.gameserver.model.StatSet;
+import org.l2jdd.gameserver.enums.SkillEnchantType;
+import org.l2jdd.gameserver.model.StatSet;
 
 /**
  * @author Sdw

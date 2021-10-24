@@ -16,12 +16,12 @@
  */
 package handlers.actionhandlers;
 
-import org.l2jmobius.gameserver.ai.CtrlIntention;
-import org.l2jmobius.gameserver.enums.InstanceType;
-import org.l2jmobius.gameserver.handler.IActionHandler;
-import org.l2jmobius.gameserver.model.WorldObject;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.ai.CtrlIntention;
+import org.l2jdd.gameserver.enums.InstanceType;
+import org.l2jdd.gameserver.handler.IActionHandler;
+import org.l2jdd.gameserver.model.WorldObject;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
 
 public class ArtefactInstanceAction implements IActionHandler
 {

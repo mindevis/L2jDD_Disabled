@@ -16,16 +16,16 @@
  */
 package handlers.effecthandlers;
 
-import org.l2jmobius.gameserver.instancemanager.FortManager;
-import org.l2jmobius.gameserver.model.StatSet;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.clan.Clan;
-import org.l2jmobius.gameserver.model.effects.AbstractEffect;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.model.siege.Fort;
-import org.l2jmobius.gameserver.model.skills.Skill;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
+import org.l2jdd.gameserver.instancemanager.FortManager;
+import org.l2jdd.gameserver.model.StatSet;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.clan.Clan;
+import org.l2jdd.gameserver.model.effects.AbstractEffect;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.model.siege.Fort;
+import org.l2jdd.gameserver.model.skills.Skill;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.SystemMessage;
 
 /**
  * Take Fort Start effect implementation.

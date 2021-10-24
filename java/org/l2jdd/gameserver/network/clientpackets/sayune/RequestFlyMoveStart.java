@@ -14,21 +14,21 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network.clientpackets.sayune;
+package org.l2jdd.gameserver.network.clientpackets.sayune;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
-import org.l2jmobius.gameserver.data.xml.SayuneData;
-import org.l2jmobius.gameserver.enums.CategoryType;
-import org.l2jmobius.gameserver.instancemanager.ZoneManager;
-import org.l2jmobius.gameserver.model.SayuneEntry;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.actor.request.SayuneRequest;
-import org.l2jmobius.gameserver.model.zone.ZoneId;
-import org.l2jmobius.gameserver.model.zone.type.SayuneZone;
-import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jdd.Config;
+import org.l2jdd.commons.network.PacketReader;
+import org.l2jdd.gameserver.data.xml.SayuneData;
+import org.l2jdd.gameserver.enums.CategoryType;
+import org.l2jdd.gameserver.instancemanager.ZoneManager;
+import org.l2jdd.gameserver.model.SayuneEntry;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.actor.request.SayuneRequest;
+import org.l2jdd.gameserver.model.zone.ZoneId;
+import org.l2jdd.gameserver.model.zone.type.SayuneZone;
+import org.l2jdd.gameserver.network.GameClient;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.clientpackets.IClientIncomingPacket;
 
 /**
  * @author UnAfraid

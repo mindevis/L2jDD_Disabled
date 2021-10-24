@@ -14,12 +14,12 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.events.impl.olympiad;
+package org.l2jdd.gameserver.model.events.impl.olympiad;
 
-import org.l2jmobius.gameserver.model.events.EventType;
-import org.l2jmobius.gameserver.model.events.impl.IBaseEvent;
-import org.l2jmobius.gameserver.model.olympiad.CompetitionType;
-import org.l2jmobius.gameserver.model.olympiad.Participant;
+import org.l2jdd.gameserver.model.events.EventType;
+import org.l2jdd.gameserver.model.events.impl.IBaseEvent;
+import org.l2jdd.gameserver.model.olympiad.CompetitionType;
+import org.l2jdd.gameserver.model.olympiad.Participant;
 
 /**
  * @author UnAfraid

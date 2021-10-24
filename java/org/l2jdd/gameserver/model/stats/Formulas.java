@@ -14,43 +14,43 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.stats;
+package org.l2jdd.gameserver.model.stats;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.util.CommonUtil;
-import org.l2jmobius.commons.util.Rnd;
-import org.l2jmobius.gameserver.data.xml.HitConditionBonusData;
-import org.l2jmobius.gameserver.data.xml.KarmaData;
-import org.l2jmobius.gameserver.enums.AttributeType;
-import org.l2jmobius.gameserver.enums.BasicProperty;
-import org.l2jmobius.gameserver.enums.DispelSlotType;
-import org.l2jmobius.gameserver.enums.Position;
-import org.l2jmobius.gameserver.enums.ShotType;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.actor.instance.SiegeFlagInstance;
-import org.l2jmobius.gameserver.model.actor.instance.StaticObjectInstance;
-import org.l2jmobius.gameserver.model.cubic.CubicInstance;
-import org.l2jmobius.gameserver.model.effects.EffectFlag;
-import org.l2jmobius.gameserver.model.effects.EffectType;
-import org.l2jmobius.gameserver.model.interfaces.ILocational;
-import org.l2jmobius.gameserver.model.items.Armor;
-import org.l2jmobius.gameserver.model.items.Item;
-import org.l2jmobius.gameserver.model.items.Weapon;
-import org.l2jmobius.gameserver.model.items.type.ArmorType;
-import org.l2jmobius.gameserver.model.items.type.WeaponType;
-import org.l2jmobius.gameserver.model.skills.AbnormalType;
-import org.l2jmobius.gameserver.model.skills.BuffInfo;
-import org.l2jmobius.gameserver.model.skills.Skill;
-import org.l2jmobius.gameserver.model.skills.SkillCaster;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.ExMagicAttackInfo;
-import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
-import org.l2jmobius.gameserver.util.Util;
+import org.l2jdd.Config;
+import org.l2jdd.commons.util.CommonUtil;
+import org.l2jdd.commons.util.Rnd;
+import org.l2jdd.gameserver.data.xml.HitConditionBonusData;
+import org.l2jdd.gameserver.data.xml.KarmaData;
+import org.l2jdd.gameserver.enums.AttributeType;
+import org.l2jdd.gameserver.enums.BasicProperty;
+import org.l2jdd.gameserver.enums.DispelSlotType;
+import org.l2jdd.gameserver.enums.Position;
+import org.l2jdd.gameserver.enums.ShotType;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.actor.instance.SiegeFlagInstance;
+import org.l2jdd.gameserver.model.actor.instance.StaticObjectInstance;
+import org.l2jdd.gameserver.model.cubic.CubicInstance;
+import org.l2jdd.gameserver.model.effects.EffectFlag;
+import org.l2jdd.gameserver.model.effects.EffectType;
+import org.l2jdd.gameserver.model.interfaces.ILocational;
+import org.l2jdd.gameserver.model.items.Armor;
+import org.l2jdd.gameserver.model.items.Item;
+import org.l2jdd.gameserver.model.items.Weapon;
+import org.l2jdd.gameserver.model.items.type.ArmorType;
+import org.l2jdd.gameserver.model.items.type.WeaponType;
+import org.l2jdd.gameserver.model.skills.AbnormalType;
+import org.l2jdd.gameserver.model.skills.BuffInfo;
+import org.l2jdd.gameserver.model.skills.Skill;
+import org.l2jdd.gameserver.model.skills.SkillCaster;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.ExMagicAttackInfo;
+import org.l2jdd.gameserver.network.serverpackets.SystemMessage;
+import org.l2jdd.gameserver.util.Util;
 
 /**
  * Global calculations.

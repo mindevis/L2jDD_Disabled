@@ -22,19 +22,19 @@ import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ScheduledFuture;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.concurrent.ThreadPool;
-import org.l2jmobius.gameserver.data.xml.SkillData;
-import org.l2jmobius.gameserver.enums.ChatType;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.quest.Event;
-import org.l2jmobius.gameserver.model.quest.QuestState;
-import org.l2jmobius.gameserver.model.skills.AbnormalType;
-import org.l2jmobius.gameserver.model.skills.Skill;
-import org.l2jmobius.gameserver.network.serverpackets.CreatureSay;
-import org.l2jmobius.gameserver.network.serverpackets.NpcHtmlMessage;
-import org.l2jmobius.gameserver.util.Broadcast;
+import org.l2jdd.Config;
+import org.l2jdd.commons.concurrent.ThreadPool;
+import org.l2jdd.gameserver.data.xml.SkillData;
+import org.l2jdd.gameserver.enums.ChatType;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.quest.Event;
+import org.l2jdd.gameserver.model.quest.QuestState;
+import org.l2jdd.gameserver.model.skills.AbnormalType;
+import org.l2jdd.gameserver.model.skills.Skill;
+import org.l2jdd.gameserver.network.serverpackets.CreatureSay;
+import org.l2jdd.gameserver.network.serverpackets.NpcHtmlMessage;
+import org.l2jdd.gameserver.util.Broadcast;
 
 /**
  * @author Gnacik

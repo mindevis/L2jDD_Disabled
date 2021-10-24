@@ -21,13 +21,13 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import org.l2jmobius.commons.util.Chronos;
-import org.l2jmobius.gameserver.data.xml.ClanHallData;
-import org.l2jmobius.gameserver.instancemanager.GlobalVariablesManager;
-import org.l2jmobius.gameserver.model.Location;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.residences.ClanHall;
+import org.l2jdd.commons.util.Chronos;
+import org.l2jdd.gameserver.data.xml.ClanHallData;
+import org.l2jdd.gameserver.instancemanager.GlobalVariablesManager;
+import org.l2jdd.gameserver.model.Location;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.residences.ClanHall;
 
 import ai.AbstractNpcAI;
 

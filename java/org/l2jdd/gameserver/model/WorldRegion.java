@@ -14,20 +14,20 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model;
+package org.l2jdd.gameserver.model;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ScheduledFuture;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.concurrent.ThreadPool;
-import org.l2jmobius.gameserver.model.actor.Attackable;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.DoorInstance;
-import org.l2jmobius.gameserver.model.actor.instance.FenceInstance;
-import org.l2jmobius.gameserver.taskmanager.RandomAnimationTaskManager;
-import org.l2jmobius.gameserver.util.UnboundArrayList;
+import org.l2jdd.Config;
+import org.l2jdd.commons.concurrent.ThreadPool;
+import org.l2jdd.gameserver.model.actor.Attackable;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.DoorInstance;
+import org.l2jdd.gameserver.model.actor.instance.FenceInstance;
+import org.l2jdd.gameserver.taskmanager.RandomAnimationTaskManager;
+import org.l2jdd.gameserver.util.UnboundArrayList;
 
 public class WorldRegion
 {
@@ -86,7 +86,7 @@ public class WorldRegion
 					// Stop the AI tasks.
 					if (mob.hasAI())
 					{
-						mob.getAI().setIntention(org.l2jmobius.gameserver.ai.CtrlIntention.AI_INTENTION_IDLE);
+						mob.getAI().setIntention(org.l2jdd.gameserver.ai.CtrlIntention.AI_INTENTION_IDLE);
 						mob.getAI().stopAITask();
 					}
 					

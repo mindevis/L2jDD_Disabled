@@ -19,10 +19,10 @@ package handlers.bypasshandlers;
 import java.util.StringTokenizer;
 import java.util.logging.Level;
 
-import org.l2jmobius.gameserver.handler.IBypassHandler;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.instance.MerchantInstance;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.handler.IBypassHandler;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.actor.instance.MerchantInstance;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
 
 public class Buy implements IBypassHandler
 {

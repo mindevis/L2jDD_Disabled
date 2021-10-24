@@ -16,10 +16,10 @@
  */
 package handlers.communityboard;
 
-import org.l2jmobius.gameserver.cache.HtmCache;
-import org.l2jmobius.gameserver.handler.CommunityBoardHandler;
-import org.l2jmobius.gameserver.handler.IWriteBoardHandler;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.cache.HtmCache;
+import org.l2jdd.gameserver.handler.CommunityBoardHandler;
+import org.l2jdd.gameserver.handler.IWriteBoardHandler;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
 
 /**
  * Mail board.

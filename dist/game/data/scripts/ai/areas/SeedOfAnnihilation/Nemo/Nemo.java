@@ -16,12 +16,12 @@
  */
 package ai.areas.SeedOfAnnihilation.Nemo;
 
-import org.l2jmobius.gameserver.ai.CtrlIntention;
-import org.l2jmobius.gameserver.instancemanager.QuestManager;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.quest.Quest;
-import org.l2jmobius.gameserver.network.NpcStringId;
+import org.l2jdd.gameserver.ai.CtrlIntention;
+import org.l2jdd.gameserver.instancemanager.QuestManager;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.quest.Quest;
+import org.l2jdd.gameserver.network.NpcStringId;
 
 import ai.AbstractNpcAI;
 import ai.areas.SeedOfAnnihilation.Maguen;

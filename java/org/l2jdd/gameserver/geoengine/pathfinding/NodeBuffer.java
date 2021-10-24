@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.geoengine.pathfinding;
+package org.l2jdd.gameserver.geoengine.pathfinding;
 
 import java.awt.Color;
 import java.util.ArrayList;
@@ -24,12 +24,12 @@ import java.util.List;
 import java.util.PriorityQueue;
 import java.util.concurrent.locks.ReentrantLock;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.gameserver.geoengine.GeoEngine;
-import org.l2jmobius.gameserver.geoengine.geodata.ABlock;
-import org.l2jmobius.gameserver.geoengine.geodata.GeoStructure;
-import org.l2jmobius.gameserver.model.Location;
-import org.l2jmobius.gameserver.network.serverpackets.ExServerPrimitive;
+import org.l2jdd.Config;
+import org.l2jdd.gameserver.geoengine.GeoEngine;
+import org.l2jdd.gameserver.geoengine.geodata.ABlock;
+import org.l2jdd.gameserver.geoengine.geodata.GeoStructure;
+import org.l2jdd.gameserver.model.Location;
+import org.l2jdd.gameserver.network.serverpackets.ExServerPrimitive;
 
 public class NodeBuffer
 {

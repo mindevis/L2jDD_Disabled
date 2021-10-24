@@ -14,23 +14,23 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.loginserver.network;
+package org.l2jdd.loginserver.network;
 
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.function.Supplier;
 
-import org.l2jmobius.commons.network.IConnectionState;
-import org.l2jmobius.commons.network.IIncomingPacket;
-import org.l2jmobius.commons.network.IIncomingPackets;
-import org.l2jmobius.loginserver.network.clientpackets.AuthGameGuard;
-import org.l2jmobius.loginserver.network.clientpackets.RequestAuthLogin;
-import org.l2jmobius.loginserver.network.clientpackets.RequestCmdLogin;
-import org.l2jmobius.loginserver.network.clientpackets.RequestPIAgreement;
-import org.l2jmobius.loginserver.network.clientpackets.RequestPIAgreementCheck;
-import org.l2jmobius.loginserver.network.clientpackets.RequestServerList;
-import org.l2jmobius.loginserver.network.clientpackets.RequestServerLogin;
+import org.l2jdd.commons.network.IConnectionState;
+import org.l2jdd.commons.network.IIncomingPacket;
+import org.l2jdd.commons.network.IIncomingPackets;
+import org.l2jdd.loginserver.network.clientpackets.AuthGameGuard;
+import org.l2jdd.loginserver.network.clientpackets.RequestAuthLogin;
+import org.l2jdd.loginserver.network.clientpackets.RequestCmdLogin;
+import org.l2jdd.loginserver.network.clientpackets.RequestPIAgreement;
+import org.l2jdd.loginserver.network.clientpackets.RequestPIAgreementCheck;
+import org.l2jdd.loginserver.network.clientpackets.RequestServerList;
+import org.l2jdd.loginserver.network.clientpackets.RequestServerLogin;
 
 /**
  * @author Mobius

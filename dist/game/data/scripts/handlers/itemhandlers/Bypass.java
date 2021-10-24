@@ -16,12 +16,12 @@
  */
 package handlers.itemhandlers;
 
-import org.l2jmobius.gameserver.cache.HtmCache;
-import org.l2jmobius.gameserver.handler.IItemHandler;
-import org.l2jmobius.gameserver.model.actor.Playable;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.network.serverpackets.NpcHtmlMessage;
+import org.l2jdd.gameserver.cache.HtmCache;
+import org.l2jdd.gameserver.handler.IItemHandler;
+import org.l2jdd.gameserver.model.actor.Playable;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.network.serverpackets.NpcHtmlMessage;
 
 /**
  * @author JIV

@@ -14,9 +14,9 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network;
+package org.l2jdd.gameserver.network;
 
-import org.l2jmobius.commons.util.Rnd;
+import org.l2jdd.commons.util.Rnd;
 
 /**
  * Blowfish keygen for GameServer client connections.

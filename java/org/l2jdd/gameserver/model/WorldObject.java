@@ -14,35 +14,35 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model;
+package org.l2jdd.gameserver.model;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-import org.l2jmobius.gameserver.enums.InstanceType;
-import org.l2jmobius.gameserver.handler.ActionHandler;
-import org.l2jmobius.gameserver.handler.ActionShiftHandler;
-import org.l2jmobius.gameserver.handler.IActionHandler;
-import org.l2jmobius.gameserver.handler.IActionShiftHandler;
-import org.l2jmobius.gameserver.instancemanager.IdManager;
-import org.l2jmobius.gameserver.instancemanager.InstanceManager;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.events.ListenersContainer;
-import org.l2jmobius.gameserver.model.instancezone.Instance;
-import org.l2jmobius.gameserver.model.interfaces.IDecayable;
-import org.l2jmobius.gameserver.model.interfaces.IIdentifiable;
-import org.l2jmobius.gameserver.model.interfaces.ILocational;
-import org.l2jmobius.gameserver.model.interfaces.INamable;
-import org.l2jmobius.gameserver.model.interfaces.IPositionable;
-import org.l2jmobius.gameserver.model.interfaces.ISpawnable;
-import org.l2jmobius.gameserver.model.interfaces.IUniqueId;
-import org.l2jmobius.gameserver.model.zone.ZoneId;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
-import org.l2jmobius.gameserver.network.serverpackets.DeleteObject;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
-import org.l2jmobius.gameserver.util.Util;
+import org.l2jdd.gameserver.enums.InstanceType;
+import org.l2jdd.gameserver.handler.ActionHandler;
+import org.l2jdd.gameserver.handler.ActionShiftHandler;
+import org.l2jdd.gameserver.handler.IActionHandler;
+import org.l2jdd.gameserver.handler.IActionShiftHandler;
+import org.l2jdd.gameserver.instancemanager.IdManager;
+import org.l2jdd.gameserver.instancemanager.InstanceManager;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.events.ListenersContainer;
+import org.l2jdd.gameserver.model.instancezone.Instance;
+import org.l2jdd.gameserver.model.interfaces.IDecayable;
+import org.l2jdd.gameserver.model.interfaces.IIdentifiable;
+import org.l2jdd.gameserver.model.interfaces.ILocational;
+import org.l2jdd.gameserver.model.interfaces.INamable;
+import org.l2jdd.gameserver.model.interfaces.IPositionable;
+import org.l2jdd.gameserver.model.interfaces.ISpawnable;
+import org.l2jdd.gameserver.model.interfaces.IUniqueId;
+import org.l2jdd.gameserver.model.zone.ZoneId;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.ActionFailed;
+import org.l2jdd.gameserver.network.serverpackets.DeleteObject;
+import org.l2jdd.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jdd.gameserver.util.Util;
 
 /**
  * Base class for all interactive objects.

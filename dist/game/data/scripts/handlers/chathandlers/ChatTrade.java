@@ -16,17 +16,17 @@
  */
 package handlers.chathandlers;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.gameserver.enums.ChatType;
-import org.l2jmobius.gameserver.handler.IChatHandler;
-import org.l2jmobius.gameserver.instancemanager.MapRegionManager;
-import org.l2jmobius.gameserver.model.BlockList;
-import org.l2jmobius.gameserver.model.PlayerCondOverride;
-import org.l2jmobius.gameserver.model.World;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.CreatureSay;
-import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
+import org.l2jdd.Config;
+import org.l2jdd.gameserver.enums.ChatType;
+import org.l2jdd.gameserver.handler.IChatHandler;
+import org.l2jdd.gameserver.instancemanager.MapRegionManager;
+import org.l2jdd.gameserver.model.BlockList;
+import org.l2jdd.gameserver.model.PlayerCondOverride;
+import org.l2jdd.gameserver.model.World;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.CreatureSay;
+import org.l2jdd.gameserver.network.serverpackets.SystemMessage;
 
 /**
  * Trade chat handler.

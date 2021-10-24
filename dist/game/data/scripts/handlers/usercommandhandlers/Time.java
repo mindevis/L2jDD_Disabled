@@ -19,13 +19,13 @@ package handlers.usercommandhandlers;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.util.Chronos;
-import org.l2jmobius.gameserver.GameTimeController;
-import org.l2jmobius.gameserver.handler.IUserCommandHandler;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
+import org.l2jdd.Config;
+import org.l2jdd.commons.util.Chronos;
+import org.l2jdd.gameserver.GameTimeController;
+import org.l2jdd.gameserver.handler.IUserCommandHandler;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.SystemMessage;
 
 /**
  * Time user command.

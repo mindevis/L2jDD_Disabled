@@ -14,13 +14,13 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.loginserver.network.gameserverpackets;
+package org.l2jdd.loginserver.network.gameserverpackets;
 
-import org.l2jmobius.commons.network.BaseRecievePacket;
-import org.l2jmobius.loginserver.GameServerThread;
-import org.l2jmobius.loginserver.LoginController;
-import org.l2jmobius.loginserver.SessionKey;
-import org.l2jmobius.loginserver.network.loginserverpackets.PlayerAuthResponse;
+import org.l2jdd.commons.network.BaseRecievePacket;
+import org.l2jdd.loginserver.GameServerThread;
+import org.l2jdd.loginserver.LoginController;
+import org.l2jdd.loginserver.SessionKey;
+import org.l2jdd.loginserver.network.loginserverpackets.PlayerAuthResponse;
 
 /**
  * @author -Wooden-

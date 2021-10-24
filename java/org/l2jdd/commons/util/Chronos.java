@@ -19,7 +19,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package org.l2jmobius.commons.util;
+package org.l2jdd.commons.util;
 
 /**
  * Chronos updates an internal long value with System.currentTimeMillis() approximately every 1 millisecond.<br>

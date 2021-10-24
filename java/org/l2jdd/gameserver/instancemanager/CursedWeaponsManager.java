@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.instancemanager;
+package org.l2jdd.gameserver.instancemanager;
 
 import java.io.File;
 import java.sql.Connection;
@@ -33,23 +33,23 @@ import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.database.DatabaseFactory;
-import org.l2jmobius.commons.util.Chronos;
-import org.l2jmobius.commons.util.IXmlReader;
-import org.l2jmobius.gameserver.model.CursedWeapon;
-import org.l2jmobius.gameserver.model.actor.Attackable;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.instance.DefenderInstance;
-import org.l2jmobius.gameserver.model.actor.instance.FeedableBeastInstance;
-import org.l2jmobius.gameserver.model.actor.instance.FortCommanderInstance;
-import org.l2jmobius.gameserver.model.actor.instance.GrandBossInstance;
-import org.l2jmobius.gameserver.model.actor.instance.GuardInstance;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
-import org.l2jmobius.gameserver.util.Broadcast;
+import org.l2jdd.Config;
+import org.l2jdd.commons.database.DatabaseFactory;
+import org.l2jdd.commons.util.Chronos;
+import org.l2jdd.commons.util.IXmlReader;
+import org.l2jdd.gameserver.model.CursedWeapon;
+import org.l2jdd.gameserver.model.actor.Attackable;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.actor.instance.DefenderInstance;
+import org.l2jdd.gameserver.model.actor.instance.FeedableBeastInstance;
+import org.l2jdd.gameserver.model.actor.instance.FortCommanderInstance;
+import org.l2jdd.gameserver.model.actor.instance.GrandBossInstance;
+import org.l2jdd.gameserver.model.actor.instance.GuardInstance;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.SystemMessage;
+import org.l2jdd.gameserver.util.Broadcast;
 
 /**
  * UnAfraid: TODO: Rewrite with DocumentParser

@@ -16,10 +16,10 @@
  */
 package handlers.itemhandlers;
 
-import org.l2jmobius.gameserver.model.actor.Playable;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.model.actor.Playable;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.network.SystemMessageId;
 
 /**
  * Item skills not allowed on Olympiad.

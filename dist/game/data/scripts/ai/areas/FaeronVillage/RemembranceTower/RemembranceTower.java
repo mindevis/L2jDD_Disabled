@@ -16,9 +16,9 @@
  */
 package ai.areas.FaeronVillage.RemembranceTower;
 
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.network.serverpackets.OnEventTrigger;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.network.serverpackets.OnEventTrigger;
 
 import ai.AbstractNpcAI;
 

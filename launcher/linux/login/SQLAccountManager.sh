@@ -1,2 +1,2 @@
 #!/bin/sh
-java -Djava.util.logging.config.file=console.cfg -cp ./../libs/*: org.l2jmobius.tools.accountmanager.SQLAccountManager
+java -Djava.util.logging.config.file=console.cfg -cp ./../libs/*: org.l2jdd.tools.accountmanager.SQLAccountManager

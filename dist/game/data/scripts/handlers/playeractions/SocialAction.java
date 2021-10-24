@@ -16,21 +16,21 @@
  */
 package handlers.playeractions;
 
-import org.l2jmobius.commons.concurrent.ThreadPool;
-import org.l2jmobius.gameserver.ai.CtrlEvent;
-import org.l2jmobius.gameserver.ai.CtrlIntention;
-import org.l2jmobius.gameserver.ai.NextAction;
-import org.l2jmobius.gameserver.data.xml.FakePlayerData;
-import org.l2jmobius.gameserver.handler.IPlayerActionHandler;
-import org.l2jmobius.gameserver.model.ActionDataHolder;
-import org.l2jmobius.gameserver.model.WorldObject;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.events.EventDispatcher;
-import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerSocialAction;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.ExAskCoupleAction;
-import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
-import org.l2jmobius.gameserver.taskmanager.AttackStanceTaskManager;
+import org.l2jdd.commons.concurrent.ThreadPool;
+import org.l2jdd.gameserver.ai.CtrlEvent;
+import org.l2jdd.gameserver.ai.CtrlIntention;
+import org.l2jdd.gameserver.ai.NextAction;
+import org.l2jdd.gameserver.data.xml.FakePlayerData;
+import org.l2jdd.gameserver.handler.IPlayerActionHandler;
+import org.l2jdd.gameserver.model.ActionDataHolder;
+import org.l2jdd.gameserver.model.WorldObject;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.events.EventDispatcher;
+import org.l2jdd.gameserver.model.events.impl.creature.player.OnPlayerSocialAction;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.ExAskCoupleAction;
+import org.l2jdd.gameserver.network.serverpackets.SystemMessage;
+import org.l2jdd.gameserver.taskmanager.AttackStanceTaskManager;
 
 /**
  * Social Action player action handler.
@@ -90,7 +90,7 @@ public class SocialAction implements IPlayerActionHandler
 		
 		if (player.canMakeSocialAction())
 		{
-			player.broadcastPacket(new org.l2jmobius.gameserver.network.serverpackets.SocialAction(player.getObjectId(), id));
+			player.broadcastPacket(new org.l2jdd.gameserver.network.serverpackets.SocialAction(player.getObjectId(), id));
 			
 			// Notify to scripts
 			EventDispatcher.getInstance().notifyEventAsync(new OnPlayerSocialAction(player, id), player);

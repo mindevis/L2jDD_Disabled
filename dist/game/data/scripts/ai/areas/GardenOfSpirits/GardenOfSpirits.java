@@ -16,9 +16,9 @@
  */
 package ai.areas.GardenOfSpirits;
 
-import org.l2jmobius.gameserver.model.Location;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.zone.ZoneType;
+import org.l2jdd.gameserver.model.Location;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.zone.ZoneType;
 
 import ai.AbstractNpcAI;
 

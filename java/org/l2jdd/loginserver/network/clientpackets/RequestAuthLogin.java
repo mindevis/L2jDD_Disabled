@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.loginserver.network.clientpackets;
+package org.l2jdd.loginserver.network.clientpackets;
 
 import java.net.InetAddress;
 import java.security.GeneralSecurityException;
@@ -23,20 +23,20 @@ import java.util.logging.Logger;
 
 import javax.crypto.Cipher;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.IIncomingPacket;
-import org.l2jmobius.commons.network.PacketReader;
-import org.l2jmobius.loginserver.GameServerTable.GameServerInfo;
-import org.l2jmobius.loginserver.LoginController;
-import org.l2jmobius.loginserver.LoginController.AuthLoginResult;
-import org.l2jmobius.loginserver.model.data.AccountInfo;
-import org.l2jmobius.loginserver.network.ConnectionState;
-import org.l2jmobius.loginserver.network.LoginClient;
-import org.l2jmobius.loginserver.network.serverpackets.AccountKicked;
-import org.l2jmobius.loginserver.network.serverpackets.AccountKicked.AccountKickedReason;
-import org.l2jmobius.loginserver.network.serverpackets.LoginFail.LoginFailReason;
-import org.l2jmobius.loginserver.network.serverpackets.LoginOk;
-import org.l2jmobius.loginserver.network.serverpackets.ServerList;
+import org.l2jdd.Config;
+import org.l2jdd.commons.network.IIncomingPacket;
+import org.l2jdd.commons.network.PacketReader;
+import org.l2jdd.loginserver.GameServerTable.GameServerInfo;
+import org.l2jdd.loginserver.LoginController;
+import org.l2jdd.loginserver.LoginController.AuthLoginResult;
+import org.l2jdd.loginserver.model.data.AccountInfo;
+import org.l2jdd.loginserver.network.ConnectionState;
+import org.l2jdd.loginserver.network.LoginClient;
+import org.l2jdd.loginserver.network.serverpackets.AccountKicked;
+import org.l2jdd.loginserver.network.serverpackets.AccountKicked.AccountKickedReason;
+import org.l2jdd.loginserver.network.serverpackets.LoginFail.LoginFailReason;
+import org.l2jdd.loginserver.network.serverpackets.LoginOk;
+import org.l2jdd.loginserver.network.serverpackets.ServerList;
 
 /**
  * Format: x 0 (a leading null) x: the rsa encrypted block with the login an password.

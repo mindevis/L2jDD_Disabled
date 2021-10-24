@@ -16,26 +16,26 @@
  */
 package ai.others.ManorManager;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.gameserver.instancemanager.CastleManorManager;
-import org.l2jmobius.gameserver.model.PlayerCondOverride;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.MerchantInstance;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.events.EventType;
-import org.l2jmobius.gameserver.model.events.ListenerRegisterType;
-import org.l2jmobius.gameserver.model.events.annotations.Id;
-import org.l2jmobius.gameserver.model.events.annotations.RegisterEvent;
-import org.l2jmobius.gameserver.model.events.annotations.RegisterType;
-import org.l2jmobius.gameserver.model.events.impl.creature.npc.OnNpcManorBypass;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.BuyListSeed;
-import org.l2jmobius.gameserver.network.serverpackets.ExShowCropInfo;
-import org.l2jmobius.gameserver.network.serverpackets.ExShowManorDefaultInfo;
-import org.l2jmobius.gameserver.network.serverpackets.ExShowProcureCropDetail;
-import org.l2jmobius.gameserver.network.serverpackets.ExShowSeedInfo;
-import org.l2jmobius.gameserver.network.serverpackets.ExShowSellCropList;
-import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
+import org.l2jdd.Config;
+import org.l2jdd.gameserver.instancemanager.CastleManorManager;
+import org.l2jdd.gameserver.model.PlayerCondOverride;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.MerchantInstance;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.events.EventType;
+import org.l2jdd.gameserver.model.events.ListenerRegisterType;
+import org.l2jdd.gameserver.model.events.annotations.Id;
+import org.l2jdd.gameserver.model.events.annotations.RegisterEvent;
+import org.l2jdd.gameserver.model.events.annotations.RegisterType;
+import org.l2jdd.gameserver.model.events.impl.creature.npc.OnNpcManorBypass;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.BuyListSeed;
+import org.l2jdd.gameserver.network.serverpackets.ExShowCropInfo;
+import org.l2jdd.gameserver.network.serverpackets.ExShowManorDefaultInfo;
+import org.l2jdd.gameserver.network.serverpackets.ExShowProcureCropDetail;
+import org.l2jdd.gameserver.network.serverpackets.ExShowSeedInfo;
+import org.l2jdd.gameserver.network.serverpackets.ExShowSellCropList;
+import org.l2jdd.gameserver.network.serverpackets.SystemMessage;
 
 import ai.AbstractNpcAI;
 

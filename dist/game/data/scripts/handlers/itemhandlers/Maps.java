@@ -16,11 +16,11 @@
  */
 package handlers.itemhandlers;
 
-import org.l2jmobius.gameserver.handler.IItemHandler;
-import org.l2jmobius.gameserver.model.actor.Playable;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.ShowMiniMap;
+import org.l2jdd.gameserver.handler.IItemHandler;
+import org.l2jdd.gameserver.model.actor.Playable;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.ShowMiniMap;
 
 /**
  * This class provides handling for items that should display a map when double clicked.

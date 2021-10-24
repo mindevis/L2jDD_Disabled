@@ -14,13 +14,13 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.skills;
+package org.l2jdd.gameserver.model.skills;
 
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
-import org.l2jmobius.gameserver.model.holders.ItemSkillHolder;
+import org.l2jdd.gameserver.model.holders.ItemSkillHolder;
 
 /**
  * @author Mobius

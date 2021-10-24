@@ -18,22 +18,22 @@ package ai.areas.TalkingIsland.Hardin;
 
 import java.util.List;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.gameserver.data.xml.ClassListData;
-import org.l2jmobius.gameserver.data.xml.SkillData;
-import org.l2jmobius.gameserver.data.xml.SkillTreeData;
-import org.l2jmobius.gameserver.enums.CategoryType;
-import org.l2jmobius.gameserver.enums.ClassId;
-import org.l2jmobius.gameserver.enums.Race;
-import org.l2jmobius.gameserver.enums.SubclassInfoType;
-import org.l2jmobius.gameserver.model.SkillLearn;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.olympiad.Olympiad;
-import org.l2jmobius.gameserver.model.skills.Skill;
-import org.l2jmobius.gameserver.network.serverpackets.ExSubjobInfo;
-import org.l2jmobius.gameserver.network.serverpackets.ExUserInfoInvenWeight;
-import org.l2jmobius.gameserver.network.serverpackets.NpcHtmlMessage;
+import org.l2jdd.Config;
+import org.l2jdd.gameserver.data.xml.ClassListData;
+import org.l2jdd.gameserver.data.xml.SkillData;
+import org.l2jdd.gameserver.data.xml.SkillTreeData;
+import org.l2jdd.gameserver.enums.CategoryType;
+import org.l2jdd.gameserver.enums.ClassId;
+import org.l2jdd.gameserver.enums.Race;
+import org.l2jdd.gameserver.enums.SubclassInfoType;
+import org.l2jdd.gameserver.model.SkillLearn;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.olympiad.Olympiad;
+import org.l2jdd.gameserver.model.skills.Skill;
+import org.l2jdd.gameserver.network.serverpackets.ExSubjobInfo;
+import org.l2jdd.gameserver.network.serverpackets.ExUserInfoInvenWeight;
+import org.l2jdd.gameserver.network.serverpackets.NpcHtmlMessage;
 
 import ai.AbstractNpcAI;
 

@@ -16,11 +16,11 @@
  */
 package ai.areas.KeucereusAllianceBase.Lekon;
 
-import org.l2jmobius.gameserver.instancemanager.AirShipManager;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.clan.Clan;
-import org.l2jmobius.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.instancemanager.AirShipManager;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.clan.Clan;
+import org.l2jdd.gameserver.network.SystemMessageId;
 
 import ai.AbstractNpcAI;
 

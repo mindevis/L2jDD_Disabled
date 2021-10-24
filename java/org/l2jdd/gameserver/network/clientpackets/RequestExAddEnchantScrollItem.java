@@ -14,18 +14,18 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network.clientpackets;
+package org.l2jdd.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
-import org.l2jmobius.commons.util.Chronos;
-import org.l2jmobius.gameserver.data.xml.EnchantItemData;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.actor.request.EnchantItemRequest;
-import org.l2jmobius.gameserver.model.items.enchant.EnchantScroll;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.ExPutEnchantScrollItemResult;
+import org.l2jdd.commons.network.PacketReader;
+import org.l2jdd.commons.util.Chronos;
+import org.l2jdd.gameserver.data.xml.EnchantItemData;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.actor.request.EnchantItemRequest;
+import org.l2jdd.gameserver.model.items.enchant.EnchantScroll;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.network.GameClient;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.ExPutEnchantScrollItemResult;
 
 /**
  * @author Sdw

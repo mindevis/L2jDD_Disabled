@@ -14,19 +14,19 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.actor.instance;
+package org.l2jdd.gameserver.model.actor.instance;
 
 import java.util.StringTokenizer;
 
-import org.l2jmobius.gameserver.data.xml.DoorData;
-import org.l2jmobius.gameserver.data.xml.TeleporterData;
-import org.l2jmobius.gameserver.enums.InstanceType;
-import org.l2jmobius.gameserver.enums.TeleportType;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.templates.NpcTemplate;
-import org.l2jmobius.gameserver.model.teleporter.TeleportHolder;
-import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
-import org.l2jmobius.gameserver.network.serverpackets.NpcHtmlMessage;
+import org.l2jdd.gameserver.data.xml.DoorData;
+import org.l2jdd.gameserver.data.xml.TeleporterData;
+import org.l2jdd.gameserver.enums.InstanceType;
+import org.l2jdd.gameserver.enums.TeleportType;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.actor.templates.NpcTemplate;
+import org.l2jdd.gameserver.model.teleporter.TeleportHolder;
+import org.l2jdd.gameserver.network.serverpackets.ActionFailed;
+import org.l2jdd.gameserver.network.serverpackets.NpcHtmlMessage;
 
 /**
  * @version $Revision$ $Date$

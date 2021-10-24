@@ -18,18 +18,18 @@ package handlers.bypasshandlers;
 
 import java.util.logging.Level;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.gameserver.handler.IBypassHandler;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.actor.instance.WarehouseInstance;
-import org.l2jmobius.gameserver.model.clan.ClanPrivilege;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
-import org.l2jmobius.gameserver.network.serverpackets.WareHouseDepositList;
-import org.l2jmobius.gameserver.network.serverpackets.WareHouseWithdrawalList;
+import org.l2jdd.Config;
+import org.l2jdd.gameserver.handler.IBypassHandler;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.actor.instance.WarehouseInstance;
+import org.l2jdd.gameserver.model.clan.ClanPrivilege;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.ActionFailed;
+import org.l2jdd.gameserver.network.serverpackets.WareHouseDepositList;
+import org.l2jdd.gameserver.network.serverpackets.WareHouseWithdrawalList;
 
 public class ClanWarehouse implements IBypassHandler
 {

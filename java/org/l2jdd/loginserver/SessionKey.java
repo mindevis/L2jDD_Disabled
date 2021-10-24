@@ -14,16 +14,16 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.loginserver;
+package org.l2jdd.loginserver;
 
-import org.l2jmobius.Config;
+import org.l2jdd.Config;
 
 /**
  * <p>
  * This class is used to represent session keys used by the client to authenticate in the gameserver
  * </p>
  * <p>
- * A SessionKey is made up of two 8 bytes keys. One is send in the {@link org.l2jmobius.loginserver.network.serverpackets.LoginOk#LoginOk} packet and the other is sent in {@link org.l2jmobius.loginserver.network.serverpackets.PlayOk#PlayOk}
+ * A SessionKey is made up of two 8 bytes keys. One is send in the {@link org.l2jdd.loginserver.network.serverpackets.LoginOk#LoginOk} packet and the other is sent in {@link org.l2jdd.loginserver.network.serverpackets.PlayOk#PlayOk}
  * </p>
  * @author -Wooden-
  */

@@ -14,16 +14,16 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network.serverpackets;
+package org.l2jdd.gameserver.network.serverpackets;
 
 import java.util.Collection;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.data.sql.ClanTable;
-import org.l2jmobius.gameserver.enums.TaxType;
-import org.l2jmobius.gameserver.instancemanager.CastleManager;
-import org.l2jmobius.gameserver.model.siege.Castle;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jdd.commons.network.PacketWriter;
+import org.l2jdd.gameserver.data.sql.ClanTable;
+import org.l2jdd.gameserver.enums.TaxType;
+import org.l2jdd.gameserver.instancemanager.CastleManager;
+import org.l2jdd.gameserver.model.siege.Castle;
+import org.l2jdd.gameserver.network.OutgoingPackets;
 
 /**
  * @author KenM

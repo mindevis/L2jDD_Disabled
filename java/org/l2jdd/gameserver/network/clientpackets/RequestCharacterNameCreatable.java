@@ -14,15 +14,15 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network.clientpackets;
+package org.l2jdd.gameserver.network.clientpackets;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
-import org.l2jmobius.gameserver.data.sql.CharNameTable;
-import org.l2jmobius.gameserver.data.xml.FakePlayerData;
-import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.serverpackets.ExIsCharNameCreatable;
-import org.l2jmobius.gameserver.util.Util;
+import org.l2jdd.Config;
+import org.l2jdd.commons.network.PacketReader;
+import org.l2jdd.gameserver.data.sql.CharNameTable;
+import org.l2jdd.gameserver.data.xml.FakePlayerData;
+import org.l2jdd.gameserver.network.GameClient;
+import org.l2jdd.gameserver.network.serverpackets.ExIsCharNameCreatable;
+import org.l2jdd.gameserver.util.Util;
 
 /**
  * @author UnAfraid

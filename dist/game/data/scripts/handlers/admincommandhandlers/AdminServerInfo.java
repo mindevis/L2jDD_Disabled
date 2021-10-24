@@ -23,16 +23,16 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.util.Chronos;
-import org.l2jmobius.gameserver.GameServer;
-import org.l2jmobius.gameserver.GameTimeController;
-import org.l2jmobius.gameserver.cache.HtmCache;
-import org.l2jmobius.gameserver.data.xml.AdminData;
-import org.l2jmobius.gameserver.handler.IAdminCommandHandler;
-import org.l2jmobius.gameserver.model.World;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.network.serverpackets.NpcHtmlMessage;
+import org.l2jdd.Config;
+import org.l2jdd.commons.util.Chronos;
+import org.l2jdd.gameserver.GameServer;
+import org.l2jdd.gameserver.GameTimeController;
+import org.l2jdd.gameserver.cache.HtmCache;
+import org.l2jdd.gameserver.data.xml.AdminData;
+import org.l2jdd.gameserver.handler.IAdminCommandHandler;
+import org.l2jdd.gameserver.model.World;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.network.serverpackets.NpcHtmlMessage;
 
 /**
  * @author St3eT

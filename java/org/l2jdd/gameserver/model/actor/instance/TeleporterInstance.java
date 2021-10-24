@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.actor.instance;
+package org.l2jdd.gameserver.model.actor.instance;
 
 import java.util.HashMap;
 import java.util.List;
@@ -22,20 +22,20 @@ import java.util.Map;
 import java.util.StringTokenizer;
 import java.util.logging.Logger;
 
-import org.l2jmobius.gameserver.data.xml.TeleporterData;
-import org.l2jmobius.gameserver.enums.InstanceType;
-import org.l2jmobius.gameserver.enums.TeleportType;
-import org.l2jmobius.gameserver.instancemanager.CastleManager;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.templates.NpcTemplate;
-import org.l2jmobius.gameserver.model.holders.TeleporterQuestRecommendationHolder;
-import org.l2jmobius.gameserver.model.quest.QuestState;
-import org.l2jmobius.gameserver.model.skills.CommonSkill;
-import org.l2jmobius.gameserver.model.teleporter.TeleportHolder;
-import org.l2jmobius.gameserver.network.serverpackets.NpcHtmlMessage;
-import org.l2jmobius.gameserver.network.serverpackets.teleports.ExShowTeleportUi;
-import org.l2jmobius.gameserver.util.Util;
+import org.l2jdd.gameserver.data.xml.TeleporterData;
+import org.l2jdd.gameserver.enums.InstanceType;
+import org.l2jdd.gameserver.enums.TeleportType;
+import org.l2jdd.gameserver.instancemanager.CastleManager;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.templates.NpcTemplate;
+import org.l2jdd.gameserver.model.holders.TeleporterQuestRecommendationHolder;
+import org.l2jdd.gameserver.model.quest.QuestState;
+import org.l2jdd.gameserver.model.skills.CommonSkill;
+import org.l2jdd.gameserver.model.teleporter.TeleportHolder;
+import org.l2jdd.gameserver.network.serverpackets.NpcHtmlMessage;
+import org.l2jdd.gameserver.network.serverpackets.teleports.ExShowTeleportUi;
+import org.l2jdd.gameserver.util.Util;
 
 /**
  * @author NightMarez

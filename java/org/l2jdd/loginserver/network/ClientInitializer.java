@@ -14,18 +14,18 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.loginserver.network;
+package org.l2jdd.loginserver.network;
 
 import java.nio.ByteOrder;
 
 import javax.crypto.SecretKey;
 
-import org.l2jmobius.commons.network.codecs.CryptCodec;
-import org.l2jmobius.commons.network.codecs.LengthFieldBasedFrameEncoder;
-import org.l2jmobius.commons.network.codecs.PacketDecoder;
-import org.l2jmobius.commons.network.codecs.PacketEncoder;
-import org.l2jmobius.commons.util.crypt.LoginCrypt;
-import org.l2jmobius.loginserver.LoginController;
+import org.l2jdd.commons.network.codecs.CryptCodec;
+import org.l2jdd.commons.network.codecs.LengthFieldBasedFrameEncoder;
+import org.l2jdd.commons.network.codecs.PacketDecoder;
+import org.l2jdd.commons.network.codecs.PacketEncoder;
+import org.l2jdd.commons.util.crypt.LoginCrypt;
+import org.l2jdd.loginserver.LoginController;
 
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.socket.SocketChannel;

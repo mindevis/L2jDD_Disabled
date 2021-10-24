@@ -14,15 +14,15 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model;
+package org.l2jdd.gameserver.model;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.l2jmobius.gameserver.data.xml.SkillData;
-import org.l2jmobius.gameserver.model.holders.SkillHolder;
+import org.l2jdd.gameserver.data.xml.SkillData;
+import org.l2jdd.gameserver.model.holders.SkillHolder;
 
 /**
  * Class hold information about basic pet stats which are same on each level.

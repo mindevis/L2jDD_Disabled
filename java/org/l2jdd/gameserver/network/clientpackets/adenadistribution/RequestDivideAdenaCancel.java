@@ -14,15 +14,15 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network.clientpackets.adenadistribution;
+package org.l2jdd.gameserver.network.clientpackets.adenadistribution;
 
-import org.l2jmobius.commons.network.PacketReader;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.actor.request.AdenaDistributionRequest;
-import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
-import org.l2jmobius.gameserver.network.serverpackets.adenadistribution.ExDivideAdenaCancel;
+import org.l2jdd.commons.network.PacketReader;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.actor.request.AdenaDistributionRequest;
+import org.l2jdd.gameserver.network.GameClient;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jdd.gameserver.network.serverpackets.adenadistribution.ExDivideAdenaCancel;
 
 /**
  * @author Sdw

@@ -14,14 +14,14 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network.serverpackets;
+package org.l2jdd.gameserver.network.serverpackets;
 
 import java.util.Collection;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.model.TradeItem;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jdd.commons.network.PacketWriter;
+import org.l2jdd.gameserver.model.TradeItem;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.network.OutgoingPackets;
 
 /**
  * @version $Revision: 1.7.2.2.2.3 $ $Date: 2005/03/27 15:29:39 $

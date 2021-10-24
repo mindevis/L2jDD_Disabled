@@ -14,12 +14,12 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.residences;
+package org.l2jdd.gameserver.model.residences;
 
 import java.time.Duration;
 
-import org.l2jmobius.gameserver.model.StatSet;
-import org.l2jmobius.gameserver.model.holders.ItemHolder;
+import org.l2jdd.gameserver.model.StatSet;
+import org.l2jdd.gameserver.model.holders.ItemHolder;
 
 /**
  * @author UnAfraid

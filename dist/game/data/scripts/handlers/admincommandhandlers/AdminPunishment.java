@@ -23,22 +23,22 @@ import java.util.Date;
 import java.util.StringTokenizer;
 import java.util.logging.Logger;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.util.Chronos;
-import org.l2jmobius.commons.util.CommonUtil;
-import org.l2jmobius.gameserver.cache.HtmCache;
-import org.l2jmobius.gameserver.data.sql.CharNameTable;
-import org.l2jmobius.gameserver.handler.IAdminCommandHandler;
-import org.l2jmobius.gameserver.instancemanager.PunishmentManager;
-import org.l2jmobius.gameserver.model.World;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.punishment.PunishmentAffect;
-import org.l2jmobius.gameserver.model.punishment.PunishmentTask;
-import org.l2jmobius.gameserver.model.punishment.PunishmentType;
-import org.l2jmobius.gameserver.network.serverpackets.NpcHtmlMessage;
-import org.l2jmobius.gameserver.util.BuilderUtil;
-import org.l2jmobius.gameserver.util.GMAudit;
-import org.l2jmobius.gameserver.util.Util;
+import org.l2jdd.Config;
+import org.l2jdd.commons.util.Chronos;
+import org.l2jdd.commons.util.CommonUtil;
+import org.l2jdd.gameserver.cache.HtmCache;
+import org.l2jdd.gameserver.data.sql.CharNameTable;
+import org.l2jdd.gameserver.handler.IAdminCommandHandler;
+import org.l2jdd.gameserver.instancemanager.PunishmentManager;
+import org.l2jdd.gameserver.model.World;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.punishment.PunishmentAffect;
+import org.l2jdd.gameserver.model.punishment.PunishmentTask;
+import org.l2jdd.gameserver.model.punishment.PunishmentType;
+import org.l2jdd.gameserver.network.serverpackets.NpcHtmlMessage;
+import org.l2jdd.gameserver.util.BuilderUtil;
+import org.l2jdd.gameserver.util.GMAudit;
+import org.l2jdd.gameserver.util.Util;
 
 /**
  * @author UnAfraid

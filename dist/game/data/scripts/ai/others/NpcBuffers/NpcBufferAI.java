@@ -18,12 +18,12 @@ package ai.others.NpcBuffers;
 
 import java.util.logging.Logger;
 
-import org.l2jmobius.commons.concurrent.ThreadPool;
-import org.l2jmobius.gameserver.data.xml.SkillData;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.skills.BuffInfo;
-import org.l2jmobius.gameserver.model.skills.Skill;
+import org.l2jdd.commons.concurrent.ThreadPool;
+import org.l2jdd.gameserver.data.xml.SkillData;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.skills.BuffInfo;
+import org.l2jdd.gameserver.model.skills.Skill;
 
 /**
  * @author UnAfraid

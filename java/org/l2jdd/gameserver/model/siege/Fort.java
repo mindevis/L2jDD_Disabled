@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.siege;
+package org.l2jdd.gameserver.model.siege;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -32,35 +32,35 @@ import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.concurrent.ThreadPool;
-import org.l2jmobius.commons.database.DatabaseFactory;
-import org.l2jmobius.commons.util.Chronos;
-import org.l2jmobius.gameserver.FortUpdater;
-import org.l2jmobius.gameserver.FortUpdater.UpdaterType;
-import org.l2jmobius.gameserver.data.SpawnTable;
-import org.l2jmobius.gameserver.data.sql.ClanTable;
-import org.l2jmobius.gameserver.data.xml.DoorData;
-import org.l2jmobius.gameserver.data.xml.StaticObjectData;
-import org.l2jmobius.gameserver.enums.MountType;
-import org.l2jmobius.gameserver.instancemanager.CastleManager;
-import org.l2jmobius.gameserver.instancemanager.FortManager;
-import org.l2jmobius.gameserver.instancemanager.ZoneManager;
-import org.l2jmobius.gameserver.model.Spawn;
-import org.l2jmobius.gameserver.model.World;
-import org.l2jmobius.gameserver.model.WorldObject;
-import org.l2jmobius.gameserver.model.actor.instance.DoorInstance;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.actor.instance.StaticObjectInstance;
-import org.l2jmobius.gameserver.model.clan.Clan;
-import org.l2jmobius.gameserver.model.itemcontainer.Inventory;
-import org.l2jmobius.gameserver.model.residences.AbstractResidence;
-import org.l2jmobius.gameserver.model.zone.type.FortZone;
-import org.l2jmobius.gameserver.model.zone.type.SiegeZone;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.PlaySound;
-import org.l2jmobius.gameserver.network.serverpackets.PledgeShowInfoUpdate;
-import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
+import org.l2jdd.Config;
+import org.l2jdd.commons.concurrent.ThreadPool;
+import org.l2jdd.commons.database.DatabaseFactory;
+import org.l2jdd.commons.util.Chronos;
+import org.l2jdd.gameserver.FortUpdater;
+import org.l2jdd.gameserver.FortUpdater.UpdaterType;
+import org.l2jdd.gameserver.data.SpawnTable;
+import org.l2jdd.gameserver.data.sql.ClanTable;
+import org.l2jdd.gameserver.data.xml.DoorData;
+import org.l2jdd.gameserver.data.xml.StaticObjectData;
+import org.l2jdd.gameserver.enums.MountType;
+import org.l2jdd.gameserver.instancemanager.CastleManager;
+import org.l2jdd.gameserver.instancemanager.FortManager;
+import org.l2jdd.gameserver.instancemanager.ZoneManager;
+import org.l2jdd.gameserver.model.Spawn;
+import org.l2jdd.gameserver.model.World;
+import org.l2jdd.gameserver.model.WorldObject;
+import org.l2jdd.gameserver.model.actor.instance.DoorInstance;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.actor.instance.StaticObjectInstance;
+import org.l2jdd.gameserver.model.clan.Clan;
+import org.l2jdd.gameserver.model.itemcontainer.Inventory;
+import org.l2jdd.gameserver.model.residences.AbstractResidence;
+import org.l2jdd.gameserver.model.zone.type.FortZone;
+import org.l2jdd.gameserver.model.zone.type.SiegeZone;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.PlaySound;
+import org.l2jdd.gameserver.network.serverpackets.PledgeShowInfoUpdate;
+import org.l2jdd.gameserver.network.serverpackets.SystemMessage;
 
 public class Fort extends AbstractResidence
 {

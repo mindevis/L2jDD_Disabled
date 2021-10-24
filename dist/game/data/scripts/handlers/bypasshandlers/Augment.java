@@ -18,11 +18,11 @@ package handlers.bypasshandlers;
 
 import java.util.logging.Level;
 
-import org.l2jmobius.gameserver.handler.IBypassHandler;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.network.serverpackets.ExShowVariationCancelWindow;
-import org.l2jmobius.gameserver.network.serverpackets.ExShowVariationMakeWindow;
+import org.l2jdd.gameserver.handler.IBypassHandler;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.network.serverpackets.ExShowVariationCancelWindow;
+import org.l2jdd.gameserver.network.serverpackets.ExShowVariationMakeWindow;
 
 public class Augment implements IBypassHandler
 {

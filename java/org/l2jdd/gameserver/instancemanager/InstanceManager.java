@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.instancemanager;
+package org.l2jdd.gameserver.instancemanager;
 
 import java.io.File;
 import java.lang.reflect.Constructor;
@@ -38,24 +38,24 @@ import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.database.DatabaseFactory;
-import org.l2jmobius.commons.util.Chronos;
-import org.l2jmobius.commons.util.IXmlReader;
-import org.l2jmobius.gameserver.data.xml.DoorData;
-import org.l2jmobius.gameserver.data.xml.SpawnData;
-import org.l2jmobius.gameserver.enums.InstanceReenterType;
-import org.l2jmobius.gameserver.enums.InstanceRemoveBuffType;
-import org.l2jmobius.gameserver.enums.InstanceTeleportType;
-import org.l2jmobius.gameserver.model.Location;
-import org.l2jmobius.gameserver.model.StatSet;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.actor.templates.DoorTemplate;
-import org.l2jmobius.gameserver.model.holders.InstanceReenterTimeHolder;
-import org.l2jmobius.gameserver.model.instancezone.Instance;
-import org.l2jmobius.gameserver.model.instancezone.InstanceTemplate;
-import org.l2jmobius.gameserver.model.instancezone.conditions.Condition;
-import org.l2jmobius.gameserver.model.spawns.SpawnTemplate;
+import org.l2jdd.Config;
+import org.l2jdd.commons.database.DatabaseFactory;
+import org.l2jdd.commons.util.Chronos;
+import org.l2jdd.commons.util.IXmlReader;
+import org.l2jdd.gameserver.data.xml.DoorData;
+import org.l2jdd.gameserver.data.xml.SpawnData;
+import org.l2jdd.gameserver.enums.InstanceReenterType;
+import org.l2jdd.gameserver.enums.InstanceRemoveBuffType;
+import org.l2jdd.gameserver.enums.InstanceTeleportType;
+import org.l2jdd.gameserver.model.Location;
+import org.l2jdd.gameserver.model.StatSet;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.actor.templates.DoorTemplate;
+import org.l2jdd.gameserver.model.holders.InstanceReenterTimeHolder;
+import org.l2jdd.gameserver.model.instancezone.Instance;
+import org.l2jdd.gameserver.model.instancezone.InstanceTemplate;
+import org.l2jdd.gameserver.model.instancezone.conditions.Condition;
+import org.l2jdd.gameserver.model.spawns.SpawnTemplate;
 
 /**
  * Instance manager.
@@ -347,7 +347,7 @@ public class InstanceManager implements IXmlReader
 							// Now when everything is loaded register condition to template
 							try
 							{
-								final Class<?> clazz = Class.forName("org.l2jmobius.gameserver.model.instancezone.conditions.Condition" + type);
+								final Class<?> clazz = Class.forName("org.l2jdd.gameserver.model.instancezone.conditions.Condition" + type);
 								final Constructor<?> constructor = clazz.getConstructor(InstanceTemplate.class, StatSet.class, boolean.class, boolean.class);
 								conditions.add((Condition) constructor.newInstance(template, params, onlyLeader, showMessageAndHtml));
 							}

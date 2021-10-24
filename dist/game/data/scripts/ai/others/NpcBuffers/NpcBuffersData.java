@@ -27,8 +27,8 @@ import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 
-import org.l2jmobius.commons.util.IXmlReader;
-import org.l2jmobius.gameserver.model.StatSet;
+import org.l2jdd.commons.util.IXmlReader;
+import org.l2jdd.gameserver.model.StatSet;
 
 /**
  * @author UnAfraid

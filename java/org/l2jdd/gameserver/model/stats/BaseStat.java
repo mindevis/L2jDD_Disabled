@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.stats;
+package org.l2jdd.gameserver.model.stats;
 
 import java.io.File;
 import java.util.NoSuchElementException;
@@ -23,8 +23,8 @@ import java.util.logging.Logger;
 import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 
-import org.l2jmobius.commons.util.IXmlReader;
-import org.l2jmobius.gameserver.model.actor.Creature;
+import org.l2jdd.commons.util.IXmlReader;
+import org.l2jdd.gameserver.model.actor.Creature;
 
 /**
  * @author DS

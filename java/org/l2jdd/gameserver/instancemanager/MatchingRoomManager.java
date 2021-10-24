@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.instancemanager;
+package org.l2jdd.gameserver.instancemanager;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -25,11 +25,11 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 
-import org.l2jmobius.gameserver.enums.ClassId;
-import org.l2jmobius.gameserver.enums.MatchingRoomType;
-import org.l2jmobius.gameserver.enums.PartyMatchingRoomLevelType;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.matching.MatchingRoom;
+import org.l2jdd.gameserver.enums.ClassId;
+import org.l2jdd.gameserver.enums.MatchingRoomType;
+import org.l2jdd.gameserver.enums.PartyMatchingRoomLevelType;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.matching.MatchingRoom;
 
 /**
  * @author Sdw

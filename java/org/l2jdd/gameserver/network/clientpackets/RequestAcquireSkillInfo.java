@@ -14,22 +14,22 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network.clientpackets;
+package org.l2jdd.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
-import org.l2jmobius.gameserver.data.xml.SkillData;
-import org.l2jmobius.gameserver.data.xml.SkillTreeData;
-import org.l2jmobius.gameserver.enums.AcquireSkillType;
-import org.l2jmobius.gameserver.enums.CategoryType;
-import org.l2jmobius.gameserver.enums.Race;
-import org.l2jmobius.gameserver.model.SkillLearn;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.clan.ClanPrivilege;
-import org.l2jmobius.gameserver.model.skills.Skill;
-import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.serverpackets.AcquireSkillInfo;
-import org.l2jmobius.gameserver.network.serverpackets.ExAcquireSkillInfo;
+import org.l2jdd.commons.network.PacketReader;
+import org.l2jdd.gameserver.data.xml.SkillData;
+import org.l2jdd.gameserver.data.xml.SkillTreeData;
+import org.l2jdd.gameserver.enums.AcquireSkillType;
+import org.l2jdd.gameserver.enums.CategoryType;
+import org.l2jdd.gameserver.enums.Race;
+import org.l2jdd.gameserver.model.SkillLearn;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.clan.ClanPrivilege;
+import org.l2jdd.gameserver.model.skills.Skill;
+import org.l2jdd.gameserver.network.GameClient;
+import org.l2jdd.gameserver.network.serverpackets.AcquireSkillInfo;
+import org.l2jdd.gameserver.network.serverpackets.ExAcquireSkillInfo;
 
 /**
  * Request Acquire Skill Info client packet implementation.

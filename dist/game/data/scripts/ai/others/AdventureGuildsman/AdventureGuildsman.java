@@ -20,15 +20,15 @@ import java.util.EnumMap;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import org.l2jmobius.commons.util.CommonUtil;
-import org.l2jmobius.gameserver.data.xml.MultisellData;
-import org.l2jmobius.gameserver.enums.CategoryType;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.holders.SkillHolder;
-import org.l2jmobius.gameserver.model.skills.Skill;
-import org.l2jmobius.gameserver.model.skills.SkillCaster;
-import org.l2jmobius.gameserver.network.serverpackets.ExShowQuestInfo;
+import org.l2jdd.commons.util.CommonUtil;
+import org.l2jdd.gameserver.data.xml.MultisellData;
+import org.l2jdd.gameserver.enums.CategoryType;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.holders.SkillHolder;
+import org.l2jdd.gameserver.model.skills.Skill;
+import org.l2jdd.gameserver.model.skills.SkillCaster;
+import org.l2jdd.gameserver.network.serverpackets.ExShowQuestInfo;
 
 import ai.AbstractNpcAI;
 

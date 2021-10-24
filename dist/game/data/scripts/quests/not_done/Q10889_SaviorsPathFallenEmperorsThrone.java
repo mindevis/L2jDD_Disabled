@@ -16,8 +16,8 @@
  */
 package quests.not_done;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.gameserver.model.quest.Quest;
+import org.l2jdd.Config;
+import org.l2jdd.gameserver.model.quest.Quest;
 
 /**
  * @author Mobius

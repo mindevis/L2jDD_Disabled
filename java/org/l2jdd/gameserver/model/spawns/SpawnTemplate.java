@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.spawns;
+package org.l2jdd.gameserver.model.spawns;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -23,14 +23,14 @@ import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
 
-import org.l2jmobius.gameserver.instancemanager.QuestManager;
-import org.l2jmobius.gameserver.model.StatSet;
-import org.l2jmobius.gameserver.model.instancezone.Instance;
-import org.l2jmobius.gameserver.model.interfaces.IParameterized;
-import org.l2jmobius.gameserver.model.interfaces.ITerritorized;
-import org.l2jmobius.gameserver.model.quest.Quest;
-import org.l2jmobius.gameserver.model.zone.type.BannedSpawnTerritory;
-import org.l2jmobius.gameserver.model.zone.type.SpawnTerritory;
+import org.l2jdd.gameserver.instancemanager.QuestManager;
+import org.l2jdd.gameserver.model.StatSet;
+import org.l2jdd.gameserver.model.instancezone.Instance;
+import org.l2jdd.gameserver.model.interfaces.IParameterized;
+import org.l2jdd.gameserver.model.interfaces.ITerritorized;
+import org.l2jdd.gameserver.model.quest.Quest;
+import org.l2jdd.gameserver.model.zone.type.BannedSpawnTerritory;
+import org.l2jdd.gameserver.model.zone.type.SpawnTerritory;
 
 /**
  * @author UnAfraid

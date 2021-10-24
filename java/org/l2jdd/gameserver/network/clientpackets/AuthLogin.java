@@ -14,12 +14,12 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network.clientpackets;
+package org.l2jdd.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
-import org.l2jmobius.gameserver.LoginServerThread;
-import org.l2jmobius.gameserver.LoginServerThread.SessionKey;
-import org.l2jmobius.gameserver.network.GameClient;
+import org.l2jdd.commons.network.PacketReader;
+import org.l2jdd.gameserver.LoginServerThread;
+import org.l2jdd.gameserver.LoginServerThread.SessionKey;
+import org.l2jdd.gameserver.network.GameClient;
 
 /**
  * @version $Revision: 1.9.2.3.2.4 $ $Date: 2005/03/27 15:29:30 $

@@ -14,14 +14,14 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network.clientpackets;
+package org.l2jdd.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
-import org.l2jmobius.gameserver.model.Party;
-import org.l2jmobius.gameserver.model.Party.MessageType;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.matching.MatchingRoom;
-import org.l2jmobius.gameserver.network.GameClient;
+import org.l2jdd.commons.network.PacketReader;
+import org.l2jdd.gameserver.model.Party;
+import org.l2jdd.gameserver.model.Party.MessageType;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.matching.MatchingRoom;
+import org.l2jdd.gameserver.network.GameClient;
 
 /**
  * @version $Revision: 1.3.4.2 $ $Date: 2005/03/27 15:29:30 $

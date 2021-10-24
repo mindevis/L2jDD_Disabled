@@ -14,22 +14,22 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model;
+package org.l2jdd.gameserver.model;
 
 import java.util.Collection;
 import java.util.concurrent.ConcurrentHashMap;
 
-import org.l2jmobius.commons.util.Chronos;
-import org.l2jmobius.gameserver.enums.PetitionState;
-import org.l2jmobius.gameserver.enums.PetitionType;
-import org.l2jmobius.gameserver.instancemanager.IdManager;
-import org.l2jmobius.gameserver.instancemanager.PetitionManager;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.CreatureSay;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
-import org.l2jmobius.gameserver.network.serverpackets.PetitionVotePacket;
-import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
+import org.l2jdd.commons.util.Chronos;
+import org.l2jdd.gameserver.enums.PetitionState;
+import org.l2jdd.gameserver.enums.PetitionType;
+import org.l2jdd.gameserver.instancemanager.IdManager;
+import org.l2jdd.gameserver.instancemanager.PetitionManager;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.CreatureSay;
+import org.l2jdd.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jdd.gameserver.network.serverpackets.PetitionVotePacket;
+import org.l2jdd.gameserver.network.serverpackets.SystemMessage;
 
 /**
  * Petition

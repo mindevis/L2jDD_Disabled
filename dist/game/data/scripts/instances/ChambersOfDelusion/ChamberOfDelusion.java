@@ -24,20 +24,20 @@ import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.stream.IntStream;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.concurrent.ThreadPool;
-import org.l2jmobius.commons.util.CommonUtil;
-import org.l2jmobius.gameserver.enums.ChatType;
-import org.l2jmobius.gameserver.model.Location;
-import org.l2jmobius.gameserver.model.StatSet;
-import org.l2jmobius.gameserver.model.WorldObject;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.holders.SkillHolder;
-import org.l2jmobius.gameserver.model.instancezone.Instance;
-import org.l2jmobius.gameserver.model.skills.Skill;
-import org.l2jmobius.gameserver.network.NpcStringId;
-import org.l2jmobius.gameserver.network.serverpackets.Earthquake;
+import org.l2jdd.Config;
+import org.l2jdd.commons.concurrent.ThreadPool;
+import org.l2jdd.commons.util.CommonUtil;
+import org.l2jdd.gameserver.enums.ChatType;
+import org.l2jdd.gameserver.model.Location;
+import org.l2jdd.gameserver.model.StatSet;
+import org.l2jdd.gameserver.model.WorldObject;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.holders.SkillHolder;
+import org.l2jdd.gameserver.model.instancezone.Instance;
+import org.l2jdd.gameserver.model.skills.Skill;
+import org.l2jdd.gameserver.network.NpcStringId;
+import org.l2jdd.gameserver.network.serverpackets.Earthquake;
 
 import instances.AbstractInstance;
 

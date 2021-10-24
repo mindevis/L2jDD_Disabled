@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.residences;
+package org.l2jdd.gameserver.model.residences;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -29,13 +29,13 @@ import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.l2jmobius.commons.database.DatabaseFactory;
-import org.l2jmobius.commons.util.Chronos;
-import org.l2jmobius.gameserver.data.sql.ClanTable;
-import org.l2jmobius.gameserver.data.xml.ClanHallData;
-import org.l2jmobius.gameserver.instancemanager.ClanHallAuctionManager;
-import org.l2jmobius.gameserver.model.clan.Clan;
-import org.l2jmobius.gameserver.model.itemcontainer.Inventory;
+import org.l2jdd.commons.database.DatabaseFactory;
+import org.l2jdd.commons.util.Chronos;
+import org.l2jdd.gameserver.data.sql.ClanTable;
+import org.l2jdd.gameserver.data.xml.ClanHallData;
+import org.l2jdd.gameserver.instancemanager.ClanHallAuctionManager;
+import org.l2jdd.gameserver.model.clan.Clan;
+import org.l2jdd.gameserver.model.itemcontainer.Inventory;
 
 /**
  * @author Sdw

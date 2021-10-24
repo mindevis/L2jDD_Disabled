@@ -16,11 +16,11 @@
  */
 package handlers.telnethandlers.player;
 
-import org.l2jmobius.gameserver.data.sql.CharNameTable;
-import org.l2jmobius.gameserver.instancemanager.PunishmentManager;
-import org.l2jmobius.gameserver.model.punishment.PunishmentAffect;
-import org.l2jmobius.gameserver.model.punishment.PunishmentType;
-import org.l2jmobius.gameserver.network.telnet.ITelnetCommand;
+import org.l2jdd.gameserver.data.sql.CharNameTable;
+import org.l2jdd.gameserver.instancemanager.PunishmentManager;
+import org.l2jdd.gameserver.model.punishment.PunishmentAffect;
+import org.l2jdd.gameserver.model.punishment.PunishmentType;
+import org.l2jdd.gameserver.network.telnet.ITelnetCommand;
 
 import io.netty.channel.ChannelHandlerContext;
 

@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.commons.database;
+package org.l2jdd.commons.database;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -25,8 +25,8 @@ import java.time.ZoneOffset;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.enums.ServerMode;
+import org.l2jdd.Config;
+import org.l2jdd.commons.enums.ServerMode;
 
 /**
  * @author Mobius

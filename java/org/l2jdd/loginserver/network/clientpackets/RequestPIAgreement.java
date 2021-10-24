@@ -14,12 +14,12 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.loginserver.network.clientpackets;
+package org.l2jdd.loginserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.IIncomingPacket;
-import org.l2jmobius.commons.network.PacketReader;
-import org.l2jmobius.loginserver.network.LoginClient;
-import org.l2jmobius.loginserver.network.serverpackets.PIAgreementAck;
+import org.l2jdd.commons.network.IIncomingPacket;
+import org.l2jdd.commons.network.PacketReader;
+import org.l2jdd.loginserver.network.LoginClient;
+import org.l2jdd.loginserver.network.serverpackets.PIAgreementAck;
 
 /**
  * @author UnAfraid

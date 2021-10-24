@@ -16,9 +16,9 @@
  */
 package vehicles.SoIController;
 
-import org.l2jmobius.gameserver.enums.Movie;
-import org.l2jmobius.gameserver.model.Location;
-import org.l2jmobius.gameserver.model.VehiclePathPoint;
+import org.l2jdd.gameserver.enums.Movie;
+import org.l2jdd.gameserver.model.Location;
+import org.l2jdd.gameserver.model.VehiclePathPoint;
 
 import vehicles.AirShipController;
 

@@ -14,13 +14,13 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.instancemanager.events;
+package org.l2jdd.gameserver.instancemanager.events;
 
-import org.l2jmobius.gameserver.instancemanager.QuestManager;
-import org.l2jmobius.gameserver.model.eventengine.AbstractEvent;
-import org.l2jmobius.gameserver.model.eventengine.AbstractEventManager;
-import org.l2jmobius.gameserver.model.eventengine.ScheduleTarget;
-import org.l2jmobius.gameserver.model.quest.Event;
+import org.l2jdd.gameserver.instancemanager.QuestManager;
+import org.l2jdd.gameserver.model.eventengine.AbstractEvent;
+import org.l2jdd.gameserver.model.eventengine.AbstractEventManager;
+import org.l2jdd.gameserver.model.eventengine.ScheduleTarget;
+import org.l2jdd.gameserver.model.quest.Event;
 
 /**
  * @author Mobius

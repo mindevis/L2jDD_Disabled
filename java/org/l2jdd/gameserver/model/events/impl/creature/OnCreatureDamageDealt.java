@@ -14,12 +14,12 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.events.impl.creature;
+package org.l2jdd.gameserver.model.events.impl.creature;
 
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.events.EventType;
-import org.l2jmobius.gameserver.model.events.impl.IBaseEvent;
-import org.l2jmobius.gameserver.model.skills.Skill;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.events.EventType;
+import org.l2jdd.gameserver.model.events.impl.IBaseEvent;
+import org.l2jdd.gameserver.model.skills.Skill;
 
 /**
  * An instantly executed event when Creature is attacked by Creature.

@@ -14,21 +14,21 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.items.enchant;
+package org.l2jdd.gameserver.model.items.enchant;
 
 import java.util.HashSet;
 import java.util.Set;
 
-import org.l2jmobius.commons.util.Rnd;
-import org.l2jmobius.gameserver.data.xml.EnchantItemData;
-import org.l2jmobius.gameserver.data.xml.EnchantItemGroupsData;
-import org.l2jmobius.gameserver.model.StatSet;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.model.items.type.CrystalType;
-import org.l2jmobius.gameserver.model.items.type.EtcItemType;
-import org.l2jmobius.gameserver.model.items.type.ItemType;
-import org.l2jmobius.gameserver.model.stats.Stat;
+import org.l2jdd.commons.util.Rnd;
+import org.l2jdd.gameserver.data.xml.EnchantItemData;
+import org.l2jdd.gameserver.data.xml.EnchantItemGroupsData;
+import org.l2jdd.gameserver.model.StatSet;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.model.items.type.CrystalType;
+import org.l2jdd.gameserver.model.items.type.EtcItemType;
+import org.l2jdd.gameserver.model.items.type.ItemType;
+import org.l2jdd.gameserver.model.stats.Stat;
 
 /**
  * @author UnAfraid

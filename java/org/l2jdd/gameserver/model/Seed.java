@@ -14,11 +14,11 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model;
+package org.l2jdd.gameserver.model;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.gameserver.data.ItemTable;
-import org.l2jmobius.gameserver.model.items.Item;
+import org.l2jdd.Config;
+import org.l2jdd.gameserver.data.ItemTable;
+import org.l2jdd.gameserver.model.items.Item;
 
 public class Seed
 {

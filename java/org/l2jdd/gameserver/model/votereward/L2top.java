@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.votereward;
+package org.l2jdd.gameserver.model.votereward;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -22,7 +22,7 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.util.Map;
 
-import org.l2jmobius.Config;
+import org.l2jdd.Config;
 
 /**
  * @author andrei

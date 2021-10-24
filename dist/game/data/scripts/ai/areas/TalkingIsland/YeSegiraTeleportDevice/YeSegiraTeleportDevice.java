@@ -19,16 +19,16 @@ package ai.areas.TalkingIsland.YeSegiraTeleportDevice;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.l2jmobius.gameserver.enums.Movie;
-import org.l2jmobius.gameserver.enums.Race;
-import org.l2jmobius.gameserver.model.Location;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.events.EventType;
-import org.l2jmobius.gameserver.model.events.ListenerRegisterType;
-import org.l2jmobius.gameserver.model.events.annotations.RegisterEvent;
-import org.l2jmobius.gameserver.model.events.annotations.RegisterType;
-import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerCreate;
+import org.l2jdd.gameserver.enums.Movie;
+import org.l2jdd.gameserver.enums.Race;
+import org.l2jdd.gameserver.model.Location;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.events.EventType;
+import org.l2jdd.gameserver.model.events.ListenerRegisterType;
+import org.l2jdd.gameserver.model.events.annotations.RegisterEvent;
+import org.l2jdd.gameserver.model.events.annotations.RegisterType;
+import org.l2jdd.gameserver.model.events.impl.creature.player.OnPlayerCreate;
 
 import ai.AbstractNpcAI;
 

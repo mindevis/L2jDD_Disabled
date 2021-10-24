@@ -14,16 +14,16 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.holders;
+package org.l2jdd.gameserver.model.holders;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.l2jmobius.gameserver.enums.TaxType;
-import org.l2jmobius.gameserver.model.ItemInfo;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.itemcontainer.Inventory;
-import org.l2jmobius.gameserver.model.itemcontainer.ItemContainer;
+import org.l2jdd.gameserver.enums.TaxType;
+import org.l2jdd.gameserver.model.ItemInfo;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.itemcontainer.Inventory;
+import org.l2jdd.gameserver.model.itemcontainer.ItemContainer;
 
 /**
  * A modified version of {@link MultisellListHolder} that may include altered data of the original and other dynamic data resulted from players' interraction.

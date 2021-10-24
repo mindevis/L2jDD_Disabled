@@ -21,12 +21,12 @@ import java.sql.PreparedStatement;
 import java.util.Calendar;
 import java.util.logging.Level;
 
-import org.l2jmobius.commons.database.DatabaseFactory;
-import org.l2jmobius.commons.util.Chronos;
-import org.l2jmobius.commons.util.Rnd;
-import org.l2jmobius.gameserver.model.World;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.commons.database.DatabaseFactory;
+import org.l2jdd.commons.util.Chronos;
+import org.l2jdd.commons.util.Rnd;
+import org.l2jdd.gameserver.model.World;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
 
 import ai.AbstractNpcAI;
 

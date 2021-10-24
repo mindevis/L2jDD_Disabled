@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network.serverpackets;
+package org.l2jdd.gameserver.network.serverpackets;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -24,23 +24,23 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.database.DatabaseFactory;
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.commons.util.Chronos;
-import org.l2jmobius.gameserver.data.sql.ClanTable;
-import org.l2jmobius.gameserver.data.xml.ExperienceData;
-import org.l2jmobius.gameserver.instancemanager.PremiumManager;
-import org.l2jmobius.gameserver.model.CharSelectInfoPackage;
-import org.l2jmobius.gameserver.model.VariationInstance;
-import org.l2jmobius.gameserver.model.World;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.clan.Clan;
-import org.l2jmobius.gameserver.model.itemcontainer.Inventory;
-import org.l2jmobius.gameserver.model.olympiad.Hero;
-import org.l2jmobius.gameserver.network.Disconnection;
-import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jdd.Config;
+import org.l2jdd.commons.database.DatabaseFactory;
+import org.l2jdd.commons.network.PacketWriter;
+import org.l2jdd.commons.util.Chronos;
+import org.l2jdd.gameserver.data.sql.ClanTable;
+import org.l2jdd.gameserver.data.xml.ExperienceData;
+import org.l2jdd.gameserver.instancemanager.PremiumManager;
+import org.l2jdd.gameserver.model.CharSelectInfoPackage;
+import org.l2jdd.gameserver.model.VariationInstance;
+import org.l2jdd.gameserver.model.World;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.clan.Clan;
+import org.l2jdd.gameserver.model.itemcontainer.Inventory;
+import org.l2jdd.gameserver.model.olympiad.Hero;
+import org.l2jdd.gameserver.network.Disconnection;
+import org.l2jdd.gameserver.network.GameClient;
+import org.l2jdd.gameserver.network.OutgoingPackets;
 
 public class CharSelectionInfo implements IClientOutgoingPacket
 {

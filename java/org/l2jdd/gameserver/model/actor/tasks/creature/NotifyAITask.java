@@ -14,10 +14,10 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.actor.tasks.creature;
+package org.l2jdd.gameserver.model.actor.tasks.creature;
 
-import org.l2jmobius.gameserver.ai.CtrlEvent;
-import org.l2jmobius.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.ai.CtrlEvent;
+import org.l2jdd.gameserver.model.actor.Creature;
 
 /**
  * Task dedicated to notify character's AI

@@ -14,9 +14,9 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.data;
+package org.l2jdd.gameserver.data;
 
-import static org.l2jmobius.gameserver.model.itemcontainer.Inventory.ADENA_ID;
+import static org.l2jdd.gameserver.model.itemcontainer.Inventory.ADENA_ID;
 
 import java.io.File;
 import java.sql.Connection;
@@ -32,31 +32,31 @@ import java.util.concurrent.ScheduledFuture;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.concurrent.ThreadPool;
-import org.l2jmobius.commons.database.DatabaseFactory;
-import org.l2jmobius.commons.util.file.filter.XMLFilter;
-import org.l2jmobius.gameserver.data.xml.EnchantItemHPBonusData;
-import org.l2jmobius.gameserver.enums.ItemLocation;
-import org.l2jmobius.gameserver.instancemanager.IdManager;
-import org.l2jmobius.gameserver.model.World;
-import org.l2jmobius.gameserver.model.WorldObject;
-import org.l2jmobius.gameserver.model.actor.Attackable;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.instance.EventMonsterInstance;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.events.EventDispatcher;
-import org.l2jmobius.gameserver.model.events.impl.item.OnItemCreate;
-import org.l2jmobius.gameserver.model.holders.ItemSkillHolder;
-import org.l2jmobius.gameserver.model.items.Armor;
-import org.l2jmobius.gameserver.model.items.EtcItem;
-import org.l2jmobius.gameserver.model.items.Item;
-import org.l2jmobius.gameserver.model.items.Weapon;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.model.items.type.EtcItemType;
-import org.l2jmobius.gameserver.model.skills.AmmunitionSkillList;
-import org.l2jmobius.gameserver.util.DocumentItem;
-import org.l2jmobius.gameserver.util.GMAudit;
+import org.l2jdd.Config;
+import org.l2jdd.commons.concurrent.ThreadPool;
+import org.l2jdd.commons.database.DatabaseFactory;
+import org.l2jdd.commons.util.file.filter.XMLFilter;
+import org.l2jdd.gameserver.data.xml.EnchantItemHPBonusData;
+import org.l2jdd.gameserver.enums.ItemLocation;
+import org.l2jdd.gameserver.instancemanager.IdManager;
+import org.l2jdd.gameserver.model.World;
+import org.l2jdd.gameserver.model.WorldObject;
+import org.l2jdd.gameserver.model.actor.Attackable;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.actor.instance.EventMonsterInstance;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.events.EventDispatcher;
+import org.l2jdd.gameserver.model.events.impl.item.OnItemCreate;
+import org.l2jdd.gameserver.model.holders.ItemSkillHolder;
+import org.l2jdd.gameserver.model.items.Armor;
+import org.l2jdd.gameserver.model.items.EtcItem;
+import org.l2jdd.gameserver.model.items.Item;
+import org.l2jdd.gameserver.model.items.Weapon;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.model.items.type.EtcItemType;
+import org.l2jdd.gameserver.model.skills.AmmunitionSkillList;
+import org.l2jdd.gameserver.util.DocumentItem;
+import org.l2jdd.gameserver.util.GMAudit;
 
 /**
  * This class serves as a container for all item templates in the game.

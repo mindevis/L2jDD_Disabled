@@ -14,13 +14,13 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.holders;
+package org.l2jdd.gameserver.model.holders;
 
 import java.util.function.Function;
 
-import org.l2jmobius.gameserver.model.ArmorSet;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.model.ArmorSet;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
 
 /**
  * @author UnAfraid

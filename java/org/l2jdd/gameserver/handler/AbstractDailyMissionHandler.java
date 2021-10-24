@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.handler;
+package org.l2jdd.gameserver.handler;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -25,15 +25,15 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.l2jmobius.commons.database.DatabaseFactory;
-import org.l2jmobius.commons.util.Chronos;
-import org.l2jmobius.gameserver.enums.DailyMissionStatus;
-import org.l2jmobius.gameserver.enums.SpecialItemType;
-import org.l2jmobius.gameserver.model.DailyMissionDataHolder;
-import org.l2jmobius.gameserver.model.DailyMissionPlayerEntry;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.events.ListenersContainer;
-import org.l2jmobius.gameserver.model.holders.ItemHolder;
+import org.l2jdd.commons.database.DatabaseFactory;
+import org.l2jdd.commons.util.Chronos;
+import org.l2jdd.gameserver.enums.DailyMissionStatus;
+import org.l2jdd.gameserver.enums.SpecialItemType;
+import org.l2jdd.gameserver.model.DailyMissionDataHolder;
+import org.l2jdd.gameserver.model.DailyMissionPlayerEntry;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.events.ListenersContainer;
+import org.l2jdd.gameserver.model.holders.ItemHolder;
 
 /**
  * @author Sdw

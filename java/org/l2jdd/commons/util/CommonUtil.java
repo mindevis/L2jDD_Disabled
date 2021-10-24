@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.commons.util;
+package org.l2jdd.commons.util;
 
 import java.io.File;
 import java.io.IOException;
@@ -33,7 +33,7 @@ import java.util.Locale;
 import java.util.StringJoiner;
 import java.util.StringTokenizer;
 
-import org.l2jmobius.Config;
+import org.l2jdd.Config;
 
 public class CommonUtil
 {

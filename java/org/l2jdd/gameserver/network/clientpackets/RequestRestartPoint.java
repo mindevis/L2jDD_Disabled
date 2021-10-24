@@ -14,30 +14,30 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network.clientpackets;
+package org.l2jdd.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.concurrent.ThreadPool;
-import org.l2jmobius.commons.network.PacketReader;
-import org.l2jmobius.gameserver.data.xml.ClanHallData;
-import org.l2jmobius.gameserver.enums.TeleportWhereType;
-import org.l2jmobius.gameserver.instancemanager.CastleManager;
-import org.l2jmobius.gameserver.instancemanager.FortManager;
-import org.l2jmobius.gameserver.instancemanager.MapRegionManager;
-import org.l2jmobius.gameserver.model.Location;
-import org.l2jmobius.gameserver.model.SiegeClan;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.clan.Clan;
-import org.l2jmobius.gameserver.model.events.EventType;
-import org.l2jmobius.gameserver.model.events.listeners.AbstractEventListener;
-import org.l2jmobius.gameserver.model.instancezone.Instance;
-import org.l2jmobius.gameserver.model.quest.Event;
-import org.l2jmobius.gameserver.model.residences.ClanHall;
-import org.l2jmobius.gameserver.model.residences.ResidenceFunctionType;
-import org.l2jmobius.gameserver.model.siege.Castle;
-import org.l2jmobius.gameserver.model.siege.Castle.CastleFunction;
-import org.l2jmobius.gameserver.model.siege.Fort;
-import org.l2jmobius.gameserver.model.siege.Fort.FortFunction;
-import org.l2jmobius.gameserver.network.GameClient;
+import org.l2jdd.commons.concurrent.ThreadPool;
+import org.l2jdd.commons.network.PacketReader;
+import org.l2jdd.gameserver.data.xml.ClanHallData;
+import org.l2jdd.gameserver.enums.TeleportWhereType;
+import org.l2jdd.gameserver.instancemanager.CastleManager;
+import org.l2jdd.gameserver.instancemanager.FortManager;
+import org.l2jdd.gameserver.instancemanager.MapRegionManager;
+import org.l2jdd.gameserver.model.Location;
+import org.l2jdd.gameserver.model.SiegeClan;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.clan.Clan;
+import org.l2jdd.gameserver.model.events.EventType;
+import org.l2jdd.gameserver.model.events.listeners.AbstractEventListener;
+import org.l2jdd.gameserver.model.instancezone.Instance;
+import org.l2jdd.gameserver.model.quest.Event;
+import org.l2jdd.gameserver.model.residences.ClanHall;
+import org.l2jdd.gameserver.model.residences.ResidenceFunctionType;
+import org.l2jdd.gameserver.model.siege.Castle;
+import org.l2jdd.gameserver.model.siege.Castle.CastleFunction;
+import org.l2jdd.gameserver.model.siege.Fort;
+import org.l2jdd.gameserver.model.siege.Fort.FortFunction;
+import org.l2jdd.gameserver.network.GameClient;
 
 /**
  * @version $Revision: 1.7.2.3.2.6 $ $Date: 2005/03/27 15:29:30 $

@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.ui;
+package org.l2jdd.gameserver.ui;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -44,17 +44,17 @@ import javax.swing.JTextArea;
 import javax.swing.SwingUtilities;
 import javax.swing.WindowConstants;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.util.LimitLinesDocumentListener;
-import org.l2jmobius.commons.util.SplashScreen;
-import org.l2jmobius.gameserver.Shutdown;
-import org.l2jmobius.gameserver.cache.HtmCache;
-import org.l2jmobius.gameserver.data.xml.AdminData;
-import org.l2jmobius.gameserver.data.xml.BuyListData;
-import org.l2jmobius.gameserver.data.xml.MultisellData;
-import org.l2jmobius.gameserver.data.xml.PrimeShopData;
-import org.l2jmobius.gameserver.util.Broadcast;
-import org.l2jmobius.gameserver.util.Util;
+import org.l2jdd.Config;
+import org.l2jdd.commons.util.LimitLinesDocumentListener;
+import org.l2jdd.commons.util.SplashScreen;
+import org.l2jdd.gameserver.Shutdown;
+import org.l2jdd.gameserver.cache.HtmCache;
+import org.l2jdd.gameserver.data.xml.AdminData;
+import org.l2jdd.gameserver.data.xml.BuyListData;
+import org.l2jdd.gameserver.data.xml.MultisellData;
+import org.l2jdd.gameserver.data.xml.PrimeShopData;
+import org.l2jdd.gameserver.util.Broadcast;
+import org.l2jdd.gameserver.util.Util;
 
 /**
  * @author Mobius
@@ -296,10 +296,10 @@ public class Gui
 		
 		// Set icons.
 		final List<Image> icons = new ArrayList<>();
-		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "l2jmobius_16x16.png").getImage());
-		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "l2jmobius_32x32.png").getImage());
-		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "l2jmobius_64x64.png").getImage());
-		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "l2jmobius_128x128.png").getImage());
+		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "l2jdd_16x16.png").getImage());
+		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "l2jdd_32x32.png").getImage());
+		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "l2jdd_64x64.png").getImage());
+		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "l2jdd_128x128.png").getImage());
 		
 		// Set Panels.
 		final JPanel systemPanel = new SystemPanel();

@@ -18,15 +18,15 @@ package ai.others.AlchemistManager;
 
 import java.util.List;
 
-import org.l2jmobius.gameserver.data.xml.SkillTreeData;
-import org.l2jmobius.gameserver.enums.AcquireSkillType;
-import org.l2jmobius.gameserver.enums.Race;
-import org.l2jmobius.gameserver.model.SkillLearn;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.ExAcquirableSkillListByClass;
-import org.l2jmobius.gameserver.network.serverpackets.ExTutorialShowId;
+import org.l2jdd.gameserver.data.xml.SkillTreeData;
+import org.l2jdd.gameserver.enums.AcquireSkillType;
+import org.l2jdd.gameserver.enums.Race;
+import org.l2jdd.gameserver.model.SkillLearn;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.ExAcquirableSkillListByClass;
+import org.l2jdd.gameserver.network.serverpackets.ExTutorialShowId;
 
 import ai.AbstractNpcAI;
 

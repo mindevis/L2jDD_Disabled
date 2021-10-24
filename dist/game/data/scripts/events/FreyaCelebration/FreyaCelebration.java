@@ -16,19 +16,19 @@
  */
 package events.FreyaCelebration;
 
-import org.l2jmobius.commons.util.Chronos;
-import org.l2jmobius.commons.util.CommonUtil;
-import org.l2jmobius.gameserver.enums.ChatType;
-import org.l2jmobius.gameserver.model.WorldObject;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.itemcontainer.Inventory;
-import org.l2jmobius.gameserver.model.quest.LongTimeEvent;
-import org.l2jmobius.gameserver.model.skills.Skill;
-import org.l2jmobius.gameserver.network.NpcStringId;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.CreatureSay;
-import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
+import org.l2jdd.commons.util.Chronos;
+import org.l2jdd.commons.util.CommonUtil;
+import org.l2jdd.gameserver.enums.ChatType;
+import org.l2jdd.gameserver.model.WorldObject;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.itemcontainer.Inventory;
+import org.l2jdd.gameserver.model.quest.LongTimeEvent;
+import org.l2jdd.gameserver.model.skills.Skill;
+import org.l2jdd.gameserver.network.NpcStringId;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.CreatureSay;
+import org.l2jdd.gameserver.network.serverpackets.SystemMessage;
 
 /**
  * Freya Celebration event AI.

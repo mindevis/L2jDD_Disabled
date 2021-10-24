@@ -16,10 +16,10 @@
  */
 package custom.NoblessMaster;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.gameserver.enums.QuestSound;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.Config;
+import org.l2jdd.gameserver.enums.QuestSound;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
 
 import ai.AbstractNpcAI;
 

@@ -14,42 +14,42 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.fishing;
+package org.l2jdd.gameserver.model.fishing;
 
 import java.util.concurrent.ScheduledFuture;
 import java.util.logging.Logger;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.concurrent.ThreadPool;
-import org.l2jmobius.commons.util.Rnd;
-import org.l2jmobius.gameserver.data.xml.FishingData;
-import org.l2jmobius.gameserver.enums.ShotType;
-import org.l2jmobius.gameserver.geoengine.GeoEngine;
-import org.l2jmobius.gameserver.instancemanager.ZoneManager;
-import org.l2jmobius.gameserver.model.Location;
-import org.l2jmobius.gameserver.model.PlayerCondOverride;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.events.EventDispatcher;
-import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerFishing;
-import org.l2jmobius.gameserver.model.interfaces.ILocational;
-import org.l2jmobius.gameserver.model.itemcontainer.Inventory;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.model.items.type.WeaponType;
-import org.l2jmobius.gameserver.model.stats.Stat;
-import org.l2jmobius.gameserver.model.zone.ZoneId;
-import org.l2jmobius.gameserver.model.zone.ZoneType;
-import org.l2jmobius.gameserver.model.zone.type.FishingZone;
-import org.l2jmobius.gameserver.model.zone.type.WaterZone;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
-import org.l2jmobius.gameserver.network.serverpackets.PlaySound;
-import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
-import org.l2jmobius.gameserver.network.serverpackets.fishing.ExFishingEnd;
-import org.l2jmobius.gameserver.network.serverpackets.fishing.ExFishingEnd.FishingEndReason;
-import org.l2jmobius.gameserver.network.serverpackets.fishing.ExFishingEnd.FishingEndType;
-import org.l2jmobius.gameserver.network.serverpackets.fishing.ExFishingStart;
-import org.l2jmobius.gameserver.network.serverpackets.fishing.ExUserInfoFishing;
-import org.l2jmobius.gameserver.util.Util;
+import org.l2jdd.Config;
+import org.l2jdd.commons.concurrent.ThreadPool;
+import org.l2jdd.commons.util.Rnd;
+import org.l2jdd.gameserver.data.xml.FishingData;
+import org.l2jdd.gameserver.enums.ShotType;
+import org.l2jdd.gameserver.geoengine.GeoEngine;
+import org.l2jdd.gameserver.instancemanager.ZoneManager;
+import org.l2jdd.gameserver.model.Location;
+import org.l2jdd.gameserver.model.PlayerCondOverride;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.events.EventDispatcher;
+import org.l2jdd.gameserver.model.events.impl.creature.player.OnPlayerFishing;
+import org.l2jdd.gameserver.model.interfaces.ILocational;
+import org.l2jdd.gameserver.model.itemcontainer.Inventory;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.model.items.type.WeaponType;
+import org.l2jdd.gameserver.model.stats.Stat;
+import org.l2jdd.gameserver.model.zone.ZoneId;
+import org.l2jdd.gameserver.model.zone.ZoneType;
+import org.l2jdd.gameserver.model.zone.type.FishingZone;
+import org.l2jdd.gameserver.model.zone.type.WaterZone;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.ActionFailed;
+import org.l2jdd.gameserver.network.serverpackets.PlaySound;
+import org.l2jdd.gameserver.network.serverpackets.SystemMessage;
+import org.l2jdd.gameserver.network.serverpackets.fishing.ExFishingEnd;
+import org.l2jdd.gameserver.network.serverpackets.fishing.ExFishingEnd.FishingEndReason;
+import org.l2jdd.gameserver.network.serverpackets.fishing.ExFishingEnd.FishingEndType;
+import org.l2jdd.gameserver.network.serverpackets.fishing.ExFishingStart;
+import org.l2jdd.gameserver.network.serverpackets.fishing.ExUserInfoFishing;
+import org.l2jdd.gameserver.util.Util;
 
 /**
  * @author bit

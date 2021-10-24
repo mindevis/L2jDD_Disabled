@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.eventengine;
+package org.l2jdd.gameserver.model.eventengine;
 
 import java.nio.file.Path;
 import java.util.Collections;
@@ -25,15 +25,15 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentLinkedDeque;
 import java.util.concurrent.atomic.AtomicReference;
 
-import org.l2jmobius.gameserver.model.StatSet;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.eventengine.drop.IEventDrop;
-import org.l2jmobius.gameserver.model.events.AbstractScript;
-import org.l2jmobius.gameserver.model.events.EventType;
-import org.l2jmobius.gameserver.model.events.ListenerRegisterType;
-import org.l2jmobius.gameserver.model.events.annotations.RegisterEvent;
-import org.l2jmobius.gameserver.model.events.annotations.RegisterType;
-import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerLogout;
+import org.l2jdd.gameserver.model.StatSet;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.eventengine.drop.IEventDrop;
+import org.l2jdd.gameserver.model.events.AbstractScript;
+import org.l2jdd.gameserver.model.events.EventType;
+import org.l2jdd.gameserver.model.events.ListenerRegisterType;
+import org.l2jdd.gameserver.model.events.annotations.RegisterEvent;
+import org.l2jdd.gameserver.model.events.annotations.RegisterType;
+import org.l2jdd.gameserver.model.events.impl.creature.player.OnPlayerLogout;
 
 /**
  * @author UnAfraid

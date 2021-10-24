@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.tools.gsregistering;
+package org.l2jdd.tools.gsregistering;
 
 import java.awt.HeadlessException;
 import java.io.File;
@@ -30,11 +30,11 @@ import java.util.Map.Entry;
 import java.util.Properties;
 import java.util.ResourceBundle;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.database.DatabaseFactory;
-import org.l2jmobius.commons.enums.ServerMode;
-import org.l2jmobius.commons.util.CommonUtil;
-import org.l2jmobius.loginserver.GameServerTable;
+import org.l2jdd.Config;
+import org.l2jdd.commons.database.DatabaseFactory;
+import org.l2jdd.commons.enums.ServerMode;
+import org.l2jdd.commons.util.CommonUtil;
+import org.l2jdd.loginserver.GameServerTable;
 
 /**
  * The Class BaseGameServerRegister.

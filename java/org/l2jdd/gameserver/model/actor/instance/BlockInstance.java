@@ -14,20 +14,20 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.actor.instance;
+package org.l2jdd.gameserver.model.actor.instance;
 
-import org.l2jmobius.commons.util.Chronos;
-import org.l2jmobius.commons.util.Rnd;
-import org.l2jmobius.gameserver.data.ItemTable;
-import org.l2jmobius.gameserver.instancemanager.games.BlockChecker;
-import org.l2jmobius.gameserver.model.ArenaParticipantsHolder;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.templates.NpcTemplate;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
-import org.l2jmobius.gameserver.network.serverpackets.ExCubeGameChangePoints;
-import org.l2jmobius.gameserver.network.serverpackets.ExCubeGameExtendedChangePoints;
-import org.l2jmobius.gameserver.network.serverpackets.NpcInfo;
+import org.l2jdd.commons.util.Chronos;
+import org.l2jdd.commons.util.Rnd;
+import org.l2jdd.gameserver.data.ItemTable;
+import org.l2jdd.gameserver.instancemanager.games.BlockChecker;
+import org.l2jdd.gameserver.model.ArenaParticipantsHolder;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.actor.templates.NpcTemplate;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.network.serverpackets.ActionFailed;
+import org.l2jdd.gameserver.network.serverpackets.ExCubeGameChangePoints;
+import org.l2jdd.gameserver.network.serverpackets.ExCubeGameExtendedChangePoints;
+import org.l2jdd.gameserver.network.serverpackets.NpcInfo;
 
 /**
  * @author BiggBoss

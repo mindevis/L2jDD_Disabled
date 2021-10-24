@@ -14,19 +14,19 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.actor.instance;
+package org.l2jdd.gameserver.model.actor.instance;
 
 import java.util.concurrent.Future;
 
-import org.l2jmobius.commons.concurrent.ThreadPool;
-import org.l2jmobius.gameserver.enums.InstanceType;
-import org.l2jmobius.gameserver.instancemanager.IdManager;
-import org.l2jmobius.gameserver.model.actor.stat.ControllableAirShipStat;
-import org.l2jmobius.gameserver.model.actor.templates.CreatureTemplate;
-import org.l2jmobius.gameserver.model.skills.AbnormalType;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.DeleteObject;
-import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
+import org.l2jdd.commons.concurrent.ThreadPool;
+import org.l2jdd.gameserver.enums.InstanceType;
+import org.l2jdd.gameserver.instancemanager.IdManager;
+import org.l2jdd.gameserver.model.actor.stat.ControllableAirShipStat;
+import org.l2jdd.gameserver.model.actor.templates.CreatureTemplate;
+import org.l2jdd.gameserver.model.skills.AbnormalType;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.DeleteObject;
+import org.l2jdd.gameserver.network.serverpackets.SystemMessage;
 
 public class ControllableAirShipInstance extends AirShipInstance
 {

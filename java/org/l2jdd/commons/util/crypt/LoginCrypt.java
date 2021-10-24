@@ -14,12 +14,12 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.commons.util.crypt;
+package org.l2jdd.commons.util.crypt;
 
 import javax.crypto.SecretKey;
 
-import org.l2jmobius.commons.network.ICrypt;
-import org.l2jmobius.commons.util.Rnd;
+import org.l2jdd.commons.network.ICrypt;
+import org.l2jdd.commons.util.Rnd;
 
 import io.netty.buffer.ByteBuf;
 

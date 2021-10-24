@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.spawns;
+package org.l2jdd.gameserver.model.spawns;
 
 import java.time.Duration;
 import java.util.ArrayList;
@@ -25,23 +25,23 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.l2jmobius.commons.util.Rnd;
-import org.l2jmobius.gameserver.data.SpawnTable;
-import org.l2jmobius.gameserver.data.xml.NpcData;
-import org.l2jmobius.gameserver.instancemanager.DBSpawnManager;
-import org.l2jmobius.gameserver.instancemanager.ZoneManager;
-import org.l2jmobius.gameserver.model.ChanceLocation;
-import org.l2jmobius.gameserver.model.Location;
-import org.l2jmobius.gameserver.model.Spawn;
-import org.l2jmobius.gameserver.model.StatSet;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.MonsterInstance;
-import org.l2jmobius.gameserver.model.actor.templates.NpcTemplate;
-import org.l2jmobius.gameserver.model.holders.MinionHolder;
-import org.l2jmobius.gameserver.model.instancezone.Instance;
-import org.l2jmobius.gameserver.model.interfaces.IParameterized;
-import org.l2jmobius.gameserver.model.zone.type.SpawnTerritory;
+import org.l2jdd.commons.util.Rnd;
+import org.l2jdd.gameserver.data.SpawnTable;
+import org.l2jdd.gameserver.data.xml.NpcData;
+import org.l2jdd.gameserver.instancemanager.DBSpawnManager;
+import org.l2jdd.gameserver.instancemanager.ZoneManager;
+import org.l2jdd.gameserver.model.ChanceLocation;
+import org.l2jdd.gameserver.model.Location;
+import org.l2jdd.gameserver.model.Spawn;
+import org.l2jdd.gameserver.model.StatSet;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.MonsterInstance;
+import org.l2jdd.gameserver.model.actor.templates.NpcTemplate;
+import org.l2jdd.gameserver.model.holders.MinionHolder;
+import org.l2jdd.gameserver.model.instancezone.Instance;
+import org.l2jdd.gameserver.model.interfaces.IParameterized;
+import org.l2jdd.gameserver.model.zone.type.SpawnTerritory;
 
 /**
  * @author UnAfraid

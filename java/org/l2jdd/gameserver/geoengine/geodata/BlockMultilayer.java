@@ -14,13 +14,13 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.geoengine.geodata;
+package org.l2jdd.gameserver.geoengine.geodata;
 
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.util.Arrays;
 
-import org.l2jmobius.gameserver.enums.GeoType;
+import org.l2jdd.gameserver.enums.GeoType;
 
 public class BlockMultilayer extends ABlock
 {

@@ -14,24 +14,24 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network.clientpackets.compound;
+package org.l2jdd.gameserver.network.clientpackets.compound;
 
-import org.l2jmobius.commons.network.PacketReader;
-import org.l2jmobius.commons.util.Rnd;
-import org.l2jmobius.gameserver.data.xml.CombinationItemsData;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.actor.request.CompoundRequest;
-import org.l2jmobius.gameserver.model.items.combination.CombinationItem;
-import org.l2jmobius.gameserver.model.items.combination.CombinationItemReward;
-import org.l2jmobius.gameserver.model.items.combination.CombinationItemType;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
-import org.l2jmobius.gameserver.network.serverpackets.InventoryUpdate;
-import org.l2jmobius.gameserver.network.serverpackets.compound.ExEnchantFail;
-import org.l2jmobius.gameserver.network.serverpackets.compound.ExEnchantOneFail;
-import org.l2jmobius.gameserver.network.serverpackets.compound.ExEnchantSucess;
+import org.l2jdd.commons.network.PacketReader;
+import org.l2jdd.commons.util.Rnd;
+import org.l2jdd.gameserver.data.xml.CombinationItemsData;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.actor.request.CompoundRequest;
+import org.l2jdd.gameserver.model.items.combination.CombinationItem;
+import org.l2jdd.gameserver.model.items.combination.CombinationItemReward;
+import org.l2jdd.gameserver.model.items.combination.CombinationItemType;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.network.GameClient;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jdd.gameserver.network.serverpackets.InventoryUpdate;
+import org.l2jdd.gameserver.network.serverpackets.compound.ExEnchantFail;
+import org.l2jdd.gameserver.network.serverpackets.compound.ExEnchantOneFail;
+import org.l2jdd.gameserver.network.serverpackets.compound.ExEnchantSucess;
 
 /**
  * @author UnAfraid

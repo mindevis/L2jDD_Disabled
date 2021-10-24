@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.data.xml;
+package org.l2jdd.gameserver.data.xml;
 
 import java.io.File;
 import java.io.FileFilter;
@@ -29,14 +29,14 @@ import java.util.logging.Logger;
 import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.database.DatabaseFactory;
-import org.l2jmobius.commons.util.IXmlReader;
-import org.l2jmobius.commons.util.file.filter.NumericNameFilter;
-import org.l2jmobius.gameserver.data.ItemTable;
-import org.l2jmobius.gameserver.model.buylist.Product;
-import org.l2jmobius.gameserver.model.buylist.ProductList;
-import org.l2jmobius.gameserver.model.items.Item;
+import org.l2jdd.Config;
+import org.l2jdd.commons.database.DatabaseFactory;
+import org.l2jdd.commons.util.IXmlReader;
+import org.l2jdd.commons.util.file.filter.NumericNameFilter;
+import org.l2jdd.gameserver.data.ItemTable;
+import org.l2jdd.gameserver.model.buylist.Product;
+import org.l2jdd.gameserver.model.buylist.ProductList;
+import org.l2jdd.gameserver.model.items.Item;
 
 /**
  * Loads buy lists for NPCs.

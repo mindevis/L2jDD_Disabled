@@ -14,15 +14,15 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.handler;
+package org.l2jdd.gameserver.handler;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Function;
 
-import org.l2jmobius.gameserver.model.StatSet;
-import org.l2jmobius.gameserver.model.conditions.ICondition;
-import org.l2jmobius.gameserver.scripting.ScriptEngineManager;
+import org.l2jdd.gameserver.model.StatSet;
+import org.l2jdd.gameserver.model.conditions.ICondition;
+import org.l2jdd.gameserver.scripting.ScriptEngineManager;
 
 /**
  * @author Sdw

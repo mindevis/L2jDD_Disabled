@@ -20,16 +20,16 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.util.Chronos;
-import org.l2jmobius.commons.util.Rnd;
-import org.l2jmobius.gameserver.enums.ChatType;
-import org.l2jmobius.gameserver.handler.IBypassHandler;
-import org.l2jmobius.gameserver.model.World;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.zone.ZoneId;
-import org.l2jmobius.gameserver.network.serverpackets.CreatureSay;
+import org.l2jdd.Config;
+import org.l2jdd.commons.util.Chronos;
+import org.l2jdd.commons.util.Rnd;
+import org.l2jdd.gameserver.enums.ChatType;
+import org.l2jdd.gameserver.handler.IBypassHandler;
+import org.l2jdd.gameserver.model.World;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.zone.ZoneId;
+import org.l2jdd.gameserver.network.serverpackets.CreatureSay;
 
 /**
  * @author Mobius (based on Tenkai pvpzone)

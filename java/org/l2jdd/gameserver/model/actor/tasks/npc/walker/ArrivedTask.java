@@ -14,11 +14,11 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.actor.tasks.npc.walker;
+package org.l2jdd.gameserver.model.actor.tasks.npc.walker;
 
-import org.l2jmobius.gameserver.instancemanager.WalkingManager;
-import org.l2jmobius.gameserver.model.WalkInfo;
-import org.l2jmobius.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.instancemanager.WalkingManager;
+import org.l2jdd.gameserver.model.WalkInfo;
+import org.l2jdd.gameserver.model.actor.Npc;
 
 /**
  * Walker arrive task.

@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.data.xml;
+package org.l2jdd.gameserver.data.xml;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -27,14 +27,14 @@ import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 
-import org.l2jmobius.commons.util.IXmlReader;
-import org.l2jmobius.gameserver.data.ItemTable;
-import org.l2jmobius.gameserver.model.StatSet;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.items.Item;
-import org.l2jmobius.gameserver.model.primeshop.PrimeShopGroup;
-import org.l2jmobius.gameserver.model.primeshop.PrimeShopItem;
-import org.l2jmobius.gameserver.network.serverpackets.primeshop.ExBRProductInfo;
+import org.l2jdd.commons.util.IXmlReader;
+import org.l2jdd.gameserver.data.ItemTable;
+import org.l2jdd.gameserver.model.StatSet;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.items.Item;
+import org.l2jdd.gameserver.model.primeshop.PrimeShopGroup;
+import org.l2jdd.gameserver.model.primeshop.PrimeShopItem;
+import org.l2jdd.gameserver.network.serverpackets.primeshop.ExBRProductInfo;
 
 /**
  * @author Gnacik, UnAfraid

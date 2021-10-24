@@ -14,13 +14,13 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.scripting;
+package org.l2jdd.gameserver.scripting;
 
 import java.nio.file.Path;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.l2jmobius.commons.util.Chronos;
+import org.l2jdd.commons.util.Chronos;
 
 /**
  * Abstract class for classes that are meant to be implemented by scripts.<br>

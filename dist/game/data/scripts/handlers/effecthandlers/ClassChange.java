@@ -16,23 +16,23 @@
  */
 package handlers.effecthandlers;
 
-import org.l2jmobius.gameserver.data.xml.SkillData;
-import org.l2jmobius.gameserver.enums.SubclassInfoType;
-import org.l2jmobius.gameserver.model.StatSet;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.effects.AbstractEffect;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.model.olympiad.OlympiadManager;
-import org.l2jmobius.gameserver.model.skills.Skill;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.AcquireSkillList;
-import org.l2jmobius.gameserver.network.serverpackets.ExStorageMaxCount;
-import org.l2jmobius.gameserver.network.serverpackets.ExSubjobInfo;
-import org.l2jmobius.gameserver.network.serverpackets.PartySmallWindowAll;
-import org.l2jmobius.gameserver.network.serverpackets.PartySmallWindowDeleteAll;
-import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
-import org.l2jmobius.gameserver.network.serverpackets.ability.ExAcquireAPSkillList;
+import org.l2jdd.gameserver.data.xml.SkillData;
+import org.l2jdd.gameserver.enums.SubclassInfoType;
+import org.l2jdd.gameserver.model.StatSet;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.effects.AbstractEffect;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.model.olympiad.OlympiadManager;
+import org.l2jdd.gameserver.model.skills.Skill;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.AcquireSkillList;
+import org.l2jdd.gameserver.network.serverpackets.ExStorageMaxCount;
+import org.l2jdd.gameserver.network.serverpackets.ExSubjobInfo;
+import org.l2jdd.gameserver.network.serverpackets.PartySmallWindowAll;
+import org.l2jdd.gameserver.network.serverpackets.PartySmallWindowDeleteAll;
+import org.l2jdd.gameserver.network.serverpackets.SystemMessage;
+import org.l2jdd.gameserver.network.serverpackets.ability.ExAcquireAPSkillList;
 
 /**
  * @author Sdw

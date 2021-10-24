@@ -22,14 +22,14 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
 
-import org.l2jmobius.gameserver.handler.AffectObjectHandler;
-import org.l2jmobius.gameserver.handler.IAffectObjectHandler;
-import org.l2jmobius.gameserver.handler.IAffectScopeHandler;
-import org.l2jmobius.gameserver.model.World;
-import org.l2jmobius.gameserver.model.WorldObject;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.skills.Skill;
-import org.l2jmobius.gameserver.model.skills.targets.AffectScope;
+import org.l2jdd.gameserver.handler.AffectObjectHandler;
+import org.l2jdd.gameserver.handler.IAffectObjectHandler;
+import org.l2jdd.gameserver.handler.IAffectScopeHandler;
+import org.l2jdd.gameserver.model.World;
+import org.l2jdd.gameserver.model.WorldObject;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.skills.Skill;
+import org.l2jdd.gameserver.model.skills.targets.AffectScope;
 
 /**
  * Range sorted by lowest to highest hp percent affect scope implementation.

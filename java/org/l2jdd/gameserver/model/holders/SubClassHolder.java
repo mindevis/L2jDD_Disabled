@@ -14,11 +14,11 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.holders;
+package org.l2jdd.gameserver.model.holders;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.gameserver.data.xml.ExperienceData;
-import org.l2jmobius.gameserver.enums.ClassId;
+import org.l2jdd.Config;
+import org.l2jdd.gameserver.data.xml.ExperienceData;
+import org.l2jdd.gameserver.enums.ClassId;
 
 /**
  * Character Sub-Class Definition<br>

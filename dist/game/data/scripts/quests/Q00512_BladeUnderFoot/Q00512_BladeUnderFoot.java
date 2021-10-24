@@ -16,13 +16,13 @@
  */
 package quests.Q00512_BladeUnderFoot;
 
-import org.l2jmobius.gameserver.enums.QuestType;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.clan.Clan;
-import org.l2jmobius.gameserver.model.quest.Quest;
-import org.l2jmobius.gameserver.model.quest.QuestState;
-import org.l2jmobius.gameserver.model.siege.Castle;
+import org.l2jdd.gameserver.enums.QuestType;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.clan.Clan;
+import org.l2jdd.gameserver.model.quest.Quest;
+import org.l2jdd.gameserver.model.quest.QuestState;
+import org.l2jdd.gameserver.model.siege.Castle;
 
 /**
  * Blade Under Foot (512)

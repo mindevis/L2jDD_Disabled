@@ -14,22 +14,22 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.actor.instance;
+package org.l2jdd.gameserver.model.actor.instance;
 
-import org.l2jmobius.gameserver.ai.CreatureAI;
-import org.l2jmobius.gameserver.ai.CtrlIntention;
-import org.l2jmobius.gameserver.ai.FriendlyNpcAI;
-import org.l2jmobius.gameserver.enums.InstanceType;
-import org.l2jmobius.gameserver.model.actor.Attackable;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.templates.NpcTemplate;
-import org.l2jmobius.gameserver.model.events.EventDispatcher;
-import org.l2jmobius.gameserver.model.events.EventType;
-import org.l2jmobius.gameserver.model.events.impl.creature.npc.OnAttackableAttack;
-import org.l2jmobius.gameserver.model.events.impl.creature.npc.OnAttackableKill;
-import org.l2jmobius.gameserver.model.events.impl.creature.npc.OnNpcFirstTalk;
-import org.l2jmobius.gameserver.model.skills.Skill;
-import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
+import org.l2jdd.gameserver.ai.CreatureAI;
+import org.l2jdd.gameserver.ai.CtrlIntention;
+import org.l2jdd.gameserver.ai.FriendlyNpcAI;
+import org.l2jdd.gameserver.enums.InstanceType;
+import org.l2jdd.gameserver.model.actor.Attackable;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.actor.templates.NpcTemplate;
+import org.l2jdd.gameserver.model.events.EventDispatcher;
+import org.l2jdd.gameserver.model.events.EventType;
+import org.l2jdd.gameserver.model.events.impl.creature.npc.OnAttackableAttack;
+import org.l2jdd.gameserver.model.events.impl.creature.npc.OnAttackableKill;
+import org.l2jdd.gameserver.model.events.impl.creature.npc.OnNpcFirstTalk;
+import org.l2jdd.gameserver.model.skills.Skill;
+import org.l2jdd.gameserver.network.serverpackets.ActionFailed;
 
 /**
  * @author GKR, Sdw

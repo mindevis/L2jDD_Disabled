@@ -16,10 +16,10 @@
  */
 package handlers.telnethandlers.chat;
 
-import org.l2jmobius.gameserver.data.xml.AdminData;
-import org.l2jmobius.gameserver.enums.ChatType;
-import org.l2jmobius.gameserver.network.serverpackets.CreatureSay;
-import org.l2jmobius.gameserver.network.telnet.ITelnetCommand;
+import org.l2jdd.gameserver.data.xml.AdminData;
+import org.l2jdd.gameserver.enums.ChatType;
+import org.l2jdd.gameserver.network.serverpackets.CreatureSay;
+import org.l2jdd.gameserver.network.telnet.ITelnetCommand;
 
 import io.netty.channel.ChannelHandlerContext;
 

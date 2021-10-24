@@ -14,9 +14,9 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.enums;
+package org.l2jdd.gameserver.enums;
 
-import org.l2jmobius.gameserver.geoengine.geodata.GeoStructure;
+import org.l2jdd.gameserver.geoengine.geodata.GeoStructure;
 
 /**
  * Container of movement constants used for various geodata and movement checks.

@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.actor.transform;
+package org.l2jdd.gameserver.model.actor.transform;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -23,14 +23,14 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.l2jmobius.gameserver.model.StatSet;
-import org.l2jmobius.gameserver.model.holders.AdditionalItemHolder;
-import org.l2jmobius.gameserver.model.holders.AdditionalSkillHolder;
-import org.l2jmobius.gameserver.model.holders.SkillHolder;
-import org.l2jmobius.gameserver.model.itemcontainer.Inventory;
-import org.l2jmobius.gameserver.model.items.type.WeaponType;
-import org.l2jmobius.gameserver.model.stats.Stat;
-import org.l2jmobius.gameserver.network.serverpackets.ExBasicActionList;
+import org.l2jdd.gameserver.model.StatSet;
+import org.l2jdd.gameserver.model.holders.AdditionalItemHolder;
+import org.l2jdd.gameserver.model.holders.AdditionalSkillHolder;
+import org.l2jdd.gameserver.model.holders.SkillHolder;
+import org.l2jdd.gameserver.model.itemcontainer.Inventory;
+import org.l2jdd.gameserver.model.items.type.WeaponType;
+import org.l2jdd.gameserver.model.stats.Stat;
+import org.l2jdd.gameserver.network.serverpackets.ExBasicActionList;
 
 /**
  * @author UnAfraid

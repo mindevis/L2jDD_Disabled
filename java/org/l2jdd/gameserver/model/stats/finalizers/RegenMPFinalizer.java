@@ -14,33 +14,33 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.stats.finalizers;
+package org.l2jdd.gameserver.model.stats.finalizers;
 
 import java.util.OptionalDouble;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.gameserver.data.xml.ClanHallData;
-import org.l2jmobius.gameserver.instancemanager.CastleManager;
-import org.l2jmobius.gameserver.instancemanager.FortManager;
-import org.l2jmobius.gameserver.instancemanager.ZoneManager;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.instance.PetInstance;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.residences.AbstractResidence;
-import org.l2jmobius.gameserver.model.residences.ResidenceFunction;
-import org.l2jmobius.gameserver.model.residences.ResidenceFunctionType;
-import org.l2jmobius.gameserver.model.siege.Castle;
-import org.l2jmobius.gameserver.model.siege.Castle.CastleFunction;
-import org.l2jmobius.gameserver.model.siege.Fort;
-import org.l2jmobius.gameserver.model.siege.Fort.FortFunction;
-import org.l2jmobius.gameserver.model.stats.BaseStat;
-import org.l2jmobius.gameserver.model.stats.IStatFunction;
-import org.l2jmobius.gameserver.model.stats.Stat;
-import org.l2jmobius.gameserver.model.zone.ZoneId;
-import org.l2jmobius.gameserver.model.zone.type.CastleZone;
-import org.l2jmobius.gameserver.model.zone.type.ClanHallZone;
-import org.l2jmobius.gameserver.model.zone.type.FortZone;
-import org.l2jmobius.gameserver.model.zone.type.MotherTreeZone;
+import org.l2jdd.Config;
+import org.l2jdd.gameserver.data.xml.ClanHallData;
+import org.l2jdd.gameserver.instancemanager.CastleManager;
+import org.l2jdd.gameserver.instancemanager.FortManager;
+import org.l2jdd.gameserver.instancemanager.ZoneManager;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.actor.instance.PetInstance;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.residences.AbstractResidence;
+import org.l2jdd.gameserver.model.residences.ResidenceFunction;
+import org.l2jdd.gameserver.model.residences.ResidenceFunctionType;
+import org.l2jdd.gameserver.model.siege.Castle;
+import org.l2jdd.gameserver.model.siege.Castle.CastleFunction;
+import org.l2jdd.gameserver.model.siege.Fort;
+import org.l2jdd.gameserver.model.siege.Fort.FortFunction;
+import org.l2jdd.gameserver.model.stats.BaseStat;
+import org.l2jdd.gameserver.model.stats.IStatFunction;
+import org.l2jdd.gameserver.model.stats.Stat;
+import org.l2jdd.gameserver.model.zone.ZoneId;
+import org.l2jdd.gameserver.model.zone.type.CastleZone;
+import org.l2jdd.gameserver.model.zone.type.ClanHallZone;
+import org.l2jdd.gameserver.model.zone.type.FortZone;
+import org.l2jdd.gameserver.model.zone.type.MotherTreeZone;
 
 /**
  * @author UnAfraid

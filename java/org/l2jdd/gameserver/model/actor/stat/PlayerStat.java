@@ -14,39 +14,39 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.actor.stat;
+package org.l2jdd.gameserver.model.actor.stat;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.gameserver.data.xml.ExperienceData;
-import org.l2jmobius.gameserver.enums.PartySmallWindowUpdateType;
-import org.l2jmobius.gameserver.enums.UserInfoType;
-import org.l2jmobius.gameserver.model.Party;
-import org.l2jmobius.gameserver.model.actor.Summon;
-import org.l2jmobius.gameserver.model.actor.instance.PetInstance;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.events.EventDispatcher;
-import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerLevelChanged;
-import org.l2jmobius.gameserver.model.holders.ItemSkillHolder;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.model.items.type.WeaponType;
-import org.l2jmobius.gameserver.model.skills.AbnormalType;
-import org.l2jmobius.gameserver.model.stats.Formulas;
-import org.l2jmobius.gameserver.model.stats.Stat;
-import org.l2jmobius.gameserver.model.zone.ZoneId;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.AcquireSkillList;
-import org.l2jmobius.gameserver.network.serverpackets.ExVitalityPointInfo;
-import org.l2jmobius.gameserver.network.serverpackets.ExVoteSystemInfo;
-import org.l2jmobius.gameserver.network.serverpackets.PartySmallWindowUpdate;
-import org.l2jmobius.gameserver.network.serverpackets.PledgeShowMemberListUpdate;
-import org.l2jmobius.gameserver.network.serverpackets.SocialAction;
-import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
-import org.l2jmobius.gameserver.network.serverpackets.UserInfo;
-import org.l2jmobius.gameserver.network.serverpackets.friend.FriendStatus;
-import org.l2jmobius.gameserver.network.serverpackets.pledgeV2.ExPledgeMissionRewardCount;
-import org.l2jmobius.gameserver.util.Util;
+import org.l2jdd.Config;
+import org.l2jdd.gameserver.data.xml.ExperienceData;
+import org.l2jdd.gameserver.enums.PartySmallWindowUpdateType;
+import org.l2jdd.gameserver.enums.UserInfoType;
+import org.l2jdd.gameserver.model.Party;
+import org.l2jdd.gameserver.model.actor.Summon;
+import org.l2jdd.gameserver.model.actor.instance.PetInstance;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.events.EventDispatcher;
+import org.l2jdd.gameserver.model.events.impl.creature.player.OnPlayerLevelChanged;
+import org.l2jdd.gameserver.model.holders.ItemSkillHolder;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.model.items.type.WeaponType;
+import org.l2jdd.gameserver.model.skills.AbnormalType;
+import org.l2jdd.gameserver.model.stats.Formulas;
+import org.l2jdd.gameserver.model.stats.Stat;
+import org.l2jdd.gameserver.model.zone.ZoneId;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.AcquireSkillList;
+import org.l2jdd.gameserver.network.serverpackets.ExVitalityPointInfo;
+import org.l2jdd.gameserver.network.serverpackets.ExVoteSystemInfo;
+import org.l2jdd.gameserver.network.serverpackets.PartySmallWindowUpdate;
+import org.l2jdd.gameserver.network.serverpackets.PledgeShowMemberListUpdate;
+import org.l2jdd.gameserver.network.serverpackets.SocialAction;
+import org.l2jdd.gameserver.network.serverpackets.SystemMessage;
+import org.l2jdd.gameserver.network.serverpackets.UserInfo;
+import org.l2jdd.gameserver.network.serverpackets.friend.FriendStatus;
+import org.l2jdd.gameserver.network.serverpackets.pledgeV2.ExPledgeMissionRewardCount;
+import org.l2jdd.gameserver.util.Util;
 
 public class PlayerStat extends PlayableStat
 {

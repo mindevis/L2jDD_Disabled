@@ -14,13 +14,13 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.olympiad;
+package org.l2jdd.gameserver.model.olympiad;
 
-import org.l2jmobius.gameserver.data.SpawnTable;
-import org.l2jmobius.gameserver.enums.ChatType;
-import org.l2jmobius.gameserver.model.Spawn;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.network.NpcStringId;
+import org.l2jdd.gameserver.data.SpawnTable;
+import org.l2jdd.gameserver.enums.ChatType;
+import org.l2jdd.gameserver.model.Spawn;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.network.NpcStringId;
 
 /**
  * @author DS

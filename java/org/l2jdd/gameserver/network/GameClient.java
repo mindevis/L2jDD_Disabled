@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network;
+package org.l2jdd.gameserver.network;
 
 import java.net.InetAddress;
 import java.net.InetSocketAddress;
@@ -25,36 +25,36 @@ import java.util.concurrent.locks.ReentrantLock;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.database.DatabaseFactory;
-import org.l2jmobius.commons.network.ChannelInboundHandler;
-import org.l2jmobius.commons.network.ICrypt;
-import org.l2jmobius.commons.network.IIncomingPacket;
-import org.l2jmobius.commons.util.Chronos;
-import org.l2jmobius.gameserver.LoginServerThread;
-import org.l2jmobius.gameserver.LoginServerThread.SessionKey;
-import org.l2jmobius.gameserver.data.sql.CharNameTable;
-import org.l2jmobius.gameserver.data.sql.ClanTable;
-import org.l2jmobius.gameserver.data.xml.SecondaryAuthData;
-import org.l2jmobius.gameserver.enums.CharacterDeleteFailType;
-import org.l2jmobius.gameserver.instancemanager.CommissionManager;
-import org.l2jmobius.gameserver.instancemanager.MailManager;
-import org.l2jmobius.gameserver.instancemanager.MentorManager;
-import org.l2jmobius.gameserver.model.CharSelectInfoPackage;
-import org.l2jmobius.gameserver.model.World;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.clan.Clan;
-import org.l2jmobius.gameserver.model.holders.ClientHardwareInfoHolder;
-import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
-import org.l2jmobius.gameserver.network.serverpackets.ExShowScreenMessage;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
-import org.l2jmobius.gameserver.network.serverpackets.LeaveWorld;
-import org.l2jmobius.gameserver.network.serverpackets.NpcInfo;
-import org.l2jmobius.gameserver.network.serverpackets.NpcSay;
-import org.l2jmobius.gameserver.network.serverpackets.ServerClose;
-import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
-import org.l2jmobius.gameserver.security.SecondaryPasswordAuth;
-import org.l2jmobius.gameserver.util.FloodProtectors;
+import org.l2jdd.Config;
+import org.l2jdd.commons.database.DatabaseFactory;
+import org.l2jdd.commons.network.ChannelInboundHandler;
+import org.l2jdd.commons.network.ICrypt;
+import org.l2jdd.commons.network.IIncomingPacket;
+import org.l2jdd.commons.util.Chronos;
+import org.l2jdd.gameserver.LoginServerThread;
+import org.l2jdd.gameserver.LoginServerThread.SessionKey;
+import org.l2jdd.gameserver.data.sql.CharNameTable;
+import org.l2jdd.gameserver.data.sql.ClanTable;
+import org.l2jdd.gameserver.data.xml.SecondaryAuthData;
+import org.l2jdd.gameserver.enums.CharacterDeleteFailType;
+import org.l2jdd.gameserver.instancemanager.CommissionManager;
+import org.l2jdd.gameserver.instancemanager.MailManager;
+import org.l2jdd.gameserver.instancemanager.MentorManager;
+import org.l2jdd.gameserver.model.CharSelectInfoPackage;
+import org.l2jdd.gameserver.model.World;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.clan.Clan;
+import org.l2jdd.gameserver.model.holders.ClientHardwareInfoHolder;
+import org.l2jdd.gameserver.network.serverpackets.ActionFailed;
+import org.l2jdd.gameserver.network.serverpackets.ExShowScreenMessage;
+import org.l2jdd.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jdd.gameserver.network.serverpackets.LeaveWorld;
+import org.l2jdd.gameserver.network.serverpackets.NpcInfo;
+import org.l2jdd.gameserver.network.serverpackets.NpcSay;
+import org.l2jdd.gameserver.network.serverpackets.ServerClose;
+import org.l2jdd.gameserver.network.serverpackets.SystemMessage;
+import org.l2jdd.gameserver.security.SecondaryPasswordAuth;
+import org.l2jdd.gameserver.util.FloodProtectors;
 
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;

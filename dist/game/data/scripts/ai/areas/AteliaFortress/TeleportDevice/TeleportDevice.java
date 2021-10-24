@@ -16,10 +16,10 @@
  */
 package ai.areas.AteliaFortress.TeleportDevice;
 
-import org.l2jmobius.gameserver.enums.Faction;
-import org.l2jmobius.gameserver.model.Location;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.enums.Faction;
+import org.l2jdd.gameserver.model.Location;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
 
 import ai.AbstractNpcAI;
 

@@ -14,40 +14,40 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.actor.instance;
+package org.l2jdd.gameserver.model.actor.instance;
 
 import java.util.Collection;
 import java.util.Set;
 import java.util.concurrent.Future;
 
-import org.l2jmobius.commons.concurrent.ThreadPool;
-import org.l2jmobius.commons.util.Rnd;
-import org.l2jmobius.gameserver.ai.CreatureAI;
-import org.l2jmobius.gameserver.ai.DoorAI;
-import org.l2jmobius.gameserver.data.xml.DoorData;
-import org.l2jmobius.gameserver.enums.DoorOpenType;
-import org.l2jmobius.gameserver.enums.InstanceType;
-import org.l2jmobius.gameserver.enums.Race;
-import org.l2jmobius.gameserver.instancemanager.CastleManager;
-import org.l2jmobius.gameserver.instancemanager.FortManager;
-import org.l2jmobius.gameserver.model.Location;
-import org.l2jmobius.gameserver.model.World;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.stat.DoorStat;
-import org.l2jmobius.gameserver.model.actor.status.DoorStatus;
-import org.l2jmobius.gameserver.model.actor.templates.DoorTemplate;
-import org.l2jmobius.gameserver.model.clan.Clan;
-import org.l2jmobius.gameserver.model.instancezone.Instance;
-import org.l2jmobius.gameserver.model.items.Weapon;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.model.siege.Castle;
-import org.l2jmobius.gameserver.model.siege.Fort;
-import org.l2jmobius.gameserver.model.skills.Skill;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.DoorStatusUpdate;
-import org.l2jmobius.gameserver.network.serverpackets.OnEventTrigger;
-import org.l2jmobius.gameserver.network.serverpackets.StaticObject;
-import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
+import org.l2jdd.commons.concurrent.ThreadPool;
+import org.l2jdd.commons.util.Rnd;
+import org.l2jdd.gameserver.ai.CreatureAI;
+import org.l2jdd.gameserver.ai.DoorAI;
+import org.l2jdd.gameserver.data.xml.DoorData;
+import org.l2jdd.gameserver.enums.DoorOpenType;
+import org.l2jdd.gameserver.enums.InstanceType;
+import org.l2jdd.gameserver.enums.Race;
+import org.l2jdd.gameserver.instancemanager.CastleManager;
+import org.l2jdd.gameserver.instancemanager.FortManager;
+import org.l2jdd.gameserver.model.Location;
+import org.l2jdd.gameserver.model.World;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.actor.stat.DoorStat;
+import org.l2jdd.gameserver.model.actor.status.DoorStatus;
+import org.l2jdd.gameserver.model.actor.templates.DoorTemplate;
+import org.l2jdd.gameserver.model.clan.Clan;
+import org.l2jdd.gameserver.model.instancezone.Instance;
+import org.l2jdd.gameserver.model.items.Weapon;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.model.siege.Castle;
+import org.l2jdd.gameserver.model.siege.Fort;
+import org.l2jdd.gameserver.model.skills.Skill;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.DoorStatusUpdate;
+import org.l2jdd.gameserver.network.serverpackets.OnEventTrigger;
+import org.l2jdd.gameserver.network.serverpackets.StaticObject;
+import org.l2jdd.gameserver.network.serverpackets.SystemMessage;
 
 public class DoorInstance extends Creature
 {

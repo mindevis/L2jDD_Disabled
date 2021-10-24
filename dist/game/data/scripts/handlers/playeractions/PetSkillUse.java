@@ -16,14 +16,14 @@
  */
 package handlers.playeractions;
 
-import org.l2jmobius.gameserver.data.xml.PetDataTable;
-import org.l2jmobius.gameserver.data.xml.SkillData;
-import org.l2jmobius.gameserver.handler.IPlayerActionHandler;
-import org.l2jmobius.gameserver.model.ActionDataHolder;
-import org.l2jmobius.gameserver.model.actor.instance.PetInstance;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.skills.CommonSkill;
-import org.l2jmobius.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.data.xml.PetDataTable;
+import org.l2jdd.gameserver.data.xml.SkillData;
+import org.l2jdd.gameserver.handler.IPlayerActionHandler;
+import org.l2jdd.gameserver.model.ActionDataHolder;
+import org.l2jdd.gameserver.model.actor.instance.PetInstance;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.skills.CommonSkill;
+import org.l2jdd.gameserver.network.SystemMessageId;
 
 /**
  * Pet skill use player action handler.

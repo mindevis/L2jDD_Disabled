@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.instancemanager;
+package org.l2jdd.gameserver.instancemanager;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -29,23 +29,23 @@ import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 
-import org.l2jmobius.commons.concurrent.ThreadPool;
-import org.l2jmobius.commons.util.IXmlReader;
-import org.l2jmobius.gameserver.ai.CtrlIntention;
-import org.l2jmobius.gameserver.data.xml.NpcData;
-import org.l2jmobius.gameserver.enums.ChatType;
-import org.l2jmobius.gameserver.instancemanager.tasks.StartMovingTask;
-import org.l2jmobius.gameserver.model.Location;
-import org.l2jmobius.gameserver.model.NpcWalkerNode;
-import org.l2jmobius.gameserver.model.WalkInfo;
-import org.l2jmobius.gameserver.model.WalkRoute;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.MonsterInstance;
-import org.l2jmobius.gameserver.model.actor.tasks.npc.walker.ArrivedTask;
-import org.l2jmobius.gameserver.model.events.EventDispatcher;
-import org.l2jmobius.gameserver.model.events.impl.creature.npc.OnNpcMoveNodeArrived;
-import org.l2jmobius.gameserver.model.holders.NpcRoutesHolder;
-import org.l2jmobius.gameserver.network.NpcStringId;
+import org.l2jdd.commons.concurrent.ThreadPool;
+import org.l2jdd.commons.util.IXmlReader;
+import org.l2jdd.gameserver.ai.CtrlIntention;
+import org.l2jdd.gameserver.data.xml.NpcData;
+import org.l2jdd.gameserver.enums.ChatType;
+import org.l2jdd.gameserver.instancemanager.tasks.StartMovingTask;
+import org.l2jdd.gameserver.model.Location;
+import org.l2jdd.gameserver.model.NpcWalkerNode;
+import org.l2jdd.gameserver.model.WalkInfo;
+import org.l2jdd.gameserver.model.WalkRoute;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.MonsterInstance;
+import org.l2jdd.gameserver.model.actor.tasks.npc.walker.ArrivedTask;
+import org.l2jdd.gameserver.model.events.EventDispatcher;
+import org.l2jdd.gameserver.model.events.impl.creature.npc.OnNpcMoveNodeArrived;
+import org.l2jdd.gameserver.model.holders.NpcRoutesHolder;
+import org.l2jdd.gameserver.network.NpcStringId;
 
 /**
  * This class manages walking monsters.

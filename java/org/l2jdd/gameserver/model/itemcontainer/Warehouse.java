@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.itemcontainer;
+package org.l2jdd.gameserver.model.itemcontainer;
 
 /**
  * @version $Revision: 1.3.2.1.2.12 $ $Date: 2005/04/06 16:13:42 $

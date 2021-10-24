@@ -14,9 +14,9 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.actor.stat;
+package org.l2jdd.gameserver.model.actor.stat;
 
-import org.l2jmobius.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.Npc;
 
 public class NpcStat extends CreatureStat
 {

@@ -14,14 +14,14 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.tools.dbinstaller;
+package org.l2jdd.tools.dbinstaller;
 
 import java.awt.HeadlessException;
 
 import javax.swing.UIManager;
 
-import org.l2jmobius.tools.dbinstaller.console.DBInstallerConsole;
-import org.l2jmobius.tools.dbinstaller.gui.DBConfigGUI;
+import org.l2jdd.tools.dbinstaller.console.DBInstallerConsole;
+import org.l2jdd.tools.dbinstaller.gui.DBConfigGUI;
 
 /**
  * Contains main class for Database Installer If system doesn't support the graphical UI, start the installer in console mode.
@@ -31,7 +31,7 @@ public class LauncherLS extends AbstractDBLauncher
 {
 	public static void main(String[] args) throws Exception
 	{
-		final String defDatabase = "l2jmobius";
+		final String defDatabase = "l2jdd";
 		final String dir = "sql/login/";
 		
 		if ((args != null) && (args.length > 0))

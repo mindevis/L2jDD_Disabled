@@ -14,19 +14,19 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.instancemanager;
+package org.l2jdd.gameserver.instancemanager;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.gameserver.model.StatSet;
-import org.l2jmobius.gameserver.model.VehiclePathPoint;
-import org.l2jmobius.gameserver.model.World;
-import org.l2jmobius.gameserver.model.actor.instance.BoatInstance;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.actor.templates.CreatureTemplate;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jdd.Config;
+import org.l2jdd.gameserver.model.StatSet;
+import org.l2jdd.gameserver.model.VehiclePathPoint;
+import org.l2jdd.gameserver.model.World;
+import org.l2jdd.gameserver.model.actor.instance.BoatInstance;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.actor.templates.CreatureTemplate;
+import org.l2jdd.gameserver.network.serverpackets.IClientOutgoingPacket;
 
 public class BoatManager
 {

@@ -14,20 +14,20 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network.clientpackets;
+package org.l2jdd.gameserver.network.clientpackets;
 
 import java.util.logging.Level;
 
-import org.l2jmobius.commons.network.PacketReader;
-import org.l2jmobius.gameserver.enums.CharacterDeleteFailType;
-import org.l2jmobius.gameserver.model.CharSelectInfoPackage;
-import org.l2jmobius.gameserver.model.events.Containers;
-import org.l2jmobius.gameserver.model.events.EventDispatcher;
-import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerDelete;
-import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.serverpackets.CharDeleteFail;
-import org.l2jmobius.gameserver.network.serverpackets.CharDeleteSuccess;
-import org.l2jmobius.gameserver.network.serverpackets.CharSelectionInfo;
+import org.l2jdd.commons.network.PacketReader;
+import org.l2jdd.gameserver.enums.CharacterDeleteFailType;
+import org.l2jdd.gameserver.model.CharSelectInfoPackage;
+import org.l2jdd.gameserver.model.events.Containers;
+import org.l2jdd.gameserver.model.events.EventDispatcher;
+import org.l2jdd.gameserver.model.events.impl.creature.player.OnPlayerDelete;
+import org.l2jdd.gameserver.network.GameClient;
+import org.l2jdd.gameserver.network.serverpackets.CharDeleteFail;
+import org.l2jdd.gameserver.network.serverpackets.CharDeleteSuccess;
+import org.l2jdd.gameserver.network.serverpackets.CharSelectionInfo;
 
 /**
  * @version $Revision: 1.8.2.1.2.3 $ $Date: 2005/03/27 15:29:30 $

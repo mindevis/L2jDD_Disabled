@@ -14,14 +14,14 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model;
+package org.l2jdd.gameserver.model;
 
 import java.util.logging.Level;
 
-import org.l2jmobius.commons.util.Rnd;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.ControllableMobInstance;
-import org.l2jmobius.gameserver.model.actor.templates.NpcTemplate;
+import org.l2jdd.commons.util.Rnd;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.ControllableMobInstance;
+import org.l2jdd.gameserver.model.actor.templates.NpcTemplate;
 
 /**
  * @author littlecrow A special spawn implementation to spawn controllable mob

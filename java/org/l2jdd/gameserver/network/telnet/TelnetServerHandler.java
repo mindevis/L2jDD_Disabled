@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network.telnet;
+package org.l2jdd.gameserver.network.telnet;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -22,7 +22,7 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.l2jmobius.Config;
+import org.l2jdd.Config;
 
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelFutureListener;

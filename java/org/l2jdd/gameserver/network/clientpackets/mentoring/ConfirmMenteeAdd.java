@@ -14,26 +14,26 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network.clientpackets.mentoring;
+package org.l2jdd.gameserver.network.clientpackets.mentoring;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.util.logging.Level;
 
-import org.l2jmobius.commons.database.DatabaseFactory;
-import org.l2jmobius.commons.network.PacketReader;
-import org.l2jmobius.commons.util.Chronos;
-import org.l2jmobius.gameserver.enums.CategoryType;
-import org.l2jmobius.gameserver.instancemanager.MentorManager;
-import org.l2jmobius.gameserver.model.World;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.events.EventDispatcher;
-import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerMenteeAdd;
-import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
-import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
-import org.l2jmobius.gameserver.network.serverpackets.mentoring.ExMentorList;
+import org.l2jdd.commons.database.DatabaseFactory;
+import org.l2jdd.commons.network.PacketReader;
+import org.l2jdd.commons.util.Chronos;
+import org.l2jdd.gameserver.enums.CategoryType;
+import org.l2jdd.gameserver.instancemanager.MentorManager;
+import org.l2jdd.gameserver.model.World;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.events.EventDispatcher;
+import org.l2jdd.gameserver.model.events.impl.creature.player.OnPlayerMenteeAdd;
+import org.l2jdd.gameserver.network.GameClient;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jdd.gameserver.network.serverpackets.SystemMessage;
+import org.l2jdd.gameserver.network.serverpackets.mentoring.ExMentorList;
 
 /**
  * @author Gnacik, UnAfraid

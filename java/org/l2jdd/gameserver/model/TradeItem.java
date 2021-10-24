@@ -14,16 +14,16 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model;
+package org.l2jdd.gameserver.model;
 
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Objects;
 
-import org.l2jmobius.gameserver.enums.AttributeType;
-import org.l2jmobius.gameserver.model.ensoul.EnsoulOption;
-import org.l2jmobius.gameserver.model.items.Item;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.enums.AttributeType;
+import org.l2jdd.gameserver.model.ensoul.EnsoulOption;
+import org.l2jdd.gameserver.model.items.Item;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
 
 public class TradeItem
 {

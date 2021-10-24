@@ -14,13 +14,13 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model;
+package org.l2jdd.gameserver.model;
 
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
-import org.l2jmobius.gameserver.enums.SiegeClanType;
-import org.l2jmobius.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.enums.SiegeClanType;
+import org.l2jdd.gameserver.model.actor.Npc;
 
 public class SiegeClan
 {

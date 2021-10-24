@@ -14,19 +14,19 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.loginserver.network.gameserverpackets;
+package org.l2jdd.loginserver.network.gameserverpackets;
 
 import java.util.Arrays;
 import java.util.logging.Logger;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.BaseRecievePacket;
-import org.l2jmobius.loginserver.GameServerTable;
-import org.l2jmobius.loginserver.GameServerTable.GameServerInfo;
-import org.l2jmobius.loginserver.GameServerThread;
-import org.l2jmobius.loginserver.network.GameServerPacketHandler.GameServerState;
-import org.l2jmobius.loginserver.network.loginserverpackets.AuthResponse;
-import org.l2jmobius.loginserver.network.loginserverpackets.LoginServerFail;
+import org.l2jdd.Config;
+import org.l2jdd.commons.network.BaseRecievePacket;
+import org.l2jdd.loginserver.GameServerTable;
+import org.l2jdd.loginserver.GameServerTable.GameServerInfo;
+import org.l2jdd.loginserver.GameServerThread;
+import org.l2jdd.loginserver.network.GameServerPacketHandler.GameServerState;
+import org.l2jdd.loginserver.network.loginserverpackets.AuthResponse;
+import org.l2jdd.loginserver.network.loginserverpackets.LoginServerFail;
 
 /**
  * <pre>

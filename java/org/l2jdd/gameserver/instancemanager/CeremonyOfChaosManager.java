@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.instancemanager;
+package org.l2jdd.gameserver.instancemanager;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -23,36 +23,36 @@ import java.util.List;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
-import org.l2jmobius.commons.database.DatabaseFactory;
-import org.l2jmobius.commons.util.Rnd;
-import org.l2jmobius.gameserver.enums.CategoryType;
-import org.l2jmobius.gameserver.enums.CeremonyOfChaosState;
-import org.l2jmobius.gameserver.model.StatSet;
-import org.l2jmobius.gameserver.model.World;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.ceremonyofchaos.CeremonyOfChaosEvent;
-import org.l2jmobius.gameserver.model.ceremonyofchaos.CeremonyOfChaosMember;
-import org.l2jmobius.gameserver.model.clan.Clan;
-import org.l2jmobius.gameserver.model.eventengine.AbstractEventManager;
-import org.l2jmobius.gameserver.model.eventengine.ScheduleTarget;
-import org.l2jmobius.gameserver.model.events.EventType;
-import org.l2jmobius.gameserver.model.events.ListenerRegisterType;
-import org.l2jmobius.gameserver.model.events.annotations.RegisterEvent;
-import org.l2jmobius.gameserver.model.events.annotations.RegisterType;
-import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerBypass;
-import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerLogin;
-import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerLogout;
-import org.l2jmobius.gameserver.model.events.returns.TerminateReturn;
-import org.l2jmobius.gameserver.model.olympiad.OlympiadManager;
-import org.l2jmobius.gameserver.model.punishment.PunishmentAffect;
-import org.l2jmobius.gameserver.model.punishment.PunishmentType;
-import org.l2jmobius.gameserver.model.variables.PlayerVariables;
-import org.l2jmobius.gameserver.model.zone.ZoneId;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
-import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
-import org.l2jmobius.gameserver.network.serverpackets.ceremonyofchaos.ExCuriousHouseState;
+import org.l2jdd.commons.database.DatabaseFactory;
+import org.l2jdd.commons.util.Rnd;
+import org.l2jdd.gameserver.enums.CategoryType;
+import org.l2jdd.gameserver.enums.CeremonyOfChaosState;
+import org.l2jdd.gameserver.model.StatSet;
+import org.l2jdd.gameserver.model.World;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.ceremonyofchaos.CeremonyOfChaosEvent;
+import org.l2jdd.gameserver.model.ceremonyofchaos.CeremonyOfChaosMember;
+import org.l2jdd.gameserver.model.clan.Clan;
+import org.l2jdd.gameserver.model.eventengine.AbstractEventManager;
+import org.l2jdd.gameserver.model.eventengine.ScheduleTarget;
+import org.l2jdd.gameserver.model.events.EventType;
+import org.l2jdd.gameserver.model.events.ListenerRegisterType;
+import org.l2jdd.gameserver.model.events.annotations.RegisterEvent;
+import org.l2jdd.gameserver.model.events.annotations.RegisterType;
+import org.l2jdd.gameserver.model.events.impl.creature.player.OnPlayerBypass;
+import org.l2jdd.gameserver.model.events.impl.creature.player.OnPlayerLogin;
+import org.l2jdd.gameserver.model.events.impl.creature.player.OnPlayerLogout;
+import org.l2jdd.gameserver.model.events.returns.TerminateReturn;
+import org.l2jdd.gameserver.model.olympiad.OlympiadManager;
+import org.l2jdd.gameserver.model.punishment.PunishmentAffect;
+import org.l2jdd.gameserver.model.punishment.PunishmentType;
+import org.l2jdd.gameserver.model.variables.PlayerVariables;
+import org.l2jdd.gameserver.model.zone.ZoneId;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jdd.gameserver.network.serverpackets.SystemMessage;
+import org.l2jdd.gameserver.network.serverpackets.ceremonyofchaos.ExCuriousHouseState;
 
 /**
  * @author Sdw

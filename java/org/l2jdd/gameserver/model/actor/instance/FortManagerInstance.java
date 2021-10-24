@@ -14,27 +14,27 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.actor.instance;
+package org.l2jdd.gameserver.model.actor.instance;
 
 import java.text.SimpleDateFormat;
 import java.util.StringTokenizer;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.util.CommonUtil;
-import org.l2jmobius.gameserver.data.xml.SkillData;
-import org.l2jmobius.gameserver.data.xml.TeleporterData;
-import org.l2jmobius.gameserver.enums.InstanceType;
-import org.l2jmobius.gameserver.model.actor.templates.NpcTemplate;
-import org.l2jmobius.gameserver.model.clan.ClanPrivilege;
-import org.l2jmobius.gameserver.model.effects.EffectType;
-import org.l2jmobius.gameserver.model.siege.Fort;
-import org.l2jmobius.gameserver.model.siege.Fort.FortFunction;
-import org.l2jmobius.gameserver.model.skills.Skill;
-import org.l2jmobius.gameserver.model.teleporter.TeleportHolder;
-import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
-import org.l2jmobius.gameserver.network.serverpackets.NpcHtmlMessage;
-import org.l2jmobius.gameserver.network.serverpackets.WareHouseDepositList;
-import org.l2jmobius.gameserver.network.serverpackets.WareHouseWithdrawalList;
+import org.l2jdd.Config;
+import org.l2jdd.commons.util.CommonUtil;
+import org.l2jdd.gameserver.data.xml.SkillData;
+import org.l2jdd.gameserver.data.xml.TeleporterData;
+import org.l2jdd.gameserver.enums.InstanceType;
+import org.l2jdd.gameserver.model.actor.templates.NpcTemplate;
+import org.l2jdd.gameserver.model.clan.ClanPrivilege;
+import org.l2jdd.gameserver.model.effects.EffectType;
+import org.l2jdd.gameserver.model.siege.Fort;
+import org.l2jdd.gameserver.model.siege.Fort.FortFunction;
+import org.l2jdd.gameserver.model.skills.Skill;
+import org.l2jdd.gameserver.model.teleporter.TeleportHolder;
+import org.l2jdd.gameserver.network.serverpackets.ActionFailed;
+import org.l2jdd.gameserver.network.serverpackets.NpcHtmlMessage;
+import org.l2jdd.gameserver.network.serverpackets.WareHouseDepositList;
+import org.l2jdd.gameserver.network.serverpackets.WareHouseWithdrawalList;
 
 /**
  * Fortress Foreman implementation used for: Area Teleports, Support Magic, Clan Warehouse, Exp Loss Reduction

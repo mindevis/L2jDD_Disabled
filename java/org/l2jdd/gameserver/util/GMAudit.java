@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.util;
+package org.l2jdd.gameserver.util;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -24,7 +24,7 @@ import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.l2jmobius.Config;
+import org.l2jdd.Config;
 
 /**
  * Audits Game Master's actions.
@@ -48,8 +48,8 @@ public class GMAudit
 	{
 		final SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy H:mm:ss");
 		final String date = formatter.format(new Date());
-		String name = org.l2jmobius.commons.util.CommonUtil.replaceIllegalCharacters(gmName);
-		if (!org.l2jmobius.commons.util.CommonUtil.isValidFileName(name))
+		String name = org.l2jdd.commons.util.CommonUtil.replaceIllegalCharacters(gmName);
+		if (!org.l2jdd.commons.util.CommonUtil.isValidFileName(name))
 		{
 			name = "INVALID_GM_NAME_" + date;
 		}

@@ -14,15 +14,15 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network.clientpackets;
+package org.l2jdd.gameserver.network.clientpackets;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 import java.util.logging.Level;
 
-import org.l2jmobius.commons.network.PacketReader;
-import org.l2jmobius.gameserver.network.GameClient;
+import org.l2jdd.commons.network.PacketReader;
+import org.l2jdd.gameserver.network.GameClient;
 
 /**
  * Format: c dddd

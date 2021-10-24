@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.actor.request;
+package org.l2jdd.gameserver.model.actor.request;
 
 import java.util.Arrays;
 import java.util.Deque;
@@ -22,13 +22,13 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Objects;
 
-import org.l2jmobius.gameserver.data.xml.SayuneData;
-import org.l2jmobius.gameserver.enums.SayuneType;
-import org.l2jmobius.gameserver.model.SayuneEntry;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.network.serverpackets.sayune.ExFlyMove;
-import org.l2jmobius.gameserver.network.serverpackets.sayune.ExFlyMoveBroadcast;
-import org.l2jmobius.gameserver.util.Broadcast;
+import org.l2jdd.gameserver.data.xml.SayuneData;
+import org.l2jdd.gameserver.enums.SayuneType;
+import org.l2jdd.gameserver.model.SayuneEntry;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.network.serverpackets.sayune.ExFlyMove;
+import org.l2jdd.gameserver.network.serverpackets.sayune.ExFlyMoveBroadcast;
+import org.l2jdd.gameserver.util.Broadcast;
 
 /**
  * @author UnAfraid

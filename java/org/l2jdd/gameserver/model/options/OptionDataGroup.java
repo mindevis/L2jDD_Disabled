@@ -14,12 +14,12 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.options;
+package org.l2jdd.gameserver.model.options;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.l2jmobius.commons.util.Rnd;
+import org.l2jdd.commons.util.Rnd;
 
 /**
  * @author Pere, Mobius

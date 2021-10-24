@@ -14,10 +14,10 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.loginserver.network;
+package org.l2jdd.loginserver.network;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.NetworkManager;
+import org.l2jdd.Config;
+import org.l2jdd.commons.network.NetworkManager;
 
 /**
  * @author Nos

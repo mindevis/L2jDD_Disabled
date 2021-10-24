@@ -19,14 +19,14 @@ package ai.areas.KeucereusAllianceBase;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
-import org.l2jmobius.commons.util.Chronos;
-import org.l2jmobius.gameserver.data.SpawnTable;
-import org.l2jmobius.gameserver.enums.ChatType;
-import org.l2jmobius.gameserver.enums.Movie;
-import org.l2jmobius.gameserver.model.World;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.network.NpcStringId;
+import org.l2jdd.commons.util.Chronos;
+import org.l2jdd.gameserver.data.SpawnTable;
+import org.l2jdd.gameserver.enums.ChatType;
+import org.l2jdd.gameserver.enums.Movie;
+import org.l2jdd.gameserver.model.World;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.network.NpcStringId;
 
 import ai.AbstractNpcAI;
 

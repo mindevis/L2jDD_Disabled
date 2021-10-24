@@ -14,11 +14,11 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.holders;
+package org.l2jdd.gameserver.model.holders;
 
 import java.util.regex.Matcher;
 
-import org.l2jmobius.gameserver.enums.ClassId;
+import org.l2jdd.gameserver.enums.ClassId;
 
 /**
  * This class will hold the information of the player classes.

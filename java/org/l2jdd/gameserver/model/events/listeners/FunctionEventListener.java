@@ -14,16 +14,16 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.events.listeners;
+package org.l2jdd.gameserver.model.events.listeners;
 
 import java.util.function.Function;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.l2jmobius.gameserver.model.events.EventType;
-import org.l2jmobius.gameserver.model.events.ListenersContainer;
-import org.l2jmobius.gameserver.model.events.impl.IBaseEvent;
-import org.l2jmobius.gameserver.model.events.returns.AbstractEventReturn;
+import org.l2jdd.gameserver.model.events.EventType;
+import org.l2jdd.gameserver.model.events.ListenersContainer;
+import org.l2jdd.gameserver.model.events.impl.IBaseEvent;
+import org.l2jdd.gameserver.model.events.returns.AbstractEventReturn;
 
 /**
  * Function event listener provides callback operation with return object possibility.

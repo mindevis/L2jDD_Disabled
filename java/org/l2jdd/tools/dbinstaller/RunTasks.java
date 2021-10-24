@@ -14,15 +14,15 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.tools.dbinstaller;
+package org.l2jdd.tools.dbinstaller;
 
 import java.io.File;
 import java.sql.SQLException;
 
 import javax.swing.JOptionPane;
 
-import org.l2jmobius.tools.dbinstaller.util.mysql.DBDumper;
-import org.l2jmobius.tools.dbinstaller.util.mysql.ScriptExecutor;
+import org.l2jdd.tools.dbinstaller.util.mysql.DBDumper;
+import org.l2jdd.tools.dbinstaller.util.mysql.ScriptExecutor;
 
 /**
  * @author mrTJO

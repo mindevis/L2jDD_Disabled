@@ -16,8 +16,8 @@
  */
 package handlers.usercommandhandlers;
 
-import org.l2jmobius.gameserver.handler.IVoicedCommandHandler;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.handler.IVoicedCommandHandler;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
 
 /**
  * @author xban1x

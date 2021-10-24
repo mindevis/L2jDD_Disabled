@@ -14,11 +14,11 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.taskmanager;
+package org.l2jdd.gameserver.taskmanager;
 
-import static org.l2jmobius.gameserver.taskmanager.TaskTypes.TYPE_NONE;
-import static org.l2jmobius.gameserver.taskmanager.TaskTypes.TYPE_SHEDULED;
-import static org.l2jmobius.gameserver.taskmanager.TaskTypes.TYPE_TIME;
+import static org.l2jdd.gameserver.taskmanager.TaskTypes.TYPE_NONE;
+import static org.l2jdd.gameserver.taskmanager.TaskTypes.TYPE_SHEDULED;
+import static org.l2jdd.gameserver.taskmanager.TaskTypes.TYPE_TIME;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -34,14 +34,14 @@ import java.util.concurrent.ScheduledFuture;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.l2jmobius.commons.concurrent.ThreadPool;
-import org.l2jmobius.commons.database.DatabaseFactory;
-import org.l2jmobius.commons.util.Chronos;
-import org.l2jmobius.gameserver.taskmanager.tasks.TaskBirthday;
-import org.l2jmobius.gameserver.taskmanager.tasks.TaskCleanUp;
-import org.l2jmobius.gameserver.taskmanager.tasks.TaskRecom;
-import org.l2jmobius.gameserver.taskmanager.tasks.TaskRestart;
-import org.l2jmobius.gameserver.taskmanager.tasks.TaskShutdown;
+import org.l2jdd.commons.concurrent.ThreadPool;
+import org.l2jdd.commons.database.DatabaseFactory;
+import org.l2jdd.commons.util.Chronos;
+import org.l2jdd.gameserver.taskmanager.tasks.TaskBirthday;
+import org.l2jdd.gameserver.taskmanager.tasks.TaskCleanUp;
+import org.l2jdd.gameserver.taskmanager.tasks.TaskRecom;
+import org.l2jdd.gameserver.taskmanager.tasks.TaskRestart;
+import org.l2jdd.gameserver.taskmanager.tasks.TaskShutdown;
 
 /**
  * @author Layane

@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.data.xml;
+package org.l2jdd.gameserver.data.xml;
 
 import java.io.File;
 import java.util.Collections;
@@ -37,16 +37,16 @@ import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 
-import org.l2jmobius.commons.util.IXmlReader;
-import org.l2jmobius.gameserver.handler.EffectHandler;
-import org.l2jmobius.gameserver.handler.SkillConditionHandler;
-import org.l2jmobius.gameserver.model.StatSet;
-import org.l2jmobius.gameserver.model.effects.AbstractEffect;
-import org.l2jmobius.gameserver.model.skills.CommonSkill;
-import org.l2jmobius.gameserver.model.skills.EffectScope;
-import org.l2jmobius.gameserver.model.skills.ISkillCondition;
-import org.l2jmobius.gameserver.model.skills.Skill;
-import org.l2jmobius.gameserver.model.skills.SkillConditionScope;
+import org.l2jdd.commons.util.IXmlReader;
+import org.l2jdd.gameserver.handler.EffectHandler;
+import org.l2jdd.gameserver.handler.SkillConditionHandler;
+import org.l2jdd.gameserver.model.StatSet;
+import org.l2jdd.gameserver.model.effects.AbstractEffect;
+import org.l2jdd.gameserver.model.skills.CommonSkill;
+import org.l2jdd.gameserver.model.skills.EffectScope;
+import org.l2jdd.gameserver.model.skills.ISkillCondition;
+import org.l2jdd.gameserver.model.skills.Skill;
+import org.l2jdd.gameserver.model.skills.SkillConditionScope;
 
 import net.objecthunter.exp4j.ExpressionBuilder;
 

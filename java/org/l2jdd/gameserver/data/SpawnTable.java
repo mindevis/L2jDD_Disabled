@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.data;
+package org.l2jdd.gameserver.data;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -28,10 +28,10 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Function;
 import java.util.logging.Logger;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.gameserver.data.xml.NpcData;
-import org.l2jmobius.gameserver.model.Spawn;
-import org.l2jmobius.gameserver.model.World;
+import org.l2jdd.Config;
+import org.l2jdd.gameserver.data.xml.NpcData;
+import org.l2jdd.gameserver.model.Spawn;
+import org.l2jdd.gameserver.model.World;
 
 /**
  * Spawn data retriever.

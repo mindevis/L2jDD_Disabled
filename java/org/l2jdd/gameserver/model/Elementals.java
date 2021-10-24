@@ -14,15 +14,15 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model;
+package org.l2jdd.gameserver.model;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.util.Rnd;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.model.items.type.CrystalType;
+import org.l2jdd.Config;
+import org.l2jdd.commons.util.Rnd;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.model.items.type.CrystalType;
 
 public class Elementals
 {

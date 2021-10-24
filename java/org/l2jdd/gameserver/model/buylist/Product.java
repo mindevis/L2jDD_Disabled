@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.buylist;
+package org.l2jdd.gameserver.model.buylist;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -23,12 +23,12 @@ import java.util.concurrent.atomic.AtomicLong;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.database.DatabaseFactory;
-import org.l2jmobius.commons.util.Chronos;
-import org.l2jmobius.gameserver.model.items.Item;
-import org.l2jmobius.gameserver.model.items.type.EtcItemType;
-import org.l2jmobius.gameserver.taskmanager.BuyListTaskManager;
+import org.l2jdd.Config;
+import org.l2jdd.commons.database.DatabaseFactory;
+import org.l2jdd.commons.util.Chronos;
+import org.l2jdd.gameserver.model.items.Item;
+import org.l2jdd.gameserver.model.items.type.EtcItemType;
+import org.l2jdd.gameserver.taskmanager.BuyListTaskManager;
 
 /**
  * @author NosBit

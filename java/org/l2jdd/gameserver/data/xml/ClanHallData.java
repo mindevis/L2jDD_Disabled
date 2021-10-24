@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.data.xml;
+package org.l2jdd.gameserver.data.xml;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -30,15 +30,15 @@ import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 
-import org.l2jmobius.commons.util.IXmlReader;
-import org.l2jmobius.gameserver.enums.ClanHallGrade;
-import org.l2jmobius.gameserver.enums.ClanHallType;
-import org.l2jmobius.gameserver.model.Location;
-import org.l2jmobius.gameserver.model.StatSet;
-import org.l2jmobius.gameserver.model.actor.instance.DoorInstance;
-import org.l2jmobius.gameserver.model.clan.Clan;
-import org.l2jmobius.gameserver.model.holders.ClanHallTeleportHolder;
-import org.l2jmobius.gameserver.model.residences.ClanHall;
+import org.l2jdd.commons.util.IXmlReader;
+import org.l2jdd.gameserver.enums.ClanHallGrade;
+import org.l2jdd.gameserver.enums.ClanHallType;
+import org.l2jdd.gameserver.model.Location;
+import org.l2jdd.gameserver.model.StatSet;
+import org.l2jdd.gameserver.model.actor.instance.DoorInstance;
+import org.l2jdd.gameserver.model.clan.Clan;
+import org.l2jdd.gameserver.model.holders.ClanHallTeleportHolder;
+import org.l2jdd.gameserver.model.residences.ClanHall;
 
 /**
  * @author St3eT

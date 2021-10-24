@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model;
+package org.l2jdd.gameserver.model;
 
 import java.time.Duration;
 import java.util.ArrayList;
@@ -29,42 +29,42 @@ import java.util.concurrent.Future;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.concurrent.ThreadPool;
-import org.l2jmobius.commons.util.Rnd;
-import org.l2jmobius.gameserver.GameTimeController;
-import org.l2jmobius.gameserver.data.ItemTable;
-import org.l2jmobius.gameserver.enums.PartyDistributionType;
-import org.l2jmobius.gameserver.enums.StatusUpdateType;
-import org.l2jmobius.gameserver.instancemanager.DuelManager;
-import org.l2jmobius.gameserver.instancemanager.PcCafePointsManager;
-import org.l2jmobius.gameserver.model.actor.Attackable;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.Summon;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.actor.instance.ServitorInstance;
-import org.l2jmobius.gameserver.model.holders.ItemHolder;
-import org.l2jmobius.gameserver.model.instancezone.Instance;
-import org.l2jmobius.gameserver.model.itemcontainer.Inventory;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.model.stats.Stat;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.ExAskModifyPartyLooting;
-import org.l2jmobius.gameserver.network.serverpackets.ExCloseMPCC;
-import org.l2jmobius.gameserver.network.serverpackets.ExOpenMPCC;
-import org.l2jmobius.gameserver.network.serverpackets.ExPartyPetWindowAdd;
-import org.l2jmobius.gameserver.network.serverpackets.ExPartyPetWindowDelete;
-import org.l2jmobius.gameserver.network.serverpackets.ExSetPartyLooting;
-import org.l2jmobius.gameserver.network.serverpackets.ExTacticalSign;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
-import org.l2jmobius.gameserver.network.serverpackets.PartyMemberPosition;
-import org.l2jmobius.gameserver.network.serverpackets.PartySmallWindowAdd;
-import org.l2jmobius.gameserver.network.serverpackets.PartySmallWindowAll;
-import org.l2jmobius.gameserver.network.serverpackets.PartySmallWindowDelete;
-import org.l2jmobius.gameserver.network.serverpackets.PartySmallWindowDeleteAll;
-import org.l2jmobius.gameserver.network.serverpackets.StatusUpdate;
-import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
-import org.l2jmobius.gameserver.util.Util;
+import org.l2jdd.Config;
+import org.l2jdd.commons.concurrent.ThreadPool;
+import org.l2jdd.commons.util.Rnd;
+import org.l2jdd.gameserver.GameTimeController;
+import org.l2jdd.gameserver.data.ItemTable;
+import org.l2jdd.gameserver.enums.PartyDistributionType;
+import org.l2jdd.gameserver.enums.StatusUpdateType;
+import org.l2jdd.gameserver.instancemanager.DuelManager;
+import org.l2jdd.gameserver.instancemanager.PcCafePointsManager;
+import org.l2jdd.gameserver.model.actor.Attackable;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.actor.Summon;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.actor.instance.ServitorInstance;
+import org.l2jdd.gameserver.model.holders.ItemHolder;
+import org.l2jdd.gameserver.model.instancezone.Instance;
+import org.l2jdd.gameserver.model.itemcontainer.Inventory;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.model.stats.Stat;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.ExAskModifyPartyLooting;
+import org.l2jdd.gameserver.network.serverpackets.ExCloseMPCC;
+import org.l2jdd.gameserver.network.serverpackets.ExOpenMPCC;
+import org.l2jdd.gameserver.network.serverpackets.ExPartyPetWindowAdd;
+import org.l2jdd.gameserver.network.serverpackets.ExPartyPetWindowDelete;
+import org.l2jdd.gameserver.network.serverpackets.ExSetPartyLooting;
+import org.l2jdd.gameserver.network.serverpackets.ExTacticalSign;
+import org.l2jdd.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jdd.gameserver.network.serverpackets.PartyMemberPosition;
+import org.l2jdd.gameserver.network.serverpackets.PartySmallWindowAdd;
+import org.l2jdd.gameserver.network.serverpackets.PartySmallWindowAll;
+import org.l2jdd.gameserver.network.serverpackets.PartySmallWindowDelete;
+import org.l2jdd.gameserver.network.serverpackets.PartySmallWindowDeleteAll;
+import org.l2jdd.gameserver.network.serverpackets.StatusUpdate;
+import org.l2jdd.gameserver.network.serverpackets.SystemMessage;
+import org.l2jdd.gameserver.util.Util;
 
 /**
  * This class serves as a container for player parties.
@@ -154,7 +154,7 @@ public class Party extends AbstractPlayerGroup
 	/**
 	 * Check if a player invitation request is expired.
 	 * @return {@code true} if time is expired, {@code false} otherwise
-	 * @see org.l2jmobius.gameserver.model.actor.instance.PlayerInstance#isRequestExpired()
+	 * @see org.l2jdd.gameserver.model.actor.instance.PlayerInstance#isRequestExpired()
 	 */
 	public boolean isInvitationRequestExpired()
 	{

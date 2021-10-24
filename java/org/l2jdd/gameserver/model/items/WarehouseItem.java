@@ -14,17 +14,17 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.items;
+package org.l2jdd.gameserver.model.items;
 
 import java.util.Collection;
 import java.util.Objects;
 
-import org.l2jmobius.gameserver.enums.AttributeType;
-import org.l2jmobius.gameserver.model.VariationInstance;
-import org.l2jmobius.gameserver.model.ensoul.EnsoulOption;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.model.items.type.CrystalType;
-import org.l2jmobius.gameserver.model.items.type.ItemType;
+import org.l2jdd.gameserver.enums.AttributeType;
+import org.l2jdd.gameserver.model.VariationInstance;
+import org.l2jdd.gameserver.model.ensoul.EnsoulOption;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.model.items.type.CrystalType;
+import org.l2jdd.gameserver.model.items.type.ItemType;
 
 /**
  * This class contains ItemInstance<br>

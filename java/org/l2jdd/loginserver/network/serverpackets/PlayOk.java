@@ -14,12 +14,12 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.loginserver.network.serverpackets;
+package org.l2jdd.loginserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.IOutgoingPacket;
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.loginserver.SessionKey;
-import org.l2jmobius.loginserver.network.OutgoingPackets;
+import org.l2jdd.commons.network.IOutgoingPacket;
+import org.l2jdd.commons.network.PacketWriter;
+import org.l2jdd.loginserver.SessionKey;
+import org.l2jdd.loginserver.network.OutgoingPackets;
 
 public class PlayOk implements IOutgoingPacket
 {

@@ -16,17 +16,17 @@
  */
 package handlers.effecthandlers;
 
-import org.l2jmobius.commons.util.Chronos;
-import org.l2jmobius.gameserver.data.xml.TimedHuntingZoneData;
-import org.l2jmobius.gameserver.model.StatSet;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.effects.AbstractEffect;
-import org.l2jmobius.gameserver.model.holders.TimedHuntingZoneHolder;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.model.skills.Skill;
-import org.l2jmobius.gameserver.model.variables.PlayerVariables;
-import org.l2jmobius.gameserver.network.serverpackets.huntingzones.TimedHuntingZoneList;
+import org.l2jdd.commons.util.Chronos;
+import org.l2jdd.gameserver.data.xml.TimedHuntingZoneData;
+import org.l2jdd.gameserver.model.StatSet;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.effects.AbstractEffect;
+import org.l2jdd.gameserver.model.holders.TimedHuntingZoneHolder;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.model.skills.Skill;
+import org.l2jdd.gameserver.model.variables.PlayerVariables;
+import org.l2jdd.gameserver.network.serverpackets.huntingzones.TimedHuntingZoneList;
 
 /**
  * @author Mobius

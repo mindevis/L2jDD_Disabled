@@ -14,42 +14,42 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.stats;
+package org.l2jdd.gameserver.model.stats;
 
 import java.util.NoSuchElementException;
 import java.util.OptionalDouble;
 import java.util.function.DoubleBinaryOperator;
 
-import org.l2jmobius.gameserver.enums.AttributeType;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.stats.finalizers.AttributeFinalizer;
-import org.l2jmobius.gameserver.model.stats.finalizers.BaseStatFinalizer;
-import org.l2jmobius.gameserver.model.stats.finalizers.MAccuracyFinalizer;
-import org.l2jmobius.gameserver.model.stats.finalizers.MAttackFinalizer;
-import org.l2jmobius.gameserver.model.stats.finalizers.MAttackSpeedFinalizer;
-import org.l2jmobius.gameserver.model.stats.finalizers.MCritRateFinalizer;
-import org.l2jmobius.gameserver.model.stats.finalizers.MDefenseFinalizer;
-import org.l2jmobius.gameserver.model.stats.finalizers.MEvasionRateFinalizer;
-import org.l2jmobius.gameserver.model.stats.finalizers.MaxCpFinalizer;
-import org.l2jmobius.gameserver.model.stats.finalizers.MaxHpFinalizer;
-import org.l2jmobius.gameserver.model.stats.finalizers.MaxMpFinalizer;
-import org.l2jmobius.gameserver.model.stats.finalizers.PAccuracyFinalizer;
-import org.l2jmobius.gameserver.model.stats.finalizers.PAttackFinalizer;
-import org.l2jmobius.gameserver.model.stats.finalizers.PAttackSpeedFinalizer;
-import org.l2jmobius.gameserver.model.stats.finalizers.PCriticalRateFinalizer;
-import org.l2jmobius.gameserver.model.stats.finalizers.PDefenseFinalizer;
-import org.l2jmobius.gameserver.model.stats.finalizers.PEvasionRateFinalizer;
-import org.l2jmobius.gameserver.model.stats.finalizers.PRangeFinalizer;
-import org.l2jmobius.gameserver.model.stats.finalizers.RandomDamageFinalizer;
-import org.l2jmobius.gameserver.model.stats.finalizers.RegenCPFinalizer;
-import org.l2jmobius.gameserver.model.stats.finalizers.RegenHPFinalizer;
-import org.l2jmobius.gameserver.model.stats.finalizers.RegenMPFinalizer;
-import org.l2jmobius.gameserver.model.stats.finalizers.ShieldDefenceFinalizer;
-import org.l2jmobius.gameserver.model.stats.finalizers.ShieldDefenceRateFinalizer;
-import org.l2jmobius.gameserver.model.stats.finalizers.ShotsBonusFinalizer;
-import org.l2jmobius.gameserver.model.stats.finalizers.SpeedFinalizer;
-import org.l2jmobius.gameserver.model.stats.finalizers.VampiricChanceFinalizer;
-import org.l2jmobius.gameserver.util.MathUtil;
+import org.l2jdd.gameserver.enums.AttributeType;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.stats.finalizers.AttributeFinalizer;
+import org.l2jdd.gameserver.model.stats.finalizers.BaseStatFinalizer;
+import org.l2jdd.gameserver.model.stats.finalizers.MAccuracyFinalizer;
+import org.l2jdd.gameserver.model.stats.finalizers.MAttackFinalizer;
+import org.l2jdd.gameserver.model.stats.finalizers.MAttackSpeedFinalizer;
+import org.l2jdd.gameserver.model.stats.finalizers.MCritRateFinalizer;
+import org.l2jdd.gameserver.model.stats.finalizers.MDefenseFinalizer;
+import org.l2jdd.gameserver.model.stats.finalizers.MEvasionRateFinalizer;
+import org.l2jdd.gameserver.model.stats.finalizers.MaxCpFinalizer;
+import org.l2jdd.gameserver.model.stats.finalizers.MaxHpFinalizer;
+import org.l2jdd.gameserver.model.stats.finalizers.MaxMpFinalizer;
+import org.l2jdd.gameserver.model.stats.finalizers.PAccuracyFinalizer;
+import org.l2jdd.gameserver.model.stats.finalizers.PAttackFinalizer;
+import org.l2jdd.gameserver.model.stats.finalizers.PAttackSpeedFinalizer;
+import org.l2jdd.gameserver.model.stats.finalizers.PCriticalRateFinalizer;
+import org.l2jdd.gameserver.model.stats.finalizers.PDefenseFinalizer;
+import org.l2jdd.gameserver.model.stats.finalizers.PEvasionRateFinalizer;
+import org.l2jdd.gameserver.model.stats.finalizers.PRangeFinalizer;
+import org.l2jdd.gameserver.model.stats.finalizers.RandomDamageFinalizer;
+import org.l2jdd.gameserver.model.stats.finalizers.RegenCPFinalizer;
+import org.l2jdd.gameserver.model.stats.finalizers.RegenHPFinalizer;
+import org.l2jdd.gameserver.model.stats.finalizers.RegenMPFinalizer;
+import org.l2jdd.gameserver.model.stats.finalizers.ShieldDefenceFinalizer;
+import org.l2jdd.gameserver.model.stats.finalizers.ShieldDefenceRateFinalizer;
+import org.l2jdd.gameserver.model.stats.finalizers.ShotsBonusFinalizer;
+import org.l2jdd.gameserver.model.stats.finalizers.SpeedFinalizer;
+import org.l2jdd.gameserver.model.stats.finalizers.VampiricChanceFinalizer;
+import org.l2jdd.gameserver.util.MathUtil;
 
 /**
  * Enum of basic stats.

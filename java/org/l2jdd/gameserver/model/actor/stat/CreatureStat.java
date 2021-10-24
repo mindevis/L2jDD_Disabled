@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.actor.stat;
+package org.l2jdd.gameserver.model.actor.stat;
 
 import java.util.Collections;
 import java.util.Deque;
@@ -32,23 +32,23 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 import java.util.function.BiFunction;
 import java.util.function.BiPredicate;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.gameserver.enums.AttributeType;
-import org.l2jmobius.gameserver.enums.Position;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.effects.AbstractEffect;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.model.skills.AbnormalType;
-import org.l2jmobius.gameserver.model.skills.BuffInfo;
-import org.l2jmobius.gameserver.model.skills.Skill;
-import org.l2jmobius.gameserver.model.skills.SkillConditionScope;
-import org.l2jmobius.gameserver.model.stats.Formulas;
-import org.l2jmobius.gameserver.model.stats.MoveType;
-import org.l2jmobius.gameserver.model.stats.Stat;
-import org.l2jmobius.gameserver.model.stats.StatHolder;
-import org.l2jmobius.gameserver.model.stats.TraitType;
-import org.l2jmobius.gameserver.model.zone.ZoneId;
-import org.l2jmobius.gameserver.util.MathUtil;
+import org.l2jdd.Config;
+import org.l2jdd.gameserver.enums.AttributeType;
+import org.l2jdd.gameserver.enums.Position;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.effects.AbstractEffect;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.model.skills.AbnormalType;
+import org.l2jdd.gameserver.model.skills.BuffInfo;
+import org.l2jdd.gameserver.model.skills.Skill;
+import org.l2jdd.gameserver.model.skills.SkillConditionScope;
+import org.l2jdd.gameserver.model.stats.Formulas;
+import org.l2jdd.gameserver.model.stats.MoveType;
+import org.l2jdd.gameserver.model.stats.Stat;
+import org.l2jdd.gameserver.model.stats.StatHolder;
+import org.l2jdd.gameserver.model.stats.TraitType;
+import org.l2jdd.gameserver.model.zone.ZoneId;
+import org.l2jdd.gameserver.util.MathUtil;
 
 public class CreatureStat
 {

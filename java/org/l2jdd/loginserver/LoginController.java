@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.loginserver;
+package org.l2jdd.loginserver;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
@@ -39,15 +39,15 @@ import java.util.logging.Logger;
 import javax.crypto.KeyGenerator;
 import javax.crypto.SecretKey;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.database.DatabaseFactory;
-import org.l2jmobius.commons.util.Chronos;
-import org.l2jmobius.commons.util.Rnd;
-import org.l2jmobius.commons.util.crypt.ScrambledKeyPair;
-import org.l2jmobius.loginserver.GameServerTable.GameServerInfo;
-import org.l2jmobius.loginserver.model.data.AccountInfo;
-import org.l2jmobius.loginserver.network.LoginClient;
-import org.l2jmobius.loginserver.network.serverpackets.LoginFail.LoginFailReason;
+import org.l2jdd.Config;
+import org.l2jdd.commons.database.DatabaseFactory;
+import org.l2jdd.commons.util.Chronos;
+import org.l2jdd.commons.util.Rnd;
+import org.l2jdd.commons.util.crypt.ScrambledKeyPair;
+import org.l2jdd.loginserver.GameServerTable.GameServerInfo;
+import org.l2jdd.loginserver.model.data.AccountInfo;
+import org.l2jdd.loginserver.network.LoginClient;
+import org.l2jdd.loginserver.network.serverpackets.LoginFail.LoginFailReason;
 
 public class LoginController
 {

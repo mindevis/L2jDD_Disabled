@@ -16,13 +16,13 @@
  */
 package quests.Q00726_LightWithinTheDarkness;
 
-import org.l2jmobius.gameserver.enums.QuestType;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.clan.Clan;
-import org.l2jmobius.gameserver.model.quest.Quest;
-import org.l2jmobius.gameserver.model.quest.QuestState;
-import org.l2jmobius.gameserver.model.siege.Fort;
+import org.l2jdd.gameserver.enums.QuestType;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.clan.Clan;
+import org.l2jdd.gameserver.model.quest.Quest;
+import org.l2jdd.gameserver.model.quest.QuestState;
+import org.l2jdd.gameserver.model.siege.Fort;
 
 /**
  * Light within the Darkness (726)

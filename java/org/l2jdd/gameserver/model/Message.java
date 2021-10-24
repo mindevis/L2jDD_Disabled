@@ -14,21 +14,21 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model;
+package org.l2jdd.gameserver.model;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import org.l2jmobius.commons.util.Chronos;
-import org.l2jmobius.gameserver.data.sql.CharNameTable;
-import org.l2jmobius.gameserver.enums.AttributeType;
-import org.l2jmobius.gameserver.enums.MailType;
-import org.l2jmobius.gameserver.instancemanager.IdManager;
-import org.l2jmobius.gameserver.instancemanager.MailManager;
-import org.l2jmobius.gameserver.model.itemcontainer.Mail;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.commons.util.Chronos;
+import org.l2jdd.gameserver.data.sql.CharNameTable;
+import org.l2jdd.gameserver.enums.AttributeType;
+import org.l2jdd.gameserver.enums.MailType;
+import org.l2jdd.gameserver.instancemanager.IdManager;
+import org.l2jdd.gameserver.instancemanager.MailManager;
+import org.l2jdd.gameserver.model.itemcontainer.Mail;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
 
 /**
  * @author Migi, DS

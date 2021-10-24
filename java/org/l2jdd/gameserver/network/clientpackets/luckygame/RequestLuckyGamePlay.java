@@ -14,33 +14,33 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network.clientpackets.luckygame;
+package org.l2jdd.gameserver.network.clientpackets.luckygame;
 
 import java.util.ArrayList;
 import java.util.EnumMap;
 import java.util.List;
 import java.util.Map.Entry;
 
-import org.l2jmobius.commons.network.PacketReader;
-import org.l2jmobius.commons.util.CommonUtil;
-import org.l2jmobius.commons.util.Rnd;
-import org.l2jmobius.gameserver.data.ItemTable;
-import org.l2jmobius.gameserver.data.xml.LuckyGameData;
-import org.l2jmobius.gameserver.enums.LuckyGameItemType;
-import org.l2jmobius.gameserver.enums.LuckyGameResultType;
-import org.l2jmobius.gameserver.enums.LuckyGameType;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.holders.ItemChanceHolder;
-import org.l2jmobius.gameserver.model.holders.ItemHolder;
-import org.l2jmobius.gameserver.model.holders.LuckyGameDataHolder;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.model.variables.PlayerVariables;
-import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
-import org.l2jmobius.gameserver.network.serverpackets.InventoryUpdate;
-import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
-import org.l2jmobius.gameserver.network.serverpackets.luckygame.ExBettingLuckyGameResult;
+import org.l2jdd.commons.network.PacketReader;
+import org.l2jdd.commons.util.CommonUtil;
+import org.l2jdd.commons.util.Rnd;
+import org.l2jdd.gameserver.data.ItemTable;
+import org.l2jdd.gameserver.data.xml.LuckyGameData;
+import org.l2jdd.gameserver.enums.LuckyGameItemType;
+import org.l2jdd.gameserver.enums.LuckyGameResultType;
+import org.l2jdd.gameserver.enums.LuckyGameType;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.holders.ItemChanceHolder;
+import org.l2jdd.gameserver.model.holders.ItemHolder;
+import org.l2jdd.gameserver.model.holders.LuckyGameDataHolder;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.model.variables.PlayerVariables;
+import org.l2jdd.gameserver.network.GameClient;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jdd.gameserver.network.serverpackets.InventoryUpdate;
+import org.l2jdd.gameserver.network.serverpackets.SystemMessage;
+import org.l2jdd.gameserver.network.serverpackets.luckygame.ExBettingLuckyGameResult;
 
 /**
  * @author Sdw

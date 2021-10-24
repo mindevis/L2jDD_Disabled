@@ -18,15 +18,15 @@ package custom.events.Elpies;
 
 import java.util.concurrent.ScheduledFuture;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.concurrent.ThreadPool;
-import org.l2jmobius.gameserver.data.SpawnTable;
-import org.l2jmobius.gameserver.model.Spawn;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.EventMonsterInstance;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.quest.Event;
-import org.l2jmobius.gameserver.util.Broadcast;
+import org.l2jdd.Config;
+import org.l2jdd.commons.concurrent.ThreadPool;
+import org.l2jdd.gameserver.data.SpawnTable;
+import org.l2jdd.gameserver.model.Spawn;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.EventMonsterInstance;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.quest.Event;
+import org.l2jdd.gameserver.util.Broadcast;
 
 public class Elpies extends Event
 {

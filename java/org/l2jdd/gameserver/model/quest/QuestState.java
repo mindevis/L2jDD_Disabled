@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.quest;
+package org.l2jdd.gameserver.model.quest;
 
 import java.util.Calendar;
 import java.util.HashMap;
@@ -22,15 +22,15 @@ import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.l2jmobius.commons.util.Chronos;
-import org.l2jmobius.gameserver.enums.QuestSound;
-import org.l2jmobius.gameserver.enums.QuestType;
-import org.l2jmobius.gameserver.instancemanager.QuestManager;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.events.EventDispatcher;
-import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerQuestComplete;
-import org.l2jmobius.gameserver.network.serverpackets.ExShowQuestMark;
-import org.l2jmobius.gameserver.network.serverpackets.QuestList;
+import org.l2jdd.commons.util.Chronos;
+import org.l2jdd.gameserver.enums.QuestSound;
+import org.l2jdd.gameserver.enums.QuestType;
+import org.l2jdd.gameserver.instancemanager.QuestManager;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.events.EventDispatcher;
+import org.l2jdd.gameserver.model.events.impl.creature.player.OnPlayerQuestComplete;
+import org.l2jdd.gameserver.network.serverpackets.ExShowQuestMark;
+import org.l2jdd.gameserver.network.serverpackets.QuestList;
 
 /**
  * Quest state class.
@@ -100,7 +100,7 @@ public class QuestState
 	
 	/**
 	 * @return the current State of this QuestState
-	 * @see org.l2jmobius.gameserver.model.quest.State
+	 * @see org.l2jdd.gameserver.model.quest.State
 	 */
 	public byte getState()
 	{
@@ -109,7 +109,7 @@ public class QuestState
 	
 	/**
 	 * @return {@code true} if the State of this QuestState is CREATED, {@code false} otherwise
-	 * @see org.l2jmobius.gameserver.model.quest.State
+	 * @see org.l2jdd.gameserver.model.quest.State
 	 */
 	public boolean isCreated()
 	{
@@ -118,7 +118,7 @@ public class QuestState
 	
 	/**
 	 * @return {@code true} if the State of this QuestState is STARTED, {@code false} otherwise
-	 * @see org.l2jmobius.gameserver.model.quest.State
+	 * @see org.l2jdd.gameserver.model.quest.State
 	 */
 	public boolean isStarted()
 	{
@@ -127,7 +127,7 @@ public class QuestState
 	
 	/**
 	 * @return {@code true} if the State of this QuestState is COMPLETED, {@code false} otherwise
-	 * @see org.l2jmobius.gameserver.model.quest.State
+	 * @see org.l2jdd.gameserver.model.quest.State
 	 */
 	public boolean isCompleted()
 	{
@@ -137,7 +137,7 @@ public class QuestState
 	/**
 	 * @param state the new state of the quest to set
 	 * @see #setState(byte state, boolean saveInDb)
-	 * @see org.l2jmobius.gameserver.model.quest.State
+	 * @see org.l2jdd.gameserver.model.quest.State
 	 */
 	public void setState(byte state)
 	{
@@ -148,7 +148,7 @@ public class QuestState
 	 * Change the state of this quest to the specified value.
 	 * @param state the new state of the quest to set
 	 * @param saveInDb if {@code true}, will save the state change in the database
-	 * @see org.l2jmobius.gameserver.model.quest.State
+	 * @see org.l2jdd.gameserver.model.quest.State
 	 */
 	public void setState(byte state, boolean saveInDb)
 	{

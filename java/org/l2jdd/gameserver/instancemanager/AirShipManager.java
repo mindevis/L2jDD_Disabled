@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.instancemanager;
+package org.l2jdd.gameserver.instancemanager;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -26,15 +26,15 @@ import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.l2jmobius.commons.database.DatabaseFactory;
-import org.l2jmobius.gameserver.model.AirShipTeleportList;
-import org.l2jmobius.gameserver.model.StatSet;
-import org.l2jmobius.gameserver.model.VehiclePathPoint;
-import org.l2jmobius.gameserver.model.actor.instance.AirShipInstance;
-import org.l2jmobius.gameserver.model.actor.instance.ControllableAirShipInstance;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.actor.templates.CreatureTemplate;
-import org.l2jmobius.gameserver.network.serverpackets.ExAirShipTeleportList;
+import org.l2jdd.commons.database.DatabaseFactory;
+import org.l2jdd.gameserver.model.AirShipTeleportList;
+import org.l2jdd.gameserver.model.StatSet;
+import org.l2jdd.gameserver.model.VehiclePathPoint;
+import org.l2jdd.gameserver.model.actor.instance.AirShipInstance;
+import org.l2jdd.gameserver.model.actor.instance.ControllableAirShipInstance;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.actor.templates.CreatureTemplate;
+import org.l2jdd.gameserver.network.serverpackets.ExAirShipTeleportList;
 
 public class AirShipManager
 {

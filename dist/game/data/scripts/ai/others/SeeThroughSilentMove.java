@@ -16,8 +16,8 @@
  */
 package ai.others;
 
-import org.l2jmobius.gameserver.model.actor.Attackable;
-import org.l2jmobius.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.Attackable;
+import org.l2jdd.gameserver.model.actor.Npc;
 
 import ai.AbstractNpcAI;
 

@@ -14,10 +14,10 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.ai;
+package org.l2jdd.gameserver.ai;
 
-import org.l2jmobius.gameserver.model.actor.instance.ShuttleInstance;
-import org.l2jmobius.gameserver.network.serverpackets.shuttle.ExShuttleMove;
+import org.l2jdd.gameserver.model.actor.instance.ShuttleInstance;
+import org.l2jdd.gameserver.network.serverpackets.shuttle.ExShuttleMove;
 
 /**
  * @author UnAfraid

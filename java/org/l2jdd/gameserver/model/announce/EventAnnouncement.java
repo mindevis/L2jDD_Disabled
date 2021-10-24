@@ -14,12 +14,12 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.announce;
+package org.l2jdd.gameserver.model.announce;
 
 import java.util.Date;
 
-import org.l2jmobius.gameserver.instancemanager.IdManager;
-import org.l2jmobius.gameserver.script.DateRange;
+import org.l2jdd.gameserver.instancemanager.IdManager;
+import org.l2jdd.gameserver.script.DateRange;
 
 /**
  * @author UnAfraid

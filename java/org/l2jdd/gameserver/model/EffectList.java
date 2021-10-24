@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model;
+package org.l2jdd.gameserver.model;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -31,24 +31,24 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.Predicate;
 import java.util.logging.Logger;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.effects.AbstractEffect;
-import org.l2jmobius.gameserver.model.effects.EffectFlag;
-import org.l2jmobius.gameserver.model.olympiad.OlympiadGameManager;
-import org.l2jmobius.gameserver.model.olympiad.OlympiadGameTask;
-import org.l2jmobius.gameserver.model.skills.AbnormalType;
-import org.l2jmobius.gameserver.model.skills.AbnormalVisualEffect;
-import org.l2jmobius.gameserver.model.skills.BuffInfo;
-import org.l2jmobius.gameserver.model.skills.EffectScope;
-import org.l2jmobius.gameserver.model.skills.Skill;
-import org.l2jmobius.gameserver.model.skills.SkillBuffType;
-import org.l2jmobius.gameserver.network.serverpackets.AbnormalStatusUpdate;
-import org.l2jmobius.gameserver.network.serverpackets.ExAbnormalStatusUpdateFromTarget;
-import org.l2jmobius.gameserver.network.serverpackets.ExOlympiadSpelledInfo;
-import org.l2jmobius.gameserver.network.serverpackets.PartySpelled;
-import org.l2jmobius.gameserver.network.serverpackets.ShortBuffStatusUpdate;
+import org.l2jdd.Config;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.effects.AbstractEffect;
+import org.l2jdd.gameserver.model.effects.EffectFlag;
+import org.l2jdd.gameserver.model.olympiad.OlympiadGameManager;
+import org.l2jdd.gameserver.model.olympiad.OlympiadGameTask;
+import org.l2jdd.gameserver.model.skills.AbnormalType;
+import org.l2jdd.gameserver.model.skills.AbnormalVisualEffect;
+import org.l2jdd.gameserver.model.skills.BuffInfo;
+import org.l2jdd.gameserver.model.skills.EffectScope;
+import org.l2jdd.gameserver.model.skills.Skill;
+import org.l2jdd.gameserver.model.skills.SkillBuffType;
+import org.l2jdd.gameserver.network.serverpackets.AbnormalStatusUpdate;
+import org.l2jdd.gameserver.network.serverpackets.ExAbnormalStatusUpdateFromTarget;
+import org.l2jdd.gameserver.network.serverpackets.ExOlympiadSpelledInfo;
+import org.l2jdd.gameserver.network.serverpackets.PartySpelled;
+import org.l2jdd.gameserver.network.serverpackets.ShortBuffStatusUpdate;
 
 /**
  * Effect lists.<br>

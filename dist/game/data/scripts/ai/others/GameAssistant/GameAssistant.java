@@ -19,16 +19,16 @@ package ai.others.GameAssistant;
 import java.util.Collection;
 import java.util.HashMap;
 
-import org.l2jmobius.gameserver.handler.IItemHandler;
-import org.l2jmobius.gameserver.handler.ItemHandler;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.itemcontainer.PlayerFreight;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.ExGetPremiumItemList;
-import org.l2jmobius.gameserver.network.serverpackets.PackageToList;
-import org.l2jmobius.gameserver.network.serverpackets.WareHouseWithdrawalList;
+import org.l2jdd.gameserver.handler.IItemHandler;
+import org.l2jdd.gameserver.handler.ItemHandler;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.itemcontainer.PlayerFreight;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.ExGetPremiumItemList;
+import org.l2jdd.gameserver.network.serverpackets.PackageToList;
+import org.l2jdd.gameserver.network.serverpackets.WareHouseWithdrawalList;
 
 import ai.AbstractNpcAI;
 

@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model;
+package org.l2jdd.gameserver.model;
 
 import java.util.Collection;
 import java.util.LinkedList;
@@ -22,14 +22,14 @@ import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Function;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.ExCloseMPCC;
-import org.l2jmobius.gameserver.network.serverpackets.ExMPCCPartyInfoUpdate;
-import org.l2jmobius.gameserver.network.serverpackets.ExOpenMPCC;
-import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
+import org.l2jdd.Config;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.ExCloseMPCC;
+import org.l2jdd.gameserver.network.serverpackets.ExMPCCPartyInfoUpdate;
+import org.l2jdd.gameserver.network.serverpackets.ExOpenMPCC;
+import org.l2jdd.gameserver.network.serverpackets.SystemMessage;
 
 /**
  * This class serves as a container for command channels.
@@ -233,7 +233,7 @@ public class CommandChannel extends AbstractPlayerGroup
 	
 	/**
 	 * Iterates over all command channel members without the need to allocate a new list
-	 * @see org.l2jmobius.gameserver.model.AbstractPlayerGroup#forEachMember(Function)
+	 * @see org.l2jdd.gameserver.model.AbstractPlayerGroup#forEachMember(Function)
 	 */
 	@Override
 	public boolean forEachMember(Function<PlayerInstance, Boolean> function)

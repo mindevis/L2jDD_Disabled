@@ -16,13 +16,13 @@
  */
 package handlers.itemhandlers;
 
-import org.l2jmobius.gameserver.data.xml.PetDataTable;
-import org.l2jmobius.gameserver.model.PetData;
-import org.l2jmobius.gameserver.model.actor.Playable;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.holders.PetItemHolder;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.data.xml.PetDataTable;
+import org.l2jdd.gameserver.model.PetData;
+import org.l2jdd.gameserver.model.actor.Playable;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.holders.PetItemHolder;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.network.SystemMessageId;
 
 /**
  * @author HorridoJoho, UnAfraid

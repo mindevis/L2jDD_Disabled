@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.events;
+package org.l2jdd.gameserver.model.events;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
@@ -33,135 +33,135 @@ import java.util.function.Function;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.util.Rnd;
-import org.l2jmobius.gameserver.GameTimeController;
-import org.l2jmobius.gameserver.ai.CtrlIntention;
-import org.l2jmobius.gameserver.data.ItemTable;
-import org.l2jmobius.gameserver.data.xml.DoorData;
-import org.l2jmobius.gameserver.data.xml.NpcData;
-import org.l2jmobius.gameserver.enums.AttributeType;
-import org.l2jmobius.gameserver.enums.Faction;
-import org.l2jmobius.gameserver.enums.Movie;
-import org.l2jmobius.gameserver.enums.QuestSound;
-import org.l2jmobius.gameserver.instancemanager.CastleManager;
-import org.l2jmobius.gameserver.instancemanager.CommissionManager;
-import org.l2jmobius.gameserver.instancemanager.FortManager;
-import org.l2jmobius.gameserver.instancemanager.InstanceManager;
-import org.l2jmobius.gameserver.instancemanager.MailManager;
-import org.l2jmobius.gameserver.instancemanager.PcCafePointsManager;
-import org.l2jmobius.gameserver.instancemanager.ZoneManager;
-import org.l2jmobius.gameserver.model.Location;
-import org.l2jmobius.gameserver.model.Message;
-import org.l2jmobius.gameserver.model.Spawn;
-import org.l2jmobius.gameserver.model.StatSet;
-import org.l2jmobius.gameserver.model.WorldObject;
-import org.l2jmobius.gameserver.model.actor.Attackable;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.Playable;
-import org.l2jmobius.gameserver.model.actor.Summon;
-import org.l2jmobius.gameserver.model.actor.instance.DoorInstance;
-import org.l2jmobius.gameserver.model.actor.instance.MonsterInstance;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.actor.instance.TrapInstance;
-import org.l2jmobius.gameserver.model.actor.templates.NpcTemplate;
-import org.l2jmobius.gameserver.model.events.annotations.Id;
-import org.l2jmobius.gameserver.model.events.annotations.Ids;
-import org.l2jmobius.gameserver.model.events.annotations.NpcLevelRange;
-import org.l2jmobius.gameserver.model.events.annotations.NpcLevelRanges;
-import org.l2jmobius.gameserver.model.events.annotations.Priority;
-import org.l2jmobius.gameserver.model.events.annotations.Range;
-import org.l2jmobius.gameserver.model.events.annotations.Ranges;
-import org.l2jmobius.gameserver.model.events.annotations.RegisterEvent;
-import org.l2jmobius.gameserver.model.events.annotations.RegisterType;
-import org.l2jmobius.gameserver.model.events.impl.IBaseEvent;
-import org.l2jmobius.gameserver.model.events.impl.creature.OnCreatureAttacked;
-import org.l2jmobius.gameserver.model.events.impl.creature.OnCreatureDeath;
-import org.l2jmobius.gameserver.model.events.impl.creature.OnCreatureSee;
-import org.l2jmobius.gameserver.model.events.impl.creature.OnCreatureZoneEnter;
-import org.l2jmobius.gameserver.model.events.impl.creature.OnCreatureZoneExit;
-import org.l2jmobius.gameserver.model.events.impl.creature.npc.OnAttackableAggroRangeEnter;
-import org.l2jmobius.gameserver.model.events.impl.creature.npc.OnAttackableAttack;
-import org.l2jmobius.gameserver.model.events.impl.creature.npc.OnAttackableFactionCall;
-import org.l2jmobius.gameserver.model.events.impl.creature.npc.OnAttackableHate;
-import org.l2jmobius.gameserver.model.events.impl.creature.npc.OnAttackableKill;
-import org.l2jmobius.gameserver.model.events.impl.creature.npc.OnNpcCanBeSeen;
-import org.l2jmobius.gameserver.model.events.impl.creature.npc.OnNpcCreatureSee;
-import org.l2jmobius.gameserver.model.events.impl.creature.npc.OnNpcDespawn;
-import org.l2jmobius.gameserver.model.events.impl.creature.npc.OnNpcEventReceived;
-import org.l2jmobius.gameserver.model.events.impl.creature.npc.OnNpcFirstTalk;
-import org.l2jmobius.gameserver.model.events.impl.creature.npc.OnNpcMoveFinished;
-import org.l2jmobius.gameserver.model.events.impl.creature.npc.OnNpcMoveNodeArrived;
-import org.l2jmobius.gameserver.model.events.impl.creature.npc.OnNpcMoveRouteFinished;
-import org.l2jmobius.gameserver.model.events.impl.creature.npc.OnNpcSkillFinished;
-import org.l2jmobius.gameserver.model.events.impl.creature.npc.OnNpcSkillSee;
-import org.l2jmobius.gameserver.model.events.impl.creature.npc.OnNpcSpawn;
-import org.l2jmobius.gameserver.model.events.impl.creature.npc.OnNpcTeleport;
-import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerLogin;
-import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerLogout;
-import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerProfessionCancel;
-import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerProfessionChange;
-import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerSkillLearn;
-import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerSummonSpawn;
-import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerSummonTalk;
-import org.l2jmobius.gameserver.model.events.impl.creature.player.OnTrapAction;
-import org.l2jmobius.gameserver.model.events.impl.instance.OnInstanceCreated;
-import org.l2jmobius.gameserver.model.events.impl.instance.OnInstanceDestroy;
-import org.l2jmobius.gameserver.model.events.impl.instance.OnInstanceEnter;
-import org.l2jmobius.gameserver.model.events.impl.instance.OnInstanceLeave;
-import org.l2jmobius.gameserver.model.events.impl.instance.OnInstanceStatusChange;
-import org.l2jmobius.gameserver.model.events.impl.item.OnItemBypassEvent;
-import org.l2jmobius.gameserver.model.events.impl.item.OnItemTalk;
-import org.l2jmobius.gameserver.model.events.impl.olympiad.OnOlympiadMatchResult;
-import org.l2jmobius.gameserver.model.events.impl.sieges.OnCastleSiegeFinish;
-import org.l2jmobius.gameserver.model.events.impl.sieges.OnCastleSiegeOwnerChange;
-import org.l2jmobius.gameserver.model.events.impl.sieges.OnCastleSiegeStart;
-import org.l2jmobius.gameserver.model.events.listeners.AbstractEventListener;
-import org.l2jmobius.gameserver.model.events.listeners.AnnotationEventListener;
-import org.l2jmobius.gameserver.model.events.listeners.ConsumerEventListener;
-import org.l2jmobius.gameserver.model.events.listeners.DummyEventListener;
-import org.l2jmobius.gameserver.model.events.listeners.FunctionEventListener;
-import org.l2jmobius.gameserver.model.events.listeners.RunnableEventListener;
-import org.l2jmobius.gameserver.model.events.returns.AbstractEventReturn;
-import org.l2jmobius.gameserver.model.events.returns.TerminateReturn;
-import org.l2jmobius.gameserver.model.events.timers.IEventTimerCancel;
-import org.l2jmobius.gameserver.model.events.timers.IEventTimerEvent;
-import org.l2jmobius.gameserver.model.events.timers.TimerHolder;
-import org.l2jmobius.gameserver.model.holders.ItemHolder;
-import org.l2jmobius.gameserver.model.holders.MovieHolder;
-import org.l2jmobius.gameserver.model.holders.SkillHolder;
-import org.l2jmobius.gameserver.model.instancezone.Instance;
-import org.l2jmobius.gameserver.model.instancezone.InstanceTemplate;
-import org.l2jmobius.gameserver.model.interfaces.IPositionable;
-import org.l2jmobius.gameserver.model.itemcontainer.Inventory;
-import org.l2jmobius.gameserver.model.itemcontainer.Mail;
-import org.l2jmobius.gameserver.model.itemcontainer.PetInventory;
-import org.l2jmobius.gameserver.model.itemcontainer.PlayerInventory;
-import org.l2jmobius.gameserver.model.itemcontainer.PlayerWarehouse;
-import org.l2jmobius.gameserver.model.items.EtcItem;
-import org.l2jmobius.gameserver.model.items.Item;
-import org.l2jmobius.gameserver.model.items.enchant.attribute.AttributeHolder;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.model.olympiad.Olympiad;
-import org.l2jmobius.gameserver.model.siege.Castle;
-import org.l2jmobius.gameserver.model.siege.Fort;
-import org.l2jmobius.gameserver.model.skills.Skill;
-import org.l2jmobius.gameserver.model.spawns.SpawnGroup;
-import org.l2jmobius.gameserver.model.spawns.SpawnTemplate;
-import org.l2jmobius.gameserver.model.stats.Stat;
-import org.l2jmobius.gameserver.model.zone.ZoneType;
-import org.l2jmobius.gameserver.network.NpcStringId;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.ExAdenaInvenCount;
-import org.l2jmobius.gameserver.network.serverpackets.ExShowScreenMessage;
-import org.l2jmobius.gameserver.network.serverpackets.ExUserInfoInvenWeight;
-import org.l2jmobius.gameserver.network.serverpackets.InventoryUpdate;
-import org.l2jmobius.gameserver.network.serverpackets.PlaySound;
-import org.l2jmobius.gameserver.network.serverpackets.SpecialCamera;
-import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
-import org.l2jmobius.gameserver.scripting.ManagedScript;
-import org.l2jmobius.gameserver.util.MinionList;
+import org.l2jdd.Config;
+import org.l2jdd.commons.util.Rnd;
+import org.l2jdd.gameserver.GameTimeController;
+import org.l2jdd.gameserver.ai.CtrlIntention;
+import org.l2jdd.gameserver.data.ItemTable;
+import org.l2jdd.gameserver.data.xml.DoorData;
+import org.l2jdd.gameserver.data.xml.NpcData;
+import org.l2jdd.gameserver.enums.AttributeType;
+import org.l2jdd.gameserver.enums.Faction;
+import org.l2jdd.gameserver.enums.Movie;
+import org.l2jdd.gameserver.enums.QuestSound;
+import org.l2jdd.gameserver.instancemanager.CastleManager;
+import org.l2jdd.gameserver.instancemanager.CommissionManager;
+import org.l2jdd.gameserver.instancemanager.FortManager;
+import org.l2jdd.gameserver.instancemanager.InstanceManager;
+import org.l2jdd.gameserver.instancemanager.MailManager;
+import org.l2jdd.gameserver.instancemanager.PcCafePointsManager;
+import org.l2jdd.gameserver.instancemanager.ZoneManager;
+import org.l2jdd.gameserver.model.Location;
+import org.l2jdd.gameserver.model.Message;
+import org.l2jdd.gameserver.model.Spawn;
+import org.l2jdd.gameserver.model.StatSet;
+import org.l2jdd.gameserver.model.WorldObject;
+import org.l2jdd.gameserver.model.actor.Attackable;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.Playable;
+import org.l2jdd.gameserver.model.actor.Summon;
+import org.l2jdd.gameserver.model.actor.instance.DoorInstance;
+import org.l2jdd.gameserver.model.actor.instance.MonsterInstance;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.actor.instance.TrapInstance;
+import org.l2jdd.gameserver.model.actor.templates.NpcTemplate;
+import org.l2jdd.gameserver.model.events.annotations.Id;
+import org.l2jdd.gameserver.model.events.annotations.Ids;
+import org.l2jdd.gameserver.model.events.annotations.NpcLevelRange;
+import org.l2jdd.gameserver.model.events.annotations.NpcLevelRanges;
+import org.l2jdd.gameserver.model.events.annotations.Priority;
+import org.l2jdd.gameserver.model.events.annotations.Range;
+import org.l2jdd.gameserver.model.events.annotations.Ranges;
+import org.l2jdd.gameserver.model.events.annotations.RegisterEvent;
+import org.l2jdd.gameserver.model.events.annotations.RegisterType;
+import org.l2jdd.gameserver.model.events.impl.IBaseEvent;
+import org.l2jdd.gameserver.model.events.impl.creature.OnCreatureAttacked;
+import org.l2jdd.gameserver.model.events.impl.creature.OnCreatureDeath;
+import org.l2jdd.gameserver.model.events.impl.creature.OnCreatureSee;
+import org.l2jdd.gameserver.model.events.impl.creature.OnCreatureZoneEnter;
+import org.l2jdd.gameserver.model.events.impl.creature.OnCreatureZoneExit;
+import org.l2jdd.gameserver.model.events.impl.creature.npc.OnAttackableAggroRangeEnter;
+import org.l2jdd.gameserver.model.events.impl.creature.npc.OnAttackableAttack;
+import org.l2jdd.gameserver.model.events.impl.creature.npc.OnAttackableFactionCall;
+import org.l2jdd.gameserver.model.events.impl.creature.npc.OnAttackableHate;
+import org.l2jdd.gameserver.model.events.impl.creature.npc.OnAttackableKill;
+import org.l2jdd.gameserver.model.events.impl.creature.npc.OnNpcCanBeSeen;
+import org.l2jdd.gameserver.model.events.impl.creature.npc.OnNpcCreatureSee;
+import org.l2jdd.gameserver.model.events.impl.creature.npc.OnNpcDespawn;
+import org.l2jdd.gameserver.model.events.impl.creature.npc.OnNpcEventReceived;
+import org.l2jdd.gameserver.model.events.impl.creature.npc.OnNpcFirstTalk;
+import org.l2jdd.gameserver.model.events.impl.creature.npc.OnNpcMoveFinished;
+import org.l2jdd.gameserver.model.events.impl.creature.npc.OnNpcMoveNodeArrived;
+import org.l2jdd.gameserver.model.events.impl.creature.npc.OnNpcMoveRouteFinished;
+import org.l2jdd.gameserver.model.events.impl.creature.npc.OnNpcSkillFinished;
+import org.l2jdd.gameserver.model.events.impl.creature.npc.OnNpcSkillSee;
+import org.l2jdd.gameserver.model.events.impl.creature.npc.OnNpcSpawn;
+import org.l2jdd.gameserver.model.events.impl.creature.npc.OnNpcTeleport;
+import org.l2jdd.gameserver.model.events.impl.creature.player.OnPlayerLogin;
+import org.l2jdd.gameserver.model.events.impl.creature.player.OnPlayerLogout;
+import org.l2jdd.gameserver.model.events.impl.creature.player.OnPlayerProfessionCancel;
+import org.l2jdd.gameserver.model.events.impl.creature.player.OnPlayerProfessionChange;
+import org.l2jdd.gameserver.model.events.impl.creature.player.OnPlayerSkillLearn;
+import org.l2jdd.gameserver.model.events.impl.creature.player.OnPlayerSummonSpawn;
+import org.l2jdd.gameserver.model.events.impl.creature.player.OnPlayerSummonTalk;
+import org.l2jdd.gameserver.model.events.impl.creature.player.OnTrapAction;
+import org.l2jdd.gameserver.model.events.impl.instance.OnInstanceCreated;
+import org.l2jdd.gameserver.model.events.impl.instance.OnInstanceDestroy;
+import org.l2jdd.gameserver.model.events.impl.instance.OnInstanceEnter;
+import org.l2jdd.gameserver.model.events.impl.instance.OnInstanceLeave;
+import org.l2jdd.gameserver.model.events.impl.instance.OnInstanceStatusChange;
+import org.l2jdd.gameserver.model.events.impl.item.OnItemBypassEvent;
+import org.l2jdd.gameserver.model.events.impl.item.OnItemTalk;
+import org.l2jdd.gameserver.model.events.impl.olympiad.OnOlympiadMatchResult;
+import org.l2jdd.gameserver.model.events.impl.sieges.OnCastleSiegeFinish;
+import org.l2jdd.gameserver.model.events.impl.sieges.OnCastleSiegeOwnerChange;
+import org.l2jdd.gameserver.model.events.impl.sieges.OnCastleSiegeStart;
+import org.l2jdd.gameserver.model.events.listeners.AbstractEventListener;
+import org.l2jdd.gameserver.model.events.listeners.AnnotationEventListener;
+import org.l2jdd.gameserver.model.events.listeners.ConsumerEventListener;
+import org.l2jdd.gameserver.model.events.listeners.DummyEventListener;
+import org.l2jdd.gameserver.model.events.listeners.FunctionEventListener;
+import org.l2jdd.gameserver.model.events.listeners.RunnableEventListener;
+import org.l2jdd.gameserver.model.events.returns.AbstractEventReturn;
+import org.l2jdd.gameserver.model.events.returns.TerminateReturn;
+import org.l2jdd.gameserver.model.events.timers.IEventTimerCancel;
+import org.l2jdd.gameserver.model.events.timers.IEventTimerEvent;
+import org.l2jdd.gameserver.model.events.timers.TimerHolder;
+import org.l2jdd.gameserver.model.holders.ItemHolder;
+import org.l2jdd.gameserver.model.holders.MovieHolder;
+import org.l2jdd.gameserver.model.holders.SkillHolder;
+import org.l2jdd.gameserver.model.instancezone.Instance;
+import org.l2jdd.gameserver.model.instancezone.InstanceTemplate;
+import org.l2jdd.gameserver.model.interfaces.IPositionable;
+import org.l2jdd.gameserver.model.itemcontainer.Inventory;
+import org.l2jdd.gameserver.model.itemcontainer.Mail;
+import org.l2jdd.gameserver.model.itemcontainer.PetInventory;
+import org.l2jdd.gameserver.model.itemcontainer.PlayerInventory;
+import org.l2jdd.gameserver.model.itemcontainer.PlayerWarehouse;
+import org.l2jdd.gameserver.model.items.EtcItem;
+import org.l2jdd.gameserver.model.items.Item;
+import org.l2jdd.gameserver.model.items.enchant.attribute.AttributeHolder;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.model.olympiad.Olympiad;
+import org.l2jdd.gameserver.model.siege.Castle;
+import org.l2jdd.gameserver.model.siege.Fort;
+import org.l2jdd.gameserver.model.skills.Skill;
+import org.l2jdd.gameserver.model.spawns.SpawnGroup;
+import org.l2jdd.gameserver.model.spawns.SpawnTemplate;
+import org.l2jdd.gameserver.model.stats.Stat;
+import org.l2jdd.gameserver.model.zone.ZoneType;
+import org.l2jdd.gameserver.network.NpcStringId;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.ExAdenaInvenCount;
+import org.l2jdd.gameserver.network.serverpackets.ExShowScreenMessage;
+import org.l2jdd.gameserver.network.serverpackets.ExUserInfoInvenWeight;
+import org.l2jdd.gameserver.network.serverpackets.InventoryUpdate;
+import org.l2jdd.gameserver.network.serverpackets.PlaySound;
+import org.l2jdd.gameserver.network.serverpackets.SpecialCamera;
+import org.l2jdd.gameserver.network.serverpackets.SystemMessage;
+import org.l2jdd.gameserver.scripting.ManagedScript;
+import org.l2jdd.gameserver.util.MinionList;
 
 /**
  * @author UnAfraid
@@ -1170,7 +1170,7 @@ public abstract class AbstractScript extends ManagedScript implements IEventTime
 	// ---------------------------------------------------------------------------------------------------------------------------
 	
 	/**
-	 * Provides instant callback operation when {@link org.l2jmobius.gameserver.model.actor.Creature} Enters on a {@link ZoneType}.
+	 * Provides instant callback operation when {@link org.l2jdd.gameserver.model.actor.Creature} Enters on a {@link ZoneType}.
 	 * @param callback
 	 * @param npcIds
 	 * @return
@@ -1181,7 +1181,7 @@ public abstract class AbstractScript extends ManagedScript implements IEventTime
 	}
 	
 	/**
-	 * Provides instant callback operation when {@link org.l2jmobius.gameserver.model.actor.Creature} Enters on a {@link ZoneType}.
+	 * Provides instant callback operation when {@link org.l2jdd.gameserver.model.actor.Creature} Enters on a {@link ZoneType}.
 	 * @param callback
 	 * @param npcIds
 	 * @return
@@ -1194,7 +1194,7 @@ public abstract class AbstractScript extends ManagedScript implements IEventTime
 	// ---------------------------------------------------------------------------------------------------------------------------
 	
 	/**
-	 * Provides instant callback operation when {@link org.l2jmobius.gameserver.model.actor.Creature} Exits on a {@link ZoneType}.
+	 * Provides instant callback operation when {@link org.l2jdd.gameserver.model.actor.Creature} Exits on a {@link ZoneType}.
 	 * @param callback
 	 * @param npcIds
 	 * @return
@@ -1205,7 +1205,7 @@ public abstract class AbstractScript extends ManagedScript implements IEventTime
 	}
 	
 	/**
-	 * Provides instant callback operation when {@link org.l2jmobius.gameserver.model.actor.Creature} Exits on a {@link ZoneType}.
+	 * Provides instant callback operation when {@link org.l2jdd.gameserver.model.actor.Creature} Exits on a {@link ZoneType}.
 	 * @param callback
 	 * @param npcIds
 	 * @return
@@ -1218,7 +1218,7 @@ public abstract class AbstractScript extends ManagedScript implements IEventTime
 	// ---------------------------------------------------------------------------------------------------------------------------
 	
 	/**
-	 * Provides instant callback operation when {@link org.l2jmobius.gameserver.model.actor.instance.TrapInstance} acts.
+	 * Provides instant callback operation when {@link org.l2jdd.gameserver.model.actor.instance.TrapInstance} acts.
 	 * @param callback
 	 * @param npcIds
 	 * @return
@@ -1229,7 +1229,7 @@ public abstract class AbstractScript extends ManagedScript implements IEventTime
 	}
 	
 	/**
-	 * Provides instant callback operation when {@link org.l2jmobius.gameserver.model.actor.instance.TrapInstance} acts.
+	 * Provides instant callback operation when {@link org.l2jdd.gameserver.model.actor.instance.TrapInstance} acts.
 	 * @param callback
 	 * @param npcIds
 	 * @return
@@ -3110,7 +3110,7 @@ public abstract class AbstractScript extends ManagedScript implements IEventTime
 	
 	/**
 	 * Get a random integer from 0 (inclusive) to {@code max} (exclusive).<br>
-	 * Use this method instead of importing {@link org.l2jmobius.commons.util.Rnd} utility.
+	 * Use this method instead of importing {@link org.l2jdd.commons.util.Rnd} utility.
 	 * @param max the maximum value for randomization
 	 * @return a random integer number from 0 to {@code max - 1}
 	 */
@@ -3121,7 +3121,7 @@ public abstract class AbstractScript extends ManagedScript implements IEventTime
 	
 	/**
 	 * Get a random integer from {@code min} (inclusive) to {@code max} (inclusive).<br>
-	 * Use this method instead of importing {@link org.l2jmobius.commons.util.Rnd} utility.
+	 * Use this method instead of importing {@link org.l2jdd.commons.util.Rnd} utility.
 	 * @param min the minimum value for randomization
 	 * @param max the maximum value for randomization
 	 * @return a random integer number from {@code min} to {@code max}
@@ -3133,7 +3133,7 @@ public abstract class AbstractScript extends ManagedScript implements IEventTime
 	
 	/**
 	 * Get a random boolean.<br>
-	 * Use this method instead of importing {@link org.l2jmobius.commons.util.Rnd} utility.
+	 * Use this method instead of importing {@link org.l2jdd.commons.util.Rnd} utility.
 	 * @return {@code true} or {@code false} randomly
 	 */
 	public static boolean getRandomBoolean()
@@ -3194,7 +3194,7 @@ public abstract class AbstractScript extends ManagedScript implements IEventTime
 	}
 	
 	/**
-	 * @return the number of ticks from the {@link org.l2jmobius.gameserver.GameTimeController}.
+	 * @return the number of ticks from the {@link org.l2jdd.gameserver.GameTimeController}.
 	 */
 	public static int getGameTicks()
 	{

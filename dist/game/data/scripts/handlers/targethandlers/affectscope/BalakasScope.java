@@ -18,11 +18,11 @@ package handlers.targethandlers.affectscope;
 
 import java.util.function.Consumer;
 
-import org.l2jmobius.gameserver.handler.IAffectScopeHandler;
-import org.l2jmobius.gameserver.model.WorldObject;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.skills.Skill;
-import org.l2jmobius.gameserver.model.skills.targets.AffectScope;
+import org.l2jdd.gameserver.handler.IAffectScopeHandler;
+import org.l2jdd.gameserver.model.WorldObject;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.skills.Skill;
+import org.l2jdd.gameserver.model.skills.targets.AffectScope;
 
 /**
  * TODO: Valakas affect scope implementation.

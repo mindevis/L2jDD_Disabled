@@ -14,15 +14,15 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network.serverpackets.pledgeV2;
+package org.l2jdd.gameserver.network.serverpackets.pledgeV2;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.data.xml.ClanMasteryData;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.clan.Clan;
-import org.l2jmobius.gameserver.model.holders.ClanMasteryHolder;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.AbstractItemPacket;
+import org.l2jdd.commons.network.PacketWriter;
+import org.l2jdd.gameserver.data.xml.ClanMasteryData;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.clan.Clan;
+import org.l2jdd.gameserver.model.holders.ClanMasteryHolder;
+import org.l2jdd.gameserver.network.OutgoingPackets;
+import org.l2jdd.gameserver.network.serverpackets.AbstractItemPacket;
 
 /**
  * @author Mobius

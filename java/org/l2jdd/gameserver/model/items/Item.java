@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.items;
+package org.l2jdd.gameserver.model.items;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -27,34 +27,34 @@ import java.util.function.Consumer;
 import java.util.function.Predicate;
 import java.util.logging.Logger;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.gameserver.data.ItemTable;
-import org.l2jmobius.gameserver.enums.AttributeType;
-import org.l2jmobius.gameserver.enums.ItemGrade;
-import org.l2jmobius.gameserver.enums.ItemSkillType;
-import org.l2jmobius.gameserver.model.ExtractableProduct;
-import org.l2jmobius.gameserver.model.PlayerCondOverride;
-import org.l2jmobius.gameserver.model.StatSet;
-import org.l2jmobius.gameserver.model.WorldObject;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.ceremonyofchaos.CeremonyOfChaosEvent;
-import org.l2jmobius.gameserver.model.commission.CommissionItemType;
-import org.l2jmobius.gameserver.model.conditions.Condition;
-import org.l2jmobius.gameserver.model.events.ListenersContainer;
-import org.l2jmobius.gameserver.model.holders.ItemSkillHolder;
-import org.l2jmobius.gameserver.model.interfaces.IIdentifiable;
-import org.l2jmobius.gameserver.model.items.enchant.attribute.AttributeHolder;
-import org.l2jmobius.gameserver.model.items.type.ActionType;
-import org.l2jmobius.gameserver.model.items.type.CrystalType;
-import org.l2jmobius.gameserver.model.items.type.EtcItemType;
-import org.l2jmobius.gameserver.model.items.type.ItemType;
-import org.l2jmobius.gameserver.model.items.type.MaterialType;
-import org.l2jmobius.gameserver.model.stats.Stat;
-import org.l2jmobius.gameserver.model.stats.functions.FuncAdd;
-import org.l2jmobius.gameserver.model.stats.functions.FuncSet;
-import org.l2jmobius.gameserver.model.stats.functions.FuncTemplate;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
+import org.l2jdd.Config;
+import org.l2jdd.gameserver.data.ItemTable;
+import org.l2jdd.gameserver.enums.AttributeType;
+import org.l2jdd.gameserver.enums.ItemGrade;
+import org.l2jdd.gameserver.enums.ItemSkillType;
+import org.l2jdd.gameserver.model.ExtractableProduct;
+import org.l2jdd.gameserver.model.PlayerCondOverride;
+import org.l2jdd.gameserver.model.StatSet;
+import org.l2jdd.gameserver.model.WorldObject;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.ceremonyofchaos.CeremonyOfChaosEvent;
+import org.l2jdd.gameserver.model.commission.CommissionItemType;
+import org.l2jdd.gameserver.model.conditions.Condition;
+import org.l2jdd.gameserver.model.events.ListenersContainer;
+import org.l2jdd.gameserver.model.holders.ItemSkillHolder;
+import org.l2jdd.gameserver.model.interfaces.IIdentifiable;
+import org.l2jdd.gameserver.model.items.enchant.attribute.AttributeHolder;
+import org.l2jdd.gameserver.model.items.type.ActionType;
+import org.l2jdd.gameserver.model.items.type.CrystalType;
+import org.l2jdd.gameserver.model.items.type.EtcItemType;
+import org.l2jdd.gameserver.model.items.type.ItemType;
+import org.l2jdd.gameserver.model.items.type.MaterialType;
+import org.l2jdd.gameserver.model.stats.Stat;
+import org.l2jdd.gameserver.model.stats.functions.FuncAdd;
+import org.l2jdd.gameserver.model.stats.functions.FuncSet;
+import org.l2jdd.gameserver.model.stats.functions.FuncTemplate;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.SystemMessage;
 
 /**
  * This class contains all informations concerning the item (weapon, armor, etc).<br>

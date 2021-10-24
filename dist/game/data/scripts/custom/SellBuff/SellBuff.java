@@ -18,22 +18,22 @@ package custom.SellBuff;
 
 import java.util.StringTokenizer;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.gameserver.data.ItemTable;
-import org.l2jmobius.gameserver.handler.BypassHandler;
-import org.l2jmobius.gameserver.handler.IBypassHandler;
-import org.l2jmobius.gameserver.handler.IVoicedCommandHandler;
-import org.l2jmobius.gameserver.handler.VoicedCommandHandler;
-import org.l2jmobius.gameserver.instancemanager.SellBuffsManager;
-import org.l2jmobius.gameserver.model.World;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.events.AbstractScript;
-import org.l2jmobius.gameserver.model.holders.SellBuffHolder;
-import org.l2jmobius.gameserver.model.items.Item;
-import org.l2jmobius.gameserver.model.skills.Skill;
-import org.l2jmobius.gameserver.util.Util;
+import org.l2jdd.Config;
+import org.l2jdd.gameserver.data.ItemTable;
+import org.l2jdd.gameserver.handler.BypassHandler;
+import org.l2jdd.gameserver.handler.IBypassHandler;
+import org.l2jdd.gameserver.handler.IVoicedCommandHandler;
+import org.l2jdd.gameserver.handler.VoicedCommandHandler;
+import org.l2jdd.gameserver.instancemanager.SellBuffsManager;
+import org.l2jdd.gameserver.model.World;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.events.AbstractScript;
+import org.l2jdd.gameserver.model.holders.SellBuffHolder;
+import org.l2jdd.gameserver.model.items.Item;
+import org.l2jdd.gameserver.model.skills.Skill;
+import org.l2jdd.gameserver.util.Util;
 
 /**
  * Sell Buffs voice command

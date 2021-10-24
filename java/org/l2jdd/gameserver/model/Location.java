@@ -14,13 +14,13 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model;
+package org.l2jdd.gameserver.model;
 
 import java.util.Objects;
 
-import org.l2jmobius.commons.util.Point2D;
-import org.l2jmobius.gameserver.model.interfaces.ILocational;
-import org.l2jmobius.gameserver.model.interfaces.IPositionable;
+import org.l2jdd.commons.util.Point2D;
+import org.l2jdd.gameserver.model.interfaces.ILocational;
+import org.l2jdd.gameserver.model.interfaces.IPositionable;
 
 /**
  * A datatype used to retain a 3D (x/y/z/heading) point. It got the capability to be set and cleaned.

@@ -14,16 +14,16 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.stats.finalizers;
+package org.l2jdd.gameserver.model.stats.finalizers;
 
 import java.util.OptionalDouble;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.stats.BaseStat;
-import org.l2jmobius.gameserver.model.stats.IStatFunction;
-import org.l2jmobius.gameserver.model.stats.Stat;
+import org.l2jdd.Config;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.stats.BaseStat;
+import org.l2jdd.gameserver.model.stats.IStatFunction;
+import org.l2jdd.gameserver.model.stats.Stat;
 
 /**
  * @author UnAfraid

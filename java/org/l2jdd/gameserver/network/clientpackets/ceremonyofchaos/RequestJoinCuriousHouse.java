@@ -14,16 +14,16 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network.clientpackets.ceremonyofchaos;
+package org.l2jdd.gameserver.network.clientpackets.ceremonyofchaos;
 
-import org.l2jmobius.commons.network.PacketReader;
-import org.l2jmobius.gameserver.enums.CeremonyOfChaosState;
-import org.l2jmobius.gameserver.instancemanager.CeremonyOfChaosManager;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
-import org.l2jmobius.gameserver.network.serverpackets.ceremonyofchaos.ExCuriousHouseState;
+import org.l2jdd.commons.network.PacketReader;
+import org.l2jdd.gameserver.enums.CeremonyOfChaosState;
+import org.l2jdd.gameserver.instancemanager.CeremonyOfChaosManager;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.network.GameClient;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jdd.gameserver.network.serverpackets.ceremonyofchaos.ExCuriousHouseState;
 
 /**
  * @author Sdw

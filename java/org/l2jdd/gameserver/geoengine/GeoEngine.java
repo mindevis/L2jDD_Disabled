@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.geoengine;
+package org.l2jdd.gameserver.geoengine;
 
 import java.io.File;
 import java.io.RandomAccessFile;
@@ -29,24 +29,24 @@ import java.util.List;
 import java.util.ListIterator;
 import java.util.logging.Logger;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.util.CommonUtil;
-import org.l2jmobius.gameserver.data.xml.DoorData;
-import org.l2jmobius.gameserver.data.xml.FenceData;
-import org.l2jmobius.gameserver.enums.GeoType;
-import org.l2jmobius.gameserver.enums.MoveDirectionType;
-import org.l2jmobius.gameserver.geoengine.geodata.ABlock;
-import org.l2jmobius.gameserver.geoengine.geodata.BlockComplex;
-import org.l2jmobius.gameserver.geoengine.geodata.BlockFlat;
-import org.l2jmobius.gameserver.geoengine.geodata.BlockMultilayer;
-import org.l2jmobius.gameserver.geoengine.geodata.BlockNull;
-import org.l2jmobius.gameserver.geoengine.geodata.GeoStructure;
-import org.l2jmobius.gameserver.geoengine.pathfinding.NodeBuffer;
-import org.l2jmobius.gameserver.model.Location;
-import org.l2jmobius.gameserver.model.World;
-import org.l2jmobius.gameserver.model.WorldObject;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.instancezone.Instance;
+import org.l2jdd.Config;
+import org.l2jdd.commons.util.CommonUtil;
+import org.l2jdd.gameserver.data.xml.DoorData;
+import org.l2jdd.gameserver.data.xml.FenceData;
+import org.l2jdd.gameserver.enums.GeoType;
+import org.l2jdd.gameserver.enums.MoveDirectionType;
+import org.l2jdd.gameserver.geoengine.geodata.ABlock;
+import org.l2jdd.gameserver.geoengine.geodata.BlockComplex;
+import org.l2jdd.gameserver.geoengine.geodata.BlockFlat;
+import org.l2jdd.gameserver.geoengine.geodata.BlockMultilayer;
+import org.l2jdd.gameserver.geoengine.geodata.BlockNull;
+import org.l2jdd.gameserver.geoengine.geodata.GeoStructure;
+import org.l2jdd.gameserver.geoengine.pathfinding.NodeBuffer;
+import org.l2jdd.gameserver.model.Location;
+import org.l2jdd.gameserver.model.World;
+import org.l2jdd.gameserver.model.WorldObject;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.instancezone.Instance;
 
 public class GeoEngine
 {

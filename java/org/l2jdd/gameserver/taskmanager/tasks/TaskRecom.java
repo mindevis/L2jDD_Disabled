@@ -14,16 +14,16 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.taskmanager.tasks;
+package org.l2jdd.gameserver.taskmanager.tasks;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 
-import org.l2jmobius.commons.database.DatabaseFactory;
-import org.l2jmobius.gameserver.taskmanager.Task;
-import org.l2jmobius.gameserver.taskmanager.TaskManager;
-import org.l2jmobius.gameserver.taskmanager.TaskManager.ExecutedTask;
-import org.l2jmobius.gameserver.taskmanager.TaskTypes;
+import org.l2jdd.commons.database.DatabaseFactory;
+import org.l2jdd.gameserver.taskmanager.Task;
+import org.l2jdd.gameserver.taskmanager.TaskManager;
+import org.l2jdd.gameserver.taskmanager.TaskManager.ExecutedTask;
+import org.l2jdd.gameserver.taskmanager.TaskTypes;
 
 /**
  * @author Layane

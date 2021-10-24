@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.data.xml;
+package org.l2jdd.gameserver.data.xml;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -28,16 +28,16 @@ import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 
-import org.l2jmobius.commons.util.IXmlReader;
-import org.l2jmobius.gameserver.data.ItemTable;
-import org.l2jmobius.gameserver.enums.CrystallizationType;
-import org.l2jmobius.gameserver.model.holders.CrystallizationDataHolder;
-import org.l2jmobius.gameserver.model.holders.ItemChanceHolder;
-import org.l2jmobius.gameserver.model.items.Armor;
-import org.l2jmobius.gameserver.model.items.Item;
-import org.l2jmobius.gameserver.model.items.Weapon;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.model.items.type.CrystalType;
+import org.l2jdd.commons.util.IXmlReader;
+import org.l2jdd.gameserver.data.ItemTable;
+import org.l2jdd.gameserver.enums.CrystallizationType;
+import org.l2jdd.gameserver.model.holders.CrystallizationDataHolder;
+import org.l2jdd.gameserver.model.holders.ItemChanceHolder;
+import org.l2jdd.gameserver.model.items.Armor;
+import org.l2jdd.gameserver.model.items.Item;
+import org.l2jdd.gameserver.model.items.Weapon;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.model.items.type.CrystalType;
 
 /**
  * @author UnAfraid

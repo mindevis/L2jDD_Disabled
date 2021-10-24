@@ -14,11 +14,11 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.html.pagehandlers;
+package org.l2jdd.gameserver.model.html.pagehandlers;
 
-import org.l2jmobius.gameserver.model.html.IBypassFormatter;
-import org.l2jmobius.gameserver.model.html.IHtmlStyle;
-import org.l2jmobius.gameserver.model.html.IPageHandler;
+import org.l2jdd.gameserver.model.html.IBypassFormatter;
+import org.l2jdd.gameserver.model.html.IHtmlStyle;
+import org.l2jdd.gameserver.model.html.IPageHandler;
 
 /**
  * Creates pager with links 1 2 3 | 9 10 | 998 | 999

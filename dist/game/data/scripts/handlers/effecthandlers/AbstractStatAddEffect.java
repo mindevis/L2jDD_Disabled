@@ -16,12 +16,12 @@
  */
 package handlers.effecthandlers;
 
-import org.l2jmobius.gameserver.enums.StatModifierType;
-import org.l2jmobius.gameserver.model.StatSet;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.effects.AbstractEffect;
-import org.l2jmobius.gameserver.model.skills.Skill;
-import org.l2jmobius.gameserver.model.stats.Stat;
+import org.l2jdd.gameserver.enums.StatModifierType;
+import org.l2jdd.gameserver.model.StatSet;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.effects.AbstractEffect;
+import org.l2jdd.gameserver.model.skills.Skill;
+import org.l2jdd.gameserver.model.stats.Stat;
 
 /**
  * @author Sdw

@@ -14,20 +14,20 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.actor.templates;
+package org.l2jdd.gameserver.model.actor.templates;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.gameserver.model.StatSet;
-import org.l2jmobius.gameserver.model.WorldObject;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.cubic.CubicInstance;
-import org.l2jmobius.gameserver.model.cubic.CubicSkill;
-import org.l2jmobius.gameserver.model.cubic.CubicTargetType;
-import org.l2jmobius.gameserver.model.cubic.ICubicConditionHolder;
-import org.l2jmobius.gameserver.model.cubic.conditions.ICubicCondition;
+import org.l2jdd.Config;
+import org.l2jdd.gameserver.model.StatSet;
+import org.l2jdd.gameserver.model.WorldObject;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.cubic.CubicInstance;
+import org.l2jdd.gameserver.model.cubic.CubicSkill;
+import org.l2jdd.gameserver.model.cubic.CubicTargetType;
+import org.l2jdd.gameserver.model.cubic.ICubicConditionHolder;
+import org.l2jdd.gameserver.model.cubic.conditions.ICubicCondition;
 
 /**
  * @author UnAfraid

@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.loginserver;
+package org.l2jdd.loginserver;
 
 /**
  * @version $Revision: 1.2.4.2 $ $Date: 2005/03/27 15:30:09 $

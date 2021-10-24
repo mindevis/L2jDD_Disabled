@@ -16,18 +16,18 @@
  */
 package handlers.itemhandlers;
 
-import org.l2jmobius.gameserver.enums.ItemSkillType;
-import org.l2jmobius.gameserver.handler.IItemHandler;
-import org.l2jmobius.gameserver.instancemanager.HandysBlockCheckerManager;
-import org.l2jmobius.gameserver.model.ArenaParticipantsHolder;
-import org.l2jmobius.gameserver.model.World;
-import org.l2jmobius.gameserver.model.actor.Playable;
-import org.l2jmobius.gameserver.model.actor.instance.BlockInstance;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.model.skills.Skill;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
+import org.l2jdd.gameserver.enums.ItemSkillType;
+import org.l2jdd.gameserver.handler.IItemHandler;
+import org.l2jdd.gameserver.instancemanager.HandysBlockCheckerManager;
+import org.l2jdd.gameserver.model.ArenaParticipantsHolder;
+import org.l2jdd.gameserver.model.World;
+import org.l2jdd.gameserver.model.actor.Playable;
+import org.l2jdd.gameserver.model.actor.instance.BlockInstance;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.model.skills.Skill;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.SystemMessage;
 
 public class EventItem implements IItemHandler
 {

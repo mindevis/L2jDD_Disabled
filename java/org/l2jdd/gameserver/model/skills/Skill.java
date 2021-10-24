@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.skills;
+package org.l2jdd.gameserver.model.skills;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -30,38 +30,38 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.util.Rnd;
-import org.l2jmobius.gameserver.data.xml.EnchantSkillGroupsData;
-import org.l2jmobius.gameserver.data.xml.SkillData;
-import org.l2jmobius.gameserver.data.xml.SkillTreeData;
-import org.l2jmobius.gameserver.enums.AttributeType;
-import org.l2jmobius.gameserver.enums.BasicProperty;
-import org.l2jmobius.gameserver.enums.NextActionType;
-import org.l2jmobius.gameserver.enums.ShotType;
-import org.l2jmobius.gameserver.handler.AffectScopeHandler;
-import org.l2jmobius.gameserver.handler.IAffectScopeHandler;
-import org.l2jmobius.gameserver.handler.ITargetTypeHandler;
-import org.l2jmobius.gameserver.handler.TargetHandler;
-import org.l2jmobius.gameserver.model.PlayerCondOverride;
-import org.l2jmobius.gameserver.model.StatSet;
-import org.l2jmobius.gameserver.model.WorldObject;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.cubic.CubicInstance;
-import org.l2jmobius.gameserver.model.effects.AbstractEffect;
-import org.l2jmobius.gameserver.model.effects.EffectFlag;
-import org.l2jmobius.gameserver.model.effects.EffectType;
-import org.l2jmobius.gameserver.model.holders.AttachSkillHolder;
-import org.l2jmobius.gameserver.model.interfaces.IIdentifiable;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.model.skills.targets.AffectObject;
-import org.l2jmobius.gameserver.model.skills.targets.AffectScope;
-import org.l2jmobius.gameserver.model.skills.targets.TargetType;
-import org.l2jmobius.gameserver.model.stats.BasicPropertyResist;
-import org.l2jmobius.gameserver.model.stats.Formulas;
-import org.l2jmobius.gameserver.model.stats.TraitType;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
+import org.l2jdd.Config;
+import org.l2jdd.commons.util.Rnd;
+import org.l2jdd.gameserver.data.xml.EnchantSkillGroupsData;
+import org.l2jdd.gameserver.data.xml.SkillData;
+import org.l2jdd.gameserver.data.xml.SkillTreeData;
+import org.l2jdd.gameserver.enums.AttributeType;
+import org.l2jdd.gameserver.enums.BasicProperty;
+import org.l2jdd.gameserver.enums.NextActionType;
+import org.l2jdd.gameserver.enums.ShotType;
+import org.l2jdd.gameserver.handler.AffectScopeHandler;
+import org.l2jdd.gameserver.handler.IAffectScopeHandler;
+import org.l2jdd.gameserver.handler.ITargetTypeHandler;
+import org.l2jdd.gameserver.handler.TargetHandler;
+import org.l2jdd.gameserver.model.PlayerCondOverride;
+import org.l2jdd.gameserver.model.StatSet;
+import org.l2jdd.gameserver.model.WorldObject;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.cubic.CubicInstance;
+import org.l2jdd.gameserver.model.effects.AbstractEffect;
+import org.l2jdd.gameserver.model.effects.EffectFlag;
+import org.l2jdd.gameserver.model.effects.EffectType;
+import org.l2jdd.gameserver.model.holders.AttachSkillHolder;
+import org.l2jdd.gameserver.model.interfaces.IIdentifiable;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.model.skills.targets.AffectObject;
+import org.l2jdd.gameserver.model.skills.targets.AffectScope;
+import org.l2jdd.gameserver.model.skills.targets.TargetType;
+import org.l2jdd.gameserver.model.stats.BasicPropertyResist;
+import org.l2jdd.gameserver.model.stats.Formulas;
+import org.l2jdd.gameserver.model.stats.TraitType;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.SystemMessage;
 
 public class Skill implements IIdentifiable
 {

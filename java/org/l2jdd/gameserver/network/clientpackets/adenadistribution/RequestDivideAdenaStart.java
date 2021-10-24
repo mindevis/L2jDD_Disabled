@@ -14,19 +14,19 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network.clientpackets.adenadistribution;
+package org.l2jdd.gameserver.network.clientpackets.adenadistribution;
 
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketReader;
-import org.l2jmobius.gameserver.model.CommandChannel;
-import org.l2jmobius.gameserver.model.Party;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.actor.request.AdenaDistributionRequest;
-import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
-import org.l2jmobius.gameserver.network.serverpackets.adenadistribution.ExDivideAdenaStart;
+import org.l2jdd.commons.network.PacketReader;
+import org.l2jdd.gameserver.model.CommandChannel;
+import org.l2jdd.gameserver.model.Party;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.actor.request.AdenaDistributionRequest;
+import org.l2jdd.gameserver.network.GameClient;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jdd.gameserver.network.serverpackets.adenadistribution.ExDivideAdenaStart;
 
 /**
  * @author Sdw

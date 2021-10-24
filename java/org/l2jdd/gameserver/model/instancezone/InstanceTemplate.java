@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.instancezone;
+package org.l2jdd.gameserver.model.instancezone;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -25,33 +25,33 @@ import java.util.Map;
 import java.util.concurrent.TimeUnit;
 import java.util.function.BiConsumer;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.util.Chronos;
-import org.l2jmobius.commons.util.Rnd;
-import org.l2jmobius.gameserver.enums.GroupType;
-import org.l2jmobius.gameserver.enums.InstanceReenterType;
-import org.l2jmobius.gameserver.enums.InstanceRemoveBuffType;
-import org.l2jmobius.gameserver.enums.InstanceTeleportType;
-import org.l2jmobius.gameserver.instancemanager.InstanceManager;
-import org.l2jmobius.gameserver.model.AbstractPlayerGroup;
-import org.l2jmobius.gameserver.model.Location;
-import org.l2jmobius.gameserver.model.PlayerCondOverride;
-import org.l2jmobius.gameserver.model.StatSet;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.Playable;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.actor.templates.DoorTemplate;
-import org.l2jmobius.gameserver.model.events.ListenersContainer;
-import org.l2jmobius.gameserver.model.holders.InstanceReenterTimeHolder;
-import org.l2jmobius.gameserver.model.instancezone.conditions.Condition;
-import org.l2jmobius.gameserver.model.instancezone.conditions.ConditionCommandChannel;
-import org.l2jmobius.gameserver.model.instancezone.conditions.ConditionGroupMax;
-import org.l2jmobius.gameserver.model.instancezone.conditions.ConditionGroupMin;
-import org.l2jmobius.gameserver.model.interfaces.IIdentifiable;
-import org.l2jmobius.gameserver.model.interfaces.INamable;
-import org.l2jmobius.gameserver.model.skills.Skill;
-import org.l2jmobius.gameserver.model.spawns.SpawnTemplate;
-import org.l2jmobius.gameserver.model.variables.PlayerVariables;
+import org.l2jdd.Config;
+import org.l2jdd.commons.util.Chronos;
+import org.l2jdd.commons.util.Rnd;
+import org.l2jdd.gameserver.enums.GroupType;
+import org.l2jdd.gameserver.enums.InstanceReenterType;
+import org.l2jdd.gameserver.enums.InstanceRemoveBuffType;
+import org.l2jdd.gameserver.enums.InstanceTeleportType;
+import org.l2jdd.gameserver.instancemanager.InstanceManager;
+import org.l2jdd.gameserver.model.AbstractPlayerGroup;
+import org.l2jdd.gameserver.model.Location;
+import org.l2jdd.gameserver.model.PlayerCondOverride;
+import org.l2jdd.gameserver.model.StatSet;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.Playable;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.actor.templates.DoorTemplate;
+import org.l2jdd.gameserver.model.events.ListenersContainer;
+import org.l2jdd.gameserver.model.holders.InstanceReenterTimeHolder;
+import org.l2jdd.gameserver.model.instancezone.conditions.Condition;
+import org.l2jdd.gameserver.model.instancezone.conditions.ConditionCommandChannel;
+import org.l2jdd.gameserver.model.instancezone.conditions.ConditionGroupMax;
+import org.l2jdd.gameserver.model.instancezone.conditions.ConditionGroupMin;
+import org.l2jdd.gameserver.model.interfaces.IIdentifiable;
+import org.l2jdd.gameserver.model.interfaces.INamable;
+import org.l2jdd.gameserver.model.skills.Skill;
+import org.l2jdd.gameserver.model.spawns.SpawnTemplate;
+import org.l2jdd.gameserver.model.variables.PlayerVariables;
 
 /**
  * Template holder for instances.

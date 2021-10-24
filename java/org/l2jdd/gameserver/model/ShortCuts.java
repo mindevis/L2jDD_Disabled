@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model;
+package org.l2jdd.gameserver.model;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -24,15 +24,15 @@ import java.util.TreeMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.l2jmobius.commons.database.DatabaseFactory;
-import org.l2jmobius.gameserver.enums.ShortcutType;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.interfaces.IRestorable;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.model.items.type.EtcItemType;
-import org.l2jmobius.gameserver.network.serverpackets.ExAutoSoulShot;
-import org.l2jmobius.gameserver.network.serverpackets.ShortCutInit;
-import org.l2jmobius.gameserver.network.serverpackets.ShortCutRegister;
+import org.l2jdd.commons.database.DatabaseFactory;
+import org.l2jdd.gameserver.enums.ShortcutType;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.interfaces.IRestorable;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.model.items.type.EtcItemType;
+import org.l2jdd.gameserver.network.serverpackets.ExAutoSoulShot;
+import org.l2jdd.gameserver.network.serverpackets.ShortCutInit;
+import org.l2jdd.gameserver.network.serverpackets.ShortCutRegister;
 
 public class ShortCuts implements IRestorable
 {

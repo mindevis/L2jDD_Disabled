@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network.serverpackets.ranking;
+package org.l2jdd.gameserver.network.serverpackets.ranking;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -24,15 +24,15 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
-import org.l2jmobius.commons.database.DatabaseFactory;
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.instancemanager.RankManager;
-import org.l2jmobius.gameserver.model.StatSet;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.olympiad.Hero;
-import org.l2jmobius.gameserver.model.olympiad.Olympiad;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jdd.commons.database.DatabaseFactory;
+import org.l2jdd.commons.network.PacketWriter;
+import org.l2jdd.gameserver.instancemanager.RankManager;
+import org.l2jdd.gameserver.model.StatSet;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.olympiad.Hero;
+import org.l2jdd.gameserver.model.olympiad.Olympiad;
+import org.l2jdd.gameserver.network.OutgoingPackets;
+import org.l2jdd.gameserver.network.serverpackets.IClientOutgoingPacket;
 
 /**
  * @author NviX

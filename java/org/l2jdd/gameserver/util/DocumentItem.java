@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.util;
+package org.l2jdd.gameserver.util;
 
 import java.io.File;
 import java.lang.reflect.Constructor;
@@ -27,15 +27,15 @@ import java.util.logging.Logger;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 
-import org.l2jmobius.commons.util.IXmlReader;
-import org.l2jmobius.gameserver.enums.ItemSkillType;
-import org.l2jmobius.gameserver.model.ExtractableProduct;
-import org.l2jmobius.gameserver.model.StatSet;
-import org.l2jmobius.gameserver.model.conditions.Condition;
-import org.l2jmobius.gameserver.model.holders.ItemSkillHolder;
-import org.l2jmobius.gameserver.model.items.Item;
-import org.l2jmobius.gameserver.model.stats.Stat;
-import org.l2jmobius.gameserver.model.stats.functions.FuncTemplate;
+import org.l2jdd.commons.util.IXmlReader;
+import org.l2jdd.gameserver.enums.ItemSkillType;
+import org.l2jdd.gameserver.model.ExtractableProduct;
+import org.l2jdd.gameserver.model.StatSet;
+import org.l2jdd.gameserver.model.conditions.Condition;
+import org.l2jdd.gameserver.model.holders.ItemSkillHolder;
+import org.l2jdd.gameserver.model.items.Item;
+import org.l2jdd.gameserver.model.stats.Stat;
+import org.l2jdd.gameserver.model.stats.functions.FuncTemplate;
 
 /**
  * @author mkizub, JIV
@@ -227,7 +227,7 @@ public class DocumentItem extends DocumentBase implements IXmlReader
 		
 		try
 		{
-			final Constructor<?> itemClass = Class.forName("org.l2jmobius.gameserver.model.items." + _currentItem.type).getConstructor(StatSet.class);
+			final Constructor<?> itemClass = Class.forName("org.l2jdd.gameserver.model.items." + _currentItem.type).getConstructor(StatSet.class);
 			_currentItem.item = (Item) itemClass.newInstance(_currentItem.set);
 		}
 		catch (Exception e)

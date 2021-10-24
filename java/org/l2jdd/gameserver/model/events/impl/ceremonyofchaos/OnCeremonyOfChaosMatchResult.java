@@ -14,13 +14,13 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.events.impl.ceremonyofchaos;
+package org.l2jdd.gameserver.model.events.impl.ceremonyofchaos;
 
 import java.util.List;
 
-import org.l2jmobius.gameserver.model.ceremonyofchaos.CeremonyOfChaosMember;
-import org.l2jmobius.gameserver.model.events.EventType;
-import org.l2jmobius.gameserver.model.events.impl.IBaseEvent;
+import org.l2jdd.gameserver.model.ceremonyofchaos.CeremonyOfChaosMember;
+import org.l2jdd.gameserver.model.events.EventType;
+import org.l2jdd.gameserver.model.events.impl.IBaseEvent;
 
 /**
  * @author UnAfraid

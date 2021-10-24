@@ -14,12 +14,12 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.log.formatter;
+package org.l2jdd.log.formatter;
 
 import java.util.logging.Formatter;
 import java.util.logging.LogRecord;
 
-import org.l2jmobius.Config;
+import org.l2jdd.Config;
 
 public class GMAuditFormatter extends Formatter
 {

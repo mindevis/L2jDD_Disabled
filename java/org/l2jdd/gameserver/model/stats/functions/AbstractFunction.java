@@ -14,14 +14,14 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.stats.functions;
+package org.l2jdd.gameserver.model.stats.functions;
 
 import java.util.logging.Logger;
 
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.conditions.Condition;
-import org.l2jmobius.gameserver.model.skills.Skill;
-import org.l2jmobius.gameserver.model.stats.Stat;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.conditions.Condition;
+import org.l2jdd.gameserver.model.skills.Skill;
+import org.l2jdd.gameserver.model.stats.Stat;
 
 /**
  * A Function object is a component of a Calculator created to manage and dynamically calculate the effect of a character property (ex : MAX_HP, REGENERATE_HP_RATE...).<br>

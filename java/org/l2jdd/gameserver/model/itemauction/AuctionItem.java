@@ -14,13 +14,13 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.itemauction;
+package org.l2jdd.gameserver.model.itemauction;
 
-import org.l2jmobius.gameserver.data.ItemTable;
-import org.l2jmobius.gameserver.instancemanager.IdManager;
-import org.l2jmobius.gameserver.model.StatSet;
-import org.l2jmobius.gameserver.model.World;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.data.ItemTable;
+import org.l2jdd.gameserver.instancemanager.IdManager;
+import org.l2jdd.gameserver.model.StatSet;
+import org.l2jdd.gameserver.model.World;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
 
 /**
  * @author Forsaiken

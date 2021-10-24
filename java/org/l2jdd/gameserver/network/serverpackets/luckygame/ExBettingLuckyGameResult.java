@@ -14,20 +14,20 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network.serverpackets.luckygame;
+package org.l2jdd.gameserver.network.serverpackets.luckygame;
 
 import java.util.EnumMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.enums.LuckyGameItemType;
-import org.l2jmobius.gameserver.enums.LuckyGameResultType;
-import org.l2jmobius.gameserver.enums.LuckyGameType;
-import org.l2jmobius.gameserver.model.holders.ItemHolder;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jdd.commons.network.PacketWriter;
+import org.l2jdd.gameserver.enums.LuckyGameItemType;
+import org.l2jdd.gameserver.enums.LuckyGameResultType;
+import org.l2jdd.gameserver.enums.LuckyGameType;
+import org.l2jdd.gameserver.model.holders.ItemHolder;
+import org.l2jdd.gameserver.network.OutgoingPackets;
+import org.l2jdd.gameserver.network.serverpackets.IClientOutgoingPacket;
 
 /**
  * @author Sdw

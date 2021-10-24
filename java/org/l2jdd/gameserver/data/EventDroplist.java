@@ -14,15 +14,15 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.data;
+package org.l2jdd.gameserver.data;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
 import java.util.concurrent.ConcurrentHashMap;
 
-import org.l2jmobius.gameserver.model.holders.EventDropHolder;
-import org.l2jmobius.gameserver.script.DateRange;
+import org.l2jdd.gameserver.model.holders.EventDropHolder;
+import org.l2jdd.gameserver.script.DateRange;
 
 /**
  * This class manage drop of Special Events created by GM for a defined period.<br>

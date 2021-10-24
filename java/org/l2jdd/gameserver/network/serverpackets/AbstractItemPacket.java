@@ -14,18 +14,18 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network.serverpackets;
+package org.l2jdd.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.enums.AttributeType;
-import org.l2jmobius.gameserver.enums.ItemListType;
-import org.l2jmobius.gameserver.model.ItemInfo;
-import org.l2jmobius.gameserver.model.TradeItem;
-import org.l2jmobius.gameserver.model.buylist.Product;
-import org.l2jmobius.gameserver.model.ensoul.EnsoulOption;
-import org.l2jmobius.gameserver.model.itemcontainer.PlayerInventory;
-import org.l2jmobius.gameserver.model.items.WarehouseItem;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.commons.network.PacketWriter;
+import org.l2jdd.gameserver.enums.AttributeType;
+import org.l2jdd.gameserver.enums.ItemListType;
+import org.l2jdd.gameserver.model.ItemInfo;
+import org.l2jdd.gameserver.model.TradeItem;
+import org.l2jdd.gameserver.model.buylist.Product;
+import org.l2jdd.gameserver.model.ensoul.EnsoulOption;
+import org.l2jdd.gameserver.model.itemcontainer.PlayerInventory;
+import org.l2jdd.gameserver.model.items.WarehouseItem;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
 
 /**
  * @author UnAfraid

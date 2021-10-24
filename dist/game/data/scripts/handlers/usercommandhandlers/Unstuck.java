@@ -16,17 +16,17 @@
  */
 package handlers.usercommandhandlers;
 
-import static org.l2jmobius.gameserver.ai.CtrlIntention.AI_INTENTION_ACTIVE;
+import static org.l2jdd.gameserver.ai.CtrlIntention.AI_INTENTION_ACTIVE;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.gameserver.data.xml.SkillData;
-import org.l2jmobius.gameserver.handler.IUserCommandHandler;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.skills.Skill;
-import org.l2jmobius.gameserver.model.skills.SkillCaster;
-import org.l2jmobius.gameserver.model.skills.SkillCastingType;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
+import org.l2jdd.Config;
+import org.l2jdd.gameserver.data.xml.SkillData;
+import org.l2jdd.gameserver.handler.IUserCommandHandler;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.skills.Skill;
+import org.l2jdd.gameserver.model.skills.SkillCaster;
+import org.l2jdd.gameserver.model.skills.SkillCastingType;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.ActionFailed;
 
 /**
  * Unstuck user command.

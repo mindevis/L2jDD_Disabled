@@ -16,11 +16,11 @@
  */
 package ai.areas.EnchantedValley.Celestiel;
 
-import org.l2jmobius.gameserver.enums.Faction;
-import org.l2jmobius.gameserver.model.Location;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.network.serverpackets.PlaySound;
+import org.l2jdd.gameserver.enums.Faction;
+import org.l2jdd.gameserver.model.Location;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.network.serverpackets.PlaySound;
 
 import ai.AbstractNpcAI;
 

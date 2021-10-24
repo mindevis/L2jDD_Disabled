@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.data.xml;
+package org.l2jdd.gameserver.data.xml;
 
 import java.io.File;
 import java.lang.reflect.Method;
@@ -32,23 +32,23 @@ import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 
-import org.l2jmobius.commons.util.IXmlReader;
-import org.l2jmobius.gameserver.model.Location;
-import org.l2jmobius.gameserver.model.StatSet;
-import org.l2jmobius.gameserver.model.eventengine.AbstractEventManager;
-import org.l2jmobius.gameserver.model.eventengine.EventMethodNotification;
-import org.l2jmobius.gameserver.model.eventengine.EventScheduler;
-import org.l2jmobius.gameserver.model.eventengine.IConditionalEventScheduler;
-import org.l2jmobius.gameserver.model.eventengine.conditions.BetweenConditionalScheduler;
-import org.l2jmobius.gameserver.model.eventengine.conditions.HaventRunConditionalScheduler;
-import org.l2jmobius.gameserver.model.eventengine.drop.EventDropGroup;
-import org.l2jmobius.gameserver.model.eventengine.drop.EventDropItem;
-import org.l2jmobius.gameserver.model.eventengine.drop.EventDrops;
-import org.l2jmobius.gameserver.model.eventengine.drop.GroupedDrop;
-import org.l2jmobius.gameserver.model.eventengine.drop.IEventDrop;
-import org.l2jmobius.gameserver.model.eventengine.drop.NormalDrop;
-import org.l2jmobius.gameserver.model.holders.ItemHolder;
-import org.l2jmobius.gameserver.model.holders.SkillHolder;
+import org.l2jdd.commons.util.IXmlReader;
+import org.l2jdd.gameserver.model.Location;
+import org.l2jdd.gameserver.model.StatSet;
+import org.l2jdd.gameserver.model.eventengine.AbstractEventManager;
+import org.l2jdd.gameserver.model.eventengine.EventMethodNotification;
+import org.l2jdd.gameserver.model.eventengine.EventScheduler;
+import org.l2jdd.gameserver.model.eventengine.IConditionalEventScheduler;
+import org.l2jdd.gameserver.model.eventengine.conditions.BetweenConditionalScheduler;
+import org.l2jdd.gameserver.model.eventengine.conditions.HaventRunConditionalScheduler;
+import org.l2jdd.gameserver.model.eventengine.drop.EventDropGroup;
+import org.l2jdd.gameserver.model.eventengine.drop.EventDropItem;
+import org.l2jdd.gameserver.model.eventengine.drop.EventDrops;
+import org.l2jdd.gameserver.model.eventengine.drop.GroupedDrop;
+import org.l2jdd.gameserver.model.eventengine.drop.IEventDrop;
+import org.l2jdd.gameserver.model.eventengine.drop.NormalDrop;
+import org.l2jdd.gameserver.model.holders.ItemHolder;
+import org.l2jdd.gameserver.model.holders.SkillHolder;
 
 /**
  * @author UnAfraid

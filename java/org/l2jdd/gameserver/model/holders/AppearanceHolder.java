@@ -14,15 +14,15 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.holders;
+package org.l2jdd.gameserver.model.holders;
 
-import org.l2jmobius.gameserver.data.ItemTable;
-import org.l2jmobius.gameserver.model.StatSet;
-import org.l2jmobius.gameserver.model.items.appearance.AppearanceHandType;
-import org.l2jmobius.gameserver.model.items.appearance.AppearanceMagicType;
-import org.l2jmobius.gameserver.model.items.appearance.AppearanceTargetType;
-import org.l2jmobius.gameserver.model.items.type.ArmorType;
-import org.l2jmobius.gameserver.model.items.type.WeaponType;
+import org.l2jdd.gameserver.data.ItemTable;
+import org.l2jdd.gameserver.model.StatSet;
+import org.l2jdd.gameserver.model.items.appearance.AppearanceHandType;
+import org.l2jdd.gameserver.model.items.appearance.AppearanceMagicType;
+import org.l2jdd.gameserver.model.items.appearance.AppearanceTargetType;
+import org.l2jdd.gameserver.model.items.type.ArmorType;
+import org.l2jdd.gameserver.model.items.type.WeaponType;
 
 /**
  * @author Sdw

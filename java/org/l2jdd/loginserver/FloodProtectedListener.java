@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.loginserver;
+package org.l2jdd.loginserver;
 
 import java.io.IOException;
 import java.net.InetAddress;
@@ -25,8 +25,8 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.util.Chronos;
+import org.l2jdd.Config;
+import org.l2jdd.commons.util.Chronos;
 
 /**
  * @author -Wooden-

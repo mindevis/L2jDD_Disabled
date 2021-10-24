@@ -16,16 +16,16 @@
  */
 package handlers.communityboard;
 
-import org.l2jmobius.gameserver.cache.HtmCache;
-import org.l2jmobius.gameserver.data.sql.ClanTable;
-import org.l2jmobius.gameserver.enums.TaxType;
-import org.l2jmobius.gameserver.handler.CommunityBoardHandler;
-import org.l2jmobius.gameserver.handler.IWriteBoardHandler;
-import org.l2jmobius.gameserver.instancemanager.CastleManager;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.clan.Clan;
-import org.l2jmobius.gameserver.model.siege.Castle;
-import org.l2jmobius.gameserver.util.Util;
+import org.l2jdd.gameserver.cache.HtmCache;
+import org.l2jdd.gameserver.data.sql.ClanTable;
+import org.l2jdd.gameserver.enums.TaxType;
+import org.l2jdd.gameserver.handler.CommunityBoardHandler;
+import org.l2jdd.gameserver.handler.IWriteBoardHandler;
+import org.l2jdd.gameserver.instancemanager.CastleManager;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.clan.Clan;
+import org.l2jdd.gameserver.model.siege.Castle;
+import org.l2jdd.gameserver.util.Util;
 
 /**
  * Region board.

@@ -19,7 +19,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package org.l2jmobius.gameserver.util;
+package org.l2jdd.gameserver.util;
 
 import java.util.ArrayList;
 import java.util.Collection;

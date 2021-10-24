@@ -14,14 +14,14 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.commission;
+package org.l2jdd.gameserver.model.commission;
 
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;
 import java.util.concurrent.ScheduledFuture;
 
-import org.l2jmobius.gameserver.model.ItemInfo;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.model.ItemInfo;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
 
 /**
  * @author NosBit, Ren

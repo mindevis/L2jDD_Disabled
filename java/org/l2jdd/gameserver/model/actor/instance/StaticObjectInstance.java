@@ -14,20 +14,20 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.actor.instance;
+package org.l2jdd.gameserver.model.actor.instance;
 
-import org.l2jmobius.gameserver.ai.CreatureAI;
-import org.l2jmobius.gameserver.enums.InstanceType;
-import org.l2jmobius.gameserver.model.Location;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.stat.StaticObjectStat;
-import org.l2jmobius.gameserver.model.actor.status.StaticObjectStatus;
-import org.l2jmobius.gameserver.model.actor.templates.CreatureTemplate;
-import org.l2jmobius.gameserver.model.items.Weapon;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.model.skills.Skill;
-import org.l2jmobius.gameserver.network.serverpackets.ShowTownMap;
-import org.l2jmobius.gameserver.network.serverpackets.StaticObject;
+import org.l2jdd.gameserver.ai.CreatureAI;
+import org.l2jdd.gameserver.enums.InstanceType;
+import org.l2jdd.gameserver.model.Location;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.actor.stat.StaticObjectStat;
+import org.l2jdd.gameserver.model.actor.status.StaticObjectStatus;
+import org.l2jdd.gameserver.model.actor.templates.CreatureTemplate;
+import org.l2jdd.gameserver.model.items.Weapon;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.model.skills.Skill;
+import org.l2jdd.gameserver.network.serverpackets.ShowTownMap;
+import org.l2jdd.gameserver.network.serverpackets.StaticObject;
 
 /**
  * Static Object instance.

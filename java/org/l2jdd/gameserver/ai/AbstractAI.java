@@ -14,31 +14,31 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.ai;
+package org.l2jdd.gameserver.ai;
 
-import static org.l2jmobius.gameserver.ai.CtrlIntention.AI_INTENTION_ATTACK;
-import static org.l2jmobius.gameserver.ai.CtrlIntention.AI_INTENTION_FOLLOW;
-import static org.l2jmobius.gameserver.ai.CtrlIntention.AI_INTENTION_IDLE;
+import static org.l2jdd.gameserver.ai.CtrlIntention.AI_INTENTION_ATTACK;
+import static org.l2jdd.gameserver.ai.CtrlIntention.AI_INTENTION_FOLLOW;
+import static org.l2jdd.gameserver.ai.CtrlIntention.AI_INTENTION_IDLE;
 
-import org.l2jmobius.gameserver.GameTimeController;
-import org.l2jmobius.gameserver.model.Location;
-import org.l2jmobius.gameserver.model.WorldObject;
-import org.l2jmobius.gameserver.model.WorldRegion;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.Summon;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.interfaces.ILocational;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.model.skills.Skill;
-import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
-import org.l2jmobius.gameserver.network.serverpackets.AutoAttackStart;
-import org.l2jmobius.gameserver.network.serverpackets.AutoAttackStop;
-import org.l2jmobius.gameserver.network.serverpackets.Die;
-import org.l2jmobius.gameserver.network.serverpackets.MoveToLocation;
-import org.l2jmobius.gameserver.network.serverpackets.MoveToPawn;
-import org.l2jmobius.gameserver.network.serverpackets.StopMove;
-import org.l2jmobius.gameserver.taskmanager.AttackStanceTaskManager;
-import org.l2jmobius.gameserver.taskmanager.CreatureFollowTaskManager;
+import org.l2jdd.gameserver.GameTimeController;
+import org.l2jdd.gameserver.model.Location;
+import org.l2jdd.gameserver.model.WorldObject;
+import org.l2jdd.gameserver.model.WorldRegion;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.actor.Summon;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.interfaces.ILocational;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.model.skills.Skill;
+import org.l2jdd.gameserver.network.serverpackets.ActionFailed;
+import org.l2jdd.gameserver.network.serverpackets.AutoAttackStart;
+import org.l2jdd.gameserver.network.serverpackets.AutoAttackStop;
+import org.l2jdd.gameserver.network.serverpackets.Die;
+import org.l2jdd.gameserver.network.serverpackets.MoveToLocation;
+import org.l2jdd.gameserver.network.serverpackets.MoveToPawn;
+import org.l2jdd.gameserver.network.serverpackets.StopMove;
+import org.l2jdd.gameserver.taskmanager.AttackStanceTaskManager;
+import org.l2jdd.gameserver.taskmanager.CreatureFollowTaskManager;
 
 /**
  * Mother class of all objects AI in the world.<br>

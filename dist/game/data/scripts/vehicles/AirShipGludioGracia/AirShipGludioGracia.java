@@ -16,18 +16,18 @@
  */
 package vehicles.AirShipGludioGracia;
 
-import org.l2jmobius.commons.concurrent.ThreadPool;
-import org.l2jmobius.gameserver.enums.ChatType;
-import org.l2jmobius.gameserver.instancemanager.AirShipManager;
-import org.l2jmobius.gameserver.model.Location;
-import org.l2jmobius.gameserver.model.VehiclePathPoint;
-import org.l2jmobius.gameserver.model.World;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.AirShipInstance;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.skills.AbnormalType;
-import org.l2jmobius.gameserver.network.NpcStringId;
-import org.l2jmobius.gameserver.network.SystemMessageId;
+import org.l2jdd.commons.concurrent.ThreadPool;
+import org.l2jdd.gameserver.enums.ChatType;
+import org.l2jdd.gameserver.instancemanager.AirShipManager;
+import org.l2jdd.gameserver.model.Location;
+import org.l2jdd.gameserver.model.VehiclePathPoint;
+import org.l2jdd.gameserver.model.World;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.AirShipInstance;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.skills.AbnormalType;
+import org.l2jdd.gameserver.network.NpcStringId;
+import org.l2jdd.gameserver.network.SystemMessageId;
 
 import ai.AbstractNpcAI;
 

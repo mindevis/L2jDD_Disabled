@@ -14,11 +14,11 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.announce;
+package org.l2jdd.gameserver.model.announce;
 
-import org.l2jmobius.gameserver.model.interfaces.IDeletable;
-import org.l2jmobius.gameserver.model.interfaces.IStorable;
-import org.l2jmobius.gameserver.model.interfaces.IUpdatable;
+import org.l2jdd.gameserver.model.interfaces.IDeletable;
+import org.l2jdd.gameserver.model.interfaces.IStorable;
+import org.l2jdd.gameserver.model.interfaces.IUpdatable;
 
 /**
  * @author UnAfraid

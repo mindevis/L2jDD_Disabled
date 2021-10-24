@@ -19,18 +19,18 @@ package quests.Q00833_DevilsTreasureTauti;
 import java.util.HashSet;
 import java.util.Set;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.gameserver.enums.Movie;
-import org.l2jmobius.gameserver.enums.QuestSound;
-import org.l2jmobius.gameserver.enums.QuestType;
-import org.l2jmobius.gameserver.model.Party;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.holders.NpcLogListHolder;
-import org.l2jmobius.gameserver.model.quest.Quest;
-import org.l2jmobius.gameserver.model.quest.QuestState;
-import org.l2jmobius.gameserver.model.quest.State;
+import org.l2jdd.Config;
+import org.l2jdd.gameserver.enums.Movie;
+import org.l2jdd.gameserver.enums.QuestSound;
+import org.l2jdd.gameserver.enums.QuestType;
+import org.l2jdd.gameserver.model.Party;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.holders.NpcLogListHolder;
+import org.l2jdd.gameserver.model.quest.Quest;
+import org.l2jdd.gameserver.model.quest.QuestState;
+import org.l2jdd.gameserver.model.quest.State;
 
 /**
  * Devil's Treasure, Tauti (833)

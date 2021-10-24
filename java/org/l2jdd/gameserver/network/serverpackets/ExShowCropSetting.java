@@ -14,17 +14,17 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network.serverpackets;
+package org.l2jdd.gameserver.network.serverpackets;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.instancemanager.CastleManorManager;
-import org.l2jmobius.gameserver.model.CropProcure;
-import org.l2jmobius.gameserver.model.Seed;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jdd.commons.network.PacketWriter;
+import org.l2jdd.gameserver.instancemanager.CastleManorManager;
+import org.l2jdd.gameserver.model.CropProcure;
+import org.l2jdd.gameserver.model.Seed;
+import org.l2jdd.gameserver.network.OutgoingPackets;
 
 /**
  * @author l3x

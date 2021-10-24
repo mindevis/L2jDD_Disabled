@@ -14,32 +14,32 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.actor.transform;
+package org.l2jdd.gameserver.model.actor.transform;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.l2jmobius.gameserver.data.xml.SkillTreeData;
-import org.l2jmobius.gameserver.enums.InventoryBlockType;
-import org.l2jmobius.gameserver.enums.Sex;
-import org.l2jmobius.gameserver.model.SkillLearn;
-import org.l2jmobius.gameserver.model.StatSet;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.events.EventDispatcher;
-import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerTransform;
-import org.l2jmobius.gameserver.model.holders.AdditionalItemHolder;
-import org.l2jmobius.gameserver.model.holders.AdditionalSkillHolder;
-import org.l2jmobius.gameserver.model.holders.SkillHolder;
-import org.l2jmobius.gameserver.model.interfaces.IIdentifiable;
-import org.l2jmobius.gameserver.model.items.type.WeaponType;
-import org.l2jmobius.gameserver.model.skills.AbnormalType;
-import org.l2jmobius.gameserver.model.skills.Skill;
-import org.l2jmobius.gameserver.model.stats.Stat;
-import org.l2jmobius.gameserver.network.serverpackets.ExBasicActionList;
-import org.l2jmobius.gameserver.network.serverpackets.ExUserInfoEquipSlot;
-import org.l2jmobius.gameserver.network.serverpackets.SkillCoolTime;
+import org.l2jdd.gameserver.data.xml.SkillTreeData;
+import org.l2jdd.gameserver.enums.InventoryBlockType;
+import org.l2jdd.gameserver.enums.Sex;
+import org.l2jdd.gameserver.model.SkillLearn;
+import org.l2jdd.gameserver.model.StatSet;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.events.EventDispatcher;
+import org.l2jdd.gameserver.model.events.impl.creature.player.OnPlayerTransform;
+import org.l2jdd.gameserver.model.holders.AdditionalItemHolder;
+import org.l2jdd.gameserver.model.holders.AdditionalSkillHolder;
+import org.l2jdd.gameserver.model.holders.SkillHolder;
+import org.l2jdd.gameserver.model.interfaces.IIdentifiable;
+import org.l2jdd.gameserver.model.items.type.WeaponType;
+import org.l2jdd.gameserver.model.skills.AbnormalType;
+import org.l2jdd.gameserver.model.skills.Skill;
+import org.l2jdd.gameserver.model.stats.Stat;
+import org.l2jdd.gameserver.network.serverpackets.ExBasicActionList;
+import org.l2jdd.gameserver.network.serverpackets.ExUserInfoEquipSlot;
+import org.l2jdd.gameserver.network.serverpackets.SkillCoolTime;
 
 /**
  * @author UnAfraid

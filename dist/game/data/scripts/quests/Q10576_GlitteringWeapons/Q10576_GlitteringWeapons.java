@@ -16,17 +16,17 @@
  */
 package quests.Q10576_GlitteringWeapons;
 
-import org.l2jmobius.gameserver.enums.QuestType;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.events.Containers;
-import org.l2jmobius.gameserver.model.events.EventType;
-import org.l2jmobius.gameserver.model.events.impl.item.OnItemEnchantAdd;
-import org.l2jmobius.gameserver.model.events.listeners.ConsumerEventListener;
-import org.l2jmobius.gameserver.model.quest.Quest;
-import org.l2jmobius.gameserver.model.quest.QuestState;
-import org.l2jmobius.gameserver.model.quest.State;
-import org.l2jmobius.gameserver.network.serverpackets.ExTutorialShowId;
+import org.l2jdd.gameserver.enums.QuestType;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.events.Containers;
+import org.l2jdd.gameserver.model.events.EventType;
+import org.l2jdd.gameserver.model.events.impl.item.OnItemEnchantAdd;
+import org.l2jdd.gameserver.model.events.listeners.ConsumerEventListener;
+import org.l2jdd.gameserver.model.quest.Quest;
+import org.l2jdd.gameserver.model.quest.QuestState;
+import org.l2jdd.gameserver.model.quest.State;
+import org.l2jdd.gameserver.network.serverpackets.ExTutorialShowId;
 
 import quests.Q10566_BestChoice.Q10566_BestChoice;
 

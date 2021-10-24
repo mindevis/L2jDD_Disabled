@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.commons.util.file.filter;
+package org.l2jdd.commons.util.file.filter;
 
 import java.io.File;
 

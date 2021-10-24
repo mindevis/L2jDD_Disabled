@@ -14,17 +14,17 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.items;
+package org.l2jdd.gameserver.model.items;
 
 import java.util.ArrayList;
 import java.util.EnumMap;
 import java.util.List;
 import java.util.Map;
 
-import org.l2jmobius.gameserver.enums.ClassId;
-import org.l2jmobius.gameserver.model.StatSet;
-import org.l2jmobius.gameserver.model.skills.Skill;
-import org.l2jmobius.gameserver.model.stats.BaseStat;
+import org.l2jdd.gameserver.enums.ClassId;
+import org.l2jdd.gameserver.model.StatSet;
+import org.l2jdd.gameserver.model.skills.Skill;
+import org.l2jdd.gameserver.model.stats.BaseStat;
 
 /**
  * Class for the Henna object.

@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.loginserver;
+package org.l2jdd.loginserver;
 
 import java.io.File;
 import java.math.BigInteger;
@@ -35,12 +35,12 @@ import java.util.logging.Logger;
 import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
 
-import org.l2jmobius.commons.database.DatabaseFactory;
-import org.l2jmobius.commons.util.IPSubnet;
-import org.l2jmobius.commons.util.IXmlReader;
-import org.l2jmobius.commons.util.Rnd;
-import org.l2jmobius.loginserver.network.LoginClient;
-import org.l2jmobius.loginserver.network.gameserverpackets.ServerStatus;
+import org.l2jdd.commons.database.DatabaseFactory;
+import org.l2jdd.commons.util.IPSubnet;
+import org.l2jdd.commons.util.IXmlReader;
+import org.l2jdd.commons.util.Rnd;
+import org.l2jdd.loginserver.network.LoginClient;
+import org.l2jdd.loginserver.network.gameserverpackets.ServerStatus;
 
 /**
  * The Class GameServerTable loads the game server names and initialize the game server tables.

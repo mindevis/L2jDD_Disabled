@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.events;
+package org.l2jdd.gameserver.model.events;
 
 import java.util.Collection;
 import java.util.Iterator;
@@ -24,12 +24,12 @@ import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Predicate;
 
-import org.l2jmobius.gameserver.model.StatSet;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.events.timers.IEventTimerCancel;
-import org.l2jmobius.gameserver.model.events.timers.IEventTimerEvent;
-import org.l2jmobius.gameserver.model.events.timers.TimerHolder;
+import org.l2jdd.gameserver.model.StatSet;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.events.timers.IEventTimerCancel;
+import org.l2jdd.gameserver.model.events.timers.IEventTimerEvent;
+import org.l2jdd.gameserver.model.events.timers.TimerHolder;
 
 /**
  * @author UnAfraid

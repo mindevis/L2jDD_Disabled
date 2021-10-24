@@ -14,16 +14,16 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network.serverpackets.shuttle;
+package org.l2jdd.gameserver.network.serverpackets.shuttle;
 
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.model.Location;
-import org.l2jmobius.gameserver.model.actor.instance.ShuttleInstance;
-import org.l2jmobius.gameserver.model.shuttle.ShuttleStop;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jdd.commons.network.PacketWriter;
+import org.l2jdd.gameserver.model.Location;
+import org.l2jdd.gameserver.model.actor.instance.ShuttleInstance;
+import org.l2jdd.gameserver.model.shuttle.ShuttleStop;
+import org.l2jdd.gameserver.network.OutgoingPackets;
+import org.l2jdd.gameserver.network.serverpackets.IClientOutgoingPacket;
 
 /**
  * @author UnAfraid

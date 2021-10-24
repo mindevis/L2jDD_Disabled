@@ -14,13 +14,13 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.actor.tasks.npc.trap;
+package org.l2jdd.gameserver.model.actor.tasks.npc.trap;
 
 import java.util.logging.Logger;
 
-import org.l2jmobius.gameserver.model.actor.instance.TrapInstance;
-import org.l2jmobius.gameserver.model.skills.Skill;
-import org.l2jmobius.gameserver.network.serverpackets.SocialAction;
+import org.l2jdd.gameserver.model.actor.instance.TrapInstance;
+import org.l2jdd.gameserver.model.skills.Skill;
+import org.l2jdd.gameserver.network.serverpackets.SocialAction;
 
 /**
  * Trap task.

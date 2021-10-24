@@ -14,26 +14,26 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network.serverpackets;
+package org.l2jdd.gameserver.network.serverpackets;
 
 import java.util.Set;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.instancemanager.CastleManager;
-import org.l2jmobius.gameserver.instancemanager.CursedWeaponsManager;
-import org.l2jmobius.gameserver.instancemanager.RankManager;
-import org.l2jmobius.gameserver.model.VariationInstance;
-import org.l2jmobius.gameserver.model.actor.instance.DecoyInstance;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.ceremonyofchaos.CeremonyOfChaosEvent;
-import org.l2jmobius.gameserver.model.ceremonyofchaos.CeremonyOfChaosMember;
-import org.l2jmobius.gameserver.model.clan.Clan;
-import org.l2jmobius.gameserver.model.interfaces.ILocational;
-import org.l2jmobius.gameserver.model.itemcontainer.Inventory;
-import org.l2jmobius.gameserver.model.skills.AbnormalVisualEffect;
-import org.l2jmobius.gameserver.model.zone.ZoneId;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jdd.Config;
+import org.l2jdd.commons.network.PacketWriter;
+import org.l2jdd.gameserver.instancemanager.CastleManager;
+import org.l2jdd.gameserver.instancemanager.CursedWeaponsManager;
+import org.l2jdd.gameserver.instancemanager.RankManager;
+import org.l2jdd.gameserver.model.VariationInstance;
+import org.l2jdd.gameserver.model.actor.instance.DecoyInstance;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.ceremonyofchaos.CeremonyOfChaosEvent;
+import org.l2jdd.gameserver.model.ceremonyofchaos.CeremonyOfChaosMember;
+import org.l2jdd.gameserver.model.clan.Clan;
+import org.l2jdd.gameserver.model.interfaces.ILocational;
+import org.l2jdd.gameserver.model.itemcontainer.Inventory;
+import org.l2jdd.gameserver.model.skills.AbnormalVisualEffect;
+import org.l2jdd.gameserver.model.zone.ZoneId;
+import org.l2jdd.gameserver.network.OutgoingPackets;
 
 public class CharInfo implements IClientOutgoingPacket
 {

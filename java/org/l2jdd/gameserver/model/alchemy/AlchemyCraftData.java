@@ -14,14 +14,14 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.alchemy;
+package org.l2jdd.gameserver.model.alchemy;
 
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
-import org.l2jmobius.gameserver.model.StatSet;
-import org.l2jmobius.gameserver.model.holders.ItemHolder;
+import org.l2jdd.gameserver.model.StatSet;
+import org.l2jdd.gameserver.model.holders.ItemHolder;
 
 /**
  * @author Sdw

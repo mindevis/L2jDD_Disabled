@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.loginserver.network.gameserverpackets;
+package org.l2jdd.loginserver.network.gameserverpackets;
 
 import java.security.GeneralSecurityException;
 import java.util.logging.Level;
@@ -22,10 +22,10 @@ import java.util.logging.Logger;
 
 import javax.crypto.Cipher;
 
-import org.l2jmobius.commons.network.BaseRecievePacket;
-import org.l2jmobius.commons.util.crypt.NewCrypt;
-import org.l2jmobius.loginserver.GameServerThread;
-import org.l2jmobius.loginserver.network.GameServerPacketHandler.GameServerState;
+import org.l2jdd.commons.network.BaseRecievePacket;
+import org.l2jdd.commons.util.crypt.NewCrypt;
+import org.l2jdd.loginserver.GameServerThread;
+import org.l2jdd.loginserver.network.GameServerPacketHandler.GameServerState;
 
 /**
  * @author -Wooden-

@@ -16,15 +16,15 @@
  */
 package ai.others.CastleCourtMagician;
 
-import org.l2jmobius.gameserver.data.xml.MultisellData;
-import org.l2jmobius.gameserver.enums.CastleSide;
-import org.l2jmobius.gameserver.enums.CategoryType;
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.clan.ClanPrivilege;
-import org.l2jmobius.gameserver.model.holders.SkillHolder;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.RequestAcquireSkill;
+import org.l2jdd.gameserver.data.xml.MultisellData;
+import org.l2jdd.gameserver.enums.CastleSide;
+import org.l2jdd.gameserver.enums.CategoryType;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.clan.ClanPrivilege;
+import org.l2jdd.gameserver.model.holders.SkillHolder;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.clientpackets.RequestAcquireSkill;
 
 import ai.AbstractNpcAI;
 import handlers.effecthandlers.CallPc;

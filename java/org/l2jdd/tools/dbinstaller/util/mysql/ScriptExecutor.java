@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.tools.dbinstaller.util.mysql;
+package org.l2jdd.tools.dbinstaller.util.mysql;
 
 import java.awt.HeadlessException;
 import java.io.File;
@@ -27,8 +27,8 @@ import java.util.Scanner;
 
 import javax.swing.JOptionPane;
 
-import org.l2jmobius.commons.util.file.filter.SQLFilter;
-import org.l2jmobius.tools.dbinstaller.DBOutputInterface;
+import org.l2jdd.commons.util.file.filter.SQLFilter;
+import org.l2jdd.tools.dbinstaller.DBOutputInterface;
 
 /**
  * @author mrTJO

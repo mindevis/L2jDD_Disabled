@@ -14,17 +14,17 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network.clientpackets.shuttle;
+package org.l2jdd.gameserver.network.clientpackets.shuttle;
 
-import org.l2jmobius.commons.network.PacketReader;
-import org.l2jmobius.gameserver.model.Location;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.items.type.WeaponType;
-import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
-import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
-import org.l2jmobius.gameserver.network.serverpackets.shuttle.ExMoveToLocationInShuttle;
-import org.l2jmobius.gameserver.network.serverpackets.shuttle.ExStopMoveInShuttle;
+import org.l2jdd.commons.network.PacketReader;
+import org.l2jdd.gameserver.model.Location;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.items.type.WeaponType;
+import org.l2jdd.gameserver.network.GameClient;
+import org.l2jdd.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jdd.gameserver.network.serverpackets.ActionFailed;
+import org.l2jdd.gameserver.network.serverpackets.shuttle.ExMoveToLocationInShuttle;
+import org.l2jdd.gameserver.network.serverpackets.shuttle.ExStopMoveInShuttle;
 
 /**
  * @author UnAfraid

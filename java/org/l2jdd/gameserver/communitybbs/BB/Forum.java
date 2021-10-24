@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.communitybbs.BB;
+package org.l2jdd.gameserver.communitybbs.BB;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -25,9 +25,9 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.l2jmobius.commons.database.DatabaseFactory;
-import org.l2jmobius.gameserver.communitybbs.Manager.ForumsBBSManager;
-import org.l2jmobius.gameserver.communitybbs.Manager.TopicBBSManager;
+import org.l2jdd.commons.database.DatabaseFactory;
+import org.l2jdd.gameserver.communitybbs.Manager.ForumsBBSManager;
+import org.l2jdd.gameserver.communitybbs.Manager.TopicBBSManager;
 
 public class Forum
 {
@@ -57,7 +57,7 @@ public class Forum
 	private boolean _loaded = false;
 	
 	/**
-	 * Creates new instance of Forum. When you create new forum, use {@link org.l2jmobius.gameserver.communitybbs.Manager.ForumsBBSManager# addForum(org.l2jmobius.gameserver.communitybbs.BB.Forum)} to add forum to the forums manager.
+	 * Creates new instance of Forum. When you create new forum, use {@link org.l2jdd.gameserver.communitybbs.Manager.ForumsBBSManager# addForum(org.l2jdd.gameserver.communitybbs.BB.Forum)} to add forum to the forums manager.
 	 * @param forumId
 	 * @param fParent
 	 */

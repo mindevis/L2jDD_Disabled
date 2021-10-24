@@ -14,12 +14,12 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.holders;
+package org.l2jdd.gameserver.model.holders;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.l2jmobius.gameserver.enums.Faction;
+import org.l2jdd.gameserver.enums.Faction;
 
 /**
  * @author Mobius

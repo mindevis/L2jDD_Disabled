@@ -34,21 +34,21 @@ import java.util.Map.Entry;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.l2jmobius.commons.concurrent.ThreadPool;
-import org.l2jmobius.gameserver.GameServer;
-import org.l2jmobius.gameserver.GameTimeController;
-import org.l2jmobius.gameserver.LoginServerThread;
-import org.l2jmobius.gameserver.data.xml.AdminData;
-import org.l2jmobius.gameserver.enums.ItemLocation;
-import org.l2jmobius.gameserver.model.World;
-import org.l2jmobius.gameserver.model.WorldObject;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.instance.MonsterInstance;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.network.serverpackets.AdminForgePacket;
-import org.l2jmobius.gameserver.network.telnet.ITelnetCommand;
-import org.l2jmobius.gameserver.taskmanager.DecayTaskManager;
+import org.l2jdd.commons.concurrent.ThreadPool;
+import org.l2jdd.gameserver.GameServer;
+import org.l2jdd.gameserver.GameTimeController;
+import org.l2jdd.gameserver.LoginServerThread;
+import org.l2jdd.gameserver.data.xml.AdminData;
+import org.l2jdd.gameserver.enums.ItemLocation;
+import org.l2jdd.gameserver.model.World;
+import org.l2jdd.gameserver.model.WorldObject;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.actor.instance.MonsterInstance;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.network.serverpackets.AdminForgePacket;
+import org.l2jdd.gameserver.network.telnet.ITelnetCommand;
+import org.l2jdd.gameserver.taskmanager.DecayTaskManager;
 
 import io.netty.channel.ChannelHandlerContext;
 

@@ -14,16 +14,16 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.log.filter;
+package org.l2jdd.log.filter;
 
 import java.util.HashSet;
 import java.util.Set;
 import java.util.logging.Filter;
 import java.util.logging.LogRecord;
 
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.model.items.type.EtcItemType;
-import org.l2jmobius.gameserver.model.items.type.ItemType;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.model.items.type.EtcItemType;
+import org.l2jdd.gameserver.model.items.type.ItemType;
 
 /**
  * @author Advi

@@ -14,12 +14,12 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.loginserver.network;
+package org.l2jdd.loginserver.network;
 
 import java.net.InetSocketAddress;
 import java.net.UnknownHostException;
 
-import org.l2jmobius.loginserver.LoginController;
+import org.l2jdd.loginserver.LoginController;
 
 import io.netty.channel.ChannelHandler.Sharable;
 import io.netty.channel.ChannelHandlerContext;

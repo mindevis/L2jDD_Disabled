@@ -14,14 +14,14 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.holders;
+package org.l2jdd.gameserver.model.holders;
 
 import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 
-import org.l2jmobius.gameserver.data.ItemTable;
-import org.l2jmobius.gameserver.model.items.Item;
+import org.l2jdd.gameserver.data.ItemTable;
+import org.l2jdd.gameserver.model.items.Item;
 
 /**
  * @author Nik

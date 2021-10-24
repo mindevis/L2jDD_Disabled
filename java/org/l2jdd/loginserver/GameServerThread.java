@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.loginserver;
+package org.l2jdd.loginserver;
 
 import java.io.BufferedOutputStream;
 import java.io.IOException;
@@ -27,17 +27,17 @@ import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.logging.Logger;
 
-import org.l2jmobius.commons.network.BaseSendablePacket;
-import org.l2jmobius.commons.util.crypt.NewCrypt;
-import org.l2jmobius.commons.util.crypt.ScrambledKeyPair;
-import org.l2jmobius.loginserver.GameServerTable.GameServerInfo;
-import org.l2jmobius.loginserver.network.GameServerPacketHandler;
-import org.l2jmobius.loginserver.network.GameServerPacketHandler.GameServerState;
-import org.l2jmobius.loginserver.network.loginserverpackets.ChangePasswordResponse;
-import org.l2jmobius.loginserver.network.loginserverpackets.InitLS;
-import org.l2jmobius.loginserver.network.loginserverpackets.KickPlayer;
-import org.l2jmobius.loginserver.network.loginserverpackets.LoginServerFail;
-import org.l2jmobius.loginserver.network.loginserverpackets.RequestCharacters;
+import org.l2jdd.commons.network.BaseSendablePacket;
+import org.l2jdd.commons.util.crypt.NewCrypt;
+import org.l2jdd.commons.util.crypt.ScrambledKeyPair;
+import org.l2jdd.loginserver.GameServerTable.GameServerInfo;
+import org.l2jdd.loginserver.network.GameServerPacketHandler;
+import org.l2jdd.loginserver.network.GameServerPacketHandler.GameServerState;
+import org.l2jdd.loginserver.network.loginserverpackets.ChangePasswordResponse;
+import org.l2jdd.loginserver.network.loginserverpackets.InitLS;
+import org.l2jdd.loginserver.network.loginserverpackets.KickPlayer;
+import org.l2jdd.loginserver.network.loginserverpackets.LoginServerFail;
+import org.l2jdd.loginserver.network.loginserverpackets.RequestCharacters;
 
 /**
  * @author -Wooden-

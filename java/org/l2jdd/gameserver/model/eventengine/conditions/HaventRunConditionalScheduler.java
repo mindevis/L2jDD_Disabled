@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.eventengine.conditions;
+package org.l2jdd.gameserver.model.eventengine.conditions;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -23,10 +23,10 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.l2jmobius.commons.database.DatabaseFactory;
-import org.l2jmobius.gameserver.model.eventengine.AbstractEventManager;
-import org.l2jmobius.gameserver.model.eventengine.EventScheduler;
-import org.l2jmobius.gameserver.model.eventengine.IConditionalEventScheduler;
+import org.l2jdd.commons.database.DatabaseFactory;
+import org.l2jdd.gameserver.model.eventengine.AbstractEventManager;
+import org.l2jdd.gameserver.model.eventengine.EventScheduler;
+import org.l2jdd.gameserver.model.eventengine.IConditionalEventScheduler;
 
 /**
  * @author UnAfraid

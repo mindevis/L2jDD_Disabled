@@ -14,18 +14,18 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.model.actor.templates;
+package org.l2jdd.gameserver.model.actor.templates;
 
 import java.util.Collections;
 import java.util.EnumMap;
 import java.util.Map;
 
-import org.l2jmobius.gameserver.enums.Race;
-import org.l2jmobius.gameserver.model.StatSet;
-import org.l2jmobius.gameserver.model.events.ListenersContainer;
-import org.l2jmobius.gameserver.model.items.type.WeaponType;
-import org.l2jmobius.gameserver.model.skills.Skill;
-import org.l2jmobius.gameserver.model.stats.Stat;
+import org.l2jdd.gameserver.enums.Race;
+import org.l2jdd.gameserver.model.StatSet;
+import org.l2jdd.gameserver.model.events.ListenersContainer;
+import org.l2jdd.gameserver.model.items.type.WeaponType;
+import org.l2jdd.gameserver.model.skills.Skill;
+import org.l2jdd.gameserver.model.stats.Stat;
 
 /**
  * Character template.

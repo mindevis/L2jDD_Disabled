@@ -16,10 +16,10 @@
  */
 package ai.areas.FairySettlement.LargeCocoon;
 
-import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.model.actor.Playable;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.events.impl.creature.OnCreatureAttacked;
+import org.l2jdd.gameserver.model.actor.Npc;
+import org.l2jdd.gameserver.model.actor.Playable;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.events.impl.creature.OnCreatureAttacked;
 
 import ai.AbstractNpcAI;
 

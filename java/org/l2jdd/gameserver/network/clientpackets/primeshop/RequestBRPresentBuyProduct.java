@@ -14,30 +14,30 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network.clientpackets.primeshop;
+package org.l2jdd.gameserver.network.clientpackets.primeshop;
 
 import java.util.Calendar;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
-import org.l2jmobius.commons.util.Chronos;
-import org.l2jmobius.gameserver.data.sql.CharNameTable;
-import org.l2jmobius.gameserver.data.xml.PrimeShopData;
-import org.l2jmobius.gameserver.enums.MailType;
-import org.l2jmobius.gameserver.instancemanager.MailManager;
-import org.l2jmobius.gameserver.model.Message;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.actor.request.PrimeShopRequest;
-import org.l2jmobius.gameserver.model.itemcontainer.Inventory;
-import org.l2jmobius.gameserver.model.itemcontainer.Mail;
-import org.l2jmobius.gameserver.model.primeshop.PrimeShopGroup;
-import org.l2jmobius.gameserver.model.primeshop.PrimeShopItem;
-import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
-import org.l2jmobius.gameserver.network.serverpackets.primeshop.ExBRBuyProduct;
-import org.l2jmobius.gameserver.network.serverpackets.primeshop.ExBRBuyProduct.ExBrProductReplyType;
-import org.l2jmobius.gameserver.network.serverpackets.primeshop.ExBRGamePoint;
-import org.l2jmobius.gameserver.util.Util;
+import org.l2jdd.Config;
+import org.l2jdd.commons.network.PacketReader;
+import org.l2jdd.commons.util.Chronos;
+import org.l2jdd.gameserver.data.sql.CharNameTable;
+import org.l2jdd.gameserver.data.xml.PrimeShopData;
+import org.l2jdd.gameserver.enums.MailType;
+import org.l2jdd.gameserver.instancemanager.MailManager;
+import org.l2jdd.gameserver.model.Message;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.actor.request.PrimeShopRequest;
+import org.l2jdd.gameserver.model.itemcontainer.Inventory;
+import org.l2jdd.gameserver.model.itemcontainer.Mail;
+import org.l2jdd.gameserver.model.primeshop.PrimeShopGroup;
+import org.l2jdd.gameserver.model.primeshop.PrimeShopItem;
+import org.l2jdd.gameserver.network.GameClient;
+import org.l2jdd.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jdd.gameserver.network.serverpackets.primeshop.ExBRBuyProduct;
+import org.l2jdd.gameserver.network.serverpackets.primeshop.ExBRBuyProduct.ExBrProductReplyType;
+import org.l2jdd.gameserver.network.serverpackets.primeshop.ExBRGamePoint;
+import org.l2jdd.gameserver.util.Util;
 
 /**
  * @author Gnacik, UnAfraid

@@ -18,16 +18,16 @@ package handlers.playeractions;
 
 import java.util.logging.Logger;
 
-import org.l2jmobius.gameserver.enums.PrivateStoreType;
-import org.l2jmobius.gameserver.handler.IPlayerActionHandler;
-import org.l2jmobius.gameserver.model.ActionDataHolder;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.zone.ZoneId;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
-import org.l2jmobius.gameserver.network.serverpackets.PrivateStoreManageListBuy;
-import org.l2jmobius.gameserver.network.serverpackets.PrivateStoreManageListSell;
-import org.l2jmobius.gameserver.network.serverpackets.RecipeShopManageList;
+import org.l2jdd.gameserver.enums.PrivateStoreType;
+import org.l2jdd.gameserver.handler.IPlayerActionHandler;
+import org.l2jdd.gameserver.model.ActionDataHolder;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.zone.ZoneId;
+import org.l2jdd.gameserver.network.SystemMessageId;
+import org.l2jdd.gameserver.network.serverpackets.ActionFailed;
+import org.l2jdd.gameserver.network.serverpackets.PrivateStoreManageListBuy;
+import org.l2jdd.gameserver.network.serverpackets.PrivateStoreManageListSell;
+import org.l2jdd.gameserver.network.serverpackets.RecipeShopManageList;
 
 /**
  * Open/Close private store player action handler.

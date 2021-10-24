@@ -14,26 +14,26 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.ai;
+package org.l2jdd.gameserver.ai;
 
-import static org.l2jmobius.gameserver.ai.CtrlIntention.AI_INTENTION_ATTACK;
-import static org.l2jmobius.gameserver.ai.CtrlIntention.AI_INTENTION_CAST;
-import static org.l2jmobius.gameserver.ai.CtrlIntention.AI_INTENTION_IDLE;
-import static org.l2jmobius.gameserver.ai.CtrlIntention.AI_INTENTION_INTERACT;
-import static org.l2jmobius.gameserver.ai.CtrlIntention.AI_INTENTION_MOVE_TO;
-import static org.l2jmobius.gameserver.ai.CtrlIntention.AI_INTENTION_PICK_UP;
-import static org.l2jmobius.gameserver.ai.CtrlIntention.AI_INTENTION_REST;
+import static org.l2jdd.gameserver.ai.CtrlIntention.AI_INTENTION_ATTACK;
+import static org.l2jdd.gameserver.ai.CtrlIntention.AI_INTENTION_CAST;
+import static org.l2jdd.gameserver.ai.CtrlIntention.AI_INTENTION_IDLE;
+import static org.l2jdd.gameserver.ai.CtrlIntention.AI_INTENTION_INTERACT;
+import static org.l2jdd.gameserver.ai.CtrlIntention.AI_INTENTION_MOVE_TO;
+import static org.l2jdd.gameserver.ai.CtrlIntention.AI_INTENTION_PICK_UP;
+import static org.l2jdd.gameserver.ai.CtrlIntention.AI_INTENTION_REST;
 
-import org.l2jmobius.gameserver.enums.ShotType;
-import org.l2jmobius.gameserver.model.WorldObject;
-import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.Summon;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.actor.instance.StaticObjectInstance;
-import org.l2jmobius.gameserver.model.holders.SkillUseHolder;
-import org.l2jmobius.gameserver.model.interfaces.ILocational;
-import org.l2jmobius.gameserver.model.skills.Skill;
-import org.l2jmobius.gameserver.model.skills.targets.TargetType;
+import org.l2jdd.gameserver.enums.ShotType;
+import org.l2jdd.gameserver.model.WorldObject;
+import org.l2jdd.gameserver.model.actor.Creature;
+import org.l2jdd.gameserver.model.actor.Summon;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.actor.instance.StaticObjectInstance;
+import org.l2jdd.gameserver.model.holders.SkillUseHolder;
+import org.l2jdd.gameserver.model.interfaces.ILocational;
+import org.l2jdd.gameserver.model.skills.Skill;
+import org.l2jdd.gameserver.model.skills.targets.TargetType;
 
 public class PlayerAI extends PlayableAI
 {

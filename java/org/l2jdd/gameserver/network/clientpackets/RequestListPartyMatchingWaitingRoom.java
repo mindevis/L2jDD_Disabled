@@ -14,16 +14,16 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network.clientpackets;
+package org.l2jdd.gameserver.network.clientpackets;
 
 import java.util.LinkedList;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketReader;
-import org.l2jmobius.gameserver.enums.ClassId;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.serverpackets.ExListPartyMatchingWaitingRoom;
+import org.l2jdd.commons.network.PacketReader;
+import org.l2jdd.gameserver.enums.ClassId;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.network.GameClient;
+import org.l2jdd.gameserver.network.serverpackets.ExListPartyMatchingWaitingRoom;
 
 /**
  * @author Gnacik

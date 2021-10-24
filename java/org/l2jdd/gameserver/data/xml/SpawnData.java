@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.data.xml;
+package org.l2jdd.gameserver.data.xml;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -32,21 +32,21 @@ import java.util.stream.Collectors;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.concurrent.ThreadPool;
-import org.l2jmobius.commons.util.IXmlReader;
-import org.l2jmobius.gameserver.model.ChanceLocation;
-import org.l2jmobius.gameserver.model.StatSet;
-import org.l2jmobius.gameserver.model.actor.templates.NpcTemplate;
-import org.l2jmobius.gameserver.model.holders.MinionHolder;
-import org.l2jmobius.gameserver.model.interfaces.IParameterized;
-import org.l2jmobius.gameserver.model.interfaces.ITerritorized;
-import org.l2jmobius.gameserver.model.spawns.NpcSpawnTemplate;
-import org.l2jmobius.gameserver.model.spawns.SpawnGroup;
-import org.l2jmobius.gameserver.model.spawns.SpawnTemplate;
-import org.l2jmobius.gameserver.model.zone.form.ZoneNPoly;
-import org.l2jmobius.gameserver.model.zone.type.BannedSpawnTerritory;
-import org.l2jmobius.gameserver.model.zone.type.SpawnTerritory;
+import org.l2jdd.Config;
+import org.l2jdd.commons.concurrent.ThreadPool;
+import org.l2jdd.commons.util.IXmlReader;
+import org.l2jdd.gameserver.model.ChanceLocation;
+import org.l2jdd.gameserver.model.StatSet;
+import org.l2jdd.gameserver.model.actor.templates.NpcTemplate;
+import org.l2jdd.gameserver.model.holders.MinionHolder;
+import org.l2jdd.gameserver.model.interfaces.IParameterized;
+import org.l2jdd.gameserver.model.interfaces.ITerritorized;
+import org.l2jdd.gameserver.model.spawns.NpcSpawnTemplate;
+import org.l2jdd.gameserver.model.spawns.SpawnGroup;
+import org.l2jdd.gameserver.model.spawns.SpawnTemplate;
+import org.l2jdd.gameserver.model.zone.form.ZoneNPoly;
+import org.l2jdd.gameserver.model.zone.type.BannedSpawnTerritory;
+import org.l2jdd.gameserver.model.zone.type.SpawnTerritory;
 
 /**
  * @author UnAfraid

@@ -14,19 +14,19 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.cache;
+package org.l2jdd.gameserver.cache;
 
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
-import org.l2jmobius.gameserver.data.xml.ArmorSetData;
-import org.l2jmobius.gameserver.model.ArmorSet;
-import org.l2jmobius.gameserver.model.actor.instance.PlayerInstance;
-import org.l2jmobius.gameserver.model.items.instance.ItemInstance;
-import org.l2jmobius.gameserver.model.stats.BaseStat;
-import org.l2jmobius.gameserver.model.stats.Stat;
+import org.l2jdd.gameserver.data.xml.ArmorSetData;
+import org.l2jdd.gameserver.model.ArmorSet;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.model.items.instance.ItemInstance;
+import org.l2jdd.gameserver.model.stats.BaseStat;
+import org.l2jdd.gameserver.model.stats.Stat;
 
 /**
  * @author Sahar
