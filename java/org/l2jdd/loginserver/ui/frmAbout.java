@@ -22,7 +22,7 @@ import javax.swing.WindowConstants;
 public class frmAbout
 {
 	private JFrame frmAbout;
-	private static final String URL = "www.l2jdd.org";
+	private static final String URL = "https://dd-project.xyz";
 	final URI uri;
 	
 	public frmAbout()
