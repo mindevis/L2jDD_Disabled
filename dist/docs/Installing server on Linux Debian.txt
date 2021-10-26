@@ -1,0 +1,127 @@
+[RU] Установка и запуск сервера Lineage 2 L2jDD
+
+Для установки сервера L2jDD вам необходимо:
+----
+JDK: openjdk 17
+MariaDB: Ver 15.1 или выше.
+----
+
+Все операции необходимо проводить под пользователем сервера root (суперпользователь)
+В случае невозможности использования пользователя root, используйте команду эскалации привилегий *sudo*
+
+#############################################################################################################################################################
+
+Установка JDK 17
+---
+1. wget https://download.java.net/java/GA/jdk17/0d483333a00540d886896bac774ff48b/35/GPL/openjdk-17_linux-x64_bin.tar.gz
+2. mkdir -p /usr/lib/jvm && tar -xvpf openjdk-17_linux-x64_bin.tar.gz -C /usr/lib/jvm
+3. update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk-17/bin/java 1
+4. update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/jdk-17/bin/javac 1
+5. vim /etc/profile | В переменную среды PATH добавьте пути к исполняемым файлам /usr/lib/jvm/jdk-17/bin
+Для сохранения и выхода из редактора vim используем последовательное нажатие и ввод "escape + : + wq"
+
+Пример:
+1.
+   export JAVA_HOME="/usr/lib/jvm/jdk-17"
+   export JDK_HOME="/usr/lib/jvm/jdk-17"
+   export PATH="$PATH:$JAVA_HOME/bin"
+
+После внесения изменений в переменные среды PATH обязательно необходимо выполнить перезагрузку сервера.
+
+---
+Для проверки установленной версии Java можно воспользоваться следующими командами:
+java --version
+javac --version
+---
+
+#############################################################################################################################################################
+
+Установка MariaDB
+---
+1. apt install mariadb-server -y
+2. mysql_secure_installation
+Enter current password for root (enter for none): - Необходимо ввести текущий пароль root
+Change the root password? [Y/n] - Сменить пароль root? (По желанию)
+Remove anonymous users? [Y/n] - Удалить анонимных пользователей ? (Да/Yes/Y)
+Disallow root login remotely? [Y/n] - Отключить удаленный доступ для пользователя root? (Да/Yes/Y)
+Remove test database and access to it? [Y/n] - Удалить базу данных test и привелении для этой базы данных (Да/Yes/Y)
+Reload privilege tables now? [Y/n] - Выполнить перезагрузку привилегий сейчас? (Да/Yes/Y)
+Базовая настройка сервера баз данных MariaDB завершена.
+3. Создаем базу данных l2jdd с кодировкой utf8mb4
+    1. mysql -u root -p
+    2. CREATE DATABASE IF NOT EXISTS l2jdd CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+4. Создаем пользователя базы данных и назначаем права для базы данных l2jdd
+    1. CREATE USER IF NOT EXISTS 'l2jdd'@'localhost' IDENTIFIED BY 'l2jdd';
+    2. GRANT ALL PRIVILEGES on l2jdd.* TO 'l2jdd'@'localhost';
+5. Применяем изменения сделанные в базе данных без перезагрузки сервера баз данных
+    1. FLUSH PRIVILEGES;
+---
+
+#############################################################################################################################################################
+
+---
+Выполняем деплой сборки сервера L2jDD на удаленный сервер Linux Debian
+Выполнить это можно с помощью файла деплоя проекта LinuxDeploy предварительно скорректировав файл LinuxDeploy.xml
+        <scp todir="root@хост вашего удаленного сервера:/opt/" password="пароль пользователя root для удаленного сервера" failonerror="true">
+        <sshexec host="хост вашего удаленного сервера" username="root" password="пароль пользователя root для удаленного сервера" failonerror="true" command="rm -rf /opt/Server"/>
+        <sshexec host="хост вашего удаленного сервера" username="root" password="пароль пользователя root для удаленного сервера" failonerror="true" command="mkdir /opt/Server"/>
+        <sshexec host="хост вашего удаленного сервера" username="root" password="пароль пользователя root для удаленного сервера" failonerror="true" command="tar -xvpf /opt/*.tar.gz -C /opt/Server/"/>
+Также деплой можно выполнить с помощью утилит FileZilla или WinSCP
+
+Расположение сервера может быть индивидуальным.
+По умолчанию: /opt/Server
+----
+
+#############################################################################################################################################################
+
+----
+Подготовка сервера к запуску.
+
+Переходим по пути: /opt/Server/db_installer/
+1. cd /opt/Server/db_installer
+
+2. Запускаем скрипт развертывания базы данных LoginServer(a) | java -jar Database_Installer_LS.jar
+
+    Host (localhost):
+    Port (3306):
+    Username (l2jdd):
+    Password (): l2jdd
+    Database (l2jdd):
+
+3. Запускаем скрипт развертывания базы данных GameServer(a) | java -jar Database_Installer_GS.jar
+
+    Host (localhost):
+    Port (3306):
+    Username (l2jdd):
+    Password (): l2jdd
+    Database (l2jdd):
+
+4. Правим конфигурационный файл LoginServer | vim /opt/Server/login/config/network/LoginServer.ini | для сохранения и выхода из редактора vim используем комбинацию escape + : + wq
+LoginserverHostname = Прописываем внешний IP вашего удаленного сервера.
+
+5. Правим конфигурационный файл GameServer | vim /opt/Server/game/config/network/GameServer.ini | для сохранения и выхода из редактора vim используем комбинацию escape + : + wq
+GameserverHostname = Прописываем внешний IP вашего удаленного сервера.
+
+6. Правим конфигурационный файл ipconfig.xml | vim /opt/Server/game/config/network/ipconfig.xml | для сохранения и выхода из редактора vim используем комбинацию escape + : + wq
+<gameserver address="Прописываем внешний IP вашего удаленного сервера." xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../data/xsd/ipconfig.xsd">
+
+7. Выполняем регистрацию игрового сервера.
+    Переходим в директорию login - cd /opt/Server/login
+    Запускаем скрипт регистрации игрового сервера. ./RegisterGameServer.sh
+    Выбираем 1 - Register GameServer - Enter
+    Вводим ID игровго сервера: Например 1 (Bartz)
+    Далее выбираем пункт 5 - Exit (Выход)
+    Переносим файл hexid.txt в директорию конфигурационных файлов GameServer | /opt/Server/game/config/network | mv hexid.txt /opt/Server/game/config/network
+----
+
+#############################################################################################################################################################
+
+----
+Сервер готов к запуску.
+
+1. Поднимаем LoginServer
+mkdir -p /opt/Server/login/log && cd /opt/Server/login/ && sh LoginServer.sh
+
+2. Поднимаем GameServer
+mkdir -p /opt/Server/game/log && cd /opt/Server/game/ && sh GameServer.sh
+----
