@@ -45,6 +45,7 @@ public class Q11024_PathOfDestinyBeginning extends Quest
 	private static final int NASTY_ZOMBIE = 24382;
 	private static final int NASTY_ZOMBIE_LORD = 24383;
 	// Items
+	// TODO Return of Queen Ant SOE replaced Teleportation Cube ID:81875
 	private static final int SOE_SILVAN = 80678;
 	private static final int SOE_TARTI = 80677;
 	private static final int SS_NG_NOVICE = 5789;
@@ -105,7 +106,7 @@ public class Q11024_PathOfDestinyBeginning extends Quest
 				}
 				break;
 			}
-			case "34505-10.html":
+			case "34505-06.html":
 			{
 				if (qs.isCond(3))
 				{
@@ -113,7 +114,15 @@ public class Q11024_PathOfDestinyBeginning extends Quest
 				}
 				break;
 			}
-			case "34505-07.html":
+			case "34505-11.html":
+			{
+				if (qs.isCond(3))
+				{
+					htmltext = event;
+				}
+				break;
+			}
+			case "34505-08.html":
 			{
 				if (qs.isCond(7))
 				{
@@ -134,7 +143,7 @@ public class Q11024_PathOfDestinyBeginning extends Quest
 				}
 				break;
 			}
-			case "34505-08.html":
+			case "34505-09.html":
 			{
 				if (qs.isCond(8))
 				{
@@ -143,7 +152,7 @@ public class Q11024_PathOfDestinyBeginning extends Quest
 				}
 				break;
 			}
-			case "34505-09.html":
+			case "34505-10.html":
 			{
 				if (qs.isCond(8))
 				{
@@ -273,15 +282,15 @@ public class Q11024_PathOfDestinyBeginning extends Quest
 						}
 						else if (qs.isCond(3))
 						{
-							htmltext = "34505-10.html";
+							htmltext = "34505-11.html";
 						}
 						else if (qs.isCond(7))
 						{
-							htmltext = "34505-06.html";
+							htmltext = "34505-07.html";
 						}
 						else if (qs.isCond(8))
 						{
-							htmltext = "34505-08.html";
+							htmltext = "34505-09.html";
 						}
 						break;
 					}
