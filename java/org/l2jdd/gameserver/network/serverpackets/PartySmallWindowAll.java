@@ -1,0 +1,74 @@
+/*
+ * This file is part of the L2J Mobius project.
+ * 
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ * General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+package org.l2jdd.gameserver.network.serverpackets;
+
+import org.l2jdd.commons.network.PacketWriter;
+import org.l2jdd.gameserver.model.Party;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.network.OutgoingPackets;
+
+/**
+ * sample 63 01 00 00 00 count c1 b2 e0 4a object id 54 00 75 00 65 00 73 00 64 00 61 00 79 00 00 00 name 5a 01 00 00 hp 5a 01 00 00 hp max 89 00 00 00 mp 89 00 00 00 mp max 0e 00 00 00 level 12 00 00 00 class 00 00 00 00 01 00 00 00 format d (dSdddddddd)
+ * @version $Revision: 1.6.2.1.2.5 $ $Date: 2005/03/27 15:29:57 $
+ */
+public class PartySmallWindowAll implements IClientOutgoingPacket
+{
+	private final Party _party;
+	private final PlayerInstance _exclude;
+	private final int _dist;
+	private final int _leaderObjId;
+	
+	public PartySmallWindowAll(PlayerInstance exclude, Party party)
+	{
+		_exclude = exclude;
+		_party = party;
+		_leaderObjId = _party.getPartyLeaderOID();
+		_dist = _party.getLootDistribution();
+	}
+	
+	@Override
+	public boolean write(PacketWriter packet)
+	{
+		OutgoingPackets.PARTY_SMALL_WINDOW_ALL.writeId(packet);
+		
+		packet.writeD(_leaderObjId);
+		packet.writeD(_dist);
+		packet.writeD(_party.getMemberCount() - 1);
+		
+		for (PlayerInstance member : _party.getPartyMembers())
+		{
+			if ((member != null) && (member != _exclude))
+			{
+				packet.writeD(member.getObjectId());
+				packet.writeS(member.getName());
+				
+				packet.writeD((int) member.getCurrentCp()); // c4
+				packet.writeD(member.getMaxCp()); // c4
+				
+				packet.writeD((int) member.getCurrentHp());
+				packet.writeD(member.getMaxHp());
+				packet.writeD((int) member.getCurrentMp());
+				packet.writeD(member.getMaxMp());
+				packet.writeD(member.getLevel());
+				packet.writeD(member.getClassId().getId());
+				packet.writeD(0); // writeD(0x01); ??
+				packet.writeD(member.getRace().ordinal());
+			}
+		}
+		return true;
+	}
+}

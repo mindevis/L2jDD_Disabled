@@ -1,0 +1,75 @@
+/*
+ * This file is part of the L2J Mobius project.
+ * 
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ * General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+package org.l2jdd.gameserver.network.serverpackets;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.l2jdd.commons.network.PacketWriter;
+import org.l2jdd.gameserver.data.sql.CharNameTable;
+import org.l2jdd.gameserver.model.World;
+import org.l2jdd.gameserver.model.actor.instance.PlayerInstance;
+import org.l2jdd.gameserver.network.OutgoingPackets;
+
+/**
+ * Support for "Chat with Friends" dialog.
+ * @author Tempy
+ */
+public class FriendList implements IClientOutgoingPacket
+{
+	private final List<FriendInfo> _info;
+	
+	private static class FriendInfo
+	{
+		int _objId;
+		String _name;
+		boolean _online;
+		
+		public FriendInfo(int objId, String name, boolean online)
+		{
+			_objId = objId;
+			_name = name;
+			_online = online;
+		}
+	}
+	
+	public FriendList(PlayerInstance player)
+	{
+		_info = new ArrayList<>(player.getFriendList().size());
+		for (int objId : player.getFriendList())
+		{
+			final String name = CharNameTable.getInstance().getPlayerName(objId);
+			final PlayerInstance player1 = World.getInstance().getPlayer(objId);
+			_info.add(new FriendInfo(objId, name, ((player1 != null) && player1.isOnline())));
+		}
+	}
+	
+	@Override
+	public boolean write(PacketWriter packet)
+	{
+		OutgoingPackets.FRIEND_LIST.writeId(packet);
+		packet.writeD(_info.size());
+		for (FriendInfo info : _info)
+		{
+			packet.writeD(info._objId);
+			packet.writeS(info._name);
+			packet.writeD(info._online ? 0x01 : 0x00);
+			packet.writeD(info._online ? info._objId : 0x00);
+		}
+		return true;
+	}
+}

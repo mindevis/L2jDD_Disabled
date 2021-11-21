@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="L2jDD Windows Build" default="Clean-Project" basedir=".">
+
+    <property name="project.archive.name" value="l2jdd"/>
+    <property name="build" location="build"/>
+    <property name="build.bin" location="${build}/bin"/>
+    <property name="build.dist" location="${build}/dist"/>
+    <property name="build.dist.libs" location="${build.dist}/libs"/>
+    <property name="build.dist.dbinstaller" location="${build.dist}/db_installer"/>
+    <property name="compiled" location="${build}/compiled"/>
+    <property name="launcher.dist" location="launcher"/>
+    <property name="windows" location="${launcher.dist}/windows"/>
+    <property name="datapack" location="dist"/>
+    <property name="libs" location="${datapack}/libs"/>
+    <property name="src" location="java"/>
+    <property name="launch4j.dir" location="tools/launch4j"/>
+
+    <path id="classpath">
+        <fileset dir="${libs}">
+            <include name="*.jar" />
+            <exclude name="**/*-sources.jar"/>
+        </fileset>
+    </path>
+
+    <pathconvert property="manifest.libs" pathsep=" ">
+        <path refid="classpath" />
+        <mapper>
+            <chainedmapper>
+                <flattenmapper />
+                <globmapper from="*.jar" to="../libs/*.jar" />
+            </chainedmapper>
+        </mapper>
+    </pathconvert>
+
+    <exec executable="git" outputproperty="git.hash" failifexecutionfails="true" failonerror="true">
+        <arg value="rev-parse"/>
+        <arg value="--short"/>
+        <arg value="HEAD"/>
+    </exec>
+
+    <taskdef name="launch4j" classname="net.sf.launch4j.ant.Launch4jTask" classpath="${launch4j.dir}/launch4j.jar :${launch4j.dir}/lib/xstream.jar" />
+
+    <!-- Task #1 -->
+    <target name="Check-Requirements" description="Check Requirements.">
+        <echo message="Check Requirements." level="info"/>
+        <echo message="Check Java: ${java.version}" level="info" />
+        <fail message="Required Java Version 17. Your Java version: ${ant.java.version} | Full Java Version: ${java.version}. Update your JDK to the required version">
+            <condition>
+                <not>
+                    <or>
+                        <equals arg1="${ant.java.version}" arg2="17"/>
+                    </or>
+                </not>
+            </condition>
+        </fail>
+        <echo message="Check Ant: ${ant.version}" level="info" />
+        <fail message="Required Apache Ant Compiler Version 1.10.7. Your compiler version: ${ant.version}. Update your compiler to the required version">
+            <condition>
+                <not>
+                    <antversion atleast="1.10.7" />
+                </not>
+            </condition>
+        </fail>
+        <echo message="Check Requirements Successful" level="info"/>
+    </target>
+
+    <!-- Task #2 -->
+    <target name="Initial-Task" depends="Check-Requirements" description="Initial Task.">
+        <echo message="Initial Task" level="info"/>
+        <echo message="Create directory for building source code" level="info"/>
+        <delete dir="${build.bin}" quiet="true"/>
+        <mkdir dir="${build.bin}" />
+    </target>
+
+    <!-- Task #3 -->
+    <target name="Compile-Sources" depends="Initial-Task" description="Compiling the source code.">
+        <echo message="Compiling the source code." level="info"/>
+        <javac srcdir="${src}" classpathref="classpath" destdir="${build.bin}" compiler="modern" debug="true" debuglevel="lines,vars,source" includeantruntime="false" source="17" target="17" encoding="UTF-8" />
+    </target>
+
+    <!-- Task #4 -->
+    <target name="Compile-JAR-Files" depends="Compile-Sources" description="Compiling and creating JAR files.">
+        <echo message="Compiling and creating JAR files." level="info"/>
+        <tstamp>
+            <format property="time.stamp" pattern="yyyy-MM-dd HH:mm:ss" />
+        </tstamp>
+
+        <!-- LoginServer.jar -->
+        <echo message="Compile LoginServer.jar" level="info"/>
+        <jar destfile="${build.dist.libs}/LoginServer.jar" level="9">
+            <fileset dir="${build.bin}">
+                <exclude name="**/dbinstaller/**" />
+                <exclude name="**/gameserver/**" />
+                <exclude name="**/geodataconverter/**" />
+            </fileset>
+            <manifest>
+                <attribute name="Build-By" value="${user.name}" />
+                <attribute name="Build-Date" value="${time.stamp}" />
+                <attribute name="Implementation-URL" value="https://dd-project.xyz" />
+                <attribute name="Class-Path" value="${manifest.libs}" />
+                <attribute name="Main-Class" value="org.l2jdd.loginserver.LoginServer" />
+            </manifest>
+        </jar>
+
+        <!-- GameServer.jar -->
+        <echo message="Compile GameServer.jar" level="info"/>
+        <jar destfile="${build.dist.libs}/GameServer.jar" level="9">
+            <fileset dir="${build.bin}">
+                <exclude name="**/dbinstaller/**" />
+                <exclude name="**/loginserver/**" />
+                <exclude name="**/accountmanager/**" />
+                <exclude name="**/gsregistering/**" />
+            </fileset>
+            <manifest>
+                <attribute name="Build-By" value="${user.name}" />
+                <attribute name="Build-Date" value="${time.stamp}" />
+                <attribute name="Implementation-URL" value="https://dd-project.xyz" />
+                <attribute name="Class-Path" value="${manifest.libs}" />
+                <attribute name="Main-Class" value="org.l2jdd.gameserver.GameServer" />
+            </manifest>
+        </jar>
+
+        <!-- Database_Installer_GS.jar -->
+        <echo message="Compile Database_Installer_GS.jar" level="info"/>
+        <jar destfile="${build.dist.dbinstaller}/Database_Installer_GS.jar" level="9">
+            <fileset dir="${build.bin}">
+                <include name="**/dbinstaller/**" />
+                <include name="**/util/**" />
+                <include name="**/SQLFilter**" />
+                <exclude name="**/LauncherLS*" />
+            </fileset>
+            <manifest>
+                <attribute name="Build-By" value="${user.name}" />
+                <attribute name="Build-Date" value="${time.stamp}" />
+                <attribute name="Class-Path" value="${manifest.libs}" />
+                <attribute name="Implementation-URL" value="https://dd-project.xyz" />
+                <attribute name="Main-Class" value="org.l2jdd.tools.dbinstaller.LauncherGS" />
+            </manifest>
+        </jar>
+
+        <!-- Database_Installer_LS.jar -->
+        <echo message="Compile Database_Installer_LS.jar" level="info"/>
+        <jar destfile="${build.dist.dbinstaller}/Database_Installer_LS.jar" level="9">
+            <fileset dir="${build.bin}">
+                <include name="**/dbinstaller/**" />
+                <include name="**/util/**" />
+                <include name="**/SQLFilter**" />
+                <exclude name="**/LauncherGS*" />
+            </fileset>
+            <manifest>
+                <attribute name="Build-By" value="${user.name}" />
+                <attribute name="Build-Date" value="${time.stamp}" />
+                <attribute name="Class-Path" value="${manifest.libs}" />
+                <attribute name="Implementation-URL" value="https://dd-project.xyz" />
+                <attribute name="Main-Class" value="org.l2jdd.tools.dbinstaller.LauncherLS" />
+            </manifest>
+        </jar>
+
+        <!-- StartLoginServer.jar -->
+        <echo message="Compile StartLoginServer.jar" level="info"/>
+        <jar destfile="${build.dist}/login/StartLoginServer.jar" level="9">
+            <fileset dir="${build.bin}">
+                <include name="**/startloginserver/**" />
+            </fileset>
+            <manifest>
+                <attribute name="Build-By" value="${user.name}" />
+                <attribute name="Build-Date" value="${time.stamp}" />
+                <attribute name="Class-Path" value="${manifest.libs}" />
+                <attribute name="Implementation-URL" value="https://dd-project.xyz" />
+                <attribute name="Main-Class" value="org.l2jdd.tools.startloginserver.StartLoginServer" />
+            </manifest>
+        </jar>
+
+        <!-- StartGameServer.jar -->
+        <echo message="Compile StartGameServer.jar" level="info"/>
+        <jar destfile="${build.dist}/game/StartGameServer.jar" level="9">
+            <fileset dir="${build.bin}">
+                <include name="**/startgameserver/**" />
+            </fileset>
+            <manifest>
+                <attribute name="Build-By" value="${user.name}" />
+                <attribute name="Build-Date" value="${time.stamp}" />
+                <attribute name="Class-Path" value="${manifest.libs}" />
+                <attribute name="Implementation-URL" value="https://dd-project.xyz" />
+                <attribute name="Main-Class" value="org.l2jdd.tools.startgameserver.StartGameServer" />
+            </manifest>
+        </jar>
+    </target>
+
+    <!-- Task #5 -->
+    <target name="Create-EXE-Files" depends="Compile-JAR-Files" description="Creating .exe files">
+        <echo message="Create .exe files for database installer" level="info"/>
+        <echo message="Create Database_Installer_LS.exe file" level="info"/>
+        <launch4j>
+            <config headerType="gui"
+                    jarPath="${build.dist.dbinstaller}/Database_Installer_LS.jar"
+                    outfile="${build.dist.dbinstaller}/Database_Installer_LS.exe"
+                    dontWrapJar="false"
+                    icon="${datapack}/images/database/favicon.ico"
+                    errTitle="Database_Installer_LS"
+                    downloadUrl="https://dd-project.xyz"
+                    supportUrl="https://dd-project.xyz"
+                    priority="normal"
+                    stayAlive="false"
+                    restartOnCrash="false">
+                <singleInstance mutexName="Database_Installer_LS" windowTitle="Database_Installer_LS"/>
+                <jre path="%JAVA_HOME%" jdkPreference="jdkOnly" runtimeBits="64/32">
+                    <opt>-Dlaunch4j.exedir="%EXEDIR%"</opt>
+                    <opt>-Dlaunch4j.exefile="%EXEFILE%"</opt>
+                </jre>
+                <versionInfo
+                        fileVersion="1.0.0.0"
+                        txtFileVersion="1.0.0.0"
+                        fileDescription="LoginServer Database Installer"
+                        copyright="© L2jDD, 2021"
+                        productVersion="1.0.0.0"
+                        txtProductVersion="1.0.0.0"
+                        productName="Database_Installer_LS"
+                        companyName="L2jDD"
+                        internalName="Database_Installer_LS"
+                        originalFilename="Database_Installer_LS.exe"
+                        trademarks="L2jDD"
+                        language="RUSSIAN"/>
+            </config>
+        </launch4j>
+
+        <echo message="Database_Installer_LS.exe successful created" level="info"/>
+        <echo message="Create Database_Installer_GS.exe file" level="info"/>
+        <launch4j>
+            <config headerType="gui"
+                    jarPath="${build.dist.dbinstaller}/Database_Installer_GS.jar"
+                    outfile="${build.dist.dbinstaller}/Database_Installer_GS.exe"
+                    dontWrapJar="false"
+                    icon="${datapack}/images/database/favicon.ico"
+                    errTitle="Database_Installer_GS"
+                    downloadUrl="https://dd-project.xyz"
+                    supportUrl="https://dd-project.xyz"
+                    priority="normal"
+                    stayAlive="false"
+                    restartOnCrash="false">
+                <singleInstance mutexName="Database_Installer_GS" windowTitle="Database_Installer_GS"/>
+                <jre path="%JAVA_HOME%" jdkPreference="jdkOnly" runtimeBits="64/32">
+                    <opt>-Dlaunch4j.exedir="%EXEDIR%"</opt>
+                    <opt>-Dlaunch4j.exefile="%EXEFILE%"</opt>
+                </jre>
+                <versionInfo
+                        fileVersion="1.0.0.0"
+                        txtFileVersion="1.0.0.0"
+                        fileDescription="GameServer Database Installer"
+                        copyright="© L2jDD, 2021"
+                        productVersion="1.0.0.0"
+                        txtProductVersion="1.0.0.0"
+                        productName="Database_Installer_GS"
+                        companyName="L2jDD"
+                        internalName="Database_Installer_GS"
+                        originalFilename="Database_Installer_GS.exe"
+                        trademarks="L2jDD"
+                        language="RUSSIAN"/>
+            </config>
+        </launch4j>
+
+        <echo message="Database_Installer_GS.exe successful created" level="info"/>
+        <!-- TODO: need add condition if files exists -->
+        <echo message="Create RegisterGameServer.exe file" level="info"/>
+        <launch4j>
+            <config headerType="console"
+                    outfile="launcher/windows/login/RegisterGameServer.exe"
+                    dontWrapJar="true"
+                    icon="${datapack}/images/rgs/favicon.ico"
+                    errTitle="RegisterGameServer"
+                    downloadUrl="https://dd-project.xyz"
+                    supportUrl="https://dd-project.xyz"
+                    priority="normal"
+                    stayAlive="true"
+                    restartOnCrash="false">
+                <classPath mainClass="org.l2jdd.tools.gsregistering.GameServerRegister" cp="./../libs/*" />
+                <singleInstance mutexName="RegisterGameServer" windowTitle="RegisterGameServer"/>
+                <jre path="%JAVA_HOME%" jdkPreference="jdkOnly" runtimeBits="64/32">
+                    <opt>-Dlaunch4j.exedir="%EXEDIR%"</opt>
+                    <opt>-Dlaunch4j.exefile="%EXEFILE%"</opt>
+                    <opt>-Djava.util.logging.config.file=console.cfg</opt>
+                </jre>
+                <versionInfo
+                        fileVersion="1.0.0.0"
+                        txtFileVersion="1.0.0.0"
+                        fileDescription="GameServer Register Utility"
+                        copyright="© L2jDD, 2021"
+                        productVersion="1.0.0.0"
+                        txtProductVersion="1.0.0.0"
+                        productName="RegisterGameServer"
+                        companyName="L2jDD"
+                        internalName="RegisterGameServer"
+                        originalFilename="RegisterGameServer.exe"
+                        trademarks="L2jDD"
+                        language="RUSSIAN"/>
+            </config>
+        </launch4j>
+
+        <echo message="RegisterGameServer.exe successful created" level="info"/>
+        <echo message="Create AccountManager.exe file" level="info"/>
+        <launch4j>
+            <config headerType="console"
+                    outfile="launcher/windows/login/AccountManager.exe"
+                    dontWrapJar="true"
+                    icon="${datapack}/images/am/favicon.ico"
+                    errTitle="AccountManager"
+                    downloadUrl="https://dd-project.xyz"
+                    supportUrl="https://dd-project.xyz"
+                    priority="normal"
+                    stayAlive="true"
+                    restartOnCrash="false">
+                <classPath mainClass="org.l2jdd.tools.accountmanager.SQLAccountManager" cp="./../libs/*" />
+                <singleInstance mutexName="AccountManager" windowTitle="AccountManager"/>
+                <jre path="%JAVA_HOME%" jdkPreference="jdkOnly" runtimeBits="64/32">
+                    <opt>-Dlaunch4j.exedir="%EXEDIR%"</opt>
+                    <opt>-Dlaunch4j.exefile="%EXEFILE%"</opt>
+                    <opt>-Djava.util.logging.config.file=console.cfg</opt>
+                </jre>
+                <versionInfo
+                        fileVersion="1.0.0.0"
+                        txtFileVersion="1.0.0.0"
+                        fileDescription="Game Account Manage Utility"
+                        copyright="© L2jDD, 2021"
+                        productVersion="1.0.0.0"
+                        txtProductVersion="1.0.0.0"
+                        productName="AccountManager"
+                        companyName="L2jDD"
+                        internalName="AccountManager"
+                        originalFilename="AccountManager.exe"
+                        trademarks="L2jDD"
+                        language="RUSSIAN"/>
+            </config>
+        </launch4j>
+
+        <echo message="AccountManager.exe successful created" level="info"/>
+        <echo message="Create StartLoginServer.exe file" level="info"/>
+        <launch4j>
+            <config headerType="gui"
+                    jarPath="${build.dist}/login/StartLoginServer.jar"
+                    outfile="${build.dist}/login/StartLoginServer.exe"
+                    dontWrapJar="false"
+                    icon="${datapack}/images/server/favicon.ico"
+                    errTitle="StartLoginServer"
+                    downloadUrl="https://dd-project.xyz"
+                    supportUrl="https://dd-project.xyz"
+                    priority="normal"
+                    stayAlive="false"
+                    restartOnCrash="true">
+                <singleInstance mutexName="StartLoginServer" windowTitle="StartLoginServer"/>
+                <jre path="%JAVA_HOME%" jdkPreference="jdkOnly" runtimeBits="64/32">
+                    <opt>-Dlaunch4j.exedir="%EXEDIR%"</opt>
+                    <opt>-Dlaunch4j.exefile="%EXEFILE%"</opt>
+                </jre>
+                <versionInfo
+                        fileVersion="1.0.0.0"
+                        txtFileVersion="1.0.0.0"
+                        fileDescription="Start LoginServer Utility"
+                        copyright="© L2jDD, 2021"
+                        productVersion="1.0.0.0"
+                        txtProductVersion="1.0.0.0"
+                        productName="StartLoginServer"
+                        companyName="L2jDD"
+                        internalName="StartLoginServer"
+                        originalFilename="StartLoginServer.exe"
+                        trademarks="L2jDD"
+                        language="RUSSIAN"/>
+            </config>
+        </launch4j>
+
+        <echo message="StartLoginServer.exe successful created" level="info"/>
+        <echo message="Create StartGameServer.exe file" level="info"/>
+        <launch4j>
+            <config headerType="gui"
+                    jarPath="${build.dist}/game/StartGameServer.jar"
+                    outfile="${build.dist}/game/StartGameServer.exe"
+                    dontWrapJar="false"
+                    icon="${datapack}/images/server/favicon.ico"
+                    errTitle="StartGameServer"
+                    downloadUrl="https://dd-project.xyz"
+                    supportUrl="https://dd-project.xyz"
+                    priority="normal"
+                    stayAlive="false"
+                    restartOnCrash="true">
+                <singleInstance mutexName="StartGameServer" windowTitle="StartGameServer"/>
+                <jre path="%JAVA_HOME%" jdkPreference="jdkOnly" runtimeBits="64/32">
+                    <opt>-Dlaunch4j.exedir="%EXEDIR%"</opt>
+                    <opt>-Dlaunch4j.exefile="%EXEFILE%"</opt>
+                </jre>
+                <versionInfo
+                        fileVersion="1.0.0.0"
+                        txtFileVersion="1.0.0.0"
+                        fileDescription="Start GameServer Utility"
+                        copyright="© L2jDD, 2021"
+                        productVersion="1.0.0.0"
+                        txtProductVersion="1.0.0.0"
+                        productName="StartGameServer"
+                        companyName="L2jDD"
+                        internalName="StartGameServer"
+                        originalFilename="StartGameServer.exe"
+                        trademarks="L2jDD"
+                        language="RUSSIAN"/>
+            </config>
+        </launch4j>
+        <echo message="StartGameServer.exe successful created" level="info"/>
+    </target>
+
+    <!-- Task #6 -->
+    <target name="Compress-Project" depends="Create-EXE-Files" description="Project archive create.">
+        <echo message="Project archive create." level="info"/>
+        <copy todir="${compiled}" overwrite="true" includeemptydirs="true" failonerror="true">
+            <fileset dir="${build.dist}" erroronmissingdir="true">
+                <exclude name="**/Database_Installer_LS.jar"/>
+                <exclude name="**/Database_Installer_GS.jar"/>
+                <exclude name="**/StartLoginServer.jar"/>
+                <exclude name="**/StartGameServer.jar"/>
+            </fileset>
+            <fileset dir="${datapack}" erroronmissingdir="true"/>
+            <fileset dir="${windows}" erroronmissingdir="true"/>
+        </copy>
+        <zip destfile="${build}/windows_${project.archive.name}_${git.hash}.zip" basedir="${compiled}" update="true" level="9" />
+    </target>
+
+    <!-- Target #7 -->
+    <target name="Clean-Project" depends="Compress-Project" description="Clearing the project build directory.">
+        <echo message="Clearing the project build directory." level="info"/>
+        <delete dir="${build.bin}" />
+        <delete dir="${build.dist}" />
+        <delete dir="${compiled}"/>
+        <delete>
+            <fileset dir="${windows}/login/"/>
+        </delete>
+    </target>
+
+</project>
